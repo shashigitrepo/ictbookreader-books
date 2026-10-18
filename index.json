@@ -1,0 +1,412 @@
+{
+  "version": 1,
+  "grades": [
+    {
+      "id": "cyber-safety",
+      "title": "Cyber Safety",
+      "order": 101,
+      "kind": "collection"
+    },
+    {
+      "id": "teacher-resources",
+      "title": "Teacher Resources",
+      "order": 100,
+      "kind": "collection"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "cyber-safety-handbook",
+      "gradeId": "cyber-safety",
+      "name": "Cyber Safety",
+      "order": 1,
+      "medium": "en"
+    },
+    {
+      "id": "g6-ict",
+      "gradeId": "g6",
+      "name": "ICT",
+      "order": 20,
+      "medium": "en",
+      "productKey": "ict"
+    },
+    {
+      "id": "g7-ict",
+      "gradeId": "g7",
+      "name": "ICT",
+      "order": 20,
+      "medium": "en",
+      "productKey": "ict"
+    },
+    {
+      "id": "g8-ict",
+      "gradeId": "g8",
+      "name": "ICT",
+      "order": 20,
+      "medium": "en",
+      "productKey": "ict"
+    },
+    {
+      "id": "teacher-resources-ict-curriculum",
+      "gradeId": "teacher-resources",
+      "name": "ICT Curriculum (Classes 6–8)",
+      "order": 1,
+      "medium": "en"
+    }
+  ],
+  "books": [
+    {
+      "id": "cyber-safety-handbook",
+      "gradeId": "cyber-safety",
+      "subjectId": "cyber-safety-handbook",
+      "title": "Cyber Safety Handbook",
+      "order": 1,
+      "publisher": "CBSE",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "cyber-safety-handbook-00",
+          "title": "Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/cyber-safety/handbook/00-preface.pdf"
+          }
+        },
+        {
+          "id": "cyber-safety-handbook-01",
+          "title": "Netizens in the Digital World",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/cyber-safety/handbook/01-netizens-in-the-digital-world.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "cyber-safety-handbook-02",
+          "title": "Safe Netizens",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/cyber-safety/handbook/02-safe-netizens.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "cyber-safety-handbook-03",
+          "title": "Secure Netizens",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/cyber-safety/handbook/03-secure-netizens.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "cyber-safety-handbook-04",
+          "title": "Sensible Netizens",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/cyber-safety/handbook/04-sensible-netizens.pdf"
+          },
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "g6-ict",
+      "gradeId": "g6",
+      "subjectId": "g6-ict",
+      "title": "ICT – Class 6",
+      "order": 1,
+      "publisher": "SCERT Delhi",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g6-ict-00",
+          "title": "Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-6/ict/00-preface.pdf"
+          }
+        },
+        {
+          "id": "g6-ict-01",
+          "title": "Introduction to ICT Environment",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-6/ict/01-introduction-to-ict-environment.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-ict-02",
+          "title": "Spreadsheet",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-6/ict/02-spreadsheet.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-ict-03",
+          "title": "Word Processing",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-6/ict/03-word-processing.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-ict-04",
+          "title": "Basics of Internet",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-6/ict/04-basics-of-internet.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-ict-05",
+          "title": "Learn to Code-01",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-6/ict/05-learn-to-code-01.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-ict-06",
+          "title": "Being Future Ready-01",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-6/ict/06-being-future-ready-01.pdf"
+          },
+          "number": 6
+        }
+      ]
+    },
+    {
+      "id": "g7-ict",
+      "gradeId": "g7",
+      "subjectId": "g7-ict",
+      "title": "ICT – Class 7",
+      "order": 1,
+      "publisher": "SCERT Delhi",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g7-ict-00",
+          "title": "Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-7/ict/00-preface.pdf"
+          }
+        },
+        {
+          "id": "g7-ict-01",
+          "title": "Presentation Tool",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-7/ict/01-presentation-tool.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g7-ict-02",
+          "title": "Learn to Code-02",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-7/ict/02-learn-to-code-02.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g7-ict-03",
+          "title": "Being Future Ready-02 (Website Designing)",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-7/ict/03-being-future-ready-02-website-designing.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g7-ict-04",
+          "title": "Digital Footprints",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-7/ict/04-digital-footprints.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g7-ict-05",
+          "title": "Software Applications",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-7/ict/05-software-applications.pdf"
+          },
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g8-ict",
+      "gradeId": "g8",
+      "subjectId": "g8-ict",
+      "title": "ICT – Class 8",
+      "order": 1,
+      "publisher": "SCERT Delhi",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g8-ict-00",
+          "title": "Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-8/ict/00-preface.pdf"
+          }
+        },
+        {
+          "id": "g8-ict-01",
+          "title": "Spreadsheet",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-8/ict/01-spreadsheet.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g8-ict-02",
+          "title": "Learn to Code-03",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-8/ict/02-learn-to-code-03.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g8-ict-03",
+          "title": "Digital Wellbeing",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-8/ict/03-digital-wellbeing.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g8-ict-04",
+          "title": "Being Future Ready-03",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-8/ict/04-being-future-ready-03.pdf"
+          },
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "teacher-resources-ict-curriculum",
+      "gradeId": "teacher-resources",
+      "subjectId": "teacher-resources-ict-curriculum",
+      "title": "ICT Curriculum",
+      "order": 1,
+      "publisher": "SCERT Delhi",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "teacher-resources-ict-curriculum-00a",
+          "title": "Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00a-preface.pdf"
+          }
+        },
+        {
+          "id": "teacher-resources-ict-curriculum-00b",
+          "title": "About the Curriculum",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00b-about-the-curriculum.pdf"
+          }
+        },
+        {
+          "id": "teacher-resources-ict-curriculum-00c",
+          "title": "Curriculum Objectives",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00c-curriculum-objectives.pdf"
+          }
+        },
+        {
+          "id": "teacher-resources-ict-curriculum-00d",
+          "title": "Duration, Methodology and Infrastructure",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00d-duration-methodology-and-infrastructure.pdf"
+          }
+        },
+        {
+          "id": "teacher-resources-ict-curriculum-00e",
+          "title": "General Instructions",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00e-general-instructions.pdf"
+          }
+        },
+        {
+          "id": "teacher-resources-ict-curriculum-00f",
+          "title": "Course Coverage: Class 6",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00f-course-coverage-class-6.pdf"
+          }
+        },
+        {
+          "id": "teacher-resources-ict-curriculum-00g",
+          "title": "Course Coverage: Class 7",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00g-course-coverage-class-7.pdf"
+          }
+        },
+        {
+          "id": "teacher-resources-ict-curriculum-00h",
+          "title": "Course Coverage: Class 8",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/teacher-resources/ict-curriculum/00h-course-coverage-class-8.pdf"
+          }
+        }
+      ]
+    }
+  ]
+}

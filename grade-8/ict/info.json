@@ -1,0 +1,13 @@
+{
+  "subject": "ICT",
+  "title": "ICT – Class 8",
+  "publisher": "SCERT Delhi",
+  "order": 20,
+  "chapters": {
+    "00-preface.pdf": "Preface",
+    "01-spreadsheet.pdf": "Spreadsheet",
+    "02-learn-to-code-03.pdf": "Learn to Code-03",
+    "03-digital-wellbeing.pdf": "Digital Wellbeing",
+    "04-being-future-ready-03.pdf": "Being Future Ready-03"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "subject": "Cyber Safety",
+  "title": "Cyber Safety Handbook",
+  "publisher": "CBSE",
+  "order": 1,
+  "chapters": {
+    "00-preface.pdf": "Preface",
+    "01-netizens-in-the-digital-world.pdf": "Netizens in the Digital World",
+    "02-safe-netizens.pdf": "Safe Netizens",
+    "03-secure-netizens.pdf": "Secure Netizens",
+    "04-sensible-netizens.pdf": "Sensible Netizens"
+  }
+}

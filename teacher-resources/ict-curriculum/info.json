@@ -1,0 +1,16 @@
+{
+  "subject": "ICT Curriculum (Classes 6–8)",
+  "title": "ICT Curriculum",
+  "publisher": "SCERT Delhi",
+  "order": 1,
+  "chapters": {
+    "00a-preface.pdf": "Preface",
+    "00b-about-the-curriculum.pdf": "About the Curriculum",
+    "00c-curriculum-objectives.pdf": "Curriculum Objectives",
+    "00d-duration-methodology-and-infrastructure.pdf": "Duration, Methodology and Infrastructure",
+    "00e-general-instructions.pdf": "General Instructions",
+    "00f-course-coverage-class-6.pdf": "Course Coverage: Class 6",
+    "00g-course-coverage-class-7.pdf": "Course Coverage: Class 7",
+    "00h-course-coverage-class-8.pdf": "Course Coverage: Class 8"
+  }
+}

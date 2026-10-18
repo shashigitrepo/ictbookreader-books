@@ -1,0 +1,15 @@
+{
+  "subject": "ICT",
+  "title": "ICT – Class 6",
+  "publisher": "SCERT Delhi",
+  "order": 20,
+  "chapters": {
+    "00-preface.pdf": "Preface",
+    "01-introduction-to-ict-environment.pdf": "Introduction to ICT Environment",
+    "02-spreadsheet.pdf": "Spreadsheet",
+    "03-word-processing.pdf": "Word Processing",
+    "04-basics-of-internet.pdf": "Basics of Internet",
+    "05-learn-to-code-01.pdf": "Learn to Code-01",
+    "06-being-future-ready-01.pdf": "Being Future Ready-01"
+  }
+}

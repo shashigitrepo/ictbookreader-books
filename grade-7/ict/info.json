@@ -1,0 +1,14 @@
+{
+  "subject": "ICT",
+  "title": "ICT – Class 7",
+  "publisher": "SCERT Delhi",
+  "order": 20,
+  "chapters": {
+    "00-preface.pdf": "Preface",
+    "01-presentation-tool.pdf": "Presentation Tool",
+    "02-learn-to-code-02.pdf": "Learn to Code-02",
+    "03-being-future-ready-02-website-designing.pdf": "Being Future Ready-02 (Website Designing)",
+    "04-digital-footprints.pdf": "Digital Footprints",
+    "05-software-applications.pdf": "Software Applications"
+  }
+}
