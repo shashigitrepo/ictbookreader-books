@@ -22,7 +22,14 @@ cyber-safety/                 any other top-level folder is a card on the home s
     01-….pdf                  …with its chapters directly inside
     new-guide/01-….pdf        …or several books, one folder each
 teacher-resources/            same rules
+career-counselling/           the two handbooks of the Career Counselling screen
+  after-class-10/01-handbook.pdf    "What to choose after Class 10"
+  after-class-12/01-handbook.pdf    "Career options after Class 12"
 ```
+
+Career Counselling has its own screen in the app, so keep these two folder names exactly.
+A handbook can be one PDF (opens straight in the reader) or several chapters
+(`01-….pdf`, `02-….pdf`); until a PDF is uploaded the app shows "Soon" on its card.
 
 ## Rules
 
