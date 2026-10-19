@@ -31,6 +31,40 @@ Career Counselling has its own screen in the app, so keep these two folder names
 A handbook can be one PDF (opens straight in the reader) or several chapters
 (`01-….pdf`, `02-….pdf`); until a PDF is uploaded the app shows "Soon" on its card.
 
+## Chapter notes (students) and teacher notes
+
+```
+notes/                         everyone sees these (Home → Chapter notes, and the Notes tab)
+  class-10/
+    science/
+      01-chemical-reactions.pdf     01 = chapter 1 of the NCERT textbook
+      01a-practice-questions.pdf    more notes for chapter 1
+      02-acids-bases-and-salts.pdf
+teacher-notes/                 only teachers see these (Teacher notes tab): presentations as PDF
+  class-10/
+    science/
+      01-chemical-reactions.pdf
+```
+
+1. **The number is the textbook's chapter number.** The app shows a **Notes** button on that
+   chapter. Extra files for the same chapter: `05a-…`, `05b-…`.
+2. **The subject folder must be one of the names below** (exactly, lowercase). A typo stops the
+   update and the **Actions** tab shows the right names.
+3. **Presentations:** PowerPoint → *File → Save as → PDF*, then upload the PDF.
+4. Subjects with several textbooks (e.g. English): put the notes of each book in a folder of its
+   own, e.g. `notes/class-10/english/first-flight/01-a-letter-to-god.pdf`. These are listed in
+   the Notes tab but not linked to chapters (the numbers would be ambiguous).
+
+| Class folder | Subject folders |
+|---|---|
+| `class-6` | `english`, `hindi`, `sanskrit`, `mathematics`, `science`, `social-science`, `vocational-education`, `ict`, `arts`, `physical-education-and-well-being` |
+| `class-7` | `english`, `hindi`, `sanskrit`, `mathematics`, `science`, `social-science`, `vocational-education`, `ict`, `arts`, `physical-education-and-well-being` |
+| `class-8` | `english`, `hindi`, `sanskrit`, `mathematics`, `science`, `social-science`, `vocational-education`, `ict`, `arts`, `physical-education-and-well-being` |
+| `class-9` | `english`, `hindi`, `sanskrit`, `mathematics`, `science`, `social-science`, `employability-skills`, `vocational-education`, `arts`, `physical-education-and-well-being`, `skill-education` |
+| `class-10` | `english`, `hindi`, `sanskrit`, `mathematics`, `science`, `social-science`, `employability-skills`, `vocational-education`, `health-and-physical-education` |
+| `class-11` | `english`, `hindi`, `sanskrit`, `mathematics`, `physics`, `chemistry`, `biology`, `accountancy`, `business-studies`, `economics`, `history`, `geography`, `political-science`, `psychology`, `sociology`, `employability-skills`, `vocational-education`, `biotechnology`, `computer-science`, `computers-and-communication-technology`, `creative-writing-and-translation`, `fine-art`, `graphics-design`, `health-and-physical-education`, `heritage-crafts`, `home-science`, `informatics-practices`, `knowledge-traditions-practices-of-india`, `sangeet` |
+| `class-12` | `english`, `hindi`, `sanskrit`, `mathematics`, `physics`, `chemistry`, `biology`, `accountancy`, `business-studies`, `economics`, `history`, `geography`, `political-science`, `psychology`, `sociology`, `employability-skills`, `vocational-education`, `biotechnology`, `computer-science`, `creative-writing-and-translation`, `fine-art`, `heritage-crafts`, `home-science`, `informatics-practices`, `new-age-graphics-design`, `sangeet` |
+
 ## Rules
 
 1. Folder and file names: lowercase letters, digits and hyphens only. No spaces.

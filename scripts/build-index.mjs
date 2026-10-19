@@ -3,7 +3,9 @@
 // The app downloads it on every start, so files uploaded here appear without an app update.
 // Runs automatically on every push (.github/workflows/build-index.yml); no dependencies.
 //
-// Layout: <section>/<subject>[/<book>]/NN-chapter-title.pdf, see README.md.
+// Layout: <section>/<subject>[/<book>]/NN-chapter-title.pdf, and chapter-wise notes in
+// notes/ and teacher-notes/: <notes>/class-N/<subject>[/<book>]/NN-chapter-title.pdf, where
+// <subject> is one of scripts/subjects.json and NN is the textbook's chapter number. See README.md.
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 
@@ -32,13 +34,31 @@ const walk = (dir) => readdirSync(dir).flatMap((name) => {
   return statSync(full).isDirectory() ? walk(full) : [relative(ROOT, full).split(sep).join('/')];
 });
 
+// Notes belong to the class subjects of the app (scripts/subjects.json, made from its catalogue).
+const NOTES_SECTIONS = { notes: { type: 'notes', label: 'Notes' }, 'teacher-notes': { type: 'teacher_notes', label: 'Teacher Notes' } };
+const SUBJECTS = JSON.parse(readFileSync(join(ROOT, 'scripts', 'subjects.json'), 'utf8'));
+
 const errors = [];
 const folders = new Map();
 for (const path of walk(ROOT)) {
   if (!path.endsWith('.pdf')) continue;
   const parts = path.split('/');
   const file = parts.pop();
-  if (parts.length < 2 || parts.length > 3) {
+  if (NOTES_SECTIONS[parts[0]]) {
+    const [section, classFolder, subjectFolder] = parts;
+    if (parts.length < 3 || parts.length > 4) {
+      errors.push(`${path}: put notes in ${section}/class-N/<subject>/ or ${section}/class-N/<subject>/<book>/`);
+      continue;
+    }
+    if (!SUBJECTS[classFolder]) {
+      errors.push(`${path}: "${classFolder}" must be class-6 … class-12`);
+      continue;
+    }
+    if (!SUBJECTS[classFolder][subjectFolder]) {
+      errors.push(`${path}: "${subjectFolder}" is not a subject of ${classFolder}. Use one of: ${Object.keys(SUBJECTS[classFolder]).join(', ')}`);
+      continue;
+    }
+  } else if (parts.length < 2 || parts.length > 3) {
     errors.push(`${path}: put PDFs in <section>/<subject>/ or <section>/<subject>/<book>/`);
     continue;
   }
@@ -55,6 +75,10 @@ const subjects = new Map();
 const books = [];
 const byPath = ([a], [b]) => a.localeCompare(b, 'en', { numeric: true });
 for (const [folder, names] of [...folders].sort(byPath)) {
+  if (NOTES_SECTIONS[folder.split('/')[0]]) {
+    books.push(notesBook(folder, names));
+    continue;
+  }
   const [top, subjectFolder, bookFolder] = folder.split('/');
   const gradeMatch = /^grade-(\d+)$/.exec(top);
   if (gradeMatch && !(Number(gradeMatch[1]) >= 6 && Number(gradeMatch[1]) <= 12)) {
@@ -104,6 +128,39 @@ for (const [folder, names] of [...folders].sort(byPath)) {
     ...(info.section ? { section: info.section } : {}),
     chapters,
   });
+}
+
+/** Notes of one subject (or one book of it): listed in the class subject, not as a section of its own. */
+function notesBook(folder, names) {
+  const [section, classFolder, subjectFolder, bookFolder] = folder.split('/');
+  const { type, label } = NOTES_SECTIONS[section];
+  const number = classFolder.slice('class-'.length);
+  const subjectId = `g${number}-${subjectFolder}`;
+  const info = readInfo(folder);
+  const bookId = `${subjectId}-${section}${bookFolder ? `-${bookFolder}` : ''}`;
+  const subjectName = SUBJECTS[classFolder][subjectFolder];
+  return {
+    id: bookId,
+    gradeId: `g${number}`,
+    subjectId,
+    title: info.title ?? `${bookFolder ? titleCase(bookFolder) : subjectName} – ${label}`,
+    order: info.bookOrder ?? (type === 'notes' ? 100 : 200) + books.filter((b) => b.subjectId === subjectId).length,
+    publisher: info.publisher ?? 'ICT Book Reader',
+    medium: info.medium ?? 'en',
+    type,
+    chapters: names.filter((n) => FILE_PATTERN.test(n)).sort().map((name, i) => {
+      const [, digits, letter, rest] = FILE_PATTERN.exec(name);
+      const chapter = Number(digits);
+      return {
+        id: `${bookId}-${digits}${letter}`,
+        title: info.chapters?.[name] ?? titleCase(rest),
+        order: i + 1,
+        source: { type: 'remote', url: `${BASE_URL}${folder}/${name}` },
+        // 05a, 05b… are extra notes for chapter 5, so they keep its number.
+        ...(chapter >= 1 && chapter <= 98 ? { number: chapter } : {}),
+      };
+    }),
+  };
 }
 
 if (errors.length) {
