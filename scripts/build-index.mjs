@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Writes index.json: the books in this repository in the StudySathi app's catalogue format.
+// Writes index.json: the books in this repository in the Padhaku app's catalogue format.
 // The app downloads it on every start, so files uploaded here appear without an app update.
 // Runs automatically on every push (.github/workflows/build-index.yml); no dependencies.
 //
@@ -127,7 +127,7 @@ for (const [folder, names] of [...folders].sort(byPath)) {
     subjectId,
     title: info.title ?? defaultTitle,
     order: info.bookOrder ?? books.filter((b) => b.subjectId === subjectId).length + 1,
-    publisher: info.publisher ?? 'StudySathi',
+    publisher: info.publisher ?? 'Padhaku',
     medium: info.medium ?? 'en',
     ...(info.section ? { section: info.section } : {}),
     chapters,
@@ -149,7 +149,7 @@ function notesBook(folder, names) {
     subjectId,
     title: info.title ?? `${bookFolder ? titleCase(bookFolder) : subjectName} – ${label}`,
     order: info.bookOrder ?? order + books.filter((b) => b.subjectId === subjectId).length,
-    publisher: info.publisher ?? 'StudySathi',
+    publisher: info.publisher ?? 'Padhaku',
     medium: info.medium ?? 'en',
     type,
     chapters: names.filter((n) => FILE_PATTERN.test(n)).sort().map((name, i) => {

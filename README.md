@@ -1,6 +1,6 @@
-# StudySathi – books
+# Padhaku – books
 
-PDFs that the **StudySathi** app shows and downloads on demand. NCERT books are not stored
+PDFs that the **Padhaku** app shows and downloads on demand. NCERT books are not stored
 here: the app links to ncert.nic.in directly.
 
 **Anything you upload here appears in the app by itself**, usually within a few minutes:
