@@ -140,3 +140,14 @@ The videos appear in the app under **Home → Videos** about a minute after you 
 The channel button on that screen comes from Firebase Remote Config: add the parameter
 `youtube_channel_url` (e.g. `https://www.youtube.com/@yourchannel`) and publish.
 
+## CBSE previous year papers
+
+`cbse-papers.json` lists CBSE's official question papers (Class X and XII, main, compartment and
+second board exams) with links to **cbse.gov.in**. The app shows them under **Home → Previous Year
+Papers** and downloads each paper from CBSE when a student opens it; no paper is stored here.
+
+To add a new year: send the updated CBSE page (https://www.cbse.gov.in/cbsenew/question-paper.html)
+to the developer, or add entries in the same format: `{"year":2027,"grade":10,"exam":"main",
+"subject":"Science","url":"https://www.cbse.gov.in/cbsenew/question-paper/2027/X/Science.zip","size":"40 MB"}`
+(`exam` is `main`, `compartment` or `second`). The app picks up changes without an update.
+
