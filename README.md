@@ -117,3 +117,26 @@ In a subject or book folder:
    folder from your computer onto the upload page.
 3. **Commit changes**. After a minute, the **Actions** tab shows a green tick and the app shows
    the new book the next time it is opened.
+
+## YouTube videos
+
+Edit **`videos.csv`** at the top of this repository (on GitHub: open it → ✏️ Edit → Commit).
+One row per video; keep the first line as it is:
+
+```
+class,subject,chapter,title,url
+10,science,1,Chemical reactions – part 1,https://youtu.be/xxxxxxxxxxx
+10,science,1,Chemical reactions – part 2,https://youtu.be/yyyyyyyyyyy
+9,mathematics,,Number systems – full revision,https://www.youtube.com/watch?v=zzzzzzzzzzz
+```
+
+- **class** 6 … 12, **subject** one of the subject folder names in the table above.
+- **chapter**: the textbook chapter number; the app shows a **Video** button on that chapter.
+  Leave it empty for a video about the whole subject.
+- **title**: put it in "double quotes" if it contains a comma.
+- **url**: a YouTube link (`https://youtu.be/…` or `https://www.youtube.com/…`).
+
+The videos appear in the app under **Home → Videos** about a minute after you commit.
+The channel button on that screen comes from Firebase Remote Config: add the parameter
+`youtube_channel_url` (e.g. `https://www.youtube.com/@yourchannel`) and publish.
+

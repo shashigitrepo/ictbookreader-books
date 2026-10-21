@@ -167,6 +167,51 @@ function notesBook(folder, names) {
   };
 }
 
+// YouTube lessons: videos.csv at the top of this repository, one row per video:
+// class,subject,chapter,title,url  e.g.  10,science,1,Chemical reactions – part 1,https://youtu.be/…
+// chapter may be empty for a video about the whole subject. The app shows them under Videos and
+// as a Video button on that textbook chapter.
+const videos = [];
+const VIDEO_URL = /^https:\/\/(www\.|m\.)?(youtube\.com|youtu\.be)\//;
+const parseCsvLine = (line) => {
+  const cells = [];
+  let cell = '';
+  let quoted = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (quoted) {
+      if (c === '"' && line[i + 1] === '"') { cell += '"'; i++; } else if (c === '"') quoted = false; else cell += c;
+    } else if (c === '"') quoted = true;
+    else if (c === ',') { cells.push(cell); cell = ''; } else cell += c;
+  }
+  cells.push(cell);
+  return cells.map((v) => v.trim());
+};
+const videosFile = join(ROOT, 'videos.csv');
+if (existsSync(videosFile)) {
+  const lines = readFileSync(videosFile, 'utf8').replace(/^\uFEFF/, '').split(/\r?\n/);
+  lines.forEach((line, i) => {
+    if (i === 0 || !line.trim()) return; // header
+    const row = i + 1;
+    const [klass, subject, chapter, title, url] = parseCsvLine(line);
+    const classFolder = `class-${klass}`;
+    if (!SUBJECTS[classFolder]) return errors.push(`videos.csv row ${row}: class must be 6 … 12`);
+    if (!SUBJECTS[classFolder][subject]) {
+      return errors.push(`videos.csv row ${row}: "${subject}" is not a subject of class ${klass}. Use one of: ${Object.keys(SUBJECTS[classFolder]).join(', ')}`);
+    }
+    if (chapter && !/^\d{1,2}$/.test(chapter)) return errors.push(`videos.csv row ${row}: chapter must be a number or empty`);
+    if (!title) return errors.push(`videos.csv row ${row}: title is empty`);
+    if (!VIDEO_URL.test(url ?? '')) return errors.push(`videos.csv row ${row}: url must be a YouTube link (https://youtu.be/… or https://www.youtube.com/…)`);
+    videos.push({
+      gradeId: `g${klass}`,
+      subjectId: `g${klass}-${subject}`,
+      ...(chapter ? { chapter: Number(chapter) } : {}),
+      title,
+      url,
+    });
+  });
+}
+
 if (errors.length) {
   console.error(`Fix these first:\n  ${errors.join('\n  ')}`);
   process.exit(1);
@@ -180,6 +225,7 @@ const index = {
   subjects: [...subjects.values()],
   books: books.filter((b) => b.type !== 'solutions'),
   solutions,
+  videos,
 };
 writeFileSync(join(ROOT, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 const count = books.reduce((n, b) => n + b.chapters.length, 0);
