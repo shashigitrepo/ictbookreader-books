@@ -1,6 +1,6 @@
-# ICT Book Reader – books
+# StudySathi – books
 
-PDFs that the **ICT Book Reader** app shows and downloads on demand. NCERT books are not stored
+PDFs that the **StudySathi** app shows and downloads on demand. NCERT books are not stored
 here: the app links to ncert.nic.in directly.
 
 **Anything you upload here appears in the app by itself**, usually within a few minutes:
@@ -31,7 +31,22 @@ Career Counselling has its own screen in the app, so keep these two folder names
 A handbook can be one PDF (opens straight in the reader) or several chapters
 (`01-….pdf`, `02-….pdf`); until a PDF is uploaded the app shows "Soon" on its card.
 
-## Chapter notes (students) and teacher notes
+## NCERT Solutions, chapter notes (students) and teacher notes
+
+```
+solutions/                     everyone sees these (Home → NCERT Solutions, and the Solutions tab)
+  class-10/
+    science/
+      01-chemical-reactions.pdf     answers to the exercises of chapter 1
+      02-acids-bases-and-salts.pdf
+```
+
+NCERT Solutions follow exactly the same rules as notes below: the number is the textbook's
+chapter number (the app shows a **Solutions** button on that chapter), and the subject folder is
+one of the names in the table. Hindi-medium solutions: put them in a folder of their own, e.g.
+`solutions/class-10/science/hindi-medium/`, with an `info.json` containing
+`{ "title": "विज्ञान – NCERT समाधान", "medium": "hi" }`; the app then shows them to students who
+chose Hindi.
 
 ```
 notes/                         everyone sees these (Home → Chapter notes, and the Notes tab)

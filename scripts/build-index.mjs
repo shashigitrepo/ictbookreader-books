@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-// Writes index.json: the books in this repository in the ICT Book Reader catalogue format.
+// Writes index.json: the books in this repository in the StudySathi app's catalogue format.
 // The app downloads it on every start, so files uploaded here appear without an app update.
 // Runs automatically on every push (.github/workflows/build-index.yml); no dependencies.
 //
-// Layout: <section>/<subject>[/<book>]/NN-chapter-title.pdf, and chapter-wise notes in
-// notes/ and teacher-notes/: <notes>/class-N/<subject>[/<book>]/NN-chapter-title.pdf, where
+// Layout: <section>/<subject>[/<book>]/NN-chapter-title.pdf, and chapter-wise material in
+// solutions/, notes/ and teacher-notes/: <folder>/class-N/<subject>[/<book>]/NN-chapter-title.pdf, where
 // <subject> is one of scripts/subjects.json and NN is the textbook's chapter number. See README.md.
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
@@ -35,7 +35,11 @@ const walk = (dir) => readdirSync(dir).flatMap((name) => {
 });
 
 // Notes belong to the class subjects of the app (scripts/subjects.json, made from its catalogue).
-const NOTES_SECTIONS = { notes: { type: 'notes', label: 'Notes' }, 'teacher-notes': { type: 'teacher_notes', label: 'Teacher Notes' } };
+const NOTES_SECTIONS = {
+  solutions: { type: 'solutions', label: 'NCERT Solutions', order: 50 },
+  notes: { type: 'notes', label: 'Notes', order: 100 },
+  'teacher-notes': { type: 'teacher_notes', label: 'Teacher Notes', order: 200 },
+};
 const SUBJECTS = JSON.parse(readFileSync(join(ROOT, 'scripts', 'subjects.json'), 'utf8'));
 
 const errors = [];
@@ -123,7 +127,7 @@ for (const [folder, names] of [...folders].sort(byPath)) {
     subjectId,
     title: info.title ?? defaultTitle,
     order: info.bookOrder ?? books.filter((b) => b.subjectId === subjectId).length + 1,
-    publisher: info.publisher ?? 'ICT Book Reader',
+    publisher: info.publisher ?? 'StudySathi',
     medium: info.medium ?? 'en',
     ...(info.section ? { section: info.section } : {}),
     chapters,
@@ -133,7 +137,7 @@ for (const [folder, names] of [...folders].sort(byPath)) {
 /** Notes of one subject (or one book of it): listed in the class subject, not as a section of its own. */
 function notesBook(folder, names) {
   const [section, classFolder, subjectFolder, bookFolder] = folder.split('/');
-  const { type, label } = NOTES_SECTIONS[section];
+  const { type, label, order } = NOTES_SECTIONS[section];
   const number = classFolder.slice('class-'.length);
   const subjectId = `g${number}-${subjectFolder}`;
   const info = readInfo(folder);
@@ -144,8 +148,8 @@ function notesBook(folder, names) {
     gradeId: `g${number}`,
     subjectId,
     title: info.title ?? `${bookFolder ? titleCase(bookFolder) : subjectName} – ${label}`,
-    order: info.bookOrder ?? (type === 'notes' ? 100 : 200) + books.filter((b) => b.subjectId === subjectId).length,
-    publisher: info.publisher ?? 'ICT Book Reader',
+    order: info.bookOrder ?? order + books.filter((b) => b.subjectId === subjectId).length,
+    publisher: info.publisher ?? 'StudySathi',
     medium: info.medium ?? 'en',
     type,
     chapters: names.filter((n) => FILE_PATTERN.test(n)).sort().map((name, i) => {
@@ -168,7 +172,15 @@ if (errors.length) {
   process.exit(1);
 }
 
-const index = { version: 1, grades: [...grades.values()], subjects: [...subjects.values()], books };
+// Solutions are listed apart from the books: app versions that do not know them ignore the list.
+const solutions = books.filter((b) => b.type === 'solutions');
+const index = {
+  version: 1,
+  grades: [...grades.values()],
+  subjects: [...subjects.values()],
+  books: books.filter((b) => b.type !== 'solutions'),
+  solutions,
+};
 writeFileSync(join(ROOT, 'index.json'), JSON.stringify(index, null, 2) + '\n');
 const count = books.reduce((n, b) => n + b.chapters.length, 0);
 console.log(`index.json: ${grades.size} sections, ${subjects.size} subjects, ${books.length} books, ${count} chapters`);
