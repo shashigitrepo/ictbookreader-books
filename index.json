@@ -409,6 +409,69 @@
       ]
     }
   ],
-  "solutions": [],
+  "solutions": [
+    {
+      "id": "g6-english-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-english",
+      "title": "English – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-english-solutions-01",
+          "title": "Unit 1 Fables and Folk Tales",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/english/01-unit-1-fables-and-folk-tales.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-english-solutions-02",
+          "title": "Unit 2 Friendship",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/english/02-unit-2-friendship.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-english-solutions-03",
+          "title": "Unit 3 Nurturing Nature",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/english/03-unit-3-nurturing-nature.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-english-solutions-04",
+          "title": "Unit 4 Sports and Wellness",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/english/04-unit-4-sports-and-wellness.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-english-solutions-05",
+          "title": "Unit 5 Culture and Tradition",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/english/05-unit-5-culture-and-tradition.pdf"
+          },
+          "number": 5
+        }
+      ]
+    }
+  ],
   "videos": []
 }
