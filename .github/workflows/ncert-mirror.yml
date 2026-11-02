@@ -1,0 +1,40 @@
+# Keeps the NCERT backup copies (Releases "ncert-f" … "ncert-l") up to date for the Padhaku app.
+# Every 3 hours: check ncert.nic.in works and upload files not copied yet (fills the mirror in about
+# a day, then does almost nothing). Sundays: also re-copy files that changed on NCERT.
+# A failed run means NCERT is unreachable or broken for the app: GitHub emails the owner.
+name: NCERT mirror
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+    - cron: '43 1 * * 0'
+  push:
+    branches: [main]
+    paths: [scripts/ncert-mirror/**, .github/workflows/ncert-mirror.yml]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: fill (copy missing files) or check (also re-copy changed files)
+        default: fill
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ncert-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mode=fill
+          if [ "${{ github.event_name }}" = workflow_dispatch ]; then mode="${{ inputs.mode }}"; fi
+          if [ "${{ github.event.schedule }}" = '43 1 * * 0' ]; then mode=check; fi
+          scripts/ncert-mirror/sync.sh "$mode"
