@@ -473,6 +473,150 @@
       ]
     },
     {
+      "id": "g6-ict-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-ict",
+      "title": "ICT – Solutions",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-ict-solutions-01",
+          "title": "Introduction to ICT Environment",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/01-introduction-to-ict-environment.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-ict-solutions-02",
+          "title": "Data Representation and Processing–01 (Spreadsheet)",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/02-data-representation-and-processing-01-spreadsheet.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-ict-solutions-03",
+          "title": "Data Representation and Processing-02 (Word Processing)",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/03-data-representation-and-processing-02-word-processing.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-ict-solutions-04",
+          "title": "Basics of Internet",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/04-basics-of-internet.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-ict-solutions-05",
+          "title": "Learn to Code-01: Learning to Create Flowchart and Programs",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/05-learn-to-code-01-learning-to-create-flowchart-and-programs.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-ict-solutions-06",
+          "title": "Being Future Ready - 01",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/06-being-future-ready-01.pdf"
+          },
+          "number": 6
+        }
+      ]
+    },
+    {
+      "id": "g6-ict-solutions-hindi-medium",
+      "gradeId": "g6",
+      "subjectId": "g6-ict",
+      "title": "आईसीटी – समाधान",
+      "order": 52,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-ict-solutions-hindi-medium-01",
+          "title": "आईसीटी वातावरण का परिचय (Introduction to ICT Environment)",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/hindi-medium/01-introduction-to-ict-environment.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-ict-solutions-hindi-medium-02",
+          "title": "डेटा का प्रस्तुतीकरण और प्रोसेसिंग–01 (स्प्रेडशीट)",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/hindi-medium/02-data-representation-and-processing-01-spreadsheet.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-ict-solutions-hindi-medium-03",
+          "title": "डेटा प्रस्तुति और प्रोसेसिंग-02 (वर्ड प्रोसेसिंग)",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/hindi-medium/03-data-representation-and-processing-02-word-processing.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-ict-solutions-hindi-medium-04",
+          "title": "इंटरनेट की मूल बातें (Basics of Internet)",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/hindi-medium/04-basics-of-internet.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-ict-solutions-hindi-medium-05",
+          "title": "लर्न टू कोड-01: फ्लोचार्ट और प्रोग्राम बनाना सीखना",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/hindi-medium/05-learn-to-code-01-learning-to-create-flowchart-and-programs.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-ict-solutions-hindi-medium-06",
+          "title": "भविष्य के लिए तैयार - 01 (Being Future Ready - 01)",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/ict/hindi-medium/06-being-future-ready-01.pdf"
+          },
+          "number": 6
+        }
+      ]
+    },
+    {
       "id": "g6-mathematics-solutions",
       "gradeId": "g6",
       "subjectId": "g6-mathematics",
@@ -693,6 +837,130 @@
             "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/10-the-other-side-of-zero.pdf"
           },
           "number": 10
+        }
+      ]
+    },
+    {
+      "id": "g6-physical-education-and-well-being-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-physical-education-and-well-being",
+      "title": "Physical Education and Well Being – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-physical-education-and-well-being-solutions-01",
+          "title": "Importance of Physical Education and Well-being",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/01-importance-of-physical-education-and-well-being.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-02",
+          "title": "Motor Fitness",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/02-motor-fitness.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-03",
+          "title": "Fundamental Skills of Kho-Kho",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/03-fundamental-skills-of-kho-kho.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-04",
+          "title": "Fundamental Skills of Handball",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/04-fundamental-skills-of-handball.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-05",
+          "title": "Yoga",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/05-yoga.pdf"
+          },
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g6-physical-education-and-well-being-solutions-hindi-medium",
+      "gradeId": "g6",
+      "subjectId": "g6-physical-education-and-well-being",
+      "title": "शारीरिक शिक्षा एवं कल्याण – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-physical-education-and-well-being-solutions-hindi-medium-01",
+          "title": "शारीरिक शिक्षा और आरोग्य का महत्व",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/hindi-medium/01-importance-of-physical-education-and-well-being.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-hindi-medium-02",
+          "title": "गामक दक्षता",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/hindi-medium/02-motor-fitness.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-hindi-medium-03",
+          "title": "खो-खो के आधारभूत कौशल",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/hindi-medium/03-fundamental-skills-of-kho-kho.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-hindi-medium-04",
+          "title": "हैंडबॉल के आधारभूत कौशल",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/hindi-medium/04-fundamental-skills-of-handball.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-physical-education-and-well-being-solutions-hindi-medium-05",
+          "title": "योग",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/hindi-medium/05-yoga.pdf"
+          },
+          "number": 5
         }
       ]
     },
@@ -957,6 +1225,310 @@
             "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/12-beyond-earth.pdf"
           },
           "number": 12
+        }
+      ]
+    },
+    {
+      "id": "g6-social-science-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-social-science",
+      "title": "Social Science – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-social-science-solutions-01",
+          "title": "Locating Places on the Earth",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/01-locating-places-on-the-earth.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-social-science-solutions-02",
+          "title": "Oceans and Continents",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/02-oceans-and-continents.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-social-science-solutions-03",
+          "title": "Landforms and Life",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/03-landforms-and-life.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-social-science-solutions-04",
+          "title": "Timeline and Sources of History",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/04-timeline-and-sources-of-history.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-social-science-solutions-05",
+          "title": "India, That Is Bharat",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/05-india-that-is-bharat.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-social-science-solutions-06",
+          "title": "The Beginnings of Indian Civilisation",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/06-the-beginnings-of-indian-civilisation.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-social-science-solutions-07",
+          "title": "India’s Cultural Roots",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/07-india-s-cultural-roots.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-social-science-solutions-08",
+          "title": "Unity in Diversity, or ‘Many in the One’",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/08-unity-in-diversity-or-many-in-the-one.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-social-science-solutions-09",
+          "title": "Family and Community",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/09-family-and-community.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-social-science-solutions-10",
+          "title": "Grassroots Democracy – Part 1: Governance",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/10-grassroots-democracy-part-1-governance.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g6-social-science-solutions-11",
+          "title": "Grassroots Democracy – Part 2: Local Government in Rural Areas",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/11-grassroots-democracy-part-2-local-government-in-rural-areas.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g6-social-science-solutions-12",
+          "title": "Grassroots Democracy – Part 3: Local Government in Urban Areas",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/12-grassroots-democracy-part-3-local-government-in-urban-areas.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g6-social-science-solutions-13",
+          "title": "The Value of Work",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/13-the-value-of-work.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g6-social-science-solutions-14",
+          "title": "Economic Activities Around Us",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/14-economic-activities-around-us.pdf"
+          },
+          "number": 14
+        }
+      ]
+    },
+    {
+      "id": "g6-social-science-solutions-hindi-medium",
+      "gradeId": "g6",
+      "subjectId": "g6-social-science",
+      "title": "सामाजिक विज्ञान – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-social-science-solutions-hindi-medium-01",
+          "title": "पृथ्वी पर स्थानों की स्थिति",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/01-locating-places-on-the-earth.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-02",
+          "title": "महासागर एवं महाद्वीप",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/02-oceans-and-continents.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-03",
+          "title": "स्थलरूप एवं जीवन",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/03-landforms-and-life.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-04",
+          "title": "इतिहास की समय-रेखा एवं उसके स्रोत",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/04-timeline-and-sources-of-history.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-05",
+          "title": "भारत, अर्थात इंडिया",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/05-india-that-is-bharat.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-06",
+          "title": "भारतीय सभ्यता का प्रारंभ",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/06-the-beginnings-of-indian-civilisation.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-07",
+          "title": "भारत की सांस्कृतिक जड़ें",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/07-india-s-cultural-roots.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-08",
+          "title": "विविधता में एकता या ‘एक में अनेक’",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/08-unity-in-diversity-or-many-in-the-one.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-09",
+          "title": "परिवार और समुदाय",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/09-family-and-community.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-10",
+          "title": "आधारभूत लोकतंत्र — भाग 1: शासन",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/10-grassroots-democracy-part-1-governance.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-11",
+          "title": "आधारभूत लोकतंत्र — भाग 2: ग्रामीण क्षेत्रों में स्थानीय सरकार",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/11-grassroots-democracy-part-2-local-government-in-rural-areas.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-12",
+          "title": "आधारभूत लोकतंत्र — भाग 3: नगरीय क्षेत्रों में स्थानीय सरकार",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/12-grassroots-democracy-part-3-local-government-in-urban-areas.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-13",
+          "title": "कार्य का महत्व",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/13-the-value-of-work.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g6-social-science-solutions-hindi-medium-14",
+          "title": "हमारे आस-पास की आर्थिक गतिविधियाँ",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/social-science/hindi-medium/14-economic-activities-around-us.pdf"
+          },
+          "number": 14
         }
       ]
     }
