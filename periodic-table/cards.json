@@ -1,12 +1,156 @@
 {
  "cards": {
+  "1": {
+   "file": "cards/001.webp",
+   "v": "ba3d830fd5"
+  },
+  "2": {
+   "file": "cards/002.webp",
+   "v": "79d48c0b82"
+  },
+  "3": {
+   "file": "cards/003.webp",
+   "v": "78811e600d"
+  },
+  "4": {
+   "file": "cards/004.webp",
+   "v": "2b50d47133"
+  },
+  "5": {
+   "file": "cards/005.webp",
+   "v": "4d3c9222cb"
+  },
+  "6": {
+   "file": "cards/006.webp",
+   "v": "c1b2e07682"
+  },
+  "7": {
+   "file": "cards/007.webp",
+   "v": "c3c333428a"
+  },
+  "8": {
+   "file": "cards/008.webp",
+   "v": "b24b3bba5d"
+  },
+  "9": {
+   "file": "cards/009.webp",
+   "v": "1e226291b2"
+  },
+  "10": {
+   "file": "cards/010.webp",
+   "v": "5ce6986cad"
+  },
+  "11": {
+   "file": "cards/011.webp",
+   "v": "88f688c6b0"
+  },
+  "12": {
+   "file": "cards/012.webp",
+   "v": "56278e9ce2"
+  },
   "13": {
    "file": "cards/013.webp",
    "v": "399052c1de"
   },
+  "14": {
+   "file": "cards/014.webp",
+   "v": "b0a69afbdf"
+  },
+  "15": {
+   "file": "cards/015.webp",
+   "v": "e109be8604"
+  },
+  "16": {
+   "file": "cards/016.webp",
+   "v": "b617cfc945"
+  },
+  "17": {
+   "file": "cards/017.webp",
+   "v": "6780a62080"
+  },
+  "18": {
+   "file": "cards/018.webp",
+   "v": "d05aeb6da5"
+  },
+  "19": {
+   "file": "cards/019.webp",
+   "v": "924767cf3b"
+  },
+  "20": {
+   "file": "cards/020.webp",
+   "v": "51e6b52421"
+  },
+  "21": {
+   "file": "cards/021.webp",
+   "v": "dde2238454"
+  },
+  "22": {
+   "file": "cards/022.webp",
+   "v": "0d721696c0"
+  },
+  "23": {
+   "file": "cards/023.webp",
+   "v": "1633488503"
+  },
+  "24": {
+   "file": "cards/024.webp",
+   "v": "81f9af2821"
+  },
+  "25": {
+   "file": "cards/025.webp",
+   "v": "c7586a8525"
+  },
+  "26": {
+   "file": "cards/026.webp",
+   "v": "adda805fc5"
+  },
+  "27": {
+   "file": "cards/027.webp",
+   "v": "64fcc86499"
+  },
+  "28": {
+   "file": "cards/028.webp",
+   "v": "7513136af1"
+  },
+  "29": {
+   "file": "cards/029.webp",
+   "v": "1e9fe746d4"
+  },
+  "40": {
+   "file": "cards/040.webp",
+   "v": "6c25675f58"
+  },
+  "41": {
+   "file": "cards/041.webp",
+   "v": "450c47fc8f"
+  },
+  "42": {
+   "file": "cards/042.webp",
+   "v": "5c3b2e19c8"
+  },
+  "44": {
+   "file": "cards/044.webp",
+   "v": "9679c7e141"
+  },
+  "45": {
+   "file": "cards/045.webp",
+   "v": "5bc5e0b831"
+  },
+  "46": {
+   "file": "cards/046.webp",
+   "v": "0ece88ce51"
+  },
   "47": {
    "file": "cards/047.webp",
    "v": "34be12377e"
+  },
+  "48": {
+   "file": "cards/048.webp",
+   "v": "6993711290"
+  },
+  "49": {
+   "file": "cards/049.webp",
+   "v": "66f15f37f8"
   }
  }
 }

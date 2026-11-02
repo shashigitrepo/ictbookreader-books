@@ -22,18 +22,21 @@ MAX_WIDTH, QUALITY = 1080, 80
 
 
 def element_of(filename):
+    """The atomic number a file is for, or None. A number anywhere in the name wins ("47.jpg",
+    "Ag-47.jpeg", "047-silver.png"); otherwise an English name ("Silver.png") or a symbol ("Ag.jpg").
+    Raises ValueError when the name's symbol or element name disagrees with its number."""
     stem = os.path.splitext(filename)[0].strip()
-    m = re.match(r'^0*(\d{1,3})(?!\d)', stem)
-    if m and 1 <= int(m.group(1)) <= 118:
-        return int(m.group(1))
+    numbers = [int(n) for n in re.findall(r'(?<!\d)0*(\d{1,3})(?!\d)', stem) if 1 <= int(n) <= 118]
     words = [w for w in re.split(r'[^A-Za-z]+', stem) if w]
-    for w in words:
-        if w.lower() in BY_NAME:
-            return BY_NAME[w.lower()]
-    for w in words:  # symbols last: "Card" must not match "Cd"-like words by accident
-        if w.lower() in BY_SYMBOL and (len(w) <= 2):
-            return BY_SYMBOL[w.lower()]
-    return None
+    named = next((BY_NAME[w.lower()] for w in words if w.lower() in BY_NAME), None)
+    symbol = next((BY_SYMBOL[w.lower()] for w in words if len(w) <= 2 and w.lower() in BY_SYMBOL), None)
+    if numbers:
+        number = numbers[0]
+        for other in (named, symbol):
+            if other is not None and other != number:
+                raise ValueError(f'the name says element {other} but the number says {number}')
+        return number
+    return named if named is not None else symbol
 
 
 def main():
@@ -42,7 +45,11 @@ def main():
     for name in sorted(os.listdir(SRC)) if os.path.isdir(SRC) else []:
         if name.startswith('.') or name.lower() == 'readme.md':
             continue
-        number = element_of(name)
+        try:
+            number = element_of(name)
+        except ValueError as e:
+            problems.append(f'{name}: {e}; rename it to just the atomic number, e.g. 23.jpg')
+            continue
         if number is None:
             problems.append(f'{name}: cannot tell which element this is (start the name with the atomic number, e.g. 47.jpg)')
             continue
