@@ -36,6 +36,11 @@ elif [ -n "$RELAY" ] && [ -n "$RELAY_TOKEN" ] &&
   echo "ncert.nic.in health check OK (through the Mumbai relay; GitHub cannot reach NCERT directly)"
 else
   echo "::error::ncert.nic.in health check failed (direct and relay, HTTP ${code:-none}). Phones may not be able to download NCERT books; the app will use this mirror."
+  if [ -n "$RELAY" ] && [ -n "$RELAY_TOKEN" ]; then
+    # The relay's answer says what went wrong between Mumbai and NCERT (e.g. "NCERT: certificate…").
+    reason=$(curl -sS -m 90 -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=0-99" "$RELAY?f=textbook/pdf/fepr101.pdf" 2>&1 | head -c 300 | tr -cd '[:print:] ')
+    echo "::error::Relay says: ${reason:-no answer}"
+  fi
   [ -n "$RELAY" ] || echo "::error::NCERT_RELAY_TOKEN secret is missing: see scripts/ncert-mirror/README in the app repo notes."
   exit 1
 fi
