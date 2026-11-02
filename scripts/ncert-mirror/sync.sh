@@ -30,8 +30,8 @@ VIA=direct
 if code=$("${CURL[@]}" -o /dev/null -w '%{http_code}' -I -m 30 "$probe" 2>/dev/null) && [ "$code" = 200 ]; then
   echo "ncert.nic.in health check OK (direct)"
 elif [ -n "$RELAY" ] && [ -n "$RELAY_TOKEN" ] &&
-     code=$(curl -sS -o /dev/null -w '%{http_code}' -I -m 90 -H "x-mirror-token: $RELAY_TOKEN" "$RELAY?f=textbook/pdf/fepr101.pdf") &&
-     [ "$code" = 200 ]; then
+     code=$(curl -sS -o /dev/null -w '%{http_code}' -m 90 -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=0-99" "$RELAY?f=textbook/pdf/fepr101.pdf") &&
+     [ "$code" = 206 ]; then
   VIA=relay
   echo "ncert.nic.in health check OK (through the Mumbai relay; GitHub cannot reach NCERT directly)"
 else
@@ -45,13 +45,17 @@ else
   exit 1
 fi
 
-# Size of an NCERT file (Content-Length), or empty.
+# Size of an NCERT file, or empty if NCERT doesn't have it. Through the relay, a 1-byte Range request
+# (Google's front end rejects HEAD answers from the function): "Content-Range: bytes 0-0/<size>".
 ncert_size() {
   if [ "$VIA" = direct ]; then
-    "${CURL[@]}" -I -m 60 "$1"
+    "${CURL[@]}" -I -m 60 "$1" | tr -d '\r' |
+      awk '$1 ~ /^HTTP/ {st=$2} tolower($1)=="content-length:" {v=$2} END {if (st == 200) print v}'
   else
-    curl -sS -I -m 90 --retry 2 -H "x-mirror-token: $RELAY_TOKEN" "$RELAY?f=${1#https://ncert.nic.in/}"
-  fi | tr -d '\r' | awk '$1 ~ /^HTTP/ {st=$2} tolower($1)=="content-length:" {v=$2} END {if (st == 200) print v}'
+    curl -sS -o /dev/null -D - -m 90 --retry 2 -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=0-0" \
+      "$RELAY?f=${1#https://ncert.nic.in/}" | tr -d '\r' |
+      awk '$1 ~ /^HTTP/ {st=$2} tolower($1)=="content-range:" {n=split($2 $3, a, "/"); v=a[n]} END {if (st == 206) print v}'
+  fi
 }
 
 # Downloads an NCERT file to $2 ($3 = its size). Through the relay it comes in pieces of $CHUNK bytes.
