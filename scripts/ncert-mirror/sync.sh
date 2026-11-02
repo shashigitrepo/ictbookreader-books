@@ -30,7 +30,8 @@ VIA=direct
 if code=$("${CURL[@]}" -o /dev/null -w '%{http_code}' -I -m 30 "$probe" 2>/dev/null) && [ "$code" = 200 ]; then
   echo "ncert.nic.in health check OK (direct)"
 elif [ -n "$RELAY" ] && [ -n "$RELAY_TOKEN" ] &&
-     code=$(curl -sS -o /dev/null -w '%{http_code}' -m 90 -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=0-99" "$RELAY?f=textbook/pdf/fepr101.pdf") &&
+     code=$(curl -sS -o /dev/null -w '%{http_code}' -m 90 --retry 4 --retry-delay 5 --retry-all-errors \
+       -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=0-99" "$RELAY?f=textbook/pdf/fepr101.pdf") &&
      [ "$code" = 206 ]; then
   VIA=relay
   echo "ncert.nic.in health check OK (through the Mumbai relay; GitHub cannot reach NCERT directly)"
@@ -52,7 +53,7 @@ ncert_size() {
     "${CURL[@]}" -I -m 60 "$1" | tr -d '\r' |
       awk '$1 ~ /^HTTP/ {st=$2} tolower($1)=="content-length:" {v=$2} END {if (st == 200) print v}'
   else
-    curl -sS -o /dev/null -D - -m 90 --retry 2 -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=0-0" \
+    curl -sS -o /dev/null -D - -m 90 --retry 4 --retry-delay 3 --retry-all-errors -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=0-0" \
       "$RELAY?f=${1#https://ncert.nic.in/}" | tr -d '\r' |
       awk '$1 ~ /^HTTP/ {st=$2} tolower($1)=="content-range:" {n=split($2 $3, a, "/"); v=a[n]} END {if (st == 206) print v}'
   fi
@@ -69,7 +70,7 @@ ncert_get() {
   local start=0 end
   while [ "$start" -lt "$3" ]; do
     end=$((start + CHUNK - 1)); [ "$end" -lt "$3" ] || end=$(($3 - 1))
-    curl -sS -f -m 300 --retry 3 --retry-delay 5 -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=$start-$end" \
+    curl -sS -f -m 300 --retry 4 --retry-delay 5 --retry-all-errors -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=$start-$end" \
       "$RELAY?f=${1#https://ncert.nic.in/}" >> "$2" || return 1
     start=$((end + 1))
   done
