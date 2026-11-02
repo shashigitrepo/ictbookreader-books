@@ -20,14 +20,51 @@ CA="$WORK/ca.pem"
 cat "${SYSTEM_CA:-/etc/ssl/certs/ca-certificates.crt}" "$DIR/le-gen-y.pem" > "$CA"
 CURL=(curl -sS --cacert "$CA" -A "Padhaku-mirror" --retry 3 --retry-delay 5)
 
-# 1. Health check: NCERT reachable with the app's certificate rules?
+# 1. Health check. GitHub's servers (USA) usually cannot connect to ncert.nic.in, so files are fetched
+# through the "ncertFile" Firebase function in Mumbai (NCERT_RELAY + NCERT_RELAY_TOKEN). The relay
+# checks NCERT's certificate like the app does, so a failure here means phones are likely affected.
+RELAY=${NCERT_RELAY:-}
+RELAY_TOKEN=${NCERT_RELAY_TOKEN:-}
 probe=https://ncert.nic.in/textbook/pdf/fepr101.pdf
-if ! code=$("${CURL[@]}" -o /dev/null -w '%{http_code}' -I -m 60 "$probe") || [ "$code" != 200 ]; then
-  echo "::error::ncert.nic.in health check failed (HTTP ${code:-none}). The app's direct downloads are probably broken; it will use this mirror."
-  "${CURL[@]}" -v -I -m 60 "$probe" 2>&1 | tail -20
+VIA=direct
+if code=$("${CURL[@]}" -o /dev/null -w '%{http_code}' -I -m 30 "$probe" 2>/dev/null) && [ "$code" = 200 ]; then
+  echo "ncert.nic.in health check OK (direct)"
+elif [ -n "$RELAY" ] && [ -n "$RELAY_TOKEN" ] &&
+     code=$(curl -sS -o /dev/null -w '%{http_code}' -I -m 90 -H "x-mirror-token: $RELAY_TOKEN" "$RELAY?f=textbook/pdf/fepr101.pdf") &&
+     [ "$code" = 200 ]; then
+  VIA=relay
+  echo "ncert.nic.in health check OK (through the Mumbai relay; GitHub cannot reach NCERT directly)"
+else
+  echo "::error::ncert.nic.in health check failed (direct and relay, HTTP ${code:-none}). Phones may not be able to download NCERT books; the app will use this mirror."
+  [ -n "$RELAY" ] || echo "::error::NCERT_RELAY_TOKEN secret is missing: see scripts/ncert-mirror/README in the app repo notes."
   exit 1
 fi
-echo "ncert.nic.in health check OK"
+
+# Size of an NCERT file (Content-Length), or empty.
+ncert_size() {
+  if [ "$VIA" = direct ]; then
+    "${CURL[@]}" -I -m 60 "$1"
+  else
+    curl -sS -I -m 90 --retry 2 -H "x-mirror-token: $RELAY_TOKEN" "$RELAY?f=${1#https://ncert.nic.in/}"
+  fi | tr -d '\r' | awk '$1 ~ /^HTTP/ {st=$2} tolower($1)=="content-length:" {v=$2} END {if (st == 200) print v}'
+}
+
+# Downloads an NCERT file to $2 ($3 = its size). Through the relay it comes in pieces of $CHUNK bytes.
+CHUNK=${MIRROR_CHUNK:-$((20 * 1024 * 1024))}
+ncert_get() {
+  if [ "$VIA" = direct ]; then
+    "${CURL[@]}" -f -m 1200 -o "$2" "$1"
+    return
+  fi
+  : > "$2"
+  local start=0 end
+  while [ "$start" -lt "$3" ]; do
+    end=$((start + CHUNK - 1)); [ "$end" -lt "$3" ] || end=$(($3 - 1))
+    curl -sS -f -m 300 --retry 3 --retry-delay 5 -H "x-mirror-token: $RELAY_TOKEN" -H "Range: bytes=$start-$end" \
+      "$RELAY?f=${1#https://ncert.nic.in/}" >> "$2" || return 1
+    start=$((end + 1))
+  done
+}
 
 # 2. Releases and what they already hold.
 have="$WORK/have.txt"; : > "$have"
@@ -48,16 +85,16 @@ while read -r url; do
   name=${url##*/}; tag="ncert-${name:0:1}"
   size=$(awk -v n="$name" '$1==n {print $2}' "$have")
   if [ -n "$size" ] && [ "$MODE" != check ]; then continue; fi
+  len=$(ncert_size "$url")
+  if [ -z "$len" ]; then echo "::warning::$name: NCERT did not answer"; failed=$((failed + 1)); continue; fi
   if [ -n "$size" ]; then
     checked=$((checked + 1))
-    len=$("${CURL[@]}" -I -m 60 "$url" | tr -d '\r' | awk 'tolower($1)=="content-length:" {v=$2} END {print v}')
-    if [ -z "$len" ]; then echo "::warning::$name: NCERT did not answer"; failed=$((failed + 1)); continue; fi
     [ "$len" = "$size" ] && continue
     echo "$name changed on NCERT ($size -> $len bytes)"
   fi
   [ "$uploads" -lt "$MAX_UPLOADS" ] || continue
   tmp="$WORK/$name"
-  if ! "${CURL[@]}" -f -m 1200 -o "$tmp" "$url"; then
+  if ! ncert_get "$url" "$tmp" "$len" || [ "$(stat -c %s "$tmp")" != "$len" ]; then
     echo "::warning::$name: download from NCERT failed"; failed=$((failed + 1)); rm -f "$tmp"; continue
   fi
   if [ "$(head -c 4 "$tmp")" != "%PDF" ]; then
