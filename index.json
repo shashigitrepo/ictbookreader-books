@@ -471,6 +471,494 @@
           "number": 5
         }
       ]
+    },
+    {
+      "id": "g6-mathematics-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-mathematics",
+      "title": "Mathematics – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-mathematics-solutions-01",
+          "title": "Patterns in Mathematics",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/01-patterns-in-mathematics.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-mathematics-solutions-02",
+          "title": "Lines and Angles",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/02-lines-and-angles.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-mathematics-solutions-03",
+          "title": "Number Play",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/03-number-play.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-mathematics-solutions-04",
+          "title": "Data Handling and Presentation",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/04-data-handling-and-presentation.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-mathematics-solutions-05",
+          "title": "Prime Time",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/05-prime-time.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-mathematics-solutions-06",
+          "title": "Perimeter and Area",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/06-perimeter-and-area.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-mathematics-solutions-07",
+          "title": "Fractions",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/07-fractions.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-mathematics-solutions-08",
+          "title": "Playing with Constructions",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/08-playing-with-constructions.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-mathematics-solutions-09",
+          "title": "Symmetry",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/09-symmetry.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-mathematics-solutions-10",
+          "title": "The Other Side of Zero",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/10-the-other-side-of-zero.pdf"
+          },
+          "number": 10
+        }
+      ]
+    },
+    {
+      "id": "g6-mathematics-solutions-hindi-medium",
+      "gradeId": "g6",
+      "subjectId": "g6-mathematics",
+      "title": "गणित – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-01",
+          "title": "गणित में पैटर्न",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/01-patterns-in-mathematics.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-02",
+          "title": "रेखाएँ और कोण",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/02-lines-and-angles.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-03",
+          "title": "संख्याओं का खेल",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/03-number-play.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-04",
+          "title": "आँकड़ों का प्रबंधन और प्रस्तुतिकरण",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/04-data-handling-and-presentation.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-05",
+          "title": "अभाज्य समय",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/05-prime-time.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-06",
+          "title": "परिमाप और क्षेत्रफल",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/06-perimeter-and-area.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-07",
+          "title": "भिन्न",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/07-fractions.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-08",
+          "title": "रचनाओं के साथ खेलना",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/08-playing-with-constructions.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-09",
+          "title": "सममिति",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/09-symmetry.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-mathematics-solutions-hindi-medium-10",
+          "title": "शून्य के दूसरी ओर",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/mathematics/hindi-medium/10-the-other-side-of-zero.pdf"
+          },
+          "number": 10
+        }
+      ]
+    },
+    {
+      "id": "g6-science-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-science",
+      "title": "Science – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-science-solutions-01",
+          "title": "The Wonderful World of Science",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/01-the-wonderful-world-of-science.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-science-solutions-02",
+          "title": "Diversity in the Living World",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/02-diversity-in-the-living-world.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-science-solutions-03",
+          "title": "Mindful Eating: A Path to a Healthy Body",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/03-mindful-eating-a-path-to-a-healthy-body.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-science-solutions-04",
+          "title": "Exploring Magnets",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/04-exploring-magnets.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-science-solutions-05",
+          "title": "Measurement of Length and Motion",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/05-measurement-of-length-and-motion.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-science-solutions-06",
+          "title": "Materials Around Us",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/06-materials-around-us.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-science-solutions-07",
+          "title": "Temperature and its Measurement",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/07-temperature-and-its-measurement.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-science-solutions-08",
+          "title": "A Journey through States of Water",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/08-a-journey-through-states-of-water.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-science-solutions-09",
+          "title": "Methods of Separation in Everyday Life",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/09-methods-of-separation-in-everyday-life.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-science-solutions-10",
+          "title": "Living Creatures: Exploring their Characteristics",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/10-living-creatures-exploring-their-characteristics.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g6-science-solutions-11",
+          "title": "Nature’s Treasures",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/11-nature-s-treasures.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g6-science-solutions-12",
+          "title": "Beyond Earth",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/12-beyond-earth.pdf"
+          },
+          "number": 12
+        }
+      ]
+    },
+    {
+      "id": "g6-science-solutions-hindi-medium",
+      "gradeId": "g6",
+      "subjectId": "g6-science",
+      "title": "विज्ञान – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-science-solutions-hindi-medium-01",
+          "title": "विज्ञान का अनूठा संसार",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/01-the-wonderful-world-of-science.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-02",
+          "title": "सजीव जगत में विविधता",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/02-diversity-in-the-living-world.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-03",
+          "title": "उचित आहार— स्वस्थ शरीर का आधार",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/03-mindful-eating-a-path-to-a-healthy-body.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-04",
+          "title": "चुंबकों को जानें",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/04-exploring-magnets.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-05",
+          "title": "लंबाई एवं गति का मापन",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/05-measurement-of-length-and-motion.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-06",
+          "title": "हमारे आस-पास की सामग्री",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/06-materials-around-us.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-07",
+          "title": "ताप एवं उसका मापन",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/07-temperature-and-its-measurement.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-08",
+          "title": "जल की विविध अवस्थाओं की यात्रा",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/08-a-journey-through-states-of-water.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-09",
+          "title": "दैनिक जीवन में पृथक्करण विधियाँ",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/09-methods-of-separation-in-everyday-life.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-10",
+          "title": "सजीव— विशेषताओं का अन्वेषण",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/10-living-creatures-exploring-their-characteristics.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-11",
+          "title": "प्रकृति की अमूल्य संपदा",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/11-nature-s-treasures.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g6-science-solutions-hindi-medium-12",
+          "title": "पृथ्वी से परे",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/science/hindi-medium/12-beyond-earth.pdf"
+          },
+          "number": 12
+        }
+      ]
     }
   ],
   "videos": []
