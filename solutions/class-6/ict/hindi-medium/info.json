@@ -1,0 +1,12 @@
+{
+  "title": "आईसीटी – समाधान",
+  "medium": "hi",
+  "chapters": {
+    "01-introduction-to-ict-environment.pdf": "आईसीटी वातावरण का परिचय (Introduction to ICT Environment)",
+    "02-data-representation-and-processing-01-spreadsheet.pdf": "डेटा का प्रस्तुतीकरण और प्रोसेसिंग–01 (स्प्रेडशीट)",
+    "03-data-representation-and-processing-02-word-processing.pdf": "डेटा प्रस्तुति और प्रोसेसिंग-02 (वर्ड प्रोसेसिंग)",
+    "04-basics-of-internet.pdf": "इंटरनेट की मूल बातें (Basics of Internet)",
+    "05-learn-to-code-01-learning-to-create-flowchart-and-programs.pdf": "लर्न टू कोड-01: फ्लोचार्ट और प्रोग्राम बनाना सीखना",
+    "06-being-future-ready-01.pdf": "भविष्य के लिए तैयार - 01 (Being Future Ready - 01)"
+  }
+}
