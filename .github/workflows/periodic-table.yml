@@ -1,0 +1,37 @@
+# Converts element card images uploaded to periodic-table/originals/ into light WebP cards and
+# updates periodic-table/cards.json, which the Padhaku app reads (Home → Periodic Table).
+name: Periodic table cards
+
+on:
+  push:
+    branches: [main]
+    paths: [periodic-table/originals/**, scripts/periodic-table/**, .github/workflows/periodic-table.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: periodic-table
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet pillow
+      - run: python scripts/periodic-table/build.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Commit the cards if they changed
+        run: |
+          git add periodic-table/cards periodic-table/cards.json
+          if git diff --cached --quiet; then echo "Cards are up to date"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898900+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update periodic table cards"
+          # Another workflow (index.json) may have pushed meanwhile: rebase and retry.
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
