@@ -473,6 +473,148 @@
       ]
     },
     {
+      "id": "g6-hindi-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-hindi",
+      "title": "हिंदी (मल्हार) – NCERT समाधान",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-hindi-solutions-01",
+          "title": "मातृभूमि",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/01-chapter-1.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-hindi-solutions-02",
+          "title": "गोल",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/02-chapter-2.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-hindi-solutions-03",
+          "title": "पहली बूँद",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/03-chapter-3.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-hindi-solutions-04",
+          "title": "हार की जीत",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/04-chapter-4.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-hindi-solutions-05",
+          "title": "रहीम के दोहे",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/05-chapter-5.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-hindi-solutions-06",
+          "title": "मेरी माँ",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/06-chapter-6.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-hindi-solutions-07",
+          "title": "जलाते चलो",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/07-chapter-7.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-hindi-solutions-08",
+          "title": "सत्रिया और बिहू नृत्य",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/08-chapter-8.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-hindi-solutions-09",
+          "title": "मैया मैं नहिं माखन खायो",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/09-chapter-9.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-hindi-solutions-10",
+          "title": "परीक्षा",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/10-chapter-10.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g6-hindi-solutions-11",
+          "title": "चेतक की वीरता",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/11-chapter-11.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g6-hindi-solutions-12",
+          "title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/12-chapter-12.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g6-hindi-solutions-13",
+          "title": "पेड़ की बात",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/hindi/13-chapter-13.pdf"
+          },
+          "number": 13
+        }
+      ]
+    },
+    {
       "id": "g6-ict-solutions",
       "gradeId": "g6",
       "subjectId": "g6-ict",
@@ -961,6 +1103,178 @@
             "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/physical-education-and-well-being/hindi-medium/05-yoga.pdf"
           },
           "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g6-sanskrit-solutions",
+      "gradeId": "g6",
+      "subjectId": "g6-sanskrit",
+      "title": "संस्कृत (दीपकम्) – NCERT समाधान",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g6-sanskrit-solutions-01",
+          "title": "वयं वर्णमालां पठामः",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/01-chapter-1.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g6-sanskrit-solutions-02",
+          "title": "संयुक्त-व्यञ्जनानि",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/02-chapter-2.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g6-sanskrit-solutions-03",
+          "title": "एषः कः ? एषा का ? एतत् किम् ?",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/03-chapter-3.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g6-sanskrit-solutions-04",
+          "title": "अहं च त्वं च",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/04-chapter-4.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g6-sanskrit-solutions-05",
+          "title": "संख्यागणना ननु सरला",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/05-chapter-5.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g6-sanskrit-solutions-06",
+          "title": "अहं प्रातः उत्तिष्ठामि",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/06-chapter-6.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g6-sanskrit-solutions-07",
+          "title": "शूराः वयं धीराः वयम्",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/07-chapter-7.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g6-sanskrit-solutions-08",
+          "title": "सः एव महान् चित्रकारः",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/08-chapter-8.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g6-sanskrit-solutions-09",
+          "title": "अतिथिदेवो भव",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/09-chapter-9.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g6-sanskrit-solutions-10",
+          "title": "बुद्धिः सर्वार्थसाधिका",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/10-chapter-10.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g6-sanskrit-solutions-11",
+          "title": "यः जानाति सः पण्डितः",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/11-chapter-11.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g6-sanskrit-solutions-12",
+          "title": "त्वम् आपणं गच्छ",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/12-chapter-12.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g6-sanskrit-solutions-13",
+          "title": "पृथिव्यां त्रीणि रत्नानि",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/13-chapter-13.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g6-sanskrit-solutions-14",
+          "title": "आलस्यं हि मनुष्याणां शरीरस्थः महान् रिपुः",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/14-chapter-14.pdf"
+          },
+          "number": 14
+        },
+        {
+          "id": "g6-sanskrit-solutions-15",
+          "title": "माधवस्य प्रियम् अङ्गम्",
+          "order": 15,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/15-chapter-15.pdf"
+          },
+          "number": 15
+        },
+        {
+          "id": "g6-sanskrit-solutions-16",
+          "title": "वृक्षाः सत्पुरुषाः इव",
+          "order": 16,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-6/sanskrit/16-chapter-16.pdf"
+          },
+          "number": 16
         }
       ]
     },
