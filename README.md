@@ -151,3 +151,11 @@ to the developer, or add entries in the same format: `{"year":2027,"grade":10,"e
 "subject":"Science","url":"https://www.cbse.gov.in/cbsenew/question-paper/2027/X/Science.zip","size":"40 MB"}`
 (`exam` is `main`, `compartment` or `second`). The app picks up changes without an update.
 
+
+## NCERT catalogue (`catalog/catalog.json`)
+
+The app's list of NCERT classes, subjects, books, chapter names and links (app version 21.9 and later
+download it at start). Fix a chapter name or add a book here, then push: no app update needed.
+Every chapter link must start with `https://ncert.nic.in/` or this repository's raw address. The
+"Build index" Action checks the file; if it reports an error, phones keep using their last good copy.
+Never lower `"version"`.

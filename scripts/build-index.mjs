@@ -212,6 +212,34 @@ if (existsSync(videosFile)) {
   });
 }
 
+// catalog/catalog.json: the NCERT catalogue the app downloads at start (chapter names, books, NCERT
+// links). A broken file fails this Action (GitHub emails the owner); the app also ignores it.
+const CATALOG = join(ROOT, 'catalog', 'catalog.json');
+if (existsSync(CATALOG)) {
+  try {
+    const cat = JSON.parse(readFileSync(CATALOG, 'utf8'));
+    if (!Number.isInteger(cat.version)) errors.push('catalog/catalog.json: "version" must be a whole number');
+    for (const key of ['grades', 'subjects', 'books']) {
+      if (!Array.isArray(cat[key]) || !cat[key].length) errors.push(`catalog/catalog.json: "${key}" is missing or empty`);
+    }
+    const ids = new Set();
+    for (const book of cat.books ?? []) {
+      if (ids.has(book.id)) errors.push(`catalog/catalog.json: book id "${book.id}" is used twice`);
+      ids.add(book.id);
+      if (!(cat.subjects ?? []).some((s) => s.id === book.subjectId)) errors.push(`catalog/catalog.json: book "${book.id}" has unknown subject "${book.subjectId}"`);
+      for (const ch of book.chapters ?? []) {
+        if (!ch.id || !ch.title || !Number.isInteger(ch.order)) errors.push(`catalog/catalog.json: a chapter of "${book.id}" needs id, title and order`);
+        const url = ch.source?.url ?? '';
+        if (ch.source?.type !== 'remote' || !/^https:\/\/(ncert\.nic\.in|raw\.githubusercontent\.com\/shashigitrepo\/ictbookreader-books)\//.test(url)) {
+          errors.push(`catalog/catalog.json: chapter "${ch.id}" must link to ncert.nic.in or this repository (the app skips other links)`);
+        }
+      }
+    }
+  } catch (e) {
+    errors.push(`catalog/catalog.json is not valid JSON: ${e.message}`);
+  }
+}
+
 if (errors.length) {
   console.error(`Fix these first:\n  ${errors.join('\n  ')}`);
   process.exit(1);
