@@ -1845,6 +1845,290 @@
           "number": 14
         }
       ]
+    },
+    {
+      "id": "g9-science-solutions",
+      "gradeId": "g9",
+      "subjectId": "g9-science",
+      "title": "Science – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g9-science-solutions-01",
+          "title": "Exploration: Entering the World of Secondary Science",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/01-exploration-entering-the-world-of-secondary-science.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g9-science-solutions-02",
+          "title": "Cell: The Building Block of Life",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/02-cell-the-building-block-of-life.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g9-science-solutions-03",
+          "title": "Tissues in Action",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/03-tissues-in-action.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g9-science-solutions-04",
+          "title": "Describing Motion Around Us",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/04-describing-motion-around-us.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g9-science-solutions-05",
+          "title": "Exploring Mixtures and their Separation",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/05-exploring-mixtures-and-their-separation.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g9-science-solutions-06",
+          "title": "How Forces Affect Motion",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/06-how-forces-affect-motion.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g9-science-solutions-07",
+          "title": "Work, Energy, and Simple Machines",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/07-work-energy-and-simple-machines.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g9-science-solutions-08",
+          "title": "Journey Inside the Atom",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/08-journey-inside-the-atom.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g9-science-solutions-09",
+          "title": "Atomic Foundations of Matter",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/09-atomic-foundations-of-matter.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g9-science-solutions-10",
+          "title": "Sound Waves: Characteristics and Applications",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/10-sound-waves-characteristics-and-applications.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g9-science-solutions-11",
+          "title": "Reproduction: How Life Continues",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/11-reproduction-how-life-continues.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g9-science-solutions-12",
+          "title": "Patterns in Life: Diversity and Classification",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/12-patterns-in-life-diversity-and-classification.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g9-science-solutions-13",
+          "title": "Earth as a System: Energy, Matter, and Life",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/13-earth-as-a-system-energy-matter-and-life.pdf"
+          },
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": "g9-science-solutions-hindi-medium",
+      "gradeId": "g9",
+      "subjectId": "g9-science",
+      "title": "विज्ञान – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g9-science-solutions-hindi-medium-01",
+          "title": "अन्वेषण — माध्यमिक विज्ञान के संसार में प्रवेश",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/01-exploration-entering-the-world-of-secondary-science.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-02",
+          "title": "कोशिका — जीवन की निर्माण इकाई",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/02-cell-the-building-block-of-life.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-03",
+          "title": "क्रियाशील ऊतक",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/03-tissues-in-action.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-04",
+          "title": "अपने परिवेश में गति का वर्णन",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/04-describing-motion-around-us.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-05",
+          "title": "मिश्रण एवं उनके पृथक्करण का अन्वेषण",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/05-exploring-mixtures-and-their-separation.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-06",
+          "title": "गति पर बलों का प्रभाव",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/06-how-forces-affect-motion.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-07",
+          "title": "कार्य, ऊर्जा एवं सरल मशीनें",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/07-work-energy-and-simple-machines.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-08",
+          "title": "एक यात्रा — परमाणु के भीतर",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/08-journey-inside-the-atom.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-09",
+          "title": "द्रव्य का परमाण्विक आधार",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/09-atomic-foundations-of-matter.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-10",
+          "title": "ध्वनि तरंगें — अभिलक्षण एवं अनुप्रयोग",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/10-sound-waves-characteristics-and-applications.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-11",
+          "title": "जनन — जीवन की निरंतरता",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/11-reproduction-how-life-continues.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-12",
+          "title": "जीवजगत का स्वरूप — विविधता एवं वर्गीकरण",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/12-patterns-in-life-diversity-and-classification.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g9-science-solutions-hindi-medium-13",
+          "title": "पृथ्वी एक तंत्र — ऊर्जा, द्रव्य और जीवन",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/science/hindi-medium/13-earth-as-a-system-energy-matter-and-life.pdf"
+          },
+          "number": 13
+        }
+      ]
     }
   ],
   "videos": []
