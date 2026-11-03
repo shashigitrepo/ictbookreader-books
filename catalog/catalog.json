@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "grades": [
     {
       "id": "g6",
@@ -624,6 +624,14 @@
       "productKey": "computer_science"
     },
     {
+      "id": "g11-computers-and-communication-technology",
+      "gradeId": "g11",
+      "name": "Computers and Communication Technology",
+      "order": 30,
+      "medium": "en",
+      "productKey": "computers_and_communication_technology"
+    },
+    {
       "id": "g11-creative-writing-and-translation",
       "gradeId": "g11",
       "name": "Creative Writing and Translation",
@@ -640,12 +648,28 @@
       "productKey": "fine_art"
     },
     {
+      "id": "g11-graphics-design",
+      "gradeId": "g11",
+      "name": "Graphics Design",
+      "order": 30,
+      "medium": "en",
+      "productKey": "graphics_design"
+    },
+    {
       "id": "g11-health-and-physical-education",
       "gradeId": "g11",
       "name": "Health and Physical Education",
       "order": 30,
       "medium": "en",
       "productKey": "health_and_physical_education"
+    },
+    {
+      "id": "g11-heritage-crafts",
+      "gradeId": "g11",
+      "name": "Heritage Crafts",
+      "order": 30,
+      "medium": "en",
+      "productKey": "heritage_crafts"
     },
     {
       "id": "g11-home-science",
@@ -848,6 +872,14 @@
       "productKey": "fine_art"
     },
     {
+      "id": "g12-heritage-crafts",
+      "gradeId": "g12",
+      "name": "Heritage Crafts",
+      "order": 30,
+      "medium": "en",
+      "productKey": "heritage_crafts"
+    },
+    {
       "id": "g12-home-science",
       "gradeId": "g12",
       "name": "Home Science",
@@ -862,6 +894,14 @@
       "order": 30,
       "medium": "en",
       "productKey": "informatics_practices"
+    },
+    {
+      "id": "g12-new-age-graphics-design",
+      "gradeId": "g12",
+      "name": "New Age Graphics Design",
+      "order": 30,
+      "medium": "en",
+      "productKey": "new_age_graphics_design"
     },
     {
       "id": "g12-sangeet",
@@ -18158,6 +18198,398 @@
       ]
     },
     {
+      "id": "g11-computers-and-communication-technology-kect1",
+      "gradeId": "g11",
+      "subjectId": "g11-computers-and-communication-technology",
+      "title": "CCT Part-I",
+      "order": 1,
+      "publisher": "NCERT",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g11-computers-and-communication-technology-kect1-ps",
+          "title": "Contents and Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-01",
+          "title": "Chapter 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-02",
+          "title": "Chapter 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-03",
+          "title": "Chapter 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-04",
+          "title": "Chapter 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-05",
+          "title": "Chapter 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-06",
+          "title": "Chapter 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-07",
+          "title": "Chapter 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect1-08",
+          "title": "Chapter 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
+      "id": "g11-computers-and-communication-technology-kect2",
+      "gradeId": "g11",
+      "subjectId": "g11-computers-and-communication-technology",
+      "title": "CCT Part-II",
+      "order": 2,
+      "publisher": "NCERT",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g11-computers-and-communication-technology-kect2-ps",
+          "title": "Contents and Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect2ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect2-01",
+          "title": "Chapter 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect201.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect2-02",
+          "title": "Chapter 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect202.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect2-03",
+          "title": "Chapter 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect203.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect2-04",
+          "title": "Chapter 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect204.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect2-05",
+          "title": "Chapter 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect205.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-kect2-06",
+          "title": "Chapter 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kect206.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
+      "id": "g11-computers-and-communication-technology-khct1",
+      "gradeId": "g11",
+      "subjectId": "g11-computers-and-communication-technology",
+      "title": "Computer aur Sanchar Prodhogiki Part-I",
+      "order": 3,
+      "publisher": "NCERT",
+      "medium": "hi",
+      "chapters": [
+        {
+          "id": "g11-computers-and-communication-technology-khct1-ps",
+          "title": "विषय सूची एवं प्राक्कथन",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-01",
+          "title": "अध्याय 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-02",
+          "title": "अध्याय 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-03",
+          "title": "अध्याय 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-04",
+          "title": "अध्याय 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-05",
+          "title": "अध्याय 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-06",
+          "title": "अध्याय 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-07",
+          "title": "अध्याय 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct1-08",
+          "title": "अध्याय 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
+      "id": "g11-computers-and-communication-technology-khct2",
+      "gradeId": "g11",
+      "subjectId": "g11-computers-and-communication-technology",
+      "title": "Computer aur Sanchar Prodhogiki Part-II",
+      "order": 4,
+      "publisher": "NCERT",
+      "medium": "hi",
+      "chapters": [
+        {
+          "id": "g11-computers-and-communication-technology-khct2-ps",
+          "title": "विषय सूची एवं प्राक्कथन",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct2ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct2-01",
+          "title": "अध्याय 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct201.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct2-02",
+          "title": "अध्याय 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct202.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct2-03",
+          "title": "अध्याय 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct203.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct2-04",
+          "title": "अध्याय 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct204.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct2-05",
+          "title": "अध्याय 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct205.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-computers-and-communication-technology-khct2-06",
+          "title": "अध्याय 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khct206.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
       "id": "g11-creative-writing-and-translation-khsr1",
       "gradeId": "g11",
       "subjectId": "g11-creative-writing-and-translation",
@@ -20175,6 +20607,224 @@
       ]
     },
     {
+      "id": "g11-graphics-design-kegd1",
+      "gradeId": "g11",
+      "subjectId": "g11-graphics-design",
+      "title": "The story of graphic design",
+      "order": 1,
+      "publisher": "NCERT",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g11-graphics-design-kegd1-ps",
+          "title": "Contents and Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-01",
+          "title": "Chapter 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-02",
+          "title": "Chapter 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-03",
+          "title": "Chapter 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-04",
+          "title": "Chapter 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-05",
+          "title": "Chapter 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-06",
+          "title": "Chapter 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-07",
+          "title": "Chapter 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-kegd1-08",
+          "title": "Chapter 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kegd108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
+      "id": "g11-graphics-design-khgd1",
+      "gradeId": "g11",
+      "subjectId": "g11-graphics-design",
+      "title": "graphic design ek kahani",
+      "order": 2,
+      "publisher": "NCERT",
+      "medium": "hi",
+      "chapters": [
+        {
+          "id": "g11-graphics-design-khgd1-ps",
+          "title": "विषय सूची एवं प्राक्कथन",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-01",
+          "title": "अध्याय 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-02",
+          "title": "अध्याय 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-03",
+          "title": "अध्याय 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-04",
+          "title": "अध्याय 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-05",
+          "title": "अध्याय 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-06",
+          "title": "अध्याय 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-07",
+          "title": "अध्याय 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-graphics-design-khgd1-08",
+          "title": "अध्याय 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/khgd108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
       "id": "g11-health-and-physical-education-kehp1",
       "gradeId": "g11",
       "subjectId": "g11-health-and-physical-education",
@@ -20312,6 +20962,137 @@
             "url": "https://ncert.nic.in/textbook/pdf/kehp111.pdf"
           },
           "number": 11,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
+      "id": "g11-heritage-crafts-kehc1",
+      "gradeId": "g11",
+      "subjectId": "g11-heritage-crafts",
+      "title": "Living Craft Traditions of India",
+      "order": 1,
+      "publisher": "NCERT",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g11-heritage-crafts-kehc1-ps",
+          "title": "Contents and Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-01",
+          "title": "Chapter 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-02",
+          "title": "Chapter 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-03",
+          "title": "Chapter 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-04",
+          "title": "Chapter 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-05",
+          "title": "Chapter 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-06",
+          "title": "Chapter 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-07",
+          "title": "Chapter 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-08",
+          "title": "Chapter 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-09",
+          "title": "Chapter 9",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc109.pdf"
+          },
+          "number": 9,
+          "needsVerification": true
+        },
+        {
+          "id": "g11-heritage-crafts-kehc1-10",
+          "title": "Chapter 10",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/kehc110.pdf"
+          },
+          "number": 10,
           "needsVerification": true
         }
       ]
@@ -28967,6 +29748,246 @@
       ]
     },
     {
+      "id": "g12-heritage-crafts-lehc1",
+      "gradeId": "g12",
+      "subjectId": "g12-heritage-crafts",
+      "title": "Craft Tradition of India",
+      "order": 1,
+      "publisher": "NCERT",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g12-heritage-crafts-lehc1-ps",
+          "title": "Contents and Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-01",
+          "title": "Chapter 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-02",
+          "title": "Chapter 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-03",
+          "title": "Chapter 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-04",
+          "title": "Chapter 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-05",
+          "title": "Chapter 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-06",
+          "title": "Chapter 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-07",
+          "title": "Chapter 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-08",
+          "title": "Chapter 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lehc1-09",
+          "title": "Chapter 9",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lehc109.pdf"
+          },
+          "number": 9,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
+      "id": "g12-heritage-crafts-lhhc1",
+      "gradeId": "g12",
+      "subjectId": "g12-heritage-crafts",
+      "title": "Bharatiya Hastkla Ki Paramparayen",
+      "order": 2,
+      "publisher": "NCERT",
+      "medium": "hi",
+      "chapters": [
+        {
+          "id": "g12-heritage-crafts-lhhc1-ps",
+          "title": "विषय सूची एवं प्राक्कथन",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-01",
+          "title": "अध्याय 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-02",
+          "title": "अध्याय 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-03",
+          "title": "अध्याय 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-04",
+          "title": "अध्याय 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-05",
+          "title": "अध्याय 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-06",
+          "title": "अध्याय 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-07",
+          "title": "अध्याय 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-08",
+          "title": "अध्याय 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-heritage-crafts-lhhc1-09",
+          "title": "अध्याय 9",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/lhhc109.pdf"
+          },
+          "number": 9,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
       "id": "g12-hindi-lhat1",
       "gradeId": "g12",
       "subjectId": "g12-hindi",
@@ -30714,6 +31735,159 @@
             "url": "https://ncert.nic.in/textbook/pdf/lhmh207.pdf"
           },
           "number": 13,
+          "needsVerification": true
+        }
+      ]
+    },
+    {
+      "id": "g12-new-age-graphics-design-legd1",
+      "gradeId": "g12",
+      "subjectId": "g12-new-age-graphics-design",
+      "title": "New Age Graphics Design",
+      "order": 1,
+      "publisher": "NCERT",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g12-new-age-graphics-design-legd1-ps",
+          "title": "Contents and Preface",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd1ps.pdf"
+          },
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-01",
+          "title": "Chapter 1",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd101.pdf"
+          },
+          "number": 1,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-02",
+          "title": "Chapter 2",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd102.pdf"
+          },
+          "number": 2,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-03",
+          "title": "Chapter 3",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd103.pdf"
+          },
+          "number": 3,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-04",
+          "title": "Chapter 4",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd104.pdf"
+          },
+          "number": 4,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-05",
+          "title": "Chapter 5",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd105.pdf"
+          },
+          "number": 5,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-06",
+          "title": "Chapter 6",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd106.pdf"
+          },
+          "number": 6,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-07",
+          "title": "Chapter 7",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd107.pdf"
+          },
+          "number": 7,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-08",
+          "title": "Chapter 8",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd108.pdf"
+          },
+          "number": 8,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-09",
+          "title": "Chapter 9",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd109.pdf"
+          },
+          "number": 9,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-10",
+          "title": "Chapter 10",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd110.pdf"
+          },
+          "number": 10,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-11",
+          "title": "Chapter 11",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd111.pdf"
+          },
+          "number": 11,
+          "needsVerification": true
+        },
+        {
+          "id": "g12-new-age-graphics-design-legd1-12",
+          "title": "Chapter 12",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/legd112.pdf"
+          },
+          "number": 12,
           "needsVerification": true
         }
       ]
