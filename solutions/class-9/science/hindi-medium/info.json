@@ -1,0 +1,19 @@
+{
+  "title": "विज्ञान – NCERT समाधान",
+  "medium": "hi",
+  "chapters": {
+    "01-exploration-entering-the-world-of-secondary-science.pdf": "अन्वेषण — माध्यमिक विज्ञान के संसार में प्रवेश",
+    "02-cell-the-building-block-of-life.pdf": "कोशिका — जीवन की निर्माण इकाई",
+    "03-tissues-in-action.pdf": "क्रियाशील ऊतक",
+    "04-describing-motion-around-us.pdf": "अपने परिवेश में गति का वर्णन",
+    "05-exploring-mixtures-and-their-separation.pdf": "मिश्रण एवं उनके पृथक्करण का अन्वेषण",
+    "06-how-forces-affect-motion.pdf": "गति पर बलों का प्रभाव",
+    "07-work-energy-and-simple-machines.pdf": "कार्य, ऊर्जा एवं सरल मशीनें",
+    "08-journey-inside-the-atom.pdf": "एक यात्रा — परमाणु के भीतर",
+    "09-atomic-foundations-of-matter.pdf": "द्रव्य का परमाण्विक आधार",
+    "10-sound-waves-characteristics-and-applications.pdf": "ध्वनि तरंगें — अभिलक्षण एवं अनुप्रयोग",
+    "11-reproduction-how-life-continues.pdf": "जनन — जीवन की निरंतरता",
+    "12-patterns-in-life-diversity-and-classification.pdf": "जीवजगत का स्वरूप — विविधता एवं वर्गीकरण",
+    "13-earth-as-a-system-energy-matter-and-life.pdf": "पृथ्वी एक तंत्र — ऊर्जा, द्रव्य और जीवन"
+  }
+}
