@@ -14,8 +14,18 @@ set -uo pipefail
 MODE=${1:-fill}
 DIR=$(cd "$(dirname "$0")" && pwd)
 WORK=${RUNNER_TEMP:-/tmp}/ncert-mirror
-MAX_UPLOADS=${MAX_UPLOADS:-300}
+MAX_UPLOADS=${MAX_UPLOADS:-1500}
 mkdir -p "$WORK"
+# The files to copy: every NCERT link in the app's catalogue (catalog/catalog.json), so a book added
+# there is copied on the next run; files.txt is only the fallback when the catalogue is missing.
+LIST="$WORK/files.txt"
+if [ -f "$DIR/../../catalog/catalog.json" ] &&
+   jq -r '.books[].chapters[].source.url // empty | select(startswith("https://ncert.nic.in/"))' \
+     "$DIR/../../catalog/catalog.json" | sort -u > "$LIST" && [ -s "$LIST" ]; then
+  echo "Files to copy: $(wc -l < "$LIST") (from catalog/catalog.json)"
+else
+  cp "$DIR/files.txt" "$LIST"
+fi
 CA="$WORK/ca.pem"
 cat "${SYSTEM_CA:-/etc/ssl/certs/ca-certificates.crt}" "$DIR/le-gen-y.pem" > "$CA"
 CURL=(curl -sS --cacert "$CA" -A "Padhaku-mirror" --retry 3 --retry-delay 5)
@@ -78,7 +88,7 @@ ncert_get() {
 
 # 2. Releases and what they already hold.
 have="$WORK/have.txt"; : > "$have"
-for letter in $(sed -E 's#.*/##; s#^(.).*#\1#' "$DIR/files.txt" | sort -u); do
+for letter in $(sed -E 's#.*/##; s#^(.).*#\1#' "$LIST" | sort -u); do
   tag="ncert-$letter"
   if ! gh release view "$tag" >/dev/null 2>&1; then
     gh release create "$tag" --title "NCERT books ($letter…)" --latest=false \
@@ -86,7 +96,7 @@ for letter in $(sed -E 's#.*/##; s#^(.).*#\1#' "$DIR/files.txt" | sort -u); do
   fi
   gh release view "$tag" --json assets --jq '.assets[] | "\(.name) \(.size)"' >> "$have" || exit 1
 done
-echo "Mirror holds $(wc -l < "$have") of $(grep -c . "$DIR/files.txt") files"
+echo "Mirror holds $(wc -l < "$have") of $(grep -c . "$LIST") files"
 
 # 3. Upload missing (and, in check mode, changed) files.
 uploads=0; failed=0; checked=0
@@ -117,9 +127,9 @@ while read -r url; do
   fi
   rm -f "$tmp"
   sleep 2   # stay well under GitHub's limits for creating content
-done < "$DIR/files.txt"
+done < "$LIST"
 
-total=$(grep -c . "$DIR/files.txt")
+total=$(grep -c . "$LIST")
 echo "Uploaded $uploads, checked $checked, failed $failed (of $total files)"
 {
   echo "### NCERT mirror ($MODE)"
