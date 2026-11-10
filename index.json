@@ -2667,6 +2667,290 @@
           "number": 6
         }
       ]
+    },
+    {
+      "id": "g10-science-solutions",
+      "gradeId": "g10",
+      "subjectId": "g10-science",
+      "title": "Science – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-science-solutions-01",
+          "title": "Chemical Reactions and Equations",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/01-chemical-reactions-and-equations.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-science-solutions-02",
+          "title": "Acids, Bases and Salts",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/02-acids-bases-and-salts.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-science-solutions-03",
+          "title": "Metals and Non-metals",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/03-metals-and-non-metals.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-science-solutions-04",
+          "title": "Carbon and its Compounds",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/04-carbon-and-its-compounds.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-science-solutions-05",
+          "title": "Life Processes",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/05-life-processes.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-science-solutions-06",
+          "title": "Control and Coordination",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/06-control-and-coordination.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-science-solutions-07",
+          "title": "How do Organisms Reproduce?",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/07-how-do-organisms-reproduce.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-science-solutions-08",
+          "title": "Heredity",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/08-heredity.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-science-solutions-09",
+          "title": "Light – Reflection and Refraction",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/09-light-reflection-and-refraction.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g10-science-solutions-10",
+          "title": "The Human Eye and the Colourful World",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/10-the-human-eye-and-the-colourful-world.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g10-science-solutions-11",
+          "title": "Electricity",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/11-electricity.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g10-science-solutions-12",
+          "title": "Magnetic Effects of Electric Current",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/12-magnetic-effects-of-electric-current.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g10-science-solutions-13",
+          "title": "Our Environment",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/13-our-environment.pdf"
+          },
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": "g10-science-solutions-hindi-medium",
+      "gradeId": "g10",
+      "subjectId": "g10-science",
+      "title": "विज्ञान – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-science-solutions-hindi-medium-01",
+          "title": "रासायनिक अभिक्रियाएँ एवं समीकरण",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/01-chemical-reactions-and-equations.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-02",
+          "title": "अम्ल, क्षारक एवं लवण",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/02-acids-bases-and-salts.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-03",
+          "title": "धातु एवं अधातु",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/03-metals-and-non-metals.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-04",
+          "title": "कार्बन एवं उसके यौगिक",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/04-carbon-and-its-compounds.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-05",
+          "title": "जैव प्रक्रम",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/05-life-processes.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-06",
+          "title": "नियंत्रण एवं समन्वय",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/06-control-and-coordination.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-07",
+          "title": "जीव जनन कैसे करते हैं",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/07-how-do-organisms-reproduce.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-08",
+          "title": "आनुवंशिकता",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/08-heredity.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-09",
+          "title": "प्रकाश – परावर्तन तथा अपवर्तन",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/09-light-reflection-and-refraction.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-10",
+          "title": "मानव नेत्र तथा रंग-बिरंगा संसार",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/10-the-human-eye-and-the-colourful-world.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-11",
+          "title": "विद्युत",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/11-electricity.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-12",
+          "title": "विद्युत धारा के चुंबकीय प्रभाव",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/12-magnetic-effects-of-electric-current.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g10-science-solutions-hindi-medium-13",
+          "title": "हमारा पर्यावरण",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/science/hindi-medium/13-our-environment.pdf"
+          },
+          "number": 13
+        }
+      ]
     }
   ],
   "videos": []
