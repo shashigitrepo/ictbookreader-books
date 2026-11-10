@@ -1,0 +1,14 @@
+{
+  "title": "गणित – NCERT समाधान",
+  "medium": "hi",
+  "chapters": {
+    "01-orienting-yourself-the-use-of-coordinates.pdf": "स्वयं को प्रवृत्त करना — निर्देशांकों का उपयोग",
+    "02-introduction-to-linear-polynomials.pdf": "रैखिक बहुपदों का परिचय",
+    "03-the-world-of-numbers.pdf": "संख्याओं का संसार",
+    "04-exploring-algebraic-identities.pdf": "बीजीय सर्वसमिकाओं का अन्वेषण",
+    "05-i-m-up-and-down-and-round-and-round.pdf": "मैं हूँ गोल-गोल, ऊपर-नीचे",
+    "06-measuring-space-perimeter-and-area.pdf": "समष्टि मापन — परिमाप और क्षेत्रफल",
+    "07-the-mathematics-of-maybe-introduction-to-probability.pdf": "संभावनाओं का गणित — प्रायिकता का परिचय",
+    "08-predicting-what-comes-next-exploring-sequences-and-progressi.pdf": "अगले पद का पूर्वानुमान — अनुक्रमों और श्रेढ़ियों का अन्वेषण"
+  }
+}
