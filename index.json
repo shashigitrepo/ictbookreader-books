@@ -1875,6 +1875,250 @@
       ]
     },
     {
+      "id": "g9-mathematics-solutions",
+      "gradeId": "g9",
+      "subjectId": "g9-mathematics",
+      "title": "Mathematics – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g9-mathematics-solutions-01",
+          "title": "Orienting Yourself: The Use of Coordinates",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/01-orienting-yourself-the-use-of-coordinates.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g9-mathematics-solutions-02",
+          "title": "Introduction to Linear Polynomials",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/02-introduction-to-linear-polynomials.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g9-mathematics-solutions-03",
+          "title": "The World of Numbers",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/03-the-world-of-numbers.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g9-mathematics-solutions-04",
+          "title": "Exploring Algebraic Identities",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/04-exploring-algebraic-identities.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g9-mathematics-solutions-05",
+          "title": "I’m Up and Down, and Round and Round",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/05-i-m-up-and-down-and-round-and-round.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g9-mathematics-solutions-06",
+          "title": "Measuring Space: Perimeter and Area",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/06-measuring-space-perimeter-and-area.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g9-mathematics-solutions-07",
+          "title": "The Mathematics of Maybe: Introduction to Probability",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/07-the-mathematics-of-maybe-introduction-to-probability.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g9-mathematics-solutions-08",
+          "title": "Predicting What Comes Next: Exploring Sequences and Progressions",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/08-predicting-what-comes-next-exploring-sequences-and-progressi.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g9-mathematics-solutions-09",
+          "title": "Propositions and their Converses",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/09-propositions-and-their-converses.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g9-mathematics-solutions-10",
+          "title": "How Quantities Combine: Understanding Data",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/10-how-quantities-combine-understanding-data.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g9-mathematics-solutions-11",
+          "title": "The World of Algorithms",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/11-the-world-of-algorithms.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g9-mathematics-solutions-12",
+          "title": "Quadrilaterals",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/12-quadrilaterals.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g9-mathematics-solutions-13",
+          "title": "Two Variables, One Line",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/13-two-variables-one-line.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g9-mathematics-solutions-14",
+          "title": "Math of Space: Surface Area and Volume",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/14-math-of-space-surface-area-and-volume.pdf"
+          },
+          "number": 14
+        }
+      ]
+    },
+    {
+      "id": "g9-mathematics-solutions-hindi-medium",
+      "gradeId": "g9",
+      "subjectId": "g9-mathematics",
+      "title": "गणित – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-01",
+          "title": "स्वयं को प्रवृत्त करना — निर्देशांकों का उपयोग",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/01-orienting-yourself-the-use-of-coordinates.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-02",
+          "title": "रैखिक बहुपदों का परिचय",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/02-introduction-to-linear-polynomials.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-03",
+          "title": "संख्याओं का संसार",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/03-the-world-of-numbers.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-04",
+          "title": "बीजीय सर्वसमिकाओं का अन्वेषण",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/04-exploring-algebraic-identities.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-05",
+          "title": "मैं हूँ गोल-गोल, ऊपर-नीचे",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/05-i-m-up-and-down-and-round-and-round.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-06",
+          "title": "समष्टि मापन — परिमाप और क्षेत्रफल",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/06-measuring-space-perimeter-and-area.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-07",
+          "title": "संभावनाओं का गणित — प्रायिकता का परिचय",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/07-the-mathematics-of-maybe-introduction-to-probability.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g9-mathematics-solutions-hindi-medium-08",
+          "title": "अगले पद का पूर्वानुमान — अनुक्रमों और श्रेढ़ियों का अन्वेषण",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/mathematics/hindi-medium/08-predicting-what-comes-next-exploring-sequences-and-progressi.pdf"
+          },
+          "number": 8
+        }
+      ]
+    },
+    {
       "id": "g9-science-solutions",
       "gradeId": "g9",
       "subjectId": "g9-science",
