@@ -1,0 +1,19 @@
+{
+  "title": "विज्ञान – NCERT समाधान",
+  "medium": "hi",
+  "chapters": {
+    "01-chemical-reactions-and-equations.pdf": "रासायनिक अभिक्रियाएँ एवं समीकरण",
+    "02-acids-bases-and-salts.pdf": "अम्ल, क्षारक एवं लवण",
+    "03-metals-and-non-metals.pdf": "धातु एवं अधातु",
+    "04-carbon-and-its-compounds.pdf": "कार्बन एवं उसके यौगिक",
+    "05-life-processes.pdf": "जैव प्रक्रम",
+    "06-control-and-coordination.pdf": "नियंत्रण एवं समन्वय",
+    "07-how-do-organisms-reproduce.pdf": "जीव जनन कैसे करते हैं",
+    "08-heredity.pdf": "आनुवंशिकता",
+    "09-light-reflection-and-refraction.pdf": "प्रकाश – परावर्तन तथा अपवर्तन",
+    "10-the-human-eye-and-the-colourful-world.pdf": "मानव नेत्र तथा रंग-बिरंगा संसार",
+    "11-electricity.pdf": "विद्युत",
+    "12-magnetic-effects-of-electric-current.pdf": "विद्युत धारा के चुंबकीय प्रभाव",
+    "13-our-environment.pdf": "हमारा पर्यावरण"
+  }
+}
