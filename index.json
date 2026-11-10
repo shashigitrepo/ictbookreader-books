@@ -1875,6 +1875,98 @@
       ]
     },
     {
+      "id": "g9-english-solutions",
+      "gradeId": "g9",
+      "subjectId": "g9-english",
+      "title": "English – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g9-english-solutions-01",
+          "title": "How I Taught My Grandmother to Read",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/01-how-i-taught-my-grandmother-to-read.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g9-english-solutions-02",
+          "title": "The Pot Maker",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/02-the-pot-maker.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g9-english-solutions-03",
+          "title": "Winds of Change",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/03-winds-of-change.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g9-english-solutions-04",
+          "title": "Vitamin-M",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/04-vitamin-m.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g9-english-solutions-05",
+          "title": "The World of Limitless Possibilities",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/05-the-world-of-limitless-possibilities.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g9-english-solutions-06",
+          "title": "Twin Melodies",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/06-twin-melodies.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g9-english-solutions-07",
+          "title": "Carrier of Words",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/07-carrier-of-words.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g9-english-solutions-08",
+          "title": "Follow That Dream",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/english/08-follow-that-dream.pdf"
+          },
+          "number": 8
+        }
+      ]
+    },
+    {
       "id": "g9-mathematics-solutions",
       "gradeId": "g9",
       "subjectId": "g9-mathematics",
