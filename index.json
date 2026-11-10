@@ -2401,6 +2401,180 @@
           "number": 13
         }
       ]
+    },
+    {
+      "id": "g9-social-science-solutions-part-i",
+      "gradeId": "g9",
+      "subjectId": "g9-social-science",
+      "title": "Social Science Part I – NCERT Solutions",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g9-social-science-solutions-part-i-01",
+          "title": "Understanding Social Science",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/01-understanding-social-science.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-02",
+          "title": "Shaping of the Earth’s Surface",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/02-shaping-of-the-earth-s-surface.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-03",
+          "title": "Atmosphere and Climate",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/03-atmosphere-and-climate.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-04",
+          "title": "Early Humans and Beginning of Civilisation",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/04-early-humans-and-beginning-of-civilisation.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-05",
+          "title": "State and Society up to 1000 CE",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/05-state-and-society-up-to-1000-ce.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-06",
+          "title": "Democracy",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/06-democracy.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-07",
+          "title": "Elections",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/07-elections.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-08",
+          "title": "Building Blocks in Economics: The Problem of Choice",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/08-building-blocks-in-economics-the-problem-of-choice.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g9-social-science-solutions-part-i-09",
+          "title": "The Price Puzzle: What Drives the Market",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-i/09-the-price-puzzle-what-drives-the-market.pdf"
+          },
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": "g9-social-science-solutions-part-ii",
+      "gradeId": "g9",
+      "subjectId": "g9-social-science",
+      "title": "Social Science Part II – NCERT Solutions",
+      "order": 52,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g9-social-science-solutions-part-ii-01",
+          "title": "Oceans and Life",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-ii/01-oceans-and-life.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g9-social-science-solutions-part-ii-02",
+          "title": "Life on Earth",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-ii/02-life-on-earth.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g9-social-science-solutions-part-ii-03",
+          "title": "Resistance and Resilience (1000–1700 CE)",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-ii/03-resistance-and-resilience-1000-1700-ce.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g9-social-science-solutions-part-ii-04",
+          "title": "Governance and Public Policy",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-ii/04-governance-and-public-policy.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g9-social-science-solutions-part-ii-05",
+          "title": "Managing Your Personal Finances",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-ii/05-managing-your-personal-finances.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g9-social-science-solutions-part-ii-06",
+          "title": "From Ideas to Startups",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-9/social-science/part-ii/06-from-ideas-to-startups.pdf"
+          },
+          "number": 6
+        }
+      ]
     }
   ],
   "videos": []
