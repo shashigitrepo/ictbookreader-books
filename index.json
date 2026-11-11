@@ -2669,6 +2669,310 @@
       ]
     },
     {
+      "id": "g10-mathematics-solutions",
+      "gradeId": "g10",
+      "subjectId": "g10-mathematics",
+      "title": "Mathematics – NCERT Solutions",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-mathematics-solutions-01",
+          "title": "Real Numbers",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/01-real-numbers.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-mathematics-solutions-02",
+          "title": "Polynomials",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/02-polynomials.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-mathematics-solutions-03",
+          "title": "Pair of Linear Equations in Two Variables",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/03-pair-of-linear-equations-in-two-variables.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-mathematics-solutions-04",
+          "title": "Quadratic Equations",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/04-quadratic-equations.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-mathematics-solutions-05",
+          "title": "Arithmetic Progressions",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/05-arithmetic-progressions.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-mathematics-solutions-06",
+          "title": "Triangles",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/06-triangles.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-mathematics-solutions-07",
+          "title": "Coordinate Geometry",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/07-coordinate-geometry.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-mathematics-solutions-08",
+          "title": "Introduction to Trigonometry",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/08-introduction-to-trigonometry.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-mathematics-solutions-09",
+          "title": "Some Applications of Trigonometry",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/09-some-applications-of-trigonometry.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g10-mathematics-solutions-10",
+          "title": "Circles",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/10-circles.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g10-mathematics-solutions-11",
+          "title": "Areas Related to Circles",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/11-areas-related-to-circles.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g10-mathematics-solutions-12",
+          "title": "Surface Areas and Volumes",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/12-surface-areas-and-volumes.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g10-mathematics-solutions-13",
+          "title": "Statistics",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/13-statistics.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g10-mathematics-solutions-14",
+          "title": "Probability",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/14-probability.pdf"
+          },
+          "number": 14
+        }
+      ]
+    },
+    {
+      "id": "g10-mathematics-solutions-hindi-medium",
+      "gradeId": "g10",
+      "subjectId": "g10-mathematics",
+      "title": "गणित – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-01",
+          "title": "वास्तविक संख्याएँ",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/01-real-numbers.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-02",
+          "title": "बहुपद",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/02-polynomials.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-03",
+          "title": "दो चर वाले रैखिक समीकरण युग्म",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/03-pair-of-linear-equations-in-two-variables.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-04",
+          "title": "द्विघात समीकरण",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/04-quadratic-equations.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-05",
+          "title": "समांतर श्रेढ़ियाँ",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/05-arithmetic-progressions.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-06",
+          "title": "त्रिभुज",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/06-triangles.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-07",
+          "title": "निर्देशांक ज्यामिति",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/07-coordinate-geometry.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-08",
+          "title": "त्रिकोणमिति का परिचय",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/08-introduction-to-trigonometry.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-09",
+          "title": "त्रिकोणमिति के कुछ अनुप्रयोग",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/09-some-applications-of-trigonometry.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-10",
+          "title": "वृत्त",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/10-circles.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-11",
+          "title": "वृत्तों से संबंधित क्षेत्रफल",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/11-areas-related-to-circles.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-12",
+          "title": "पृष्ठीय क्षेत्रफल और आयतन",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/12-surface-areas-and-volumes.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-13",
+          "title": "सांख्यिकी",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/13-statistics.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g10-mathematics-solutions-hindi-medium-14",
+          "title": "प्रायिकता",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/mathematics/hindi-medium/14-probability.pdf"
+          },
+          "number": 14
+        }
+      ]
+    },
+    {
       "id": "g10-science-solutions",
       "gradeId": "g10",
       "subjectId": "g10-science",
