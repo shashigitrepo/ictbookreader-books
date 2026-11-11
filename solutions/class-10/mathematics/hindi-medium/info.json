@@ -1,0 +1,20 @@
+{
+  "title": "गणित – NCERT समाधान",
+  "medium": "hi",
+  "chapters": {
+    "01-real-numbers.pdf": "वास्तविक संख्याएँ",
+    "02-polynomials.pdf": "बहुपद",
+    "03-pair-of-linear-equations-in-two-variables.pdf": "दो चर वाले रैखिक समीकरण युग्म",
+    "04-quadratic-equations.pdf": "द्विघात समीकरण",
+    "05-arithmetic-progressions.pdf": "समांतर श्रेढ़ियाँ",
+    "06-triangles.pdf": "त्रिभुज",
+    "07-coordinate-geometry.pdf": "निर्देशांक ज्यामिति",
+    "08-introduction-to-trigonometry.pdf": "त्रिकोणमिति का परिचय",
+    "09-some-applications-of-trigonometry.pdf": "त्रिकोणमिति के कुछ अनुप्रयोग",
+    "10-circles.pdf": "वृत्त",
+    "11-areas-related-to-circles.pdf": "वृत्तों से संबंधित क्षेत्रफल",
+    "12-surface-areas-and-volumes.pdf": "पृष्ठीय क्षेत्रफल और आयतन",
+    "13-statistics.pdf": "सांख्यिकी",
+    "14-probability.pdf": "प्रायिकता"
+  }
+}
