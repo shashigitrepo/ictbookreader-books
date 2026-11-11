@@ -1,0 +1,18 @@
+{
+  "chapters": {
+    "01-real-numbers.pdf": "Real Numbers",
+    "02-polynomials.pdf": "Polynomials",
+    "03-pair-of-linear-equations-in-two-variables.pdf": "Pair of Linear Equations in Two Variables",
+    "04-quadratic-equations.pdf": "Quadratic Equations",
+    "05-arithmetic-progressions.pdf": "Arithmetic Progressions",
+    "06-triangles.pdf": "Triangles",
+    "07-coordinate-geometry.pdf": "Coordinate Geometry",
+    "08-introduction-to-trigonometry.pdf": "Introduction to Trigonometry",
+    "09-some-applications-of-trigonometry.pdf": "Some Applications of Trigonometry",
+    "10-circles.pdf": "Circles",
+    "11-areas-related-to-circles.pdf": "Areas Related to Circles",
+    "12-surface-areas-and-volumes.pdf": "Surface Areas and Volumes",
+    "13-statistics.pdf": "Statistics",
+    "14-probability.pdf": "Probability"
+  }
+}
