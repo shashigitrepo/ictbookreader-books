@@ -2669,6 +2669,292 @@
       ]
     },
     {
+      "id": "g10-english-solutions-first-flight",
+      "gradeId": "g10",
+      "subjectId": "g10-english",
+      "title": "First Flight – NCERT Solutions",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-english-solutions-first-flight-01",
+          "title": "A Letter to God",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/01-a-letter-to-god.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-english-solutions-first-flight-02",
+          "title": "Nelson Mandela: Long Walk to Freedom",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/02-nelson-mandela-long-walk-to-freedom.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-english-solutions-first-flight-03",
+          "title": "Two Stories about Flying",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/03-two-stories-about-flying.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-english-solutions-first-flight-04",
+          "title": "From the Diary of Anne Frank",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/04-from-the-diary-of-anne-frank.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-english-solutions-first-flight-05",
+          "title": "Glimpses of India",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/05-glimpses-of-india.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-english-solutions-first-flight-06",
+          "title": "Mijbil the Otter",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/06-mijbil-the-otter.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-english-solutions-first-flight-07",
+          "title": "Madam Rides the Bus",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/07-madam-rides-the-bus.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-english-solutions-first-flight-08",
+          "title": "The Sermon at Benares",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/08-the-sermon-at-benares.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-english-solutions-first-flight-09",
+          "title": "The Proposal",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/first-flight/09-the-proposal.pdf"
+          },
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": "g10-english-solutions-footprints-without-feet",
+      "gradeId": "g10",
+      "subjectId": "g10-english",
+      "title": "Footprints without Feet – NCERT Solutions",
+      "order": 52,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-english-solutions-footprints-without-feet-01",
+          "title": "A Triumph of Surgery",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/01-a-triumph-of-surgery.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-02",
+          "title": "The Thief's Story",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/02-the-thief-s-story.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-03",
+          "title": "The Midnight Visitor",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/03-the-midnight-visitor.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-04",
+          "title": "A Question of Trust",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/04-a-question-of-trust.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-05",
+          "title": "Footprints without Feet",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/05-footprints-without-feet.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-06",
+          "title": "The Making of a Scientist",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/06-the-making-of-a-scientist.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-07",
+          "title": "The Necklace",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/07-the-necklace.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-08",
+          "title": "Bholi",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/08-bholi.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-english-solutions-footprints-without-feet-09",
+          "title": "The Book That Saved the Earth",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/footprints-without-feet/09-the-book-that-saved-the-earth.pdf"
+          },
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": "g10-english-solutions-words-and-expressions-2",
+      "gradeId": "g10",
+      "subjectId": "g10-english",
+      "title": "Words and Expressions 2 (Workbook) – Solutions",
+      "order": 53,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-english-solutions-words-and-expressions-2-01",
+          "title": "A Letter to God",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/words-and-expressions-2/01-a-letter-to-god.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-english-solutions-words-and-expressions-2-02",
+          "title": "Nelson Mandela: Long Walk to Freedom",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/words-and-expressions-2/02-nelson-mandela-long-walk-to-freedom.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-english-solutions-words-and-expressions-2-03",
+          "title": "Two Stories about Flying",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/words-and-expressions-2/03-two-stories-about-flying.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-english-solutions-words-and-expressions-2-05",
+          "title": "Glimpses of India",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/words-and-expressions-2/05-glimpses-of-india.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-english-solutions-words-and-expressions-2-06",
+          "title": "Mijbil the Otter",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/words-and-expressions-2/06-mijbil-the-otter.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-english-solutions-words-and-expressions-2-07",
+          "title": "Madam Rides the Bus",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/words-and-expressions-2/07-madam-rides-the-bus.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-english-solutions-words-and-expressions-2-08",
+          "title": "The Sermon at Benaras",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/english/words-and-expressions-2/08-the-sermon-at-benaras.pdf"
+          },
+          "number": 8
+        }
+      ]
+    },
+    {
       "id": "g10-mathematics-solutions",
       "gradeId": "g10",
       "subjectId": "g10-mathematics",
