@@ -2769,3 +2769,9 @@ https://ncert.nic.in/vocational/pdf/lhrk104.pdf
 https://ncert.nic.in/vocational/pdf/lhrk105.pdf
 https://ncert.nic.in/vocational/pdf/lhrk1ps.pdf
 https://ncert.nic.in/textbook/pdf/iebe1a1.pdf
+https://ncert.nic.in/textbook/pdf/jemh1a1.pdf
+https://ncert.nic.in/textbook/pdf/jemh1a2.pdf
+https://ncert.nic.in/textbook/pdf/jemh1an.pdf
+https://ncert.nic.in/textbook/pdf/jhmh1a1.pdf
+https://ncert.nic.in/textbook/pdf/jhmh1a2.pdf
+https://ncert.nic.in/textbook/pdf/jhmh1an.pdf

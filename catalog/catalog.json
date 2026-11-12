@@ -13701,6 +13701,33 @@
           },
           "number": 14,
           "needsVerification": true
+        },
+        {
+          "id": "g10-mathematics-jemh1-a1",
+          "title": "Appendix 1 – Proofs in Mathematics",
+          "order": 16,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/jemh1a1.pdf"
+          }
+        },
+        {
+          "id": "g10-mathematics-jemh1-a2",
+          "title": "Appendix 2 – Mathematical Modelling",
+          "order": 17,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/jemh1a2.pdf"
+          }
+        },
+        {
+          "id": "g10-mathematics-jemh1-an",
+          "title": "Answers/Hints",
+          "order": 18,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/jemh1an.pdf"
+          }
         }
       ]
     },
@@ -13876,6 +13903,33 @@
           },
           "number": 14,
           "needsVerification": true
+        },
+        {
+          "id": "g10-mathematics-jhmh1-a1",
+          "title": "परिशिष्ट 1 – गणितीय उपपत्तियाँ",
+          "order": 16,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/jhmh1a1.pdf"
+          }
+        },
+        {
+          "id": "g10-mathematics-jhmh1-a2",
+          "title": "परिशिष्ट 2 – गणितीय निदर्शन",
+          "order": 17,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/jhmh1a2.pdf"
+          }
+        },
+        {
+          "id": "g10-mathematics-jhmh1-an",
+          "title": "उत्तर/संकेत",
+          "order": 18,
+          "source": {
+            "type": "remote",
+            "url": "https://ncert.nic.in/textbook/pdf/jhmh1an.pdf"
+          }
         }
       ]
     },
