@@ -3255,6 +3255,542 @@
           "number": 13
         }
       ]
+    },
+    {
+      "id": "g10-social-science-solutions-contemporary-india",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "Contemporary India (Geography) – NCERT Solutions",
+      "order": 52,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-contemporary-india-01",
+          "title": "Resources and Development",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india/01-resources-and-development.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-02",
+          "title": "Forest and Wildlife Resources",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india/02-forest-and-wildlife-resources.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-03",
+          "title": "Water Resources",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india/03-water-resources.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-04",
+          "title": "Agriculture",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india/04-agriculture.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-05",
+          "title": "Minerals and Energy Resources",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india/05-minerals-and-energy-resources.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-06",
+          "title": "Manufacturing Industries",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india/06-manufacturing-industries.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-07",
+          "title": "Lifelines of National Economy",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india/07-lifelines-of-national-economy.pdf"
+          },
+          "number": 7
+        }
+      ]
+    },
+    {
+      "id": "g10-social-science-solutions-contemporary-india-hindi-medium",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "समकालीन भारत (भूगोल) – NCERT समाधान",
+      "order": 52,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-contemporary-india-hindi-medium-01",
+          "title": "संसाधन एवं विकास",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india-hindi-medium/01-resources-and-development.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-hindi-medium-02",
+          "title": "वन एवं वन्य जीव संसाधन",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india-hindi-medium/02-forest-and-wildlife-resources.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-hindi-medium-03",
+          "title": "जल संसाधन",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india-hindi-medium/03-water-resources.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-hindi-medium-04",
+          "title": "कृषि",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india-hindi-medium/04-agriculture.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-hindi-medium-05",
+          "title": "खनिज तथा ऊर्जा संसाधन",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india-hindi-medium/05-minerals-and-energy-resources.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-hindi-medium-06",
+          "title": "विनिर्माण उद्योग",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india-hindi-medium/06-manufacturing-industries.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-social-science-solutions-contemporary-india-hindi-medium-07",
+          "title": "राष्ट्रीय अर्थव्यवस्था की जीवन रेखाएँ",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/contemporary-india-hindi-medium/07-lifelines-of-national-economy.pdf"
+          },
+          "number": 7
+        }
+      ]
+    },
+    {
+      "id": "g10-social-science-solutions-democratic-politics",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "Democratic Politics (Political Science) – NCERT Solutions",
+      "order": 53,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-democratic-politics-01",
+          "title": "Power-sharing",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics/01-power-sharing.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-02",
+          "title": "Federalism",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics/02-federalism.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-03",
+          "title": "Gender, Religion and Caste",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics/03-gender-religion-and-caste.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-04",
+          "title": "Political Parties",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics/04-political-parties.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-05",
+          "title": "Outcomes of Democracy",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics/05-outcomes-of-democracy.pdf"
+          },
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g10-social-science-solutions-democratic-politics-hindi-medium",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "लोकतांत्रिक राजनीति (राजनीति विज्ञान) – NCERT समाधान",
+      "order": 53,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-democratic-politics-hindi-medium-01",
+          "title": "सत्ता की साझेदारी",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics-hindi-medium/01-power-sharing.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-hindi-medium-02",
+          "title": "संघवाद",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics-hindi-medium/02-federalism.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-hindi-medium-03",
+          "title": "जाति, धर्म और लैंगिक मसले",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics-hindi-medium/03-gender-religion-and-caste.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-hindi-medium-04",
+          "title": "राजनीतिक दल",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics-hindi-medium/04-political-parties.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-democratic-politics-hindi-medium-05",
+          "title": "लोकतंत्र के परिणाम",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/democratic-politics-hindi-medium/05-outcomes-of-democracy.pdf"
+          },
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g10-social-science-solutions-economics",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "Understanding Economic Development (Economics) – NCERT Solutions",
+      "order": 54,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-economics-01",
+          "title": "Development",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics/01-development.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-economics-02",
+          "title": "Sectors of the Indian Economy",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics/02-sectors-of-the-indian-economy.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-economics-03",
+          "title": "Money and Credit",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics/03-money-and-credit.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-economics-04",
+          "title": "Globalisation and the Indian Economy",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics/04-globalisation-and-the-indian-economy.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-economics-05",
+          "title": "Consumer Rights",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics/05-consumer-rights.pdf"
+          },
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g10-social-science-solutions-economics-hindi-medium",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "आर्थिक विकास की समझ (अर्थशास्त्र) – NCERT समाधान",
+      "order": 54,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-economics-hindi-medium-01",
+          "title": "विकास",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics-hindi-medium/01-development.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-economics-hindi-medium-02",
+          "title": "भारतीय अर्थव्यवस्था के क्षेत्रक",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics-hindi-medium/02-sectors-of-the-indian-economy.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-economics-hindi-medium-03",
+          "title": "मुद्रा और साख",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics-hindi-medium/03-money-and-credit.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-economics-hindi-medium-04",
+          "title": "वैश्वीकरण और भारतीय अर्थव्यवस्था",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics-hindi-medium/04-globalisation-and-the-indian-economy.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-economics-hindi-medium-05",
+          "title": "उपभोक्ता अधिकार",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/economics-hindi-medium/05-consumer-rights.pdf"
+          },
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g10-social-science-solutions-history",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "India and the Contemporary World – II (History) – NCERT Solutions",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-history-01",
+          "title": "The Rise of Nationalism in Europe",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history/01-the-rise-of-nationalism-in-europe.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-history-02",
+          "title": "Nationalism in India",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history/02-nationalism-in-india.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-history-03",
+          "title": "The Making of a Global World",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history/03-the-making-of-a-global-world.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-history-04",
+          "title": "The Age of Industrialisation",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history/04-the-age-of-industrialisation.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-history-05",
+          "title": "Print Culture and the Modern World",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history/05-print-culture-and-the-modern-world.pdf"
+          },
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g10-social-science-solutions-history-hindi-medium",
+      "gradeId": "g10",
+      "subjectId": "g10-social-science",
+      "title": "भारत और समकालीन विश्व – II (इतिहास) – NCERT समाधान",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "hi",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-social-science-solutions-history-hindi-medium-01",
+          "title": "यूरोप में राष्ट्रवाद का उदय",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history-hindi-medium/01-the-rise-of-nationalism-in-europe.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-social-science-solutions-history-hindi-medium-02",
+          "title": "भारत में राष्ट्रवाद",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history-hindi-medium/02-nationalism-in-india.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-social-science-solutions-history-hindi-medium-03",
+          "title": "भूमंडलीकृत विश्व का बनना",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history-hindi-medium/03-the-making-of-a-global-world.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-social-science-solutions-history-hindi-medium-04",
+          "title": "औद्योगीकरण का युग",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history-hindi-medium/04-the-age-of-industrialisation.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-social-science-solutions-history-hindi-medium-05",
+          "title": "मुद्रण संस्कृति और आधुनिक दुनिया",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history-hindi-medium/05-print-culture-and-the-modern-world.pdf"
+          },
+          "number": 5
+        }
+      ]
     }
   ],
   "videos": []
