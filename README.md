@@ -152,6 +152,42 @@ to the developer, or add entries in the same format: `{"year":2027,"grade":10,"e
 (`exam` is `main`, `compartment` or `second`). The app picks up changes without an update.
 
 
+## Practical lists (`practicals/`)
+
+Ready practicals for the app's Computer Lab / Practical File Maker, one file per class and subject:
+
+```
+practicals/class-12/computer-science/practicals.json       (CS 083)
+practicals/class-12/informatics-practices/practicals.json  (IP 065)
+practicals/<…>/img/<id>-N.png                              (charts drawn by the programs)
+practicals/<…>/src/                                        (the programs themselves)
+```
+
+**Every output is real.** The JSON is made by `scripts/practicals/build.py`, which runs each program
+(Python, and SQL on a real MySQL/MariaDB server) and stores what it actually printed. Never type an
+output into the JSON by hand. To change a practical, edit its file in `src/` and rebuild:
+
+```
+python3 scripts/practicals/build.py practicals/class-12/computer-science
+```
+
+(Needs Python 3 with pandas 2.x, matplotlib, sqlalchemy, pymysql and mysql-connector-python, and a
+local MySQL/MariaDB whose root password is `tiger`, the password shown in the programs.)
+
+Source files (`src/`, run in name order):
+
+- `NN-name.py`: a Python program. First lines `#: key: value`: `id`, `group`, `title`, `title_hi`,
+  `syllabus: yes` (from CBSE's suggested list), `inputs` (keyboard input, separated by ` | `; shown on
+  screen after the prompt, and every value must be used), `files` (sample files from `src/data/`),
+  `setup` (an .sql file run first, not shown), `reset` (databases dropped first), `note`, `type`.
+- `NN-name.sql`: an SQL set. First lines `--: key: value` as above; a `-- text` line before a statement
+  is that query's question. The output is the mysql client's own.
+- `meta.json`: subject, session, CBSE's report-file rule and practical marks, groups.
+
+In `practicals.json` each practical has `id`, `group`, `type` (python, sql, python-sql), `title`,
+`title_hi`, `syllabus`, `code`, `output`; Python ones also `inputs`, `inputFiles`, `outputFiles`,
+`images`; SQL ones `steps` (question, sql, result).
+
 ## NCERT catalogue (`catalog/catalog.json`)
 
 The app's list of NCERT classes, subjects, books, chapter names and links (app version 21.9 and later

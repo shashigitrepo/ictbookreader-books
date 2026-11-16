@@ -1,0 +1,971 @@
+{
+ "version": 1,
+ "class": 12,
+ "subject": "computer-science",
+ "subjectName": "Computer Science",
+ "subjectName_hi": "कंप्यूटर विज्ञान",
+ "subjectCode": "083",
+ "session": "2026-27",
+ "source": "CBSE Curriculum 2026-27, Computer Science (083), Class XII: practical list and marks (cbseacademic.nic.in)",
+ "reportFileRule": "Minimum 15 Python programs, minimum 5 sets of SQL queries (one / two tables), minimum 4 Python–SQL connectivity programs.",
+ "reportFileRule_hi": "कम से कम 15 पायथन प्रोग्राम, एक / दो तालिकाओं पर SQL प्रश्नों के कम से कम 5 सेट, पायथन–SQL कनेक्टिविटी के कम से कम 4 प्रोग्राम।",
+ "marks": [
+  {
+   "part": "Lab Test: Python program (60% logic + 20% documentation + 20% code quality)",
+   "part_hi": "लैब टेस्ट: पायथन प्रोग्राम (60% लॉजिक + 20% डॉक्यूमेंटेशन + 20% कोड गुणवत्ता)",
+   "marks": 8
+  },
+  {
+   "part": "Lab Test: SQL queries (4 queries based on one or two tables)",
+   "part_hi": "लैब टेस्ट: SQL क्वेरी (एक या दो तालिकाओं पर 4 क्वेरी)",
+   "marks": 4
+  },
+  {
+   "part": "Report file",
+   "part_hi": "रिपोर्ट फ़ाइल",
+   "marks": 7
+  },
+  {
+   "part": "Project (concepts of Classes 11 and 12)",
+   "part_hi": "प्रोजेक्ट (कक्षा 11 और 12 की अवधारणाएँ)",
+   "marks": 8
+  },
+  {
+   "part": "Viva voce",
+   "part_hi": "मौखिक परीक्षा (वाइवा)",
+   "marks": 3
+  }
+ ],
+ "groups": [
+  {
+   "id": "functions",
+   "title": "Functions",
+   "title_hi": "फ़ंक्शन"
+  },
+  {
+   "id": "exceptions",
+   "title": "Exception Handling",
+   "title_hi": "अपवाद प्रबंधन (Exception Handling)"
+  },
+  {
+   "id": "text-files",
+   "title": "Text Files",
+   "title_hi": "टेक्स्ट फ़ाइलें"
+  },
+  {
+   "id": "binary-files",
+   "title": "Binary Files",
+   "title_hi": "बाइनरी फ़ाइलें"
+  },
+  {
+   "id": "csv-files",
+   "title": "CSV Files",
+   "title_hi": "CSV फ़ाइलें"
+  },
+  {
+   "id": "stack",
+   "title": "Stack",
+   "title_hi": "स्टैक"
+  },
+  {
+   "id": "sql",
+   "title": "SQL Queries",
+   "title_hi": "SQL क्वेरी"
+  },
+  {
+   "id": "python-sql",
+   "title": "Python–SQL Connectivity",
+   "title_hi": "पायथन–SQL कनेक्टिविटी"
+  }
+ ],
+ "practicals": [
+  {
+   "id": "cs12-01",
+   "group": "functions",
+   "type": "python",
+   "title": "Write a menu-driven program using user-defined functions to find the factorial of a number and to display the first n terms of the Fibonacci series.",
+   "title_hi": "उपयोगकर्ता-परिभाषित फ़ंक्शन का उपयोग करके किसी संख्या का फ़ैक्टोरियल ज्ञात करने और फ़िबोनाची श्रेणी के पहले n पद दिखाने का मेनू-आधारित प्रोग्राम लिखिए।",
+   "syllabus": false,
+   "code": "# Program 1: Factorial and Fibonacci series using functions\n\ndef factorial(n):\n    \"\"\"Returns n! (n factorial).\"\"\"\n    result = 1\n    for i in range(1, n + 1):\n        result = result * i\n    return result\n\n\ndef fibonacci(n):\n    \"\"\"Returns a list with the first n terms of the Fibonacci series.\"\"\"\n    terms = []\n    a, b = 0, 1\n    for i in range(n):\n        terms.append(a)\n        a, b = b, a + b\n    return terms\n\n\nwhile True:\n    print(\"\\n1. Factorial of a number\")\n    print(\"2. Fibonacci series\")\n    print(\"3. Exit\")\n    choice = int(input(\"Enter your choice: \"))\n    if choice == 1:\n        num = int(input(\"Enter a number: \"))\n        print(\"Factorial of\", num, \"is\", factorial(num))\n    elif choice == 2:\n        n = int(input(\"How many terms? \"))\n        print(\"Fibonacci series:\", *fibonacci(n))\n    elif choice == 3:\n        print(\"Thank you!\")\n        break\n    else:\n        print(\"Invalid choice\")\n",
+   "inputs": [
+    "1",
+    "6",
+    "2",
+    "10",
+    "3"
+   ],
+   "output": "\n1. Factorial of a number\n2. Fibonacci series\n3. Exit\nEnter your choice: 1\nEnter a number: 6\nFactorial of 6 is 720\n\n1. Factorial of a number\n2. Fibonacci series\n3. Exit\nEnter your choice: 2\nHow many terms? 10\nFibonacci series: 0 1 1 2 3 5 8 13 21 34\n\n1. Factorial of a number\n2. Fibonacci series\n3. Exit\nEnter your choice: 3\nThank you!\n"
+  },
+  {
+   "id": "cs12-02",
+   "group": "functions",
+   "type": "python",
+   "title": "Write a function simple_interest(p, r=8, t=2) that uses default parameters, and call it with positional, keyword and default arguments.",
+   "title_hi": "डिफ़ॉल्ट पैरामीटर वाला फ़ंक्शन simple_interest(p, r=8, t=2) लिखिए और इसे पोज़ीशनल, कीवर्ड तथा डिफ़ॉल्ट आर्ग्युमेंट के साथ कॉल कीजिए।",
+   "syllabus": false,
+   "code": "# Program 2: Default, positional and keyword arguments\n\ndef simple_interest(p, r=8, t=2):\n    \"\"\"Simple interest = p * r * t / 100 (rate r % per year, time t years).\"\"\"\n    return p * r * t / 100\n\n\nprint(\"Only principal (r = 8, t = 2 by default):\", simple_interest(10000))\nprint(\"Principal and rate (t = 2 by default):  \", simple_interest(10000, 10))\nprint(\"All three positional arguments:          \", simple_interest(10000, 10, 3))\nprint(\"Keyword arguments in any order:          \", simple_interest(t=5, p=20000, r=6))\n",
+   "inputs": [],
+   "output": "Only principal (r = 8, t = 2 by default): 1600.0\nPrincipal and rate (t = 2 by default):   2000.0\nAll three positional arguments:           3000.0\nKeyword arguments in any order:           6000.0\n"
+  },
+  {
+   "id": "cs12-03",
+   "group": "functions",
+   "type": "python",
+   "title": "Write a function stats(numbers) that returns the largest, smallest and average of a list of numbers (a function returning more than one value).",
+   "title_hi": "एक फ़ंक्शन stats(numbers) लिखिए जो सूची की सबसे बड़ी, सबसे छोटी संख्या और औसत लौटाए (एक से अधिक मान लौटाने वाला फ़ंक्शन)।",
+   "syllabus": false,
+   "code": "# Program 3: Function returning multiple values\n\ndef stats(numbers):\n    largest = max(numbers)\n    smallest = min(numbers)\n    average = sum(numbers) / len(numbers)\n    return largest, smallest, average      # returned together as a tuple\n\n\nvalues = [int(x) for x in input(\"Enter numbers separated by spaces: \").split()]\nbig, small, avg = stats(values)\nprint(\"Largest :\", big)\nprint(\"Smallest:\", small)\nprint(\"Average :\", round(avg, 2))\nprint(\"Returned as a tuple:\", stats(values))\n",
+   "inputs": [
+    "45 78 12 90 33 61"
+   ],
+   "output": "Enter numbers separated by spaces: 45 78 12 90 33 61\nLargest : 90\nSmallest: 12\nAverage : 53.17\nReturned as a tuple: (90, 12, 53.166666666666664)\n"
+  },
+  {
+   "id": "cs12-04",
+   "group": "functions",
+   "type": "python",
+   "title": "Write a program to show the difference between global and local scope of variables, and the use of the global keyword.",
+   "title_hi": "चरों के ग्लोबल और लोकल स्कोप का अंतर तथा global कीवर्ड का उपयोग दिखाने का प्रोग्राम लिखिए।",
+   "syllabus": false,
+   "code": "# Program 4: Scope of variables (global and local)\n\ncount = 10                  # global variable\n\n\ndef show_local():\n    count = 5               # a new local variable with the same name\n    print(\"Inside show_local(), local count =\", count)\n\n\ndef change_global():\n    global count            # refer to the global variable\n    count = count + 1\n    print(\"Inside change_global(), global count =\", count)\n\n\nprint(\"Before calls, count =\", count)\nshow_local()\nprint(\"After show_local(), count =\", count)\nchange_global()\nprint(\"After change_global(), count =\", count)\n",
+   "inputs": [],
+   "output": "Before calls, count = 10\nInside show_local(), local count = 5\nAfter show_local(), count = 10\nInside change_global(), global count = 11\nAfter change_global(), count = 11\n"
+  },
+  {
+   "id": "cs12-05",
+   "group": "functions",
+   "type": "python",
+   "title": "Write functions is_palindrome(n) and is_armstrong(n), and use them to check numbers entered by the user.",
+   "title_hi": "फ़ंक्शन is_palindrome(n) और is_armstrong(n) लिखिए तथा उपयोगकर्ता द्वारा दी गई संख्याओं की जाँच कीजिए।",
+   "syllabus": false,
+   "code": "# Program 5: Palindrome and Armstrong numbers\n\ndef is_palindrome(n):\n    return str(n) == str(n)[::-1]\n\n\ndef is_armstrong(n):\n    digits = str(n)\n    power = len(digits)\n    total = 0\n    for d in digits:\n        total += int(d) ** power\n    return total == n\n\n\nfor i in range(4):\n    num = int(input(\"Enter a number: \"))\n    print(num, \"is a palindrome\" if is_palindrome(num) else \"is not a palindrome\", end=\"; \")\n    print(\"an Armstrong number\" if is_armstrong(num) else \"not an Armstrong number\")\n",
+   "inputs": [
+    "121",
+    "153",
+    "370",
+    "123"
+   ],
+   "output": "Enter a number: 121\n121 is a palindrome; not an Armstrong number\nEnter a number: 153\n153 is not a palindrome; an Armstrong number\nEnter a number: 370\n370 is not a palindrome; an Armstrong number\nEnter a number: 123\n123 is not a palindrome; not an Armstrong number\n"
+  },
+  {
+   "id": "cs12-06",
+   "group": "functions",
+   "type": "python",
+   "title": "Write a random number generator that generates random numbers between 1 and 6 (simulates a dice).",
+   "title_hi": "एक रैंडम संख्या जनरेटर लिखिए जो 1 और 6 के बीच रैंडम संख्याएँ बनाए (पासे का अनुकरण)।",
+   "syllabus": true,
+   "code": "# Program 6: Dice simulator using the random module\nimport random\n\n\ndef roll_dice():\n    return random.randint(1, 6)\n\n\nrolls = 0\nwhile True:\n    answer = input(\"Roll the dice? (y/n): \")\n    if answer.lower() != \"y\":\n        break\n    rolls += 1\n    print(\"You got:\", roll_dice())\nprint(\"You rolled the dice\", rolls, \"times. Goodbye!\")\n",
+   "inputs": [
+    "y",
+    "y",
+    "y",
+    "n"
+   ],
+   "output": "Roll the dice? (y/n): y\nYou got: 3\nRoll the dice? (y/n): y\nYou got: 4\nRoll the dice? (y/n): y\nYou got: 4\nRoll the dice? (y/n): n\nYou rolled the dice 3 times. Goodbye!\n"
+  },
+  {
+   "id": "cs12-07",
+   "group": "exceptions",
+   "type": "python",
+   "title": "Write a program to divide two numbers entered by the user, handling ValueError and ZeroDivisionError with try-except-finally.",
+   "title_hi": "उपयोगकर्ता द्वारा दी गई दो संख्याओं को भाग देने का प्रोग्राम लिखिए जिसमें try-except-finally से ValueError और ZeroDivisionError संभाले जाएँ।",
+   "syllabus": false,
+   "code": "# Program 7: Exception handling with try-except-finally\n\nfor attempt in range(1, 5):\n    print(\"\\nAttempt\", attempt)\n    try:\n        a = int(input(\"Enter the first number : \"))\n        b = int(input(\"Enter the second number: \"))\n        print(\"Result =\", a / b)\n    except ZeroDivisionError:\n        print(\"Error: a number cannot be divided by zero.\")\n    except ValueError:\n        print(\"Error: please enter whole numbers only.\")\n    finally:\n        print(\"This line (finally block) always runs.\")\n",
+   "inputs": [
+    "25",
+    "4",
+    "10",
+    "0",
+    "ten",
+    "9",
+    "3"
+   ],
+   "output": "\nAttempt 1\nEnter the first number : 25\nEnter the second number: 4\nResult = 6.25\nThis line (finally block) always runs.\n\nAttempt 2\nEnter the first number : 10\nEnter the second number: 0\nError: a number cannot be divided by zero.\nThis line (finally block) always runs.\n\nAttempt 3\nEnter the first number : ten\nError: please enter whole numbers only.\nThis line (finally block) always runs.\n\nAttempt 4\nEnter the first number : 9\nEnter the second number: 3\nResult = 3.0\nThis line (finally block) always runs.\n"
+  },
+  {
+   "id": "cs12-08",
+   "group": "exceptions",
+   "type": "python",
+   "title": "Write a program that reads an index and shows the element of a list, handling IndexError and ValueError, with an else block that runs when no error occurs.",
+   "title_hi": "सूची के किसी इंडेक्स का तत्व दिखाने का प्रोग्राम लिखिए जिसमें IndexError व ValueError संभाले जाएँ और त्रुटि न होने पर else ब्लॉक चले।",
+   "syllabus": false,
+   "code": "# Program 8: try-except-else with IndexError and ValueError\n\nsubjects = [\"English\", \"Physics\", \"Chemistry\", \"Maths\", \"Computer Science\"]\n\nfor i in range(3):\n    try:\n        pos = int(input(\"Enter an index (0 to 4): \"))\n        name = subjects[pos]\n    except IndexError:\n        print(\"IndexError: there is no subject at that index.\")\n    except ValueError:\n        print(\"ValueError: the index must be a number.\")\n    else:\n        print(\"Subject at index\", pos, \"is\", name)\n",
+   "inputs": [
+    "2",
+    "7",
+    "two"
+   ],
+   "output": "Enter an index (0 to 4): 2\nSubject at index 2 is Chemistry\nEnter an index (0 to 4): 7\nIndexError: there is no subject at that index.\nEnter an index (0 to 4): two\nValueError: the index must be a number.\n"
+  },
+  {
+   "id": "cs12-09",
+   "group": "text-files",
+   "type": "python",
+   "title": "Read a text file line by line and display each word separated by a #.",
+   "title_hi": "एक टेक्स्ट फ़ाइल को पंक्ति-दर-पंक्ति पढ़कर प्रत्येक शब्द को # से अलग करके दिखाइए।",
+   "syllabus": true,
+   "code": "# Program 9: Display words of a text file separated by #\n\nwith open(\"story.txt\", \"r\") as f:\n    for line in f:\n        words = line.split()\n        print(\"#\".join(words))\n",
+   "inputs": [],
+   "output": "The#sun#rose#over#the#quiet#village.\nChildren#ran#to#school#with#their#bags.\nA#farmer#was#working#in#his#green#field.\nThe#teacher#smiled#and#opened#the#book.\nEvery#day#is#a#new#chance#to#learn.\n",
+   "inputFiles": {
+    "story.txt": "The sun rose over the quiet village.\nChildren ran to school with their bags.\nA farmer was working in his green field.\nThe teacher smiled and opened the book.\nEvery day is a new chance to learn.\n"
+   }
+  },
+  {
+   "id": "cs12-10",
+   "group": "text-files",
+   "type": "python",
+   "title": "Read a text file and display the number of vowels, consonants, uppercase and lowercase characters in the file.",
+   "title_hi": "एक टेक्स्ट फ़ाइल पढ़कर उसमें स्वरों, व्यंजनों, बड़े (uppercase) और छोटे (lowercase) अक्षरों की संख्या दिखाइए।",
+   "syllabus": true,
+   "code": "# Program 10: Count vowels, consonants, uppercase and lowercase letters\n\nvowels = consonants = upper = lower = 0\nwith open(\"story.txt\", \"r\") as f:\n    text = f.read()\n\nfor ch in text:\n    if ch.isalpha():\n        if ch.lower() in \"aeiou\":\n            vowels += 1\n        else:\n            consonants += 1\n        if ch.isupper():\n            upper += 1\n        else:\n            lower += 1\n\nprint(\"Vowels     :\", vowels)\nprint(\"Consonants :\", consonants)\nprint(\"Uppercase  :\", upper)\nprint(\"Lowercase  :\", lower)\n",
+   "inputs": [],
+   "output": "Vowels     : 59\nConsonants : 93\nUppercase  : 5\nLowercase  : 147\n",
+   "inputFiles": {
+    "story.txt": "The sun rose over the quiet village.\nChildren ran to school with their bags.\nA farmer was working in his green field.\nThe teacher smiled and opened the book.\nEvery day is a new chance to learn.\n"
+   }
+  },
+  {
+   "id": "cs12-11",
+   "group": "text-files",
+   "type": "python",
+   "title": "Remove all the lines that contain the character 'a' in a file and write them to another file.",
+   "title_hi": "फ़ाइल की वे सभी पंक्तियाँ जिनमें 'a' अक्षर है, हटाकर दूसरी फ़ाइल में लिखिए।",
+   "syllabus": true,
+   "code": "# Program 11: Move lines containing 'a' to another file\n\nwith open(\"school.txt\", \"r\") as f:\n    lines = f.readlines()\n\nkeep = []\nmoved = []\nfor line in lines:\n    if \"a\" in line:\n        moved.append(line)\n    else:\n        keep.append(line)\n\nwith open(\"school.txt\", \"w\") as f:          # lines without 'a' stay\n    f.writelines(keep)\nwith open(\"lines_with_a.txt\", \"w\") as f:   # lines with 'a' go here\n    f.writelines(moved)\n\nprint(\"Lines left in school.txt:\")\nwith open(\"school.txt\") as f:\n    print(f.read(), end=\"\")\nprint(\"\\nLines written to lines_with_a.txt:\")\nwith open(\"lines_with_a.txt\") as f:\n    print(f.read(), end=\"\")\n",
+   "inputs": [],
+   "output": "Lines left in school.txt:\nI love my school.\nBooks open new worlds.\nMy friend is kind to everyone.\n\nLines written to lines_with_a.txt:\nWe play cricket after lunch.\nOur team wins every match.\n",
+   "inputFiles": {
+    "school.txt": "I love my school.\nWe play cricket after lunch.\nBooks open new worlds.\nOur team wins every match.\nMy friend is kind to everyone.\n"
+   },
+   "outputFiles": {
+    "lines_with_a.txt": "We play cricket after lunch.\nOur team wins every match.\n"
+   }
+  },
+  {
+   "id": "cs12-12",
+   "group": "text-files",
+   "type": "python",
+   "title": "Write a function that counts the lines starting with 'T' and the number of times the word \"the\" (any case) occurs in a text file.",
+   "title_hi": "एक फ़ंक्शन लिखिए जो टेक्स्ट फ़ाइल में 'T' से शुरू होने वाली पंक्तियाँ और \"the\" शब्द (किसी भी केस में) कितनी बार आया, गिने।",
+   "syllabus": false,
+   "code": "# Program 12: Lines starting with 'T' and count of the word \"the\"\n\ndef count_in_file(filename):\n    t_lines = 0\n    the_count = 0\n    with open(filename, \"r\") as f:\n        for line in f:\n            if line.startswith(\"T\"):\n                t_lines += 1\n            for word in line.split():\n                if word.strip(\".,\").lower() == \"the\":\n                    the_count += 1\n    return t_lines, the_count\n\n\nlines, words = count_in_file(\"story.txt\")\nprint(\"Lines starting with 'T':\", lines)\nprint('The word \"the\" occurs', words, \"times\")\n",
+   "inputs": [],
+   "output": "Lines starting with 'T': 2\nThe word \"the\" occurs 4 times\n",
+   "inputFiles": {
+    "story.txt": "The sun rose over the quiet village.\nChildren ran to school with their bags.\nA farmer was working in his green field.\nThe teacher smiled and opened the book.\nEvery day is a new chance to learn.\n"
+   }
+  },
+  {
+   "id": "cs12-13",
+   "group": "text-files",
+   "type": "python",
+   "title": "Write lines to a text file using write() and writelines(), append a line, and use seek() and tell() while reading it.",
+   "title_hi": "write() और writelines() से टेक्स्ट फ़ाइल में पंक्तियाँ लिखिए, एक पंक्ति जोड़िए (append) और पढ़ते समय seek() व tell() का उपयोग कीजिए।",
+   "syllabus": false,
+   "code": "# Program 13: write(), writelines(), append mode, seek() and tell()\n\nwith open(\"notes.txt\", \"w\") as f:\n    f.write(\"Python is easy to learn.\\n\")\n    f.writelines([\"Files store data permanently.\\n\", \"Text files store characters.\\n\"])\n\nwith open(\"notes.txt\", \"a\") as f:\n    f.write(\"This line was appended.\\n\")\n\nwith open(\"notes.txt\", \"r\") as f:\n    print(\"Position at start   :\", f.tell())\n    first = f.readline()\n    print(\"First line          :\", first, end=\"\")\n    print(\"Position after line :\", f.tell())\n    f.seek(10)                      # jump to the 11th character\n    print(\"Read 14 characters from position 10:\", f.read(14))\n    f.seek(0)                       # back to the beginning\n    print(\"All lines with readlines():\")\n    for line in f.readlines():\n        print(\"  \", line, end=\"\")\n",
+   "inputs": [],
+   "output": "Position at start   : 0\nFirst line          : Python is easy to learn.\nPosition after line : 25\nRead 14 characters from position 10: easy to learn.\nAll lines with readlines():\n   Python is easy to learn.\n   Files store data permanently.\n   Text files store characters.\n   This line was appended.\n",
+   "outputFiles": {
+    "notes.txt": "Python is easy to learn.\nFiles store data permanently.\nText files store characters.\nThis line was appended.\n"
+   }
+  },
+  {
+   "id": "cs12-14",
+   "group": "binary-files",
+   "type": "python",
+   "title": "Create a binary file with name and roll number. Search for a given roll number and display the name; if not found, display an appropriate message.",
+   "title_hi": "नाम और रोल नंबर वाली एक बाइनरी फ़ाइल बनाइए। दिए गए रोल नंबर को खोजकर नाम दिखाइए; न मिलने पर उचित संदेश दिखाइए।",
+   "syllabus": true,
+   "code": "# Program 14: Binary file - search a roll number\nimport pickle\n\nn = int(input(\"How many students? \"))\nwith open(\"students.dat\", \"wb\") as f:\n    for i in range(n):\n        roll = int(input(\"Roll number: \"))\n        name = input(\"Name       : \")\n        pickle.dump([roll, name], f)\nprint(\"Records saved in students.dat\")\n\n\ndef search(roll_no):\n    with open(\"students.dat\", \"rb\") as f:\n        try:\n            while True:\n                record = pickle.load(f)\n                if record[0] == roll_no:\n                    return record[1]\n        except EOFError:          # end of file reached\n            return None\n\n\nfor i in range(2):\n    r = int(input(\"\\nEnter roll number to search: \"))\n    name = search(r)\n    if name:\n        print(\"Name of roll number\", r, \"is\", name)\n    else:\n        print(\"Roll number\", r, \"not found\")\n",
+   "inputs": [
+    "3",
+    "101",
+    "Aarav Sharma",
+    "102",
+    "Meera Singh",
+    "103",
+    "Kabir Khan",
+    "102",
+    "110"
+   ],
+   "output": "How many students? 3\nRoll number: 101\nName       : Aarav Sharma\nRoll number: 102\nName       : Meera Singh\nRoll number: 103\nName       : Kabir Khan\nRecords saved in students.dat\n\nEnter roll number to search: 102\nName of roll number 102 is Meera Singh\n\nEnter roll number to search: 110\nRoll number 110 not found\n"
+  },
+  {
+   "id": "cs12-15",
+   "group": "binary-files",
+   "type": "python",
+   "title": "Create a binary file with roll number, name and marks. Input a roll number and update the marks.",
+   "title_hi": "रोल नंबर, नाम और अंकों वाली बाइनरी फ़ाइल बनाइए। रोल नंबर लेकर उसके अंक अपडेट कीजिए।",
+   "syllabus": true,
+   "code": "# Program 15: Binary file - update marks\nimport pickle\n\nrecords = [[1, \"Ananya\", 78], [2, \"Rohan\", 65], [3, \"Ishita\", 91]]\nwith open(\"result.dat\", \"wb\") as f:\n    pickle.dump(records, f)          # the whole list is stored as one object\n\n\ndef show():\n    with open(\"result.dat\", \"rb\") as f:\n        for roll, name, marks in pickle.load(f):\n            print(f\"{roll:<5}{name:<10}{marks}\")\n\n\nprint(\"Before update:\")\nshow()\n\nroll = int(input(\"\\nEnter roll number to update: \"))\nwith open(\"result.dat\", \"rb\") as f:\n    data = pickle.load(f)\n\nfound = False\nfor rec in data:\n    if rec[0] == roll:\n        rec[2] = int(input(\"Enter new marks: \"))\n        found = True\n\nif found:\n    with open(\"result.dat\", \"wb\") as f:\n        pickle.dump(data, f)\n    print(\"Marks updated.\\n\\nAfter update:\")\n    show()\nelse:\n    print(\"Roll number not found\")\n",
+   "inputs": [
+    "2",
+    "88"
+   ],
+   "output": "Before update:\n1    Ananya    78\n2    Rohan     65\n3    Ishita    91\n\nEnter roll number to update: 2\nEnter new marks: 88\nMarks updated.\n\nAfter update:\n1    Ananya    78\n2    Rohan     88\n3    Ishita    91\n"
+  },
+  {
+   "id": "cs12-16",
+   "group": "binary-files",
+   "type": "python",
+   "title": "Append employee records (code, name, salary) to a binary file and display the employees whose salary is more than 50000.",
+   "title_hi": "बाइनरी फ़ाइल में कर्मचारी रिकॉर्ड (कोड, नाम, वेतन) जोड़िए और 50000 से अधिक वेतन वाले कर्मचारी दिखाइए।",
+   "syllabus": false,
+   "code": "# Program 16: Append to a binary file and filter records\nimport pickle\n\nwhile True:\n    code = input(\"Employee code: \")\n    name = input(\"Name         : \")\n    salary = int(input(\"Salary       : \"))\n    with open(\"emp.dat\", \"ab\") as f:          # ab = append in binary mode\n        pickle.dump({\"code\": code, \"name\": name, \"salary\": salary}, f)\n    if input(\"Add another? (y/n): \").lower() != \"y\":\n        break\n\nprint(\"\\nEmployees earning more than 50000:\")\nwith open(\"emp.dat\", \"rb\") as f:\n    try:\n        while True:\n            emp = pickle.load(f)\n            if emp[\"salary\"] > 50000:\n                print(emp[\"code\"], emp[\"name\"], emp[\"salary\"])\n    except EOFError:\n        pass\n",
+   "inputs": [
+    "E01",
+    "Neha",
+    "48000",
+    "y",
+    "E02",
+    "Arjun",
+    "62000",
+    "y",
+    "E03",
+    "Farah",
+    "55000",
+    "n"
+   ],
+   "output": "Employee code: E01\nName         : Neha\nSalary       : 48000\nAdd another? (y/n): y\nEmployee code: E02\nName         : Arjun\nSalary       : 62000\nAdd another? (y/n): y\nEmployee code: E03\nName         : Farah\nSalary       : 55000\nAdd another? (y/n): n\n\nEmployees earning more than 50000:\nE02 Arjun 62000\nE03 Farah 55000\n"
+  },
+  {
+   "id": "cs12-17",
+   "group": "csv-files",
+   "type": "python",
+   "title": "Create a CSV file by entering user-id and password, read it and search the password for a given user-id.",
+   "title_hi": "user-id और password दर्ज करके एक CSV फ़ाइल बनाइए, उसे पढ़कर दिए गए user-id का password खोजिए।",
+   "syllabus": true,
+   "code": "# Program 17: CSV file - search password for a user-id\nimport csv\n\nn = int(input(\"How many users? \"))\nwith open(\"users.csv\", \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"userid\", \"password\"])\n    for i in range(n):\n        uid = input(\"User-id : \")\n        pwd = input(\"Password: \")\n        writer.writerow([uid, pwd])\n\nfor i in range(2):\n    search = input(\"\\nEnter user-id to search: \")\n    with open(\"users.csv\", \"r\", newline=\"\") as f:\n        reader = csv.reader(f)\n        next(reader)                         # skip the heading row\n        for row in reader:\n            if row[0] == search:\n                print(\"Password is\", row[1])\n                break\n        else:\n            print(\"User-id not found\")\n",
+   "inputs": [
+    "3",
+    "riya01",
+    "sun@123",
+    "dev_k",
+    "Moon#45",
+    "sam99",
+    "star2024",
+    "dev_k",
+    "alex"
+   ],
+   "output": "How many users? 3\nUser-id : riya01\nPassword: sun@123\nUser-id : dev_k\nPassword: Moon#45\nUser-id : sam99\nPassword: star2024\n\nEnter user-id to search: dev_k\nPassword is Moon#45\n\nEnter user-id to search: alex\nUser-id not found\n",
+   "outputFiles": {
+    "users.csv": "userid,password\nriya01,sun@123\ndev_k,Moon#45\nsam99,star2024\n"
+   }
+  },
+  {
+   "id": "cs12-18",
+   "group": "csv-files",
+   "type": "python",
+   "title": "Write the records of books (book id, title, price) to a CSV file using writerows(), then read the file and display the books costing more than 300.",
+   "title_hi": "writerows() से पुस्तकों के रिकॉर्ड (book id, title, price) CSV फ़ाइल में लिखिए, फिर फ़ाइल पढ़कर 300 से महँगी पुस्तकें दिखाइए।",
+   "syllabus": false,
+   "code": "# Program 18: CSV file - writerows() and reader()\nimport csv\n\nbooks = [\n    [\"B101\", \"Python Basics\", 350],\n    [\"B102\", \"Data Structures\", 280],\n    [\"B103\", \"Computer Networks\", 420],\n    [\"B104\", \"SQL in Practice\", 300],\n]\n\nwith open(\"books.csv\", \"w\", newline=\"\") as f:\n    w = csv.writer(f)\n    w.writerow([\"bookid\", \"title\", \"price\"])\n    w.writerows(books)\n\nprint(\"Books costing more than 300:\")\nwith open(\"books.csv\", \"r\", newline=\"\") as f:\n    r = csv.reader(f)\n    header = next(r)\n    count = 0\n    for row in r:\n        if int(row[2]) > 300:\n            print(row[0], row[1], row[2], sep=\" | \")\n            count += 1\nprint(\"Total:\", count)\n",
+   "inputs": [],
+   "output": "Books costing more than 300:\nB101 | Python Basics | 350\nB103 | Computer Networks | 420\nTotal: 2\n",
+   "outputFiles": {
+    "books.csv": "bookid,title,price\nB101,Python Basics,350\nB102,Data Structures,280\nB103,Computer Networks,420\nB104,SQL in Practice,300\n"
+   }
+  },
+  {
+   "id": "cs12-19",
+   "group": "stack",
+   "type": "python",
+   "title": "Write a Python program to implement a stack using a list (menu-driven: push, pop, peek, display).",
+   "title_hi": "सूची (list) का उपयोग करके स्टैक लागू करने का पायथन प्रोग्राम लिखिए (मेनू-आधारित: push, pop, peek, display)।",
+   "syllabus": true,
+   "code": "# Program 19: Stack using a list\n\nstack = []\n\n\ndef push(item):\n    stack.append(item)\n\n\ndef pop():\n    if stack == []:\n        return \"Underflow\"           # nothing to remove\n    return stack.pop()\n\n\ndef peek():\n    if stack == []:\n        return \"Underflow\"\n    return stack[-1]\n\n\ndef display():\n    if stack == []:\n        print(\"Stack is empty\")\n    else:\n        print(\"Stack (top first):\", *stack[::-1])\n\n\nwhile True:\n    print(\"\\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\")\n    ch = int(input(\"Enter choice: \"))\n    if ch == 1:\n        push(int(input(\"Enter element: \")))\n    elif ch == 2:\n        print(\"Popped:\", pop())\n    elif ch == 3:\n        print(\"Top element:\", peek())\n    elif ch == 4:\n        display()\n    elif ch == 5:\n        break\n    else:\n        print(\"Invalid choice\")\n",
+   "inputs": [
+    "1",
+    "10",
+    "1",
+    "20",
+    "1",
+    "30",
+    "4",
+    "3",
+    "2",
+    "4",
+    "2",
+    "2",
+    "2",
+    "5"
+   ],
+   "output": "\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 1\nEnter element: 10\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 1\nEnter element: 20\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 1\nEnter element: 30\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 4\nStack (top first): 30 20 10\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 3\nTop element: 30\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 2\nPopped: 30\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 4\nStack (top first): 20 10\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 2\nPopped: 20\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 2\nPopped: 10\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 2\nPopped: Underflow\n\n1.Push  2.Pop  3.Peek  4.Display  5.Exit\nEnter choice: 5\n"
+  },
+  {
+   "id": "cs12-20",
+   "group": "stack",
+   "type": "python",
+   "title": "Write functions PUSH_EVEN(numbers) to push all even numbers of a list onto a stack, and POP_ALL() to pop and display them until the stack is empty.",
+   "title_hi": "फ़ंक्शन PUSH_EVEN(numbers) लिखिए जो सूची की सभी सम संख्याएँ स्टैक में डाले, और POP_ALL() जो स्टैक खाली होने तक उन्हें निकालकर दिखाए।",
+   "syllabus": false,
+   "code": "# Program 20: Push even numbers onto a stack, then pop them all\n\nstack = []\n\n\ndef PUSH_EVEN(numbers):\n    for n in numbers:\n        if n % 2 == 0:\n            stack.append(n)\n\n\ndef POP_ALL():\n    while stack:\n        print(stack.pop(), end=\" \")\n    print(\"\\nStack Empty\")\n\n\nnums = [12, 7, 34, 9, 18, 5, 40]\nprint(\"List:\", nums)\nPUSH_EVEN(nums)\nprint(\"Stack after pushing even numbers:\", stack)\nprint(\"Popped elements:\")\nPOP_ALL()\n",
+   "inputs": [],
+   "output": "List: [12, 7, 34, 9, 18, 5, 40]\nStack after pushing even numbers: [12, 34, 18, 40]\nPopped elements:\n40 18 34 12 \nStack Empty\n"
+  },
+  {
+   "id": "cs12-21",
+   "group": "stack",
+   "type": "python",
+   "title": "A dictionary has names of students and their marks. Push the names of students who scored more than 75 onto a stack, then pop and display them.",
+   "title_hi": "एक डिक्शनरी में विद्यार्थियों के नाम और अंक हैं। 75 से अधिक अंक वाले विद्यार्थियों के नाम स्टैक में डालिए, फिर उन्हें निकालकर दिखाइए।",
+   "syllabus": false,
+   "code": "# Program 21: Stack from a dictionary\n\nscores = {\"Aditi\": 82, \"Bhavya\": 68, \"Chirag\": 91, \"Divya\": 74, \"Eshan\": 77}\nstack = []\n\nfor name in scores:\n    if scores[name] > 75:\n        stack.append(name)\nprint(\"Stack:\", stack)\n\nprint(\"Popping:\")\nwhile stack != []:\n    print(stack.pop())\nprint(\"Stack is now empty\")\n",
+   "inputs": [],
+   "output": "Stack: ['Aditi', 'Chirag', 'Eshan']\nPopping:\nEshan\nChirag\nAditi\nStack is now empty\n"
+  },
+  {
+   "id": "cs12-22",
+   "group": "stack",
+   "type": "python",
+   "title": "Write a program to reverse a string using a stack, and use it to check whether the string is a palindrome.",
+   "title_hi": "स्टैक का उपयोग करके एक स्ट्रिंग उलटने का प्रोग्राम लिखिए और जाँचिए कि स्ट्रिंग पैलिंड्रोम है या नहीं।",
+   "syllabus": false,
+   "code": "# Program 22: Reverse a string using a stack\n\ndef reverse(text):\n    stack = []\n    for ch in text:          # push every character\n        stack.append(ch)\n    result = \"\"\n    while stack:             # pop them back in reverse order\n        result += stack.pop()\n    return result\n\n\nfor i in range(2):\n    word = input(\"Enter a word: \")\n    rev = reverse(word)\n    print(\"Reversed:\", rev)\n    print(word, \"is a palindrome\" if rev == word else \"is not a palindrome\")\n",
+   "inputs": [
+    "madam",
+    "stack"
+   ],
+   "output": "Enter a word: madam\nReversed: madam\nmadam is a palindrome\nEnter a word: stack\nReversed: kcats\nstack is not a palindrome\n"
+  },
+  {
+   "id": "cs12-23",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 1 – Create a STUDENT table, insert data and use ALTER (add / modify / drop attribute), UPDATE, ORDER BY, DELETE, and GROUP BY with MIN, MAX, SUM, COUNT and AVG.",
+   "title_hi": "SQL सेट 1 – STUDENT तालिका बनाइए, डेटा डालिए और ALTER (कॉलम जोड़ना / बदलना / हटाना), UPDATE, ORDER BY, DELETE तथा MIN, MAX, SUM, COUNT, AVG के साथ GROUP BY का उपयोग कीजिए।",
+   "syllabus": true,
+   "code": "CREATE DATABASE school;\n\nUSE school;\n\nCREATE TABLE student (\n  rollno INT PRIMARY KEY,\n  name VARCHAR(20) NOT NULL,\n  class CHAR(3),\n  stream VARCHAR(12),\n  marks INT\n);\n\nINSERT INTO student VALUES\n  (1, 'Aarav', 'XII', 'Science', 86),\n  (2, 'Diya', 'XII', 'Commerce', 74),\n  (3, 'Kabir', 'XII', 'Science', 92),\n  (4, 'Meera', 'XII', 'Humanities', 68),\n  (5, 'Rohan', 'XII', 'Commerce', 81),\n  (6, 'Sara', 'XII', 'Science', 77);\n\nSELECT * FROM student;\n\nALTER TABLE student ADD city VARCHAR(15);\n\nALTER TABLE student MODIFY name VARCHAR(30);\n\nDESCRIBE student;\n\nALTER TABLE student DROP city;\n\nUPDATE student SET marks = marks + 5 WHERE stream = 'Humanities';\n\nSELECT name, marks FROM student ORDER BY marks DESC;\n\nDELETE FROM student WHERE rollno = 6;\n\nSELECT stream, MIN(marks), MAX(marks), SUM(marks), COUNT(*), AVG(marks)\nFROM student GROUP BY stream;\n",
+   "steps": [
+    {
+     "question": "Create a database SCHOOL and open it.",
+     "sql": "CREATE DATABASE school;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE school;",
+     "result": "Database changed"
+    },
+    {
+     "question": "Create the table STUDENT.",
+     "sql": "CREATE TABLE student (\n  rollno INT PRIMARY KEY,\n  name VARCHAR(20) NOT NULL,\n  class CHAR(3),\n  stream VARCHAR(12),\n  marks INT\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "Insert six records.",
+     "sql": "INSERT INTO student VALUES\n  (1, 'Aarav', 'XII', 'Science', 86),\n  (2, 'Diya', 'XII', 'Commerce', 74),\n  (3, 'Kabir', 'XII', 'Science', 92),\n  (4, 'Meera', 'XII', 'Humanities', 68),\n  (5, 'Rohan', 'XII', 'Commerce', 81),\n  (6, 'Sara', 'XII', 'Science', 77);",
+     "result": "Query OK, 6 rows affected (0.00 sec)\nRecords: 6  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "SELECT * FROM student;",
+     "result": "+--------+-------+-------+------------+-------+\n| rollno | name  | class | stream     | marks |\n+--------+-------+-------+------------+-------+\n|      1 | Aarav | XII   | Science    |    86 |\n|      2 | Diya  | XII   | Commerce   |    74 |\n|      3 | Kabir | XII   | Science    |    92 |\n|      4 | Meera | XII   | Humanities |    68 |\n|      5 | Rohan | XII   | Commerce   |    81 |\n|      6 | Sara  | XII   | Science    |    77 |\n+--------+-------+-------+------------+-------+\n6 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Add a new attribute CITY.",
+     "sql": "ALTER TABLE student ADD city VARCHAR(15);",
+     "result": "Query OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Change the data type of NAME to VARCHAR(30).",
+     "sql": "ALTER TABLE student MODIFY name VARCHAR(30);",
+     "result": "Query OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "DESCRIBE student;",
+     "result": "+--------+-------------+------+-----+---------+-------+\n| Field  | Type        | Null | Key | Default | Extra |\n+--------+-------------+------+-----+---------+-------+\n| rollno | int(11)     | NO   | PRI | NULL    |       |\n| name   | varchar(30) | YES  |     | NULL    |       |\n| class  | char(3)     | YES  |     | NULL    |       |\n| stream | varchar(12) | YES  |     | NULL    |       |\n| marks  | int(11)     | YES  |     | NULL    |       |\n| city   | varchar(15) | YES  |     | NULL    |       |\n+--------+-------------+------+-----+---------+-------+\n6 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Remove the attribute CITY.",
+     "sql": "ALTER TABLE student DROP city;",
+     "result": "Query OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Give 5 grace marks to students of the Humanities stream.",
+     "sql": "UPDATE student SET marks = marks + 5 WHERE stream = 'Humanities';",
+     "result": "Query OK, 1 row affected (0.00 sec)\nRows matched: 1  Changed: 1  Warnings: 0"
+    },
+    {
+     "question": "Display the names and marks in descending order of marks.",
+     "sql": "SELECT name, marks FROM student ORDER BY marks DESC;",
+     "result": "+-------+-------+\n| name  | marks |\n+-------+-------+\n| Kabir |    92 |\n| Aarav |    86 |\n| Rohan |    81 |\n| Sara  |    77 |\n| Diya  |    74 |\n| Meera |    73 |\n+-------+-------+\n6 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Delete the record of roll number 6.",
+     "sql": "DELETE FROM student WHERE rollno = 6;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "Stream-wise lowest, highest, total, number and average marks.",
+     "sql": "SELECT stream, MIN(marks), MAX(marks), SUM(marks), COUNT(*), AVG(marks)\nFROM student GROUP BY stream;",
+     "result": "+------------+------------+------------+------------+----------+------------+\n| stream     | MIN(marks) | MAX(marks) | SUM(marks) | COUNT(*) | AVG(marks) |\n+------------+------------+------------+------------+----------+------------+\n| Commerce   |         74 |         81 |        155 |        2 |    77.5000 |\n| Humanities |         73 |         73 |         73 |        1 |    73.0000 |\n| Science    |         86 |         92 |        178 |        2 |    89.0000 |\n+------------+------------+------------+------------+----------+------------+\n3 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE school;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE school;\nDatabase changed\n\nmysql> CREATE TABLE student (\n  rollno INT PRIMARY KEY,\n  name VARCHAR(20) NOT NULL,\n  class CHAR(3),\n  stream VARCHAR(12),\n  marks INT\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO student VALUES\n  (1, 'Aarav', 'XII', 'Science', 86),\n  (2, 'Diya', 'XII', 'Commerce', 74),\n  (3, 'Kabir', 'XII', 'Science', 92),\n  (4, 'Meera', 'XII', 'Humanities', 68),\n  (5, 'Rohan', 'XII', 'Commerce', 81),\n  (6, 'Sara', 'XII', 'Science', 77);\nQuery OK, 6 rows affected (0.00 sec)\nRecords: 6  Duplicates: 0  Warnings: 0\n\nmysql> SELECT * FROM student;\n+--------+-------+-------+------------+-------+\n| rollno | name  | class | stream     | marks |\n+--------+-------+-------+------------+-------+\n|      1 | Aarav | XII   | Science    |    86 |\n|      2 | Diya  | XII   | Commerce   |    74 |\n|      3 | Kabir | XII   | Science    |    92 |\n|      4 | Meera | XII   | Humanities |    68 |\n|      5 | Rohan | XII   | Commerce   |    81 |\n|      6 | Sara  | XII   | Science    |    77 |\n+--------+-------+-------+------------+-------+\n6 rows in set (0.00 sec)\n\nmysql> ALTER TABLE student ADD city VARCHAR(15);\nQuery OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0\n\nmysql> ALTER TABLE student MODIFY name VARCHAR(30);\nQuery OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0\n\nmysql> DESCRIBE student;\n+--------+-------------+------+-----+---------+-------+\n| Field  | Type        | Null | Key | Default | Extra |\n+--------+-------------+------+-----+---------+-------+\n| rollno | int(11)     | NO   | PRI | NULL    |       |\n| name   | varchar(30) | YES  |     | NULL    |       |\n| class  | char(3)     | YES  |     | NULL    |       |\n| stream | varchar(12) | YES  |     | NULL    |       |\n| marks  | int(11)     | YES  |     | NULL    |       |\n| city   | varchar(15) | YES  |     | NULL    |       |\n+--------+-------------+------+-----+---------+-------+\n6 rows in set (0.00 sec)\n\nmysql> ALTER TABLE student DROP city;\nQuery OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0\n\nmysql> UPDATE student SET marks = marks + 5 WHERE stream = 'Humanities';\nQuery OK, 1 row affected (0.00 sec)\nRows matched: 1  Changed: 1  Warnings: 0\n\nmysql> SELECT name, marks FROM student ORDER BY marks DESC;\n+-------+-------+\n| name  | marks |\n+-------+-------+\n| Kabir |    92 |\n| Aarav |    86 |\n| Rohan |    81 |\n| Sara  |    77 |\n| Diya  |    74 |\n| Meera |    73 |\n+-------+-------+\n6 rows in set (0.00 sec)\n\nmysql> DELETE FROM student WHERE rollno = 6;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> SELECT stream, MIN(marks), MAX(marks), SUM(marks), COUNT(*), AVG(marks)\nFROM student GROUP BY stream;\n+------------+------------+------------+------------+----------+------------+\n| stream     | MIN(marks) | MAX(marks) | SUM(marks) | COUNT(*) | AVG(marks) |\n+------------+------------+------------+------------+----------+------------+\n| Commerce   |         74 |         81 |        155 |        2 |    77.5000 |\n| Humanities |         73 |         73 |         73 |        1 |    73.0000 |\n| Science    |         86 |         92 |        178 |        2 |    89.0000 |\n+------------+------------+------------+------------+----------+------------+\n3 rows in set (0.00 sec)\n"
+  },
+  {
+   "id": "cs12-24",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 2 – On an EMPLOYEE table, use relational and logical operators, BETWEEN, IN, LIKE, IS NULL / IS NOT NULL, DISTINCT and column aliases.",
+   "title_hi": "SQL सेट 2 – EMPLOYEE तालिका पर संबंधात्मक व तार्किक ऑपरेटर, BETWEEN, IN, LIKE, IS NULL / IS NOT NULL, DISTINCT और कॉलम उपनाम (alias) का उपयोग कीजिए।",
+   "syllabus": false,
+   "code": "CREATE DATABASE company;\n\nUSE company;\n\nCREATE TABLE employee (\n  empid CHAR(4) PRIMARY KEY,\n  name VARCHAR(20),\n  dept VARCHAR(12),\n  salary INT,\n  bonus INT,\n  doj DATE\n);\n\nINSERT INTO employee VALUES\n  ('E101', 'Anil Kumar', 'Sales', 42000, 3000, '2019-04-12'),\n  ('E102', 'Bindu Rao', 'Accounts', 55000, NULL, '2017-08-01'),\n  ('E103', 'Chetan Das', 'IT', 68000, 5000, '2020-01-15'),\n  ('E104', 'Deepa Nair', 'Sales', 39000, NULL, '2022-06-20'),\n  ('E105', 'Gaurav Jain', 'IT', 72000, 6000, '2016-11-03'),\n  ('E106', 'Anita Roy', 'Accounts', 47000, 2500, '2021-09-09');\n\nSELECT * FROM employee WHERE dept = 'IT' AND salary > 70000;\n\nSELECT name, salary FROM employee WHERE salary BETWEEN 40000 AND 60000;\n\nSELECT name, dept FROM employee WHERE dept IN ('Sales', 'Accounts');\n\nSELECT name FROM employee WHERE name LIKE 'A%';\n\nSELECT name FROM employee WHERE name LIKE '_i%';\n\nSELECT name FROM employee WHERE bonus IS NULL;\n\nSELECT name, bonus FROM employee WHERE bonus IS NOT NULL;\n\nSELECT DISTINCT dept FROM employee;\n\nSELECT name, salary * 12 AS annual_salary FROM employee;\n\nSELECT name, doj FROM employee WHERE doj < '2019-01-01';\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE company;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE company;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE employee (\n  empid CHAR(4) PRIMARY KEY,\n  name VARCHAR(20),\n  dept VARCHAR(12),\n  salary INT,\n  bonus INT,\n  doj DATE\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO employee VALUES\n  ('E101', 'Anil Kumar', 'Sales', 42000, 3000, '2019-04-12'),\n  ('E102', 'Bindu Rao', 'Accounts', 55000, NULL, '2017-08-01'),\n  ('E103', 'Chetan Das', 'IT', 68000, 5000, '2020-01-15'),\n  ('E104', 'Deepa Nair', 'Sales', 39000, NULL, '2022-06-20'),\n  ('E105', 'Gaurav Jain', 'IT', 72000, 6000, '2016-11-03'),\n  ('E106', 'Anita Roy', 'Accounts', 47000, 2500, '2021-09-09');",
+     "result": "Query OK, 6 rows affected (0.00 sec)\nRecords: 6  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Employees of the IT department earning more than 70000.",
+     "sql": "SELECT * FROM employee WHERE dept = 'IT' AND salary > 70000;",
+     "result": "+-------+-------------+------+--------+-------+------------+\n| empid | name        | dept | salary | bonus | doj        |\n+-------+-------------+------+--------+-------+------------+\n| E105  | Gaurav Jain | IT   |  72000 |  6000 | 2016-11-03 |\n+-------+-------------+------+--------+-------+------------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "Employees with salary between 40000 and 60000.",
+     "sql": "SELECT name, salary FROM employee WHERE salary BETWEEN 40000 AND 60000;",
+     "result": "+------------+--------+\n| name       | salary |\n+------------+--------+\n| Anil Kumar |  42000 |\n| Bindu Rao  |  55000 |\n| Anita Roy  |  47000 |\n+------------+--------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Employees of the Sales or Accounts department.",
+     "sql": "SELECT name, dept FROM employee WHERE dept IN ('Sales', 'Accounts');",
+     "result": "+------------+----------+\n| name       | dept     |\n+------------+----------+\n| Anil Kumar | Sales    |\n| Bindu Rao  | Accounts |\n| Deepa Nair | Sales    |\n| Anita Roy  | Accounts |\n+------------+----------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Names starting with 'A'.",
+     "sql": "SELECT name FROM employee WHERE name LIKE 'A%';",
+     "result": "+------------+\n| name       |\n+------------+\n| Anil Kumar |\n| Anita Roy  |\n+------------+\n2 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Names whose second letter is 'i'.",
+     "sql": "SELECT name FROM employee WHERE name LIKE '_i%';",
+     "result": "+-----------+\n| name      |\n+-----------+\n| Bindu Rao |\n+-----------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "Employees who did not get a bonus.",
+     "sql": "SELECT name FROM employee WHERE bonus IS NULL;",
+     "result": "+------------+\n| name       |\n+------------+\n| Bindu Rao  |\n| Deepa Nair |\n+------------+\n2 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Employees who got a bonus.",
+     "sql": "SELECT name, bonus FROM employee WHERE bonus IS NOT NULL;",
+     "result": "+-------------+-------+\n| name        | bonus |\n+-------------+-------+\n| Anil Kumar  |  3000 |\n| Chetan Das  |  5000 |\n| Gaurav Jain |  6000 |\n| Anita Roy   |  2500 |\n+-------------+-------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Different departments (without repetition).",
+     "sql": "SELECT DISTINCT dept FROM employee;",
+     "result": "+----------+\n| dept     |\n+----------+\n| Sales    |\n| Accounts |\n| IT       |\n+----------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Annual salary with a column alias.",
+     "sql": "SELECT name, salary * 12 AS annual_salary FROM employee;",
+     "result": "+-------------+---------------+\n| name        | annual_salary |\n+-------------+---------------+\n| Anil Kumar  |        504000 |\n| Bindu Rao   |        660000 |\n| Chetan Das  |        816000 |\n| Deepa Nair  |        468000 |\n| Gaurav Jain |        864000 |\n| Anita Roy   |        564000 |\n+-------------+---------------+\n6 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Employees who joined before 2019.",
+     "sql": "SELECT name, doj FROM employee WHERE doj < '2019-01-01';",
+     "result": "+-------------+------------+\n| name        | doj        |\n+-------------+------------+\n| Bindu Rao   | 2017-08-01 |\n| Gaurav Jain | 2016-11-03 |\n+-------------+------------+\n2 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE company;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE company;\nDatabase changed\n\nmysql> CREATE TABLE employee (\n  empid CHAR(4) PRIMARY KEY,\n  name VARCHAR(20),\n  dept VARCHAR(12),\n  salary INT,\n  bonus INT,\n  doj DATE\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO employee VALUES\n  ('E101', 'Anil Kumar', 'Sales', 42000, 3000, '2019-04-12'),\n  ('E102', 'Bindu Rao', 'Accounts', 55000, NULL, '2017-08-01'),\n  ('E103', 'Chetan Das', 'IT', 68000, 5000, '2020-01-15'),\n  ('E104', 'Deepa Nair', 'Sales', 39000, NULL, '2022-06-20'),\n  ('E105', 'Gaurav Jain', 'IT', 72000, 6000, '2016-11-03'),\n  ('E106', 'Anita Roy', 'Accounts', 47000, 2500, '2021-09-09');\nQuery OK, 6 rows affected (0.00 sec)\nRecords: 6  Duplicates: 0  Warnings: 0\n\nmysql> SELECT * FROM employee WHERE dept = 'IT' AND salary > 70000;\n+-------+-------------+------+--------+-------+------------+\n| empid | name        | dept | salary | bonus | doj        |\n+-------+-------------+------+--------+-------+------------+\n| E105  | Gaurav Jain | IT   |  72000 |  6000 | 2016-11-03 |\n+-------+-------------+------+--------+-------+------------+\n1 row in set (0.00 sec)\n\nmysql> SELECT name, salary FROM employee WHERE salary BETWEEN 40000 AND 60000;\n+------------+--------+\n| name       | salary |\n+------------+--------+\n| Anil Kumar |  42000 |\n| Bindu Rao  |  55000 |\n| Anita Roy  |  47000 |\n+------------+--------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT name, dept FROM employee WHERE dept IN ('Sales', 'Accounts');\n+------------+----------+\n| name       | dept     |\n+------------+----------+\n| Anil Kumar | Sales    |\n| Bindu Rao  | Accounts |\n| Deepa Nair | Sales    |\n| Anita Roy  | Accounts |\n+------------+----------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT name FROM employee WHERE name LIKE 'A%';\n+------------+\n| name       |\n+------------+\n| Anil Kumar |\n| Anita Roy  |\n+------------+\n2 rows in set (0.00 sec)\n\nmysql> SELECT name FROM employee WHERE name LIKE '_i%';\n+-----------+\n| name      |\n+-----------+\n| Bindu Rao |\n+-----------+\n1 row in set (0.00 sec)\n\nmysql> SELECT name FROM employee WHERE bonus IS NULL;\n+------------+\n| name       |\n+------------+\n| Bindu Rao  |\n| Deepa Nair |\n+------------+\n2 rows in set (0.00 sec)\n\nmysql> SELECT name, bonus FROM employee WHERE bonus IS NOT NULL;\n+-------------+-------+\n| name        | bonus |\n+-------------+-------+\n| Anil Kumar  |  3000 |\n| Chetan Das  |  5000 |\n| Gaurav Jain |  6000 |\n| Anita Roy   |  2500 |\n+-------------+-------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT DISTINCT dept FROM employee;\n+----------+\n| dept     |\n+----------+\n| Sales    |\n| Accounts |\n| IT       |\n+----------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT name, salary * 12 AS annual_salary FROM employee;\n+-------------+---------------+\n| name        | annual_salary |\n+-------------+---------------+\n| Anil Kumar  |        504000 |\n| Bindu Rao   |        660000 |\n| Chetan Das  |        816000 |\n| Deepa Nair  |        468000 |\n| Gaurav Jain |        864000 |\n| Anita Roy   |        564000 |\n+-------------+---------------+\n6 rows in set (0.00 sec)\n\nmysql> SELECT name, doj FROM employee WHERE doj < '2019-01-01';\n+-------------+------------+\n| name        | doj        |\n+-------------+------------+\n| Bindu Rao   | 2017-08-01 |\n| Gaurav Jain | 2016-11-03 |\n+-------------+------------+\n2 rows in set (0.00 sec)\n"
+  },
+  {
+   "id": "cs12-25",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 3 – Database and table commands: SHOW DATABASES, USE, SHOW TABLES, DESCRIBE, adding and removing a PRIMARY KEY, constraints NOT NULL and UNIQUE, and DROP TABLE.",
+   "title_hi": "SQL सेट 3 – डेटाबेस और तालिका कमांड: SHOW DATABASES, USE, SHOW TABLES, DESCRIBE, PRIMARY KEY जोड़ना व हटाना, NOT NULL व UNIQUE बाधाएँ (constraints) और DROP TABLE।",
+   "syllabus": false,
+   "code": "CREATE DATABASE library;\n\nSHOW DATABASES;\n\nUSE library;\n\nCREATE TABLE member (\n  memid INT NOT NULL,\n  name VARCHAR(25) NOT NULL,\n  phone CHAR(10) UNIQUE,\n  city VARCHAR(15)\n);\n\nSHOW TABLES;\n\nDESCRIBE member;\n\nALTER TABLE member ADD PRIMARY KEY (memid);\n\nDESCRIBE member;\n\nINSERT INTO member VALUES (1, 'Priya', '9876500001', 'Delhi');\n\nINSERT INTO member VALUES (1, 'Rahul', '9876500002', 'Pune');\n\nINSERT INTO member VALUES (2, NULL, '9876500003', 'Agra');\n\nALTER TABLE member DROP PRIMARY KEY;\n\nDESCRIBE member;\n\nDROP TABLE member;\n\nSHOW TABLES;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE library;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "SHOW DATABASES;",
+     "result": "+--------------------+\n| Database           |\n+--------------------+\n| information_schema |\n| library            |\n| mysql              |\n| performance_schema |\n| store              |\n| sys                |\n+--------------------+\n6 rows in set (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE library;",
+     "result": "Database changed"
+    },
+    {
+     "question": "Create a table without a primary key.",
+     "sql": "CREATE TABLE member (\n  memid INT NOT NULL,\n  name VARCHAR(25) NOT NULL,\n  phone CHAR(10) UNIQUE,\n  city VARCHAR(15)\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "SHOW TABLES;",
+     "result": "+-------------------+\n| Tables_in_library |\n+-------------------+\n| member            |\n+-------------------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "DESCRIBE member;",
+     "result": "+-------+-------------+------+-----+---------+-------+\n| Field | Type        | Null | Key | Default | Extra |\n+-------+-------------+------+-----+---------+-------+\n| memid | int(11)     | NO   |     | NULL    |       |\n| name  | varchar(25) | NO   |     | NULL    |       |\n| phone | char(10)    | YES  | UNI | NULL    |       |\n| city  | varchar(15) | YES  |     | NULL    |       |\n+-------+-------------+------+-----+---------+-------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Make MEMID the primary key.",
+     "sql": "ALTER TABLE member ADD PRIMARY KEY (memid);",
+     "result": "Query OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "DESCRIBE member;",
+     "result": "+-------+-------------+------+-----+---------+-------+\n| Field | Type        | Null | Key | Default | Extra |\n+-------+-------------+------+-----+---------+-------+\n| memid | int(11)     | NO   | PRI | NULL    |       |\n| name  | varchar(25) | NO   |     | NULL    |       |\n| phone | char(10)    | YES  | UNI | NULL    |       |\n| city  | varchar(15) | YES  |     | NULL    |       |\n+-------+-------------+------+-----+---------+-------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO member VALUES (1, 'Priya', '9876500001', 'Delhi');",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "Inserting the same MEMID again breaks the primary key.",
+     "sql": "INSERT INTO member VALUES (1, 'Rahul', '9876500002', 'Pune');",
+     "result": "ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'"
+    },
+    {
+     "question": "Inserting a NULL name breaks the NOT NULL constraint.",
+     "sql": "INSERT INTO member VALUES (2, NULL, '9876500003', 'Agra');",
+     "result": "ERROR 1048 (23000): Column 'name' cannot be null"
+    },
+    {
+     "question": "Remove the primary key.",
+     "sql": "ALTER TABLE member DROP PRIMARY KEY;",
+     "result": "Query OK, 1 row affected (0.00 sec)\nRecords: 1  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "DESCRIBE member;",
+     "result": "+-------+-------------+------+-----+---------+-------+\n| Field | Type        | Null | Key | Default | Extra |\n+-------+-------------+------+-----+---------+-------+\n| memid | int(11)     | NO   |     | NULL    |       |\n| name  | varchar(25) | NO   |     | NULL    |       |\n| phone | char(10)    | YES  | UNI | NULL    |       |\n| city  | varchar(15) | YES  |     | NULL    |       |\n+-------+-------------+------+-----+---------+-------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Delete the table.",
+     "sql": "DROP TABLE member;",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "SHOW TABLES;",
+     "result": "Empty set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE library;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> SHOW DATABASES;\n+--------------------+\n| Database           |\n+--------------------+\n| information_schema |\n| library            |\n| mysql              |\n| performance_schema |\n| store              |\n| sys                |\n+--------------------+\n6 rows in set (0.00 sec)\n\nmysql> USE library;\nDatabase changed\n\nmysql> CREATE TABLE member (\n  memid INT NOT NULL,\n  name VARCHAR(25) NOT NULL,\n  phone CHAR(10) UNIQUE,\n  city VARCHAR(15)\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> SHOW TABLES;\n+-------------------+\n| Tables_in_library |\n+-------------------+\n| member            |\n+-------------------+\n1 row in set (0.00 sec)\n\nmysql> DESCRIBE member;\n+-------+-------------+------+-----+---------+-------+\n| Field | Type        | Null | Key | Default | Extra |\n+-------+-------------+------+-----+---------+-------+\n| memid | int(11)     | NO   |     | NULL    |       |\n| name  | varchar(25) | NO   |     | NULL    |       |\n| phone | char(10)    | YES  | UNI | NULL    |       |\n| city  | varchar(15) | YES  |     | NULL    |       |\n+-------+-------------+------+-----+---------+-------+\n4 rows in set (0.00 sec)\n\nmysql> ALTER TABLE member ADD PRIMARY KEY (memid);\nQuery OK, 0 rows affected (0.00 sec)\nRecords: 0  Duplicates: 0  Warnings: 0\n\nmysql> DESCRIBE member;\n+-------+-------------+------+-----+---------+-------+\n| Field | Type        | Null | Key | Default | Extra |\n+-------+-------------+------+-----+---------+-------+\n| memid | int(11)     | NO   | PRI | NULL    |       |\n| name  | varchar(25) | NO   |     | NULL    |       |\n| phone | char(10)    | YES  | UNI | NULL    |       |\n| city  | varchar(15) | YES  |     | NULL    |       |\n+-------+-------------+------+-----+---------+-------+\n4 rows in set (0.00 sec)\n\nmysql> INSERT INTO member VALUES (1, 'Priya', '9876500001', 'Delhi');\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> INSERT INTO member VALUES (1, 'Rahul', '9876500002', 'Pune');\nERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'\n\nmysql> INSERT INTO member VALUES (2, NULL, '9876500003', 'Agra');\nERROR 1048 (23000): Column 'name' cannot be null\n\nmysql> ALTER TABLE member DROP PRIMARY KEY;\nQuery OK, 1 row affected (0.00 sec)\nRecords: 1  Duplicates: 0  Warnings: 0\n\nmysql> DESCRIBE member;\n+-------+-------------+------+-----+---------+-------+\n| Field | Type        | Null | Key | Default | Extra |\n+-------+-------------+------+-----+---------+-------+\n| memid | int(11)     | NO   |     | NULL    |       |\n| name  | varchar(25) | NO   |     | NULL    |       |\n| phone | char(10)    | YES  | UNI | NULL    |       |\n| city  | varchar(15) | YES  |     | NULL    |       |\n+-------+-------------+------+-----+---------+-------+\n4 rows in set (0.00 sec)\n\nmysql> DROP TABLE member;\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> SHOW TABLES;\nEmpty set (0.00 sec)\n"
+  },
+  {
+   "id": "cs12-26",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 4 – Two tables DEPT and EMP: Cartesian product, equi-join and natural join.",
+   "title_hi": "SQL सेट 4 – दो तालिकाएँ DEPT और EMP: कार्टेशियन गुणनफल (Cartesian product), इक्वी-जॉइन और नेचुरल जॉइन।",
+   "syllabus": true,
+   "code": "CREATE DATABASE office;\n\nUSE office;\n\nCREATE TABLE dept (\n  deptno INT PRIMARY KEY,\n  dname VARCHAR(15),\n  location VARCHAR(15)\n);\n\nCREATE TABLE emp (\n  empno INT PRIMARY KEY,\n  ename VARCHAR(15),\n  salary INT,\n  deptno INT,\n  FOREIGN KEY (deptno) REFERENCES dept(deptno)\n);\n\nINSERT INTO dept VALUES (10, 'Accounts', 'Delhi'), (20, 'Research', 'Mumbai'), (30, 'Sales', 'Chennai');\n\nINSERT INTO emp VALUES (1, 'Asha', 45000, 10), (2, 'Vikram', 62000, 20), (3, 'Neel', 38000, 30), (4, 'Ruchi', 51000, 20);\n\nSELECT ename, dname FROM emp, dept;\n\nSELECT e.ename, e.salary, d.dname, d.location\nFROM emp e, dept d\nWHERE e.deptno = d.deptno;\n\nSELECT * FROM emp NATURAL JOIN dept;\n\nSELECT ename FROM emp, dept WHERE emp.deptno = dept.deptno AND location = 'Mumbai';\n\nSELECT dname, COUNT(*), SUM(salary)\nFROM emp, dept\nWHERE emp.deptno = dept.deptno\nGROUP BY dname;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE office;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE office;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE dept (\n  deptno INT PRIMARY KEY,\n  dname VARCHAR(15),\n  location VARCHAR(15)\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE emp (\n  empno INT PRIMARY KEY,\n  ename VARCHAR(15),\n  salary INT,\n  deptno INT,\n  FOREIGN KEY (deptno) REFERENCES dept(deptno)\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO dept VALUES (10, 'Accounts', 'Delhi'), (20, 'Research', 'Mumbai'), (30, 'Sales', 'Chennai');",
+     "result": "Query OK, 3 rows affected (0.00 sec)\nRecords: 3  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO emp VALUES (1, 'Asha', 45000, 10), (2, 'Vikram', 62000, 20), (3, 'Neel', 38000, 30), (4, 'Ruchi', 51000, 20);",
+     "result": "Query OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Cartesian product of the two tables (every row with every row).",
+     "sql": "SELECT ename, dname FROM emp, dept;",
+     "result": "+--------+----------+\n| ename  | dname    |\n+--------+----------+\n| Asha   | Accounts |\n| Asha   | Research |\n| Asha   | Sales    |\n| Vikram | Accounts |\n| Vikram | Research |\n| Vikram | Sales    |\n| Neel   | Accounts |\n| Neel   | Research |\n| Neel   | Sales    |\n| Ruchi  | Accounts |\n| Ruchi  | Research |\n| Ruchi  | Sales    |\n+--------+----------+\n12 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Equi-join: each employee with the name and location of the department.",
+     "sql": "SELECT e.ename, e.salary, d.dname, d.location\nFROM emp e, dept d\nWHERE e.deptno = d.deptno;",
+     "result": "+--------+--------+----------+----------+\n| ename  | salary | dname    | location |\n+--------+--------+----------+----------+\n| Asha   |  45000 | Accounts | Delhi    |\n| Vikram |  62000 | Research | Mumbai   |\n| Neel   |  38000 | Sales    | Chennai  |\n| Ruchi  |  51000 | Research | Mumbai   |\n+--------+--------+----------+----------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Natural join (joins on the common column DEPTNO automatically).",
+     "sql": "SELECT * FROM emp NATURAL JOIN dept;",
+     "result": "+--------+-------+--------+--------+----------+----------+\n| deptno | empno | ename  | salary | dname    | location |\n+--------+-------+--------+--------+----------+----------+\n|     10 |     1 | Asha   |  45000 | Accounts | Delhi    |\n|     20 |     2 | Vikram |  62000 | Research | Mumbai   |\n|     30 |     3 | Neel   |  38000 | Sales    | Chennai  |\n|     20 |     4 | Ruchi  |  51000 | Research | Mumbai   |\n+--------+-------+--------+--------+----------+----------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Employees working in Mumbai.",
+     "sql": "SELECT ename FROM emp, dept WHERE emp.deptno = dept.deptno AND location = 'Mumbai';",
+     "result": "+--------+\n| ename  |\n+--------+\n| Vikram |\n| Ruchi  |\n+--------+\n2 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Number of employees and total salary in each department.",
+     "sql": "SELECT dname, COUNT(*), SUM(salary)\nFROM emp, dept\nWHERE emp.deptno = dept.deptno\nGROUP BY dname;",
+     "result": "+----------+----------+-------------+\n| dname    | COUNT(*) | SUM(salary) |\n+----------+----------+-------------+\n| Accounts |        1 |       45000 |\n| Research |        2 |      113000 |\n| Sales    |        1 |       38000 |\n+----------+----------+-------------+\n3 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE office;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE office;\nDatabase changed\n\nmysql> CREATE TABLE dept (\n  deptno INT PRIMARY KEY,\n  dname VARCHAR(15),\n  location VARCHAR(15)\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> CREATE TABLE emp (\n  empno INT PRIMARY KEY,\n  ename VARCHAR(15),\n  salary INT,\n  deptno INT,\n  FOREIGN KEY (deptno) REFERENCES dept(deptno)\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO dept VALUES (10, 'Accounts', 'Delhi'), (20, 'Research', 'Mumbai'), (30, 'Sales', 'Chennai');\nQuery OK, 3 rows affected (0.00 sec)\nRecords: 3  Duplicates: 0  Warnings: 0\n\nmysql> INSERT INTO emp VALUES (1, 'Asha', 45000, 10), (2, 'Vikram', 62000, 20), (3, 'Neel', 38000, 30), (4, 'Ruchi', 51000, 20);\nQuery OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0\n\nmysql> SELECT ename, dname FROM emp, dept;\n+--------+----------+\n| ename  | dname    |\n+--------+----------+\n| Asha   | Accounts |\n| Asha   | Research |\n| Asha   | Sales    |\n| Vikram | Accounts |\n| Vikram | Research |\n| Vikram | Sales    |\n| Neel   | Accounts |\n| Neel   | Research |\n| Neel   | Sales    |\n| Ruchi  | Accounts |\n| Ruchi  | Research |\n| Ruchi  | Sales    |\n+--------+----------+\n12 rows in set (0.00 sec)\n\nmysql> SELECT e.ename, e.salary, d.dname, d.location\nFROM emp e, dept d\nWHERE e.deptno = d.deptno;\n+--------+--------+----------+----------+\n| ename  | salary | dname    | location |\n+--------+--------+----------+----------+\n| Asha   |  45000 | Accounts | Delhi    |\n| Vikram |  62000 | Research | Mumbai   |\n| Neel   |  38000 | Sales    | Chennai  |\n| Ruchi  |  51000 | Research | Mumbai   |\n+--------+--------+----------+----------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT * FROM emp NATURAL JOIN dept;\n+--------+-------+--------+--------+----------+----------+\n| deptno | empno | ename  | salary | dname    | location |\n+--------+-------+--------+--------+----------+----------+\n|     10 |     1 | Asha   |  45000 | Accounts | Delhi    |\n|     20 |     2 | Vikram |  62000 | Research | Mumbai   |\n|     30 |     3 | Neel   |  38000 | Sales    | Chennai  |\n|     20 |     4 | Ruchi  |  51000 | Research | Mumbai   |\n+--------+-------+--------+--------+----------+----------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT ename FROM emp, dept WHERE emp.deptno = dept.deptno AND location = 'Mumbai';\n+--------+\n| ename  |\n+--------+\n| Vikram |\n| Ruchi  |\n+--------+\n2 rows in set (0.00 sec)\n\nmysql> SELECT dname, COUNT(*), SUM(salary)\nFROM emp, dept\nWHERE emp.deptno = dept.deptno\nGROUP BY dname;\n+----------+----------+-------------+\n| dname    | COUNT(*) | SUM(salary) |\n+----------+----------+-------------+\n| Accounts |        1 |       45000 |\n| Research |        2 |      113000 |\n| Sales    |        1 |       38000 |\n+----------+----------+-------------+\n3 rows in set (0.00 sec)\n"
+  },
+  {
+   "id": "cs12-27",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 5 – On a SALES table, use aggregate functions with GROUP BY and HAVING, and sort the result with ORDER BY.",
+   "title_hi": "SQL सेट 5 – SALES तालिका पर GROUP BY और HAVING के साथ समूह फ़ंक्शन (aggregate functions) और ORDER BY से परिणाम क्रमबद्ध कीजिए।",
+   "syllabus": false,
+   "code": "CREATE DATABASE shop;\n\nUSE shop;\n\nCREATE TABLE sales (\n  billno INT PRIMARY KEY,\n  item VARCHAR(15),\n  category VARCHAR(12),\n  qty INT,\n  rate INT\n);\n\nINSERT INTO sales VALUES\n  (1, 'Notebook', 'Stationery', 20, 40),\n  (2, 'Pen', 'Stationery', 50, 10),\n  (3, 'Apple', 'Fruits', 12, 120),\n  (4, 'Banana', 'Fruits', 24, 50),\n  (5, 'Milk', 'Dairy', 30, 60),\n  (6, 'Paneer', 'Dairy', 5, 400),\n  (7, 'Pencil', 'Stationery', 40, 5);\n\nSELECT category, SUM(qty) FROM sales GROUP BY category;\n\nSELECT category, SUM(qty * rate) AS amount\nFROM sales GROUP BY category ORDER BY amount DESC;\n\nSELECT category, COUNT(*) FROM sales GROUP BY category HAVING COUNT(*) > 2;\n\nSELECT category, AVG(rate) FROM sales GROUP BY category HAVING AVG(rate) > 100;\n\nSELECT MAX(rate), MIN(rate) FROM sales;\n\nSELECT COUNT(DISTINCT category) FROM sales;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE shop;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE shop;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE sales (\n  billno INT PRIMARY KEY,\n  item VARCHAR(15),\n  category VARCHAR(12),\n  qty INT,\n  rate INT\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO sales VALUES\n  (1, 'Notebook', 'Stationery', 20, 40),\n  (2, 'Pen', 'Stationery', 50, 10),\n  (3, 'Apple', 'Fruits', 12, 120),\n  (4, 'Banana', 'Fruits', 24, 50),\n  (5, 'Milk', 'Dairy', 30, 60),\n  (6, 'Paneer', 'Dairy', 5, 400),\n  (7, 'Pencil', 'Stationery', 40, 5);",
+     "result": "Query OK, 7 rows affected (0.00 sec)\nRecords: 7  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Total quantity sold in each category.",
+     "sql": "SELECT category, SUM(qty) FROM sales GROUP BY category;",
+     "result": "+------------+----------+\n| category   | SUM(qty) |\n+------------+----------+\n| Dairy      |       35 |\n| Fruits     |       36 |\n| Stationery |      110 |\n+------------+----------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Sale amount (qty x rate) of each category, highest first.",
+     "sql": "SELECT category, SUM(qty * rate) AS amount\nFROM sales GROUP BY category ORDER BY amount DESC;",
+     "result": "+------------+--------+\n| category   | amount |\n+------------+--------+\n| Dairy      |   3800 |\n| Fruits     |   2640 |\n| Stationery |   1500 |\n+------------+--------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Categories having more than two items.",
+     "sql": "SELECT category, COUNT(*) FROM sales GROUP BY category HAVING COUNT(*) > 2;",
+     "result": "+------------+----------+\n| category   | COUNT(*) |\n+------------+----------+\n| Stationery |        3 |\n+------------+----------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "Categories whose average rate is more than 100.",
+     "sql": "SELECT category, AVG(rate) FROM sales GROUP BY category HAVING AVG(rate) > 100;",
+     "result": "+----------+-----------+\n| category | AVG(rate) |\n+----------+-----------+\n| Dairy    |  230.0000 |\n+----------+-----------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "Costliest and cheapest rate.",
+     "sql": "SELECT MAX(rate), MIN(rate) FROM sales;",
+     "result": "+-----------+-----------+\n| MAX(rate) | MIN(rate) |\n+-----------+-----------+\n|       400 |         5 |\n+-----------+-----------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "Number of different categories.",
+     "sql": "SELECT COUNT(DISTINCT category) FROM sales;",
+     "result": "+--------------------------+\n| COUNT(DISTINCT category) |\n+--------------------------+\n|                        3 |\n+--------------------------+\n1 row in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE shop;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE shop;\nDatabase changed\n\nmysql> CREATE TABLE sales (\n  billno INT PRIMARY KEY,\n  item VARCHAR(15),\n  category VARCHAR(12),\n  qty INT,\n  rate INT\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO sales VALUES\n  (1, 'Notebook', 'Stationery', 20, 40),\n  (2, 'Pen', 'Stationery', 50, 10),\n  (3, 'Apple', 'Fruits', 12, 120),\n  (4, 'Banana', 'Fruits', 24, 50),\n  (5, 'Milk', 'Dairy', 30, 60),\n  (6, 'Paneer', 'Dairy', 5, 400),\n  (7, 'Pencil', 'Stationery', 40, 5);\nQuery OK, 7 rows affected (0.00 sec)\nRecords: 7  Duplicates: 0  Warnings: 0\n\nmysql> SELECT category, SUM(qty) FROM sales GROUP BY category;\n+------------+----------+\n| category   | SUM(qty) |\n+------------+----------+\n| Dairy      |       35 |\n| Fruits     |       36 |\n| Stationery |      110 |\n+------------+----------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT category, SUM(qty * rate) AS amount\nFROM sales GROUP BY category ORDER BY amount DESC;\n+------------+--------+\n| category   | amount |\n+------------+--------+\n| Dairy      |   3800 |\n| Fruits     |   2640 |\n| Stationery |   1500 |\n+------------+--------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT category, COUNT(*) FROM sales GROUP BY category HAVING COUNT(*) > 2;\n+------------+----------+\n| category   | COUNT(*) |\n+------------+----------+\n| Stationery |        3 |\n+------------+----------+\n1 row in set (0.00 sec)\n\nmysql> SELECT category, AVG(rate) FROM sales GROUP BY category HAVING AVG(rate) > 100;\n+----------+-----------+\n| category | AVG(rate) |\n+----------+-----------+\n| Dairy    |  230.0000 |\n+----------+-----------+\n1 row in set (0.00 sec)\n\nmysql> SELECT MAX(rate), MIN(rate) FROM sales;\n+-----------+-----------+\n| MAX(rate) | MIN(rate) |\n+-----------+-----------+\n|       400 |         5 |\n+-----------+-----------+\n1 row in set (0.00 sec)\n\nmysql> SELECT COUNT(DISTINCT category) FROM sales;\n+--------------------------+\n| COUNT(DISTINCT category) |\n+--------------------------+\n|                        3 |\n+--------------------------+\n1 row in set (0.00 sec)\n"
+  },
+  {
+   "id": "cs12-28",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 6 – Two tables BOOKS and ISSUED: insert data, display joined details, and update and delete records.",
+   "title_hi": "SQL सेट 6 – दो तालिकाएँ BOOKS और ISSUED: डेटा डालिए, जुड़ा हुआ विवरण दिखाइए तथा रिकॉर्ड अपडेट व डिलीट कीजिए।",
+   "syllabus": false,
+   "code": "CREATE DATABASE lib;\n\nUSE lib;\n\nCREATE TABLE books (\n  bookid CHAR(4) PRIMARY KEY,\n  title VARCHAR(25),\n  author VARCHAR(20),\n  price INT,\n  copies INT\n);\n\nCREATE TABLE issued (\n  bookid CHAR(4),\n  student VARCHAR(15),\n  issue_date DATE\n);\n\nINSERT INTO books VALUES\n  ('B001', 'Wings of Fire', 'A P J Abdul Kalam', 350, 5),\n  ('B002', 'Godan', 'Premchand', 220, 3),\n  ('B003', 'Python Programming', 'R Sharma', 499, 4),\n  ('B004', 'The Discovery of India', 'Jawaharlal Nehru', 400, 2);\n\nINSERT INTO issued VALUES\n  ('B001', 'Tanvi', '2026-07-10'),\n  ('B003', 'Harsh', '2026-07-12'),\n  ('B003', 'Ira', '2026-07-15');\n\nSELECT title, student, issue_date FROM books, issued WHERE books.bookid = issued.bookid;\n\nSELECT title, COUNT(*) FROM books, issued WHERE books.bookid = issued.bookid GROUP BY title;\n\nUPDATE books SET price = price * 1.1 WHERE author = 'Premchand';\n\nSELECT title, price FROM books;\n\nSELECT title, price FROM books WHERE price > 300 ORDER BY price DESC;\n\nDELETE FROM issued WHERE student = 'Ira';\n\nSELECT * FROM issued;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE lib;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE lib;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE books (\n  bookid CHAR(4) PRIMARY KEY,\n  title VARCHAR(25),\n  author VARCHAR(20),\n  price INT,\n  copies INT\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE issued (\n  bookid CHAR(4),\n  student VARCHAR(15),\n  issue_date DATE\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO books VALUES\n  ('B001', 'Wings of Fire', 'A P J Abdul Kalam', 350, 5),\n  ('B002', 'Godan', 'Premchand', 220, 3),\n  ('B003', 'Python Programming', 'R Sharma', 499, 4),\n  ('B004', 'The Discovery of India', 'Jawaharlal Nehru', 400, 2);",
+     "result": "Query OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO issued VALUES\n  ('B001', 'Tanvi', '2026-07-10'),\n  ('B003', 'Harsh', '2026-07-12'),\n  ('B003', 'Ira', '2026-07-15');",
+     "result": "Query OK, 3 rows affected (0.00 sec)\nRecords: 3  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Title of each issued book with the student's name.",
+     "sql": "SELECT title, student, issue_date FROM books, issued WHERE books.bookid = issued.bookid;",
+     "result": "+--------------------+---------+------------+\n| title              | student | issue_date |\n+--------------------+---------+------------+\n| Wings of Fire      | Tanvi   | 2026-07-10 |\n| Python Programming | Harsh   | 2026-07-12 |\n| Python Programming | Ira     | 2026-07-15 |\n+--------------------+---------+------------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Number of times each book has been issued.",
+     "sql": "SELECT title, COUNT(*) FROM books, issued WHERE books.bookid = issued.bookid GROUP BY title;",
+     "result": "+--------------------+----------+\n| title              | COUNT(*) |\n+--------------------+----------+\n| Python Programming |        2 |\n| Wings of Fire      |        1 |\n+--------------------+----------+\n2 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Increase the price of books by Premchand by 10%.",
+     "sql": "UPDATE books SET price = price * 1.1 WHERE author = 'Premchand';",
+     "result": "Query OK, 1 row affected (0.00 sec)\nRows matched: 1  Changed: 1  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "SELECT title, price FROM books;",
+     "result": "+------------------------+-------+\n| title                  | price |\n+------------------------+-------+\n| Wings of Fire          |   350 |\n| Godan                  |   242 |\n| Python Programming     |   499 |\n| The Discovery of India |   400 |\n+------------------------+-------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Books costing more than 300, costliest first.",
+     "sql": "SELECT title, price FROM books WHERE price > 300 ORDER BY price DESC;",
+     "result": "+------------------------+-------+\n| title                  | price |\n+------------------------+-------+\n| Python Programming     |   499 |\n| The Discovery of India |   400 |\n| Wings of Fire          |   350 |\n+------------------------+-------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Remove the issue record of Ira.",
+     "sql": "DELETE FROM issued WHERE student = 'Ira';",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "SELECT * FROM issued;",
+     "result": "+--------+---------+------------+\n| bookid | student | issue_date |\n+--------+---------+------------+\n| B001   | Tanvi   | 2026-07-10 |\n| B003   | Harsh   | 2026-07-12 |\n+--------+---------+------------+\n2 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE lib;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE lib;\nDatabase changed\n\nmysql> CREATE TABLE books (\n  bookid CHAR(4) PRIMARY KEY,\n  title VARCHAR(25),\n  author VARCHAR(20),\n  price INT,\n  copies INT\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> CREATE TABLE issued (\n  bookid CHAR(4),\n  student VARCHAR(15),\n  issue_date DATE\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO books VALUES\n  ('B001', 'Wings of Fire', 'A P J Abdul Kalam', 350, 5),\n  ('B002', 'Godan', 'Premchand', 220, 3),\n  ('B003', 'Python Programming', 'R Sharma', 499, 4),\n  ('B004', 'The Discovery of India', 'Jawaharlal Nehru', 400, 2);\nQuery OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0\n\nmysql> INSERT INTO issued VALUES\n  ('B001', 'Tanvi', '2026-07-10'),\n  ('B003', 'Harsh', '2026-07-12'),\n  ('B003', 'Ira', '2026-07-15');\nQuery OK, 3 rows affected (0.00 sec)\nRecords: 3  Duplicates: 0  Warnings: 0\n\nmysql> SELECT title, student, issue_date FROM books, issued WHERE books.bookid = issued.bookid;\n+--------------------+---------+------------+\n| title              | student | issue_date |\n+--------------------+---------+------------+\n| Wings of Fire      | Tanvi   | 2026-07-10 |\n| Python Programming | Harsh   | 2026-07-12 |\n| Python Programming | Ira     | 2026-07-15 |\n+--------------------+---------+------------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT title, COUNT(*) FROM books, issued WHERE books.bookid = issued.bookid GROUP BY title;\n+--------------------+----------+\n| title              | COUNT(*) |\n+--------------------+----------+\n| Python Programming |        2 |\n| Wings of Fire      |        1 |\n+--------------------+----------+\n2 rows in set (0.00 sec)\n\nmysql> UPDATE books SET price = price * 1.1 WHERE author = 'Premchand';\nQuery OK, 1 row affected (0.00 sec)\nRows matched: 1  Changed: 1  Warnings: 0\n\nmysql> SELECT title, price FROM books;\n+------------------------+-------+\n| title                  | price |\n+------------------------+-------+\n| Wings of Fire          |   350 |\n| Godan                  |   242 |\n| Python Programming     |   499 |\n| The Discovery of India |   400 |\n+------------------------+-------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT title, price FROM books WHERE price > 300 ORDER BY price DESC;\n+------------------------+-------+\n| title                  | price |\n+------------------------+-------+\n| Python Programming     |   499 |\n| The Discovery of India |   400 |\n| Wings of Fire          |   350 |\n+------------------------+-------+\n3 rows in set (0.00 sec)\n\nmysql> DELETE FROM issued WHERE student = 'Ira';\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> SELECT * FROM issued;\n+--------+---------+------------+\n| bookid | student | issue_date |\n+--------+---------+------------+\n| B001   | Tanvi   | 2026-07-10 |\n| B003   | Harsh   | 2026-07-12 |\n+--------+---------+------------+\n2 rows in set (0.00 sec)\n"
+  },
+  {
+   "id": "cs12-29",
+   "group": "python-sql",
+   "type": "python-sql",
+   "title": "Write a Python program to connect to MySQL, create a database SCHOOL and a table STUDENT, and insert records entered by the user.",
+   "title_hi": "MySQL से जुड़कर डेटाबेस SCHOOL और तालिका STUDENT बनाने तथा उपयोगकर्ता द्वारा दिए गए रिकॉर्ड डालने का पायथन प्रोग्राम लिखिए।",
+   "syllabus": true,
+   "code": "# Program 29: Create a database and table, and insert records\nimport mysql.connector as mycon\n\ncon = mycon.connect(host=\"localhost\", user=\"root\", passwd=\"tiger\")\nif con.is_connected():\n    print(\"Connected to MySQL\")\ncur = con.cursor()\ncur.execute(\"CREATE DATABASE IF NOT EXISTS school\")\ncur.execute(\"USE school\")\ncur.execute(\"\"\"CREATE TABLE IF NOT EXISTS student (\n                 rollno INT PRIMARY KEY,\n                 name VARCHAR(20),\n                 stream VARCHAR(12),\n                 marks INT)\"\"\")\nprint(\"Database and table are ready\")\n\nn = int(input(\"How many records? \"))\nfor i in range(n):\n    roll = int(input(\"Roll number: \"))\n    name = input(\"Name       : \")\n    stream = input(\"Stream     : \")\n    marks = int(input(\"Marks      : \"))\n    query = \"INSERT INTO student VALUES (%s, %s, %s, %s)\"\n    cur.execute(query, (roll, name, stream, marks))\ncon.commit()                       # save the changes permanently\nprint(n, \"records inserted\")\ncon.close()\n",
+   "inputs": [
+    "3",
+    "1",
+    "Aarav",
+    "Science",
+    "86",
+    "2",
+    "Diya",
+    "Commerce",
+    "74",
+    "3",
+    "Kabir",
+    "Science",
+    "92"
+   ],
+   "output": "Connected to MySQL\nDatabase and table are ready\nHow many records? 3\nRoll number: 1\nName       : Aarav\nStream     : Science\nMarks      : 86\nRoll number: 2\nName       : Diya\nStream     : Commerce\nMarks      : 74\nRoll number: 3\nName       : Kabir\nStream     : Science\nMarks      : 92\n3 records inserted\n"
+  },
+  {
+   "id": "cs12-30",
+   "group": "python-sql",
+   "type": "python-sql",
+   "title": "Write a Python program to display all the records of the STUDENT table using fetchall(), the first record using fetchone(), and the number of records using rowcount.",
+   "title_hi": "STUDENT तालिका के सभी रिकॉर्ड fetchall() से, पहला रिकॉर्ड fetchone() से और रिकॉर्ड की संख्या rowcount से दिखाने का पायथन प्रोग्राम लिखिए।",
+   "syllabus": true,
+   "code": "# Program 30: fetchall(), fetchone() and rowcount\nimport mysql.connector as mycon\n\ncon = mycon.connect(host=\"localhost\", user=\"root\", passwd=\"tiger\", database=\"school\")\ncur = con.cursor()\n\ncur.execute(\"SELECT * FROM student\")\nrows = cur.fetchall()\nprint(\"All records (fetchall):\")\nprint(\"%-8s%-10s%-12s%s\" % (\"Roll\", \"Name\", \"Stream\", \"Marks\"))\nfor row in rows:\n    print(\"%-8s%-10s%-12s%s\" % row)\nprint(\"Number of records (rowcount):\", cur.rowcount)\n\ncur.execute(\"SELECT * FROM student ORDER BY marks DESC\")\ntop = cur.fetchone()               # only the first row of the result\nprint(\"\\nTopper (fetchone):\", top)\ncur.fetchall()                     # read the remaining rows before the next query\ncon.close()\n",
+   "inputs": [],
+   "output": "All records (fetchall):\nRoll    Name      Stream      Marks\n1       Aarav     Science     86\n2       Diya      Commerce    74\n3       Kabir     Science     92\n4       Meera     Humanities  68\nNumber of records (rowcount): 4\n\nTopper (fetchone): (3, 'Kabir', 'Science', 92)\n"
+  },
+  {
+   "id": "cs12-31",
+   "group": "python-sql",
+   "type": "python-sql",
+   "title": "Write a Python program to search a student by roll number and update the marks, using the format() method in the query.",
+   "title_hi": "रोल नंबर से विद्यार्थी को खोजने और उसके अंक अपडेट करने का पायथन प्रोग्राम लिखिए, जिसमें क्वेरी में format() विधि का उपयोग हो।",
+   "syllabus": true,
+   "code": "# Program 31: Search and update a record using format()\nimport mysql.connector as mycon\n\ncon = mycon.connect(host=\"localhost\", user=\"root\", passwd=\"tiger\", database=\"school\")\ncur = con.cursor()\n\nfor i in range(2):\n    roll = int(input(\"\\nEnter roll number: \"))\n    cur.execute(\"SELECT * FROM student WHERE rollno = {}\".format(roll))\n    rec = cur.fetchone()\n    if rec is None:\n        print(\"No student with roll number\", roll)\n        continue\n    print(\"Found:\", rec)\n    new_marks = int(input(\"Enter new marks: \"))\n    cur.execute(\"UPDATE student SET marks = {} WHERE rollno = {}\".format(new_marks, roll))\n    con.commit()\n    print(cur.rowcount, \"record updated\")\n    cur.execute(\"SELECT * FROM student WHERE rollno = {}\".format(roll))\n    print(\"Now:\", cur.fetchone())\ncon.close()\n",
+   "inputs": [
+    "2",
+    "79",
+    "9"
+   ],
+   "output": "\nEnter roll number: 2\nFound: (2, 'Diya', 'Commerce', 74)\nEnter new marks: 79\n1 record updated\nNow: (2, 'Diya', 'Commerce', 79)\n\nEnter roll number: 9\nNo student with roll number 9\n"
+  },
+  {
+   "id": "cs12-32",
+   "group": "python-sql",
+   "type": "python-sql",
+   "title": "Write a Python program to delete the record of a student whose roll number is entered by the user (using the %s format specifier), and display the remaining records.",
+   "title_hi": "उपयोगकर्ता द्वारा दिए गए रोल नंबर वाले विद्यार्थी का रिकॉर्ड हटाने (%s फ़ॉर्मेट स्पेसिफ़ायर से) और बचे हुए रिकॉर्ड दिखाने का पायथन प्रोग्राम लिखिए।",
+   "syllabus": true,
+   "code": "# Program 32: Delete a record using %s\nimport mysql.connector as mycon\n\ncon = mycon.connect(host=\"localhost\", user=\"root\", passwd=\"tiger\", database=\"school\")\ncur = con.cursor()\n\nroll = int(input(\"Enter roll number to delete: \"))\ncur.execute(\"DELETE FROM student WHERE rollno = %s\", (roll,))\ncon.commit()\nif cur.rowcount == 0:\n    print(\"No such record\")\nelse:\n    print(\"Record deleted\")\n\ncur.execute(\"SELECT rollno, name, marks FROM student\")\nprint(\"Remaining records:\")\nfor r in cur.fetchall():\n    print(r[0], r[1], r[2])\ncon.close()\n",
+   "inputs": [
+    "4"
+   ],
+   "output": "Enter roll number to delete: 4\nRecord deleted\nRemaining records:\n1 Aarav 86\n2 Diya 74\n3 Kabir 92\n"
+  },
+  {
+   "id": "cs12-33",
+   "group": "python-sql",
+   "type": "python-sql",
+   "title": "Write a menu-driven Python–MySQL program to add a student, show all students, and show the students of a given stream with marks above a given value.",
+   "title_hi": "विद्यार्थी जोड़ने, सभी विद्यार्थी दिखाने तथा दी गई स्ट्रीम में दिए गए अंकों से अधिक वाले विद्यार्थी दिखाने का मेनू-आधारित पायथन–MySQL प्रोग्राम लिखिए।",
+   "syllabus": false,
+   "code": "# Program 33: Menu-driven student database\nimport mysql.connector as mycon\n\ncon = mycon.connect(host=\"localhost\", user=\"root\", passwd=\"tiger\", database=\"school\")\ncur = con.cursor()\n\n\ndef add_student():\n    data = (int(input(\"Roll number: \")), input(\"Name       : \"),\n            input(\"Stream     : \"), int(input(\"Marks      : \")))\n    cur.execute(\"INSERT INTO student VALUES (%s, %s, %s, %s)\", data)\n    con.commit()\n    print(\"Student added\")\n\n\ndef show_all():\n    cur.execute(\"SELECT * FROM student\")\n    for row in cur.fetchall():\n        print(*row, sep=\"\\t\")\n\n\ndef show_stream():\n    stream = input(\"Stream     : \")\n    limit = int(input(\"Marks above: \"))\n    cur.execute(\"SELECT name, marks FROM student WHERE stream = %s AND marks > %s\", (stream, limit))\n    rows = cur.fetchall()\n    if rows:\n        for name, marks in rows:\n            print(name, marks)\n    else:\n        print(\"No student found\")\n\n\nwhile True:\n    print(\"\\n1. Add student  2. Show all  3. Search by stream  4. Exit\")\n    choice = input(\"Choice: \")\n    if choice == \"1\":\n        add_student()\n    elif choice == \"2\":\n        show_all()\n    elif choice == \"3\":\n        show_stream()\n    elif choice == \"4\":\n        print(\"Bye\")\n        break\ncon.close()\n",
+   "inputs": [
+    "1",
+    "5",
+    "Rohan",
+    "Science",
+    "81",
+    "2",
+    "3",
+    "Science",
+    "85",
+    "4"
+   ],
+   "output": "\n1. Add student  2. Show all  3. Search by stream  4. Exit\nChoice: 1\nRoll number: 5\nName       : Rohan\nStream     : Science\nMarks      : 81\nStudent added\n\n1. Add student  2. Show all  3. Search by stream  4. Exit\nChoice: 2\n1\tAarav\tScience\t86\n2\tDiya\tCommerce\t74\n3\tKabir\tScience\t92\n4\tMeera\tHumanities\t68\n5\tRohan\tScience\t81\n\n1. Add student  2. Show all  3. Search by stream  4. Exit\nChoice: 3\nStream     : Science\nMarks above: 85\nAarav 86\nKabir 92\n\n1. Add student  2. Show all  3. Search by stream  4. Exit\nChoice: 4\nBye\n"
+  }
+ ]
+}

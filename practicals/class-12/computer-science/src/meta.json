@@ -1,0 +1,29 @@
+{
+ "version": 1,
+ "class": 12,
+ "subject": "computer-science",
+ "subjectName": "Computer Science",
+ "subjectName_hi": "कंप्यूटर विज्ञान",
+ "subjectCode": "083",
+ "session": "2026-27",
+ "source": "CBSE Curriculum 2026-27, Computer Science (083), Class XII: practical list and marks (cbseacademic.nic.in)",
+ "reportFileRule": "Minimum 15 Python programs, minimum 5 sets of SQL queries (one / two tables), minimum 4 Python–SQL connectivity programs.",
+ "reportFileRule_hi": "कम से कम 15 पायथन प्रोग्राम, एक / दो तालिकाओं पर SQL प्रश्नों के कम से कम 5 सेट, पायथन–SQL कनेक्टिविटी के कम से कम 4 प्रोग्राम।",
+ "marks": [
+  {"part": "Lab Test: Python program (60% logic + 20% documentation + 20% code quality)", "part_hi": "लैब टेस्ट: पायथन प्रोग्राम (60% लॉजिक + 20% डॉक्यूमेंटेशन + 20% कोड गुणवत्ता)", "marks": 8},
+  {"part": "Lab Test: SQL queries (4 queries based on one or two tables)", "part_hi": "लैब टेस्ट: SQL क्वेरी (एक या दो तालिकाओं पर 4 क्वेरी)", "marks": 4},
+  {"part": "Report file", "part_hi": "रिपोर्ट फ़ाइल", "marks": 7},
+  {"part": "Project (concepts of Classes 11 and 12)", "part_hi": "प्रोजेक्ट (कक्षा 11 और 12 की अवधारणाएँ)", "marks": 8},
+  {"part": "Viva voce", "part_hi": "मौखिक परीक्षा (वाइवा)", "marks": 3}
+ ],
+ "groups": [
+  {"id": "functions", "title": "Functions", "title_hi": "फ़ंक्शन"},
+  {"id": "exceptions", "title": "Exception Handling", "title_hi": "अपवाद प्रबंधन (Exception Handling)"},
+  {"id": "text-files", "title": "Text Files", "title_hi": "टेक्स्ट फ़ाइलें"},
+  {"id": "binary-files", "title": "Binary Files", "title_hi": "बाइनरी फ़ाइलें"},
+  {"id": "csv-files", "title": "CSV Files", "title_hi": "CSV फ़ाइलें"},
+  {"id": "stack", "title": "Stack", "title_hi": "स्टैक"},
+  {"id": "sql", "title": "SQL Queries", "title_hi": "SQL क्वेरी"},
+  {"id": "python-sql", "title": "Python–SQL Connectivity", "title_hi": "पायथन–SQL कनेक्टिविटी"}
+ ]
+}
