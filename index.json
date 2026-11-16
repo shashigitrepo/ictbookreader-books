@@ -47,6 +47,22 @@
       "productKey": "ict"
     },
     {
+      "id": "g10-artificial-intelligence",
+      "gradeId": "g10",
+      "name": "Artificial Intelligence (417)",
+      "order": 61,
+      "medium": "en",
+      "productKey": "artificial_intelligence"
+    },
+    {
+      "id": "g10-information-technology",
+      "gradeId": "g10",
+      "name": "Information Technology (402)",
+      "order": 60,
+      "medium": "en",
+      "productKey": "information_technology"
+    },
+    {
       "id": "teacher-resources-cbse-circulars",
       "gradeId": "teacher-resources",
       "name": "CBSE Circulars",
@@ -329,6 +345,295 @@
             "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-8/ict/04-being-future-ready-03.pdf"
           },
           "number": 4
+        }
+      ]
+    },
+    {
+      "id": "g10-artificial-intelligence",
+      "gradeId": "g10",
+      "subjectId": "g10-artificial-intelligence",
+      "title": "Artificial Intelligence – Class 10 (CBSE 417)",
+      "order": 1,
+      "publisher": "CBSE",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g10-artificial-intelligence-00",
+          "title": "Introduction and Syllabus",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/00-introduction.pdf"
+          }
+        },
+        {
+          "id": "g10-artificial-intelligence-01",
+          "title": "Unit 1 – Revisiting AI Project Cycle & Ethical Frameworks for AI",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/01-revisiting-ai-project-cycle-and-ethical-frameworks.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-artificial-intelligence-02",
+          "title": "Unit 2 – Advanced Concepts of Modeling in AI",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/02-advanced-concepts-of-modeling-in-ai.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-artificial-intelligence-03",
+          "title": "Unit 3 – Evaluating Models",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/03-evaluating-models.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-artificial-intelligence-04",
+          "title": "Unit 4 – Statistical Data",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/04-statistical-data.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-artificial-intelligence-05",
+          "title": "Unit 5 – Computer Vision",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/05-computer-vision.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-artificial-intelligence-06",
+          "title": "Unit 6 – Natural Language Processing",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/06-natural-language-processing.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-artificial-intelligence-99",
+          "title": "Answer Key (Unit-End Exercises)",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/99-answer-key.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "g10-artificial-intelligence-python-content-manual",
+      "gradeId": "g10",
+      "subjectId": "g10-artificial-intelligence",
+      "title": "Python Content Manual (CBSE)",
+      "order": 2,
+      "publisher": "CBSE",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g10-artificial-intelligence-python-content-manual-01",
+          "title": "Python Content Manual",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/artificial-intelligence/python-content-manual/01-python-content-manual.pdf"
+          },
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "g10-information-technology",
+      "gradeId": "g10",
+      "subjectId": "g10-information-technology",
+      "title": "Information Technology – Class 10 (CBSE 402)",
+      "order": 1,
+      "publisher": "CBSE / PSSCIVE",
+      "medium": "en",
+      "chapters": [
+        {
+          "id": "g10-information-technology-00",
+          "title": "Contents and Foreword",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/00-front-matter.pdf"
+          }
+        },
+        {
+          "id": "g10-information-technology-01",
+          "title": "Chapter 1 – Introduction to Styles",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/01-introduction-to-styles.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-information-technology-02",
+          "title": "Chapter 2 – Working with Images",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/02-working-with-images.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-information-technology-03",
+          "title": "Chapter 3 – Advanced Features of Writer",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/03-advanced-features-of-writer.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-information-technology-04",
+          "title": "Chapter 4 – Analyse Data using Scenarios and Goal Seek",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/04-analyse-data-using-scenarios-and-goal-seek.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-information-technology-05",
+          "title": "Chapter 5 – Using Macros in Spreadsheet",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/05-using-macros-in-spreadsheet.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-information-technology-06",
+          "title": "Chapter 6 – Linking Spreadsheet Data",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/06-linking-spreadsheet-data.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-information-technology-07",
+          "title": "Chapter 7 – Share and Review a Spreadsheet",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/07-share-and-review-a-spreadsheet.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-information-technology-08",
+          "title": "Chapter 8 – Introduction to Database Management System",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/08-introduction-to-database-management-system.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-information-technology-09",
+          "title": "Chapter 9 – Starting with LibreOffice Base",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/09-starting-with-libreoffice-base.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g10-information-technology-10",
+          "title": "Chapter 10 – Working with Multiple Tables",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/10-working-with-multiple-tables.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g10-information-technology-11",
+          "title": "Chapter 11 – Queries in Base",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/11-queries-in-base.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g10-information-technology-12",
+          "title": "Chapter 12 – Forms and Reports",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/12-forms-and-reports.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g10-information-technology-13",
+          "title": "Chapter 13 – Health, Safety and Security at Workplace",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/13-health-safety-and-security-at-workplace.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g10-information-technology-14",
+          "title": "Chapter 14 – Workplace Quality Measures",
+          "order": 15,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/14-workplace-quality-measures.pdf"
+          },
+          "number": 14
+        },
+        {
+          "id": "g10-information-technology-15",
+          "title": "Chapter 15 – Prevent Accidents and Emergencies",
+          "order": 16,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/15-prevent-accidents-and-emergencies.pdf"
+          },
+          "number": 15
+        },
+        {
+          "id": "g10-information-technology-99",
+          "title": "Answer Key",
+          "order": 17,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/grade-10/information-technology/99-answer-key.pdf"
+          }
         }
       ]
     },
@@ -4075,6 +4380,230 @@
             "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/social-science/history-hindi-medium/05-print-culture-and-the-modern-world.pdf"
           },
           "number": 5
+        }
+      ]
+    },
+    {
+      "id": "g12-computer-science-solutions",
+      "gradeId": "g12",
+      "subjectId": "g12-computer-science",
+      "title": "Computer Science",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g12-computer-science-solutions-01",
+          "title": "Exception Handling in Python",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/01-exception-handling-in-python.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g12-computer-science-solutions-02",
+          "title": "File Handling in Python",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/02-file-handling-in-python.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g12-computer-science-solutions-03",
+          "title": "Stack",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/03-stack.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g12-computer-science-solutions-04",
+          "title": "Queue",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/04-queue.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g12-computer-science-solutions-05",
+          "title": "Sorting",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/05-sorting.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g12-computer-science-solutions-06",
+          "title": "Searching",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/06-searching.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g12-computer-science-solutions-07",
+          "title": "Understanding Data",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/07-understanding-data.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g12-computer-science-solutions-08",
+          "title": "Database Concepts",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/08-database-concepts.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g12-computer-science-solutions-09",
+          "title": "Structured Query Language (SQL)",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/09-structured-query-language-sql.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g12-computer-science-solutions-10",
+          "title": "Computer Networks",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/10-computer-networks.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g12-computer-science-solutions-11",
+          "title": "Data Communication",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/11-data-communication.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g12-computer-science-solutions-12",
+          "title": "Security Aspects",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/12-security-aspects.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g12-computer-science-solutions-13",
+          "title": "Project Based Learning",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/computer-science/13-project-based-learning.pdf"
+          },
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": "g12-informatics-practices-solutions",
+      "gradeId": "g12",
+      "subjectId": "g12-informatics-practices",
+      "title": "Informatics Practices",
+      "order": 50,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g12-informatics-practices-solutions-01",
+          "title": "Querying and SQL Functions",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/informatics-practices/01-querying-and-sql-functions.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g12-informatics-practices-solutions-02",
+          "title": "Data Handling Using Pandas - I",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/informatics-practices/02-data-handling-using-pandas-i.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g12-informatics-practices-solutions-03",
+          "title": "Data Handling Using Pandas - II",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/informatics-practices/03-data-handling-using-pandas-ii.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g12-informatics-practices-solutions-04",
+          "title": "Plotting Data Using Matplotlib",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/informatics-practices/04-plotting-data-using-matplotlib.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g12-informatics-practices-solutions-05",
+          "title": "Internet and Web",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/informatics-practices/05-internet-and-web.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g12-informatics-practices-solutions-06",
+          "title": "Societal Impacts",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/informatics-practices/06-societal-impacts.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g12-informatics-practices-solutions-07",
+          "title": "Project Based Learning",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-12/informatics-practices/07-project-based-learning.pdf"
+          },
+          "number": 7
         }
       ]
     }
