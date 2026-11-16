@@ -1,0 +1,12 @@
+{
+  "title": "Informatics Practices",
+  "chapters": {
+    "01-querying-and-sql-functions.pdf": "Querying and SQL Functions",
+    "02-data-handling-using-pandas-i.pdf": "Data Handling Using Pandas - I",
+    "03-data-handling-using-pandas-ii.pdf": "Data Handling Using Pandas - II",
+    "04-plotting-data-using-matplotlib.pdf": "Plotting Data Using Matplotlib",
+    "05-internet-and-web.pdf": "Internet and Web",
+    "06-societal-impacts.pdf": "Societal Impacts",
+    "07-project-based-learning.pdf": "Project Based Learning"
+  }
+}
