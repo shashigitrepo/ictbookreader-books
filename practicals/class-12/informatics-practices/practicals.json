@@ -1,0 +1,636 @@
+{
+ "version": 1,
+ "class": 12,
+ "subject": "informatics-practices",
+ "subjectName": "Informatics Practices",
+ "subjectName_hi": "सूचना विज्ञान अभ्यास (Informatics Practices)",
+ "subjectCode": "065",
+ "session": "2026-27",
+ "source": "CBSE Curriculum 2026-27, Informatics Practices (065), Class XII: practical list and marks (cbseacademic.nic.in)",
+ "reportFileRule": "Minimum 15 programs based on Pandas, 4 based on Matplotlib and 15 SQL queries.",
+ "reportFileRule_hi": "Pandas पर कम से कम 15 प्रोग्राम, Matplotlib पर 4 और 15 SQL क्वेरी।",
+ "marks": [
+  {
+   "part": "Programs using Pandas and Matplotlib",
+   "part_hi": "Pandas और Matplotlib के प्रोग्राम",
+   "marks": 8
+  },
+  {
+   "part": "SQL queries",
+   "part_hi": "SQL क्वेरी",
+   "marks": 7
+  },
+  {
+   "part": "Practical file (15 Pandas, 4 Matplotlib programs, 15 SQL queries)",
+   "part_hi": "प्रैक्टिकल फ़ाइल (15 Pandas, 4 Matplotlib प्रोग्राम, 15 SQL क्वेरी)",
+   "marks": 5
+  },
+  {
+   "part": "Project work (concepts of Classes 11 and 12)",
+   "part_hi": "प्रोजेक्ट कार्य (कक्षा 11 और 12 की अवधारणाएँ)",
+   "marks": 5
+  },
+  {
+   "part": "Viva voce",
+   "part_hi": "मौखिक परीक्षा (वाइवा)",
+   "marks": 5
+  }
+ ],
+ "groups": [
+  {
+   "id": "series",
+   "title": "Pandas Series",
+   "title_hi": "Pandas सीरीज़"
+  },
+  {
+   "id": "dataframe",
+   "title": "Pandas DataFrame",
+   "title_hi": "Pandas डेटाफ़्रेम"
+  },
+  {
+   "id": "csv",
+   "title": "CSV and SQL with Pandas",
+   "title_hi": "Pandas के साथ CSV और SQL"
+  },
+  {
+   "id": "plots",
+   "title": "Data Visualization (Matplotlib)",
+   "title_hi": "डेटा विज़ुअलाइज़ेशन (Matplotlib)"
+  },
+  {
+   "id": "sql",
+   "title": "SQL Queries",
+   "title_hi": "SQL क्वेरी"
+  }
+ ],
+ "practicals": [
+  {
+   "id": "ip12-01",
+   "group": "series",
+   "type": "python",
+   "title": "Create a Pandas Series from a dictionary of values and from an ndarray.",
+   "title_hi": "मानों की डिक्शनरी से और ndarray से Pandas सीरीज़ बनाइए।",
+   "syllabus": true,
+   "code": "# Program 1: Series from a dictionary and from an ndarray\nimport pandas as pd\nimport numpy as np\n\nmarks = {\"English\": 82, \"Maths\": 91, \"Physics\": 76, \"Chemistry\": 88, \"IP\": 95}\ns1 = pd.Series(marks)\nprint(\"Series from a dictionary:\")\nprint(s1)\n\narr = np.array([12.5, 15.0, 17.5, 20.0])\ns2 = pd.Series(arr, index=[\"Q1\", \"Q2\", \"Q3\", \"Q4\"])\nprint(\"\\nSeries from an ndarray:\")\nprint(s2)\n",
+   "inputs": [],
+   "output": "Series from a dictionary:\nEnglish      82\nMaths        91\nPhysics      76\nChemistry    88\nIP           95\ndtype: int64\n\nSeries from an ndarray:\nQ1    12.5\nQ2    15.0\nQ3    17.5\nQ4    20.0\ndtype: float64\n"
+  },
+  {
+   "id": "ip12-02",
+   "group": "series",
+   "type": "python",
+   "title": "Create a Series from a scalar value, and perform mathematical operations (+, -, *, /) on two Series.",
+   "title_hi": "एक अदिश (scalar) मान से सीरीज़ बनाइए और दो सीरीज़ पर गणितीय संक्रियाएँ (+, -, *, /) कीजिए।",
+   "syllabus": false,
+   "code": "# Program 2: Series from a scalar and mathematical operations\nimport pandas as pd\n\nfee = pd.Series(1500, index=[\"Jan\", \"Feb\", \"Mar\"])\nprint(\"Series from a scalar value:\")\nprint(fee)\n\nterm1 = pd.Series([45, 38, 50, 41], index=[\"Asha\", \"Ben\", \"Chen\", \"Dev\"])\nterm2 = pd.Series([48, 42, 47, 44], index=[\"Asha\", \"Ben\", \"Chen\", \"Dev\"])\nprint(\"\\nTotal (term1 + term2):\")\nprint(term1 + term2)\nprint(\"\\nImprovement (term2 - term1):\")\nprint(term2 - term1)\nprint(\"\\nTerm 1 marks doubled (term1 * 2):\")\nprint(term1 * 2)\nprint(\"\\nPercentage of term 2 out of 50 (term2 / 50 * 100):\")\nprint(term2 / 50 * 100)\n",
+   "inputs": [],
+   "output": "Series from a scalar value:\nJan    1500\nFeb    1500\nMar    1500\ndtype: int64\n\nTotal (term1 + term2):\nAsha    93\nBen     80\nChen    97\nDev     85\ndtype: int64\n\nImprovement (term2 - term1):\nAsha    3\nBen     4\nChen   -3\nDev     3\ndtype: int64\n\nTerm 1 marks doubled (term1 * 2):\nAsha     90\nBen      76\nChen    100\nDev      82\ndtype: int64\n\nPercentage of term 2 out of 50 (term2 / 50 * 100):\nAsha    96.0\nBen     84.0\nChen    94.0\nDev     88.0\ndtype: float64\n"
+  },
+  {
+   "id": "ip12-03",
+   "group": "series",
+   "type": "python",
+   "title": "Use head(), tail(), indexing, slicing, loc and iloc on a Series of monthly rainfall.",
+   "title_hi": "मासिक वर्षा की सीरीज़ पर head(), tail(), इंडेक्सिंग, स्लाइसिंग, loc और iloc का उपयोग कीजिए।",
+   "syllabus": false,
+   "code": "# Program 3: head(), tail(), selection, indexing and slicing\nimport pandas as pd\n\nrain = pd.Series([12, 8, 15, 30, 85, 160, 240, 210, 140, 60, 20, 10],\n                 index=[\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                        \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"])\nprint(\"First 3 months (head):\")\nprint(rain.head(3))\nprint(\"\\nLast 2 months (tail):\")\nprint(rain.tail(2))\nprint(\"\\nRainfall in July (by label):\", rain[\"Jul\"])\nprint(\"Rainfall in the 3rd month (by position):\", rain.iloc[2])\nprint(\"\\nJune to September (label slice, end included):\")\nprint(rain.loc[\"Jun\":\"Sep\"])\nprint(\"\\nPositions 0 to 2 (position slice, end excluded):\")\nprint(rain.iloc[0:3])\nprint(\"\\nEvery third month:\")\nprint(rain[::3])\n",
+   "inputs": [],
+   "output": "First 3 months (head):\nJan    12\nFeb     8\nMar    15\ndtype: int64\n\nLast 2 months (tail):\nNov    20\nDec    10\ndtype: int64\n\nRainfall in July (by label): 240\nRainfall in the 3rd month (by position): 15\n\nJune to September (label slice, end included):\nJun    160\nJul    240\nAug    210\nSep    140\ndtype: int64\n\nPositions 0 to 2 (position slice, end excluded):\nJan    12\nFeb     8\nMar    15\ndtype: int64\n\nEvery third month:\nJan     12\nApr     30\nJul    240\nOct     60\ndtype: int64\n"
+  },
+  {
+   "id": "ip12-04",
+   "group": "series",
+   "type": "python",
+   "title": "Given a Series, print all the elements that are above the 75th percentile.",
+   "title_hi": "दी गई सीरीज़ के वे सभी तत्व प्रिंट कीजिए जो 75वें प्रतिशतक (percentile) से ऊपर हैं।",
+   "syllabus": true,
+   "code": "# Program 4: Elements above the 75th percentile\nimport pandas as pd\n\nscores = pd.Series([56, 78, 91, 45, 83, 67, 99, 72, 88, 61],\n                   index=[\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\", \"S7\", \"S8\", \"S9\", \"S10\"])\np75 = scores.quantile(0.75)\nprint(\"75th percentile =\", p75)\nprint(\"Scores above the 75th percentile:\")\nprint(scores[scores > p75])\n",
+   "inputs": [],
+   "output": "75th percentile = 86.75\nScores above the 75th percentile:\nS3    91\nS7    99\nS9    88\ndtype: int64\n"
+  },
+  {
+   "id": "ip12-05",
+   "group": "series",
+   "type": "python",
+   "title": "Display the attributes of a Series (index, values, size, dtype, empty) and filter it with Boolean conditions.",
+   "title_hi": "सीरीज़ के गुण (index, values, size, dtype, empty) दिखाइए और बूलियन शर्तों से उसे फ़िल्टर कीजिए।",
+   "syllabus": false,
+   "code": "# Program 5: Series attributes and Boolean indexing\nimport pandas as pd\n\nprice = pd.Series([45.0, 30.5, 120.0, 15.0, 60.0],\n                  index=[\"Pen\", \"Pencil\", \"Geometry box\", \"Eraser\", \"Notebook\"])\nprint(\"index :\", list(price.index))\nprint(\"values:\", price.values)\nprint(\"size  :\", price.size)\nprint(\"dtype :\", price.dtype)\nprint(\"empty :\", price.empty)\nprint(\"\\nItems costing more than 40:\")\nprint(price[price > 40])\nprint(\"\\nItems between 20 and 60:\")\nprint(price[(price >= 20) & (price <= 60)])\nprint(\"\\nSorted by price:\")\nprint(price.sort_values())\n",
+   "inputs": [],
+   "output": "index : ['Pen', 'Pencil', 'Geometry box', 'Eraser', 'Notebook']\nvalues: [ 45.   30.5 120.   15.   60. ]\nsize  : 5\ndtype : float64\nempty : False\n\nItems costing more than 40:\nPen              45.0\nGeometry box    120.0\nNotebook         60.0\ndtype: float64\n\nItems between 20 and 60:\nPen         45.0\nPencil      30.5\nNotebook    60.0\ndtype: float64\n\nSorted by price:\nEraser           15.0\nPencil           30.5\nPen              45.0\nNotebook         60.0\nGeometry box    120.0\ndtype: float64\n"
+  },
+  {
+   "id": "ip12-06",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Create a DataFrame from a dictionary of Series and from a list of dictionaries, and display it.",
+   "title_hi": "Series की डिक्शनरी से और डिक्शनरियों की सूची से डेटाफ़्रेम बनाइए और दिखाइए।",
+   "syllabus": false,
+   "code": "# Program 6: DataFrame from a dictionary of Series and a list of dictionaries\nimport pandas as pd\n\nnames = pd.Series([\"Ira\", \"Om\", \"Pia\", \"Raj\"])\nages = pd.Series([16, 17, 16, 17])\nhouse = pd.Series([\"Red\", \"Blue\", \"Green\", \"Blue\"])\ndf1 = pd.DataFrame({\"Name\": names, \"Age\": ages, \"House\": house})\nprint(\"From a dictionary of Series:\")\nprint(df1)\n\nrows = [{\"City\": \"Delhi\", \"Temp\": 31, \"Humidity\": 45},\n        {\"City\": \"Chennai\", \"Temp\": 34, \"Humidity\": 70},\n        {\"City\": \"Shimla\", \"Temp\": 18}]          # Humidity missing for Shimla\ndf2 = pd.DataFrame(rows)\nprint(\"\\nFrom a list of dictionaries (missing value becomes NaN):\")\nprint(df2)\n",
+   "inputs": [],
+   "output": "From a dictionary of Series:\n  Name  Age  House\n0  Ira   16    Red\n1   Om   17   Blue\n2  Pia   16  Green\n3  Raj   17   Blue\n\nFrom a list of dictionaries (missing value becomes NaN):\n      City  Temp  Humidity\n0    Delhi    31      45.0\n1  Chennai    34      70.0\n2   Shimla    18       NaN\n"
+  },
+  {
+   "id": "ip12-07",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Create a DataFrame quarterly sales where each row contains the item category, item name and expenditure. Group the rows by category and print the total expenditure per category.",
+   "title_hi": "तिमाही बिक्री का डेटाफ़्रेम बनाइए जिसकी हर पंक्ति में वस्तु श्रेणी, वस्तु का नाम और व्यय हो। पंक्तियों को श्रेणी के अनुसार समूहित करके प्रति श्रेणी कुल व्यय प्रिंट कीजिए।",
+   "syllabus": true,
+   "code": "# Program 7: Group by category and total expenditure\nimport pandas as pd\n\nsales = pd.DataFrame({\n    \"Category\": [\"Electronics\", \"Furniture\", \"Electronics\", \"Stationery\",\n                 \"Furniture\", \"Stationery\", \"Electronics\"],\n    \"Item\": [\"Laptop\", \"Chair\", \"Printer\", \"Notebooks\", \"Table\", \"Pens\", \"Mouse\"],\n    \"Expenditure\": [55000, 4500, 12000, 1800, 9000, 600, 900],\n})\nprint(sales)\nprint(\"\\nTotal expenditure per category:\")\nprint(sales.groupby(\"Category\")[\"Expenditure\"].sum())\n",
+   "inputs": [],
+   "output": "      Category       Item  Expenditure\n0  Electronics     Laptop        55000\n1    Furniture      Chair         4500\n2  Electronics    Printer        12000\n3   Stationery  Notebooks         1800\n4    Furniture      Table         9000\n5   Stationery       Pens          600\n6  Electronics      Mouse          900\n\nTotal expenditure per category:\nCategory\nElectronics    67900\nFurniture      13500\nStationery      2400\nName: Expenditure, dtype: int64\n"
+  },
+  {
+   "id": "ip12-08",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Create a DataFrame for examination results and display its row labels, column labels, data types of each column and its dimensions.",
+   "title_hi": "परीक्षा परिणाम का डेटाफ़्रेम बनाइए और उसके पंक्ति लेबल, स्तंभ लेबल, हर स्तंभ का डेटा टाइप और आयाम (dimensions) दिखाइए।",
+   "syllabus": true,
+   "code": "# Program 8: Row labels, column labels, dtypes and dimensions\nimport pandas as pd\n\nresult = pd.DataFrame({\n    \"Name\": [\"Arnav\", \"Bela\", \"Charu\", \"Dhruv\"],\n    \"Maths\": [88, 76, 93, 65],\n    \"Science\": [91, 84, 89, 72],\n    \"Percent\": [89.5, 80.0, 91.0, 68.5],\n    \"Pass\": [True, True, True, True],\n}, index=[\"R1\", \"R2\", \"R3\", \"R4\"])\nprint(result)\nprint(\"\\nRow labels   :\", list(result.index))\nprint(\"Column labels:\", list(result.columns))\nprint(\"\\nData types:\")\nprint(result.dtypes)\nprint(\"\\nShape (rows, columns):\", result.shape)\nprint(\"Number of dimensions:\", result.ndim)\nprint(\"Total values (size) :\", result.size)\n",
+   "inputs": [],
+   "output": "     Name  Maths  Science  Percent  Pass\nR1  Arnav     88       91     89.5  True\nR2   Bela     76       84     80.0  True\nR3  Charu     93       89     91.0  True\nR4  Dhruv     65       72     68.5  True\n\nRow labels   : ['R1', 'R2', 'R3', 'R4']\nColumn labels: ['Name', 'Maths', 'Science', 'Percent', 'Pass']\n\nData types:\nName        object\nMaths        int64\nScience      int64\nPercent    float64\nPass          bool\ndtype: object\n\nShape (rows, columns): (4, 5)\nNumber of dimensions: 2\nTotal values (size) : 20\n"
+  },
+  {
+   "id": "ip12-09",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Add, select, delete and rename rows and columns of a DataFrame.",
+   "title_hi": "डेटाफ़्रेम की पंक्तियाँ और स्तंभ जोड़िए, चुनिए, हटाइए और उनका नाम बदलिए।",
+   "syllabus": false,
+   "code": "# Program 9: Operations on rows and columns\nimport pandas as pd\n\ndf = pd.DataFrame({\"Hindi\": [78, 85, 69], \"English\": [82, 74, 90]},\n                  index=[\"Anu\", \"Bilal\", \"Charvi\"])\nprint(\"Original:\")\nprint(df)\n\ndf[\"Maths\"] = [91, 66, 88]                 # add a column\ndf.loc[\"Deep\"] = [72, 80, 77]              # add a row\nprint(\"\\nAfter adding column Maths and row Deep:\")\nprint(df)\n\nprint(\"\\nSelect column English:\")\nprint(df[\"English\"])\nprint(\"\\nSelect row Bilal:\")\nprint(df.loc[\"Bilal\"])\n\ndf = df.drop(\"Hindi\", axis=1)              # delete a column\ndf = df.drop(\"Charvi\")                     # delete a row\ndf = df.rename(columns={\"English\": \"Eng\"}, index={\"Anu\": \"Anushka\"})\nprint(\"\\nAfter deleting Hindi and Charvi, and renaming:\")\nprint(df)\n",
+   "inputs": [],
+   "output": "Original:\n        Hindi  English\nAnu        78       82\nBilal      85       74\nCharvi     69       90\n\nAfter adding column Maths and row Deep:\n        Hindi  English  Maths\nAnu        78       82     91\nBilal      85       74     66\nCharvi     69       90     88\nDeep       72       80     77\n\nSelect column English:\nAnu       82\nBilal     74\nCharvi    90\nDeep      80\nName: English, dtype: int64\n\nSelect row Bilal:\nHindi      85\nEnglish    74\nMaths      66\nName: Bilal, dtype: int64\n\nAfter deleting Hindi and Charvi, and renaming:\n         Eng  Maths\nAnushka   82     91\nBilal     74     66\nDeep      80     77\n"
+  },
+  {
+   "id": "ip12-10",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Iterate over the rows of a DataFrame using iterrows() and over its columns using items().",
+   "title_hi": "iterrows() से डेटाफ़्रेम की पंक्तियों पर और items() से उसके स्तंभों पर पुनरावृत्ति (iteration) कीजिए।",
+   "syllabus": false,
+   "code": "# Program 10: Iterating over a DataFrame\nimport pandas as pd\n\ndf = pd.DataFrame({\"Item\": [\"Rice\", \"Dal\", \"Oil\"],\n                   \"Qty\": [5, 2, 1],\n                   \"Rate\": [60, 120, 180]})\n\nprint(\"Row by row (iterrows):\")\nfor idx, row in df.iterrows():\n    print(idx, row[\"Item\"], \"costs\", row[\"Qty\"] * row[\"Rate\"])\n\nprint(\"\\nColumn by column (items):\")\nfor col, values in df.items():\n    print(col, \":\", list(values))\n",
+   "inputs": [],
+   "output": "Row by row (iterrows):\n0 Rice costs 300\n1 Dal costs 240\n2 Oil costs 180\n\nColumn by column (items):\nItem : ['Rice', 'Dal', 'Oil']\nQty : [5, 2, 1]\nRate : [60, 120, 180]\n"
+  },
+  {
+   "id": "ip12-11",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Use label-based indexing (loc), position-based indexing (iloc) and Boolean indexing on a DataFrame of players.",
+   "title_hi": "खिलाड़ियों के डेटाफ़्रेम पर लेबल-आधारित (loc), स्थिति-आधारित (iloc) और बूलियन इंडेक्सिंग कीजिए।",
+   "syllabus": false,
+   "code": "# Program 11: loc, iloc and Boolean indexing\nimport pandas as pd\n\nplayers = pd.DataFrame({\n    \"Team\": [\"India\", \"Australia\", \"India\", \"England\", \"India\"],\n    \"Runs\": [512, 430, 610, 388, 275],\n    \"Matches\": [10, 9, 11, 8, 7],\n}, index=[\"Virat\", \"Steve\", \"Shubman\", \"Joe\", \"Rishabh\"])\nprint(players)\nprint(\"\\nloc - rows Steve to Joe, columns Runs and Matches:\")\nprint(players.loc[\"Steve\":\"Joe\", [\"Runs\", \"Matches\"]])\nprint(\"\\niloc - first two rows, first two columns:\")\nprint(players.iloc[0:2, 0:2])\nprint(\"\\nPlayers with more than 400 runs:\")\nprint(players[players[\"Runs\"] > 400])\nprint(\"\\nIndian players with more than 300 runs:\")\nprint(players[(players[\"Team\"] == \"India\") & (players[\"Runs\"] > 300)])\n",
+   "inputs": [],
+   "output": "              Team  Runs  Matches\nVirat        India   512       10\nSteve    Australia   430        9\nShubman      India   610       11\nJoe        England   388        8\nRishabh      India   275        7\n\nloc - rows Steve to Joe, columns Runs and Matches:\n         Runs  Matches\nSteve     430        9\nShubman   610       11\nJoe       388        8\n\niloc - first two rows, first two columns:\n            Team  Runs\nVirat      India   512\nSteve  Australia   430\n\nPlayers with more than 400 runs:\n              Team  Runs  Matches\nVirat        India   512       10\nSteve    Australia   430        9\nShubman      India   610       11\n\nIndian players with more than 300 runs:\n          Team  Runs  Matches\nVirat    India   512       10\nShubman  India   610       11\n"
+  },
+  {
+   "id": "ip12-12",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Filter out rows based on different criteria, such as duplicate rows.",
+   "title_hi": "विभिन्न मानदंडों के आधार पर पंक्तियाँ छाँटिए, जैसे दोहराई गई (duplicate) पंक्तियाँ।",
+   "syllabus": true,
+   "code": "# Program 12: Finding and removing duplicate rows\nimport pandas as pd\n\nentries = pd.DataFrame({\n    \"RollNo\": [1, 2, 2, 3, 4, 4, 5],\n    \"Name\": [\"Aman\", \"Bina\", \"Bina\", \"Chirag\", \"Disha\", \"Disha\", \"Ekta\"],\n    \"Event\": [\"Race\", \"Quiz\", \"Quiz\", \"Chess\", \"Dance\", \"Quiz\", \"Race\"],\n})\nprint(\"All entries:\")\nprint(entries)\nprint(\"\\nIs the row a duplicate of an earlier row?\")\nprint(entries.duplicated())\nprint(\"\\nDuplicate rows:\")\nprint(entries[entries.duplicated()])\nprint(\"\\nAfter removing duplicate rows:\")\nprint(entries.drop_duplicates())\nprint(\"\\nOne row per student (duplicates by RollNo removed):\")\nprint(entries.drop_duplicates(subset=\"RollNo\"))\nprint(\"\\nOnly the Quiz entries:\")\nprint(entries[entries[\"Event\"] == \"Quiz\"])\n",
+   "inputs": [],
+   "output": "All entries:\n   RollNo    Name  Event\n0       1    Aman   Race\n1       2    Bina   Quiz\n2       2    Bina   Quiz\n3       3  Chirag  Chess\n4       4   Disha  Dance\n5       4   Disha   Quiz\n6       5    Ekta   Race\n\nIs the row a duplicate of an earlier row?\n0    False\n1    False\n2     True\n3    False\n4    False\n5    False\n6    False\ndtype: bool\n\nDuplicate rows:\n   RollNo  Name Event\n2       2  Bina  Quiz\n\nAfter removing duplicate rows:\n   RollNo    Name  Event\n0       1    Aman   Race\n1       2    Bina   Quiz\n3       3  Chirag  Chess\n4       4   Disha  Dance\n5       4   Disha   Quiz\n6       5    Ekta   Race\n\nOne row per student (duplicates by RollNo removed):\n   RollNo    Name  Event\n0       1    Aman   Race\n1       2    Bina   Quiz\n3       3  Chirag  Chess\n4       4   Disha  Dance\n6       5    Ekta   Race\n\nOnly the Quiz entries:\n   RollNo   Name Event\n1       2   Bina  Quiz\n2       2   Bina  Quiz\n5       4  Disha  Quiz\n"
+  },
+  {
+   "id": "ip12-13",
+   "group": "dataframe",
+   "type": "python",
+   "title": "Use head(), tail(), sort_values() and aggregate functions (max, min, mean, sum, count) on a DataFrame of student marks.",
+   "title_hi": "विद्यार्थियों के अंकों के डेटाफ़्रेम पर head(), tail(), sort_values() और समूह फ़ंक्शन (max, min, mean, sum, count) का उपयोग कीजिए।",
+   "syllabus": false,
+   "code": "# Program 13: head, tail, sorting and aggregate functions\nimport pandas as pd\n\nmarks = pd.DataFrame({\n    \"Name\": [\"Aditya\", \"Bhumi\", \"Chaitanya\", \"Devika\", \"Farhan\", \"Gauri\"],\n    \"Maths\": [78, 92, 65, 88, 71, 95],\n    \"IP\": [85, 90, 70, 94, 80, 89],\n})\nprint(\"First 3 rows:\")\nprint(marks.head(3))\nprint(\"\\nLast 2 rows:\")\nprint(marks.tail(2))\nprint(\"\\nSorted by IP marks (highest first):\")\nprint(marks.sort_values(\"IP\", ascending=False))\nprint(\"\\nHighest marks:\\n\", marks[[\"Maths\", \"IP\"]].max(), sep=\"\")\nprint(\"\\nLowest marks:\\n\", marks[[\"Maths\", \"IP\"]].min(), sep=\"\")\nprint(\"\\nAverage marks:\\n\", marks[[\"Maths\", \"IP\"]].mean(), sep=\"\")\nprint(\"\\nTotal of each student:\")\nmarks[\"Total\"] = marks[\"Maths\"] + marks[\"IP\"]\nprint(marks)\nprint(\"\\nNumber of students:\", marks[\"Name\"].count())\n",
+   "inputs": [],
+   "output": "First 3 rows:\n        Name  Maths  IP\n0     Aditya     78  85\n1      Bhumi     92  90\n2  Chaitanya     65  70\n\nLast 2 rows:\n     Name  Maths  IP\n4  Farhan     71  80\n5   Gauri     95  89\n\nSorted by IP marks (highest first):\n        Name  Maths  IP\n3     Devika     88  94\n1      Bhumi     92  90\n5      Gauri     95  89\n0     Aditya     78  85\n4     Farhan     71  80\n2  Chaitanya     65  70\n\nHighest marks:\nMaths    95\nIP       94\ndtype: int64\n\nLowest marks:\nMaths    65\nIP       70\ndtype: int64\n\nAverage marks:\nMaths    81.500000\nIP       84.666667\ndtype: float64\n\nTotal of each student:\n        Name  Maths  IP  Total\n0     Aditya     78  85    163\n1      Bhumi     92  90    182\n2  Chaitanya     65  70    135\n3     Devika     88  94    182\n4     Farhan     71  80    151\n5      Gauri     95  89    184\n\nNumber of students: 6\n"
+  },
+  {
+   "id": "ip12-14",
+   "group": "csv",
+   "type": "python",
+   "title": "Import data from a CSV file into a DataFrame, process it, and export the result to another CSV file.",
+   "title_hi": "CSV फ़ाइल से डेटा डेटाफ़्रेम में आयात कीजिए, उसे संसाधित कीजिए और परिणाम दूसरी CSV फ़ाइल में निर्यात कीजिए।",
+   "syllabus": true,
+   "code": "# Program 14: Importing and exporting data between Pandas and CSV files\nimport pandas as pd\n\ndf = pd.read_csv(\"students.csv\")\nprint(\"Data read from students.csv:\")\nprint(df)\n\ndf[\"Total\"] = df[\"Maths\"] + df[\"Science\"] + df[\"English\"]\ndf[\"Percent\"] = (df[\"Total\"] / 3).round(2)\ntoppers = df[df[\"Percent\"] >= 80]\nprint(\"\\nStudents with 80% or more:\")\nprint(toppers[[\"Name\", \"Class\", \"Percent\"]])\n\ntoppers.to_csv(\"toppers.csv\", index=False)\nprint(\"\\nSaved to toppers.csv. Reading it back:\")\nprint(pd.read_csv(\"toppers.csv\"))\n",
+   "inputs": [],
+   "output": "Data read from students.csv:\n   RollNo     Name  Class  Maths  Science  English\n0       1   Aarohi  XII-A     88       92       79\n1       2  Bhavesh  XII-A     67       71       74\n2       3   Chhavi  XII-B     95       89       91\n3       4    Darsh  XII-B     72       65       80\n4       5     Esha  XII-A     81       86       88\n5       6    Farid  XII-B     58       62       70\n\nStudents with 80% or more:\n     Name  Class  Percent\n0  Aarohi  XII-A    86.33\n2  Chhavi  XII-B    91.67\n4    Esha  XII-A    85.00\n\nSaved to toppers.csv. Reading it back:\n   RollNo    Name  Class  Maths  Science  English  Total  Percent\n0       1  Aarohi  XII-A     88       92       79    259    86.33\n1       3  Chhavi  XII-B     95       89       91    275    91.67\n2       5    Esha  XII-A     81       86       88    255    85.00\n",
+   "inputFiles": {
+    "students.csv": "RollNo,Name,Class,Maths,Science,English\n1,Aarohi,XII-A,88,92,79\n2,Bhavesh,XII-A,67,71,74\n3,Chhavi,XII-B,95,89,91\n4,Darsh,XII-B,72,65,80\n5,Esha,XII-A,81,86,88\n6,Farid,XII-B,58,62,70\n"
+   },
+   "outputFiles": {
+    "toppers.csv": "RollNo,Name,Class,Maths,Science,English,Total,Percent\n1,Aarohi,XII-A,88,92,79,259,86.33\n3,Chhavi,XII-B,95,89,91,275,91.67\n5,Esha,XII-A,81,86,88,255,85.0\n"
+   }
+  },
+  {
+   "id": "ip12-15",
+   "group": "csv",
+   "type": "python",
+   "title": "Read a CSV file with options (usecols, index_col, nrows) and write a DataFrame to CSV with a different separator and without the index.",
+   "title_hi": "विकल्पों (usecols, index_col, nrows) के साथ CSV फ़ाइल पढ़िए और डेटाफ़्रेम को अलग विभाजक (separator) के साथ, बिना इंडेक्स के CSV में लिखिए।",
+   "syllabus": false,
+   "code": "# Program 15: read_csv() and to_csv() options\nimport pandas as pd\n\npart = pd.read_csv(\"students.csv\", usecols=[\"Name\", \"Maths\"], nrows=3)\nprint(\"Only two columns, first 3 rows:\")\nprint(part)\n\nby_roll = pd.read_csv(\"students.csv\", index_col=\"RollNo\")\nprint(\"\\nRollNo used as the row index:\")\nprint(by_roll.head())\n\nclass_a = by_roll[by_roll[\"Class\"] == \"XII-A\"]\nclass_a.to_csv(\"class_a.csv\", sep=\";\", index=False)\nprint(\"\\nContents of class_a.csv (separator ;):\")\nwith open(\"class_a.csv\") as f:\n    print(f.read(), end=\"\")\n",
+   "inputs": [],
+   "output": "Only two columns, first 3 rows:\n      Name  Maths\n0   Aarohi     88\n1  Bhavesh     67\n2   Chhavi     95\n\nRollNo used as the row index:\n           Name  Class  Maths  Science  English\nRollNo                                         \n1        Aarohi  XII-A     88       92       79\n2       Bhavesh  XII-A     67       71       74\n3        Chhavi  XII-B     95       89       91\n4         Darsh  XII-B     72       65       80\n5          Esha  XII-A     81       86       88\n\nContents of class_a.csv (separator ;):\nName;Class;Maths;Science;English\nAarohi;XII-A;88;92;79\nBhavesh;XII-A;67;71;74\nEsha;XII-A;81;86;88\n",
+   "inputFiles": {
+    "students.csv": "RollNo,Name,Class,Maths,Science,English\n1,Aarohi,XII-A,88,92,79\n2,Bhavesh,XII-A,67,71,74\n3,Chhavi,XII-B,95,89,91\n4,Darsh,XII-B,72,65,80\n5,Esha,XII-A,81,86,88\n6,Farid,XII-B,58,62,70\n"
+   },
+   "outputFiles": {
+    "class_a.csv": "Name;Class;Maths;Science;English\nAarohi;XII-A;88;92;79\nBhavesh;XII-A;67;71;74\nEsha;XII-A;81;86;88\n"
+   }
+  },
+  {
+   "id": "ip12-16",
+   "group": "csv",
+   "type": "python",
+   "title": "Export a DataFrame to a MySQL table using to_sql(), and import the data back into Pandas using read_sql() with a query.",
+   "title_hi": "to_sql() से डेटाफ़्रेम को MySQL तालिका में निर्यात कीजिए और क्वेरी के साथ read_sql() से डेटा वापस Pandas में आयात कीजिए।",
+   "syllabus": false,
+   "code": "# Program 16: Importing and exporting data between Pandas and MySQL\nimport pandas as pd\nfrom sqlalchemy import create_engine\n\n# mysql+pymysql://user:password@host/database\nengine = create_engine(\"mysql+pymysql://root:tiger@localhost/school\")\n\ndf = pd.read_csv(\"students.csv\")\ndf.to_sql(\"marks\", engine, if_exists=\"replace\", index=False)\nprint(\"DataFrame saved as table MARKS in MySQL\")\n\nresult = pd.read_sql(\"SELECT Name, Class, Maths FROM marks WHERE Maths > 75\", engine)\nprint(\"\\nStudents with more than 75 in Maths (read from MySQL):\")\nprint(result)\n\navg = pd.read_sql(\"SELECT Class, AVG(Science) AS AvgScience FROM marks GROUP BY Class\", engine)\nprint(\"\\nClass-wise average in Science:\")\nprint(avg)\n",
+   "inputs": [],
+   "output": "DataFrame saved as table MARKS in MySQL\n\nStudents with more than 75 in Maths (read from MySQL):\n     Name  Class  Maths\n0  Aarohi  XII-A     88\n1  Chhavi  XII-B     95\n2    Esha  XII-A     81\n\nClass-wise average in Science:\n   Class  AvgScience\n0  XII-A        83.0\n1  XII-B        72.0\n",
+   "inputFiles": {
+    "students.csv": "RollNo,Name,Class,Maths,Science,English\n1,Aarohi,XII-A,88,92,79\n2,Bhavesh,XII-A,67,71,74\n3,Chhavi,XII-B,95,89,91\n4,Darsh,XII-B,72,65,80\n5,Esha,XII-A,81,86,88\n6,Farid,XII-B,58,62,70\n"
+   }
+  },
+  {
+   "id": "ip12-17",
+   "group": "plots",
+   "type": "python",
+   "title": "Take data from an open source (India's literacy rate in the Census of India, 1951–2011), and draw a line plot with title, axis labels and markers; save the plot as an image.",
+   "title_hi": "खुले स्रोत से डेटा (भारत की जनगणना 1951–2011 में साक्षरता दर) लेकर शीर्षक, अक्ष लेबल और मार्कर के साथ लाइन प्लॉट बनाइए; प्लॉट को चित्र के रूप में सहेजिए।",
+   "syllabus": true,
+   "code": "# Program 17: Line plot of India's literacy rate (Census of India)\nimport matplotlib.pyplot as plt\n\nyears = [1951, 1961, 1971, 1981, 1991, 2001, 2011]\nliteracy = [18.33, 28.30, 34.45, 43.57, 52.21, 64.84, 74.04]\n\nplt.plot(years, literacy, marker=\"o\", color=\"green\", linestyle=\"-\")\nplt.title(\"Literacy Rate of India (Census 1951-2011)\")\nplt.xlabel(\"Census year\")\nplt.ylabel(\"Literacy rate (%)\")\nplt.grid(True)\nplt.savefig(\"literacy.png\")\nprint(\"Plot saved as literacy.png\")\nplt.show()\n",
+   "inputs": [],
+   "output": "Plot saved as literacy.png\n",
+   "images": [
+    "img/ip12-17-1.png"
+   ],
+   "note": "Data: literacy rate (%) of India, Census of India 1951–2011."
+  },
+  {
+   "id": "ip12-18",
+   "group": "plots",
+   "type": "python",
+   "title": "Given the school result data, analyse the performance of the students subject-wise and draw a bar graph of the average marks in each subject.",
+   "title_hi": "विद्यालय परिणाम के डेटा से विद्यार्थियों के प्रदर्शन का विषयवार विश्लेषण कीजिए और हर विषय के औसत अंकों का बार ग्राफ़ बनाइए।",
+   "syllabus": true,
+   "code": "# Program 18: Subject-wise performance (bar graph)\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nresult = pd.DataFrame({\n    \"English\": [78, 85, 69, 90, 74],\n    \"Maths\": [92, 66, 81, 88, 59],\n    \"Physics\": [70, 75, 68, 84, 62],\n    \"Chemistry\": [81, 79, 72, 91, 65],\n    \"IP\": [95, 88, 90, 97, 80],\n})\naverage = result.mean()\nprint(\"Average marks in each subject:\")\nprint(average)\nprint(\"Best subject:\", average.idxmax())\n\nplt.bar(average.index, average.values, color=[\"#4e79a7\", \"#f28e2b\", \"#e15759\", \"#76b7b2\", \"#59a14f\"])\nplt.title(\"Subject-wise Average Marks\")\nplt.xlabel(\"Subject\")\nplt.ylabel(\"Average marks\")\nplt.ylim(0, 100)\nplt.show()\n",
+   "inputs": [],
+   "output": "Average marks in each subject:\nEnglish      79.2\nMaths        77.2\nPhysics      71.8\nChemistry    77.6\nIP           90.0\ndtype: float64\nBest subject: IP\n",
+   "images": [
+    "img/ip12-18-1.png"
+   ]
+  },
+  {
+   "id": "ip12-19",
+   "group": "plots",
+   "type": "python",
+   "title": "For class-wise result data in a DataFrame, compare the pass percentage of sections in two years with a multiple bar chart that has a title and a legend.",
+   "title_hi": "डेटाफ़्रेम में कक्षावार परिणाम डेटा के लिए, दो वर्षों में अनुभागों (sections) के उत्तीर्ण प्रतिशत की तुलना शीर्षक और लेजेंड वाले बहु-बार चार्ट से कीजिए।",
+   "syllabus": true,
+   "code": "# Program 19: Class-wise comparison (multiple bar chart with legend)\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.DataFrame({\"Section\": [\"XII-A\", \"XII-B\", \"XII-C\", \"XII-D\"],\n                   \"2025\": [92, 85, 78, 88],\n                   \"2026\": [95, 89, 84, 86]})\nprint(df)\nx = np.arange(len(df))\nwidth = 0.35\nplt.bar(x - width / 2, df[\"2025\"], width, label=\"2025\")\nplt.bar(x + width / 2, df[\"2026\"], width, label=\"2026\")\nplt.xticks(x, df[\"Section\"])\nplt.title(\"Pass Percentage by Section\")\nplt.xlabel(\"Section\")\nplt.ylabel(\"Pass percentage\")\nplt.ylim(0, 110)\nplt.legend()\nplt.show()\n",
+   "inputs": [],
+   "output": "  Section  2025  2026\n0   XII-A    92    95\n1   XII-B    85    89\n2   XII-C    78    84\n3   XII-D    88    86\n",
+   "images": [
+    "img/ip12-19-1.png"
+   ]
+  },
+  {
+   "id": "ip12-20",
+   "group": "plots",
+   "type": "python",
+   "title": "Draw a histogram of the marks of 30 students in IP to show how many students fall in each range of marks.",
+   "title_hi": "IP में 30 विद्यार्थियों के अंकों का हिस्टोग्राम बनाइए जो दिखाए कि अंकों की हर सीमा में कितने विद्यार्थी हैं।",
+   "syllabus": false,
+   "code": "# Program 20: Histogram of marks\nimport matplotlib.pyplot as plt\n\nmarks = [45, 52, 58, 61, 63, 66, 68, 70, 71, 72, 74, 75, 76, 78, 79,\n         80, 81, 82, 83, 85, 86, 87, 88, 90, 91, 92, 94, 95, 97, 99]\ncounts, edges, bars = plt.hist(marks, bins=[40, 50, 60, 70, 80, 90, 100],\n                               color=\"orange\", edgecolor=\"black\")\nfor low, high, c in zip(edges[:-1], edges[1:], counts):\n    print(f\"{int(low)}-{int(high)}: {int(c)} students\")\nplt.title(\"Distribution of IP Marks\")\nplt.xlabel(\"Marks\")\nplt.ylabel(\"Number of students\")\nplt.show()\n",
+   "inputs": [],
+   "output": "40-50: 1 students\n50-60: 2 students\n60-70: 4 students\n70-80: 8 students\n80-90: 8 students\n90-100: 7 students\n",
+   "images": [
+    "img/ip12-20-1.png"
+   ]
+  },
+  {
+   "id": "ip12-21",
+   "group": "plots",
+   "type": "python",
+   "title": "Plot the monthly sales of two shops from a DataFrame as a line chart with two lines, different styles, a legend and a title.",
+   "title_hi": "डेटाफ़्रेम से दो दुकानों की मासिक बिक्री को दो रेखाओं, अलग शैलियों, लेजेंड और शीर्षक वाले लाइन चार्ट में दिखाइए।",
+   "syllabus": false,
+   "code": "# Program 21: Line chart with two lines and a legend\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nsales = pd.DataFrame({\"Month\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\"],\n                      \"Shop A\": [42, 48, 51, 47, 60, 66],\n                      \"Shop B\": [38, 41, 49, 55, 58, 52]})\nprint(sales)\nplt.plot(sales[\"Month\"], sales[\"Shop A\"], color=\"blue\", marker=\"s\", label=\"Shop A\")\nplt.plot(sales[\"Month\"], sales[\"Shop B\"], color=\"red\", marker=\"^\", linestyle=\"--\", label=\"Shop B\")\nplt.title(\"Monthly Sales (in thousand rupees)\")\nplt.xlabel(\"Month\")\nplt.ylabel(\"Sales\")\nplt.legend()\nplt.show()\n",
+   "inputs": [],
+   "output": "  Month  Shop A  Shop B\n0   Jan      42      38\n1   Feb      48      41\n2   Mar      51      49\n3   Apr      47      55\n4   May      60      58\n5   Jun      66      52\n",
+   "images": [
+    "img/ip12-21-1.png"
+   ]
+  },
+  {
+   "id": "ip12-22",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 1 – Create a STUDENT table with student id, name and marks (student id as the primary key); insert, delete and select records; find MIN, MAX, SUM and AVG of marks; and order the records by marks.",
+   "title_hi": "SQL सेट 1 – student id, name और marks वाली STUDENT तालिका बनाइए (student id प्राथमिक कुंजी); रिकॉर्ड डालिए, हटाइए और चुनिए; अंकों का MIN, MAX, SUM, AVG निकालिए और रिकॉर्ड अंकों के क्रम में लगाइए।",
+   "syllabus": true,
+   "code": "CREATE DATABASE school;\n\nUSE school;\n\nCREATE TABLE student (\n  stud_id INT PRIMARY KEY,\n  name VARCHAR(20),\n  marks INT\n);\n\nINSERT INTO student VALUES (101, 'Ayesha', 78), (102, 'Bharat', 91), (103, 'Charu', 64), (104, 'Dev', 85), (105, 'Ela', 72);\n\nINSERT INTO student VALUES (106, 'Faiz', 88);\n\nSELECT * FROM student;\n\nDELETE FROM student WHERE stud_id = 103;\n\nSELECT * FROM student WHERE marks > 80;\n\nSELECT MIN(marks), MAX(marks), SUM(marks), AVG(marks) FROM student;\n\nSELECT stud_id, marks FROM student ORDER BY marks DESC;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE school;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE school;",
+     "result": "Database changed"
+    },
+    {
+     "question": "Q1. Create a student table with the student id, name and marks as attributes where the student id is the primary key.",
+     "sql": "CREATE TABLE student (\n  stud_id INT PRIMARY KEY,\n  name VARCHAR(20),\n  marks INT\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO student VALUES (101, 'Ayesha', 78), (102, 'Bharat', 91), (103, 'Charu', 64), (104, 'Dev', 85), (105, 'Ela', 72);",
+     "result": "Query OK, 5 rows affected (0.00 sec)\nRecords: 5  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Q2. Insert the details of a new student in the above table.",
+     "sql": "INSERT INTO student VALUES (106, 'Faiz', 88);",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "SELECT * FROM student;",
+     "result": "+---------+--------+-------+\n| stud_id | name   | marks |\n+---------+--------+-------+\n|     101 | Ayesha |    78 |\n|     102 | Bharat |    91 |\n|     103 | Charu  |    64 |\n|     104 | Dev    |    85 |\n|     105 | Ela    |    72 |\n|     106 | Faiz   |    88 |\n+---------+--------+-------+\n6 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q3. Delete the details of a student in the above table.",
+     "sql": "DELETE FROM student WHERE stud_id = 103;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "Q4. Use the select command to get the details of the students with marks more than 80.",
+     "sql": "SELECT * FROM student WHERE marks > 80;",
+     "result": "+---------+--------+-------+\n| stud_id | name   | marks |\n+---------+--------+-------+\n|     102 | Bharat |    91 |\n|     104 | Dev    |    85 |\n|     106 | Faiz   |    88 |\n+---------+--------+-------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q5. Find the min, max, sum, and average of the marks in the student marks table.",
+     "sql": "SELECT MIN(marks), MAX(marks), SUM(marks), AVG(marks) FROM student;",
+     "result": "+------------+------------+------------+------------+\n| MIN(marks) | MAX(marks) | SUM(marks) | AVG(marks) |\n+------------+------------+------------+------------+\n|         72 |         91 |        414 |    82.8000 |\n+------------+------------+------------+------------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "Q6. Order the (student ID, marks) table in descending order of the marks.",
+     "sql": "SELECT stud_id, marks FROM student ORDER BY marks DESC;",
+     "result": "+---------+-------+\n| stud_id | marks |\n+---------+-------+\n|     102 |    91 |\n|     106 |    88 |\n|     104 |    85 |\n|     101 |    78 |\n|     105 |    72 |\n+---------+-------+\n5 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE school;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE school;\nDatabase changed\n\nmysql> CREATE TABLE student (\n  stud_id INT PRIMARY KEY,\n  name VARCHAR(20),\n  marks INT\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO student VALUES (101, 'Ayesha', 78), (102, 'Bharat', 91), (103, 'Charu', 64), (104, 'Dev', 85), (105, 'Ela', 72);\nQuery OK, 5 rows affected (0.00 sec)\nRecords: 5  Duplicates: 0  Warnings: 0\n\nmysql> INSERT INTO student VALUES (106, 'Faiz', 88);\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> SELECT * FROM student;\n+---------+--------+-------+\n| stud_id | name   | marks |\n+---------+--------+-------+\n|     101 | Ayesha |    78 |\n|     102 | Bharat |    91 |\n|     103 | Charu  |    64 |\n|     104 | Dev    |    85 |\n|     105 | Ela    |    72 |\n|     106 | Faiz   |    88 |\n+---------+--------+-------+\n6 rows in set (0.00 sec)\n\nmysql> DELETE FROM student WHERE stud_id = 103;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> SELECT * FROM student WHERE marks > 80;\n+---------+--------+-------+\n| stud_id | name   | marks |\n+---------+--------+-------+\n|     102 | Bharat |    91 |\n|     104 | Dev    |    85 |\n|     106 | Faiz   |    88 |\n+---------+--------+-------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT MIN(marks), MAX(marks), SUM(marks), AVG(marks) FROM student;\n+------------+------------+------------+------------+\n| MIN(marks) | MAX(marks) | SUM(marks) | AVG(marks) |\n+------------+------------+------------+------------+\n|         72 |         91 |        414 |    82.8000 |\n+------------+------------+------------+------------+\n1 row in set (0.00 sec)\n\nmysql> SELECT stud_id, marks FROM student ORDER BY marks DESC;\n+---------+-------+\n| stud_id | marks |\n+---------+-------+\n|     102 |    91 |\n|     106 |    88 |\n|     104 |    85 |\n|     101 |    78 |\n|     105 |    72 |\n+---------+-------+\n5 rows in set (0.00 sec)\n"
+  },
+  {
+   "id": "ip12-23",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 2 – Find the total number of customers from each country in the table CUSTOMER (customer ID, customer name, country) using GROUP BY, with HAVING and ORDER BY.",
+   "title_hi": "SQL सेट 2 – GROUP BY से CUSTOMER तालिका (customer ID, customer name, country) में हर देश के ग्राहकों की कुल संख्या निकालिए; HAVING और ORDER BY के साथ।",
+   "syllabus": true,
+   "code": "CREATE DATABASE shop;\n\nUSE shop;\n\nCREATE TABLE customer (\n  cust_id INT PRIMARY KEY,\n  cust_name VARCHAR(20),\n  country VARCHAR(15)\n);\n\nINSERT INTO customer VALUES\n  (1, 'Arjun Mehta', 'India'), (2, 'Emma Brown', 'UK'), (3, 'Li Wei', 'China'),\n  (4, 'Sneha Iyer', 'India'), (5, 'Oliver Smith', 'UK'), (6, 'Rahul Verma', 'India'),\n  (7, 'Chen Jing', 'China'), (8, 'Sofia Rossi', 'Italy');\n\nSELECT country, COUNT(*) FROM customer GROUP BY country;\n\nSELECT country, COUNT(*) AS customers FROM customer GROUP BY country HAVING COUNT(*) > 1;\n\nSELECT country, COUNT(*) AS customers FROM customer GROUP BY country ORDER BY customers DESC;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE shop;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE shop;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE customer (\n  cust_id INT PRIMARY KEY,\n  cust_name VARCHAR(20),\n  country VARCHAR(15)\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO customer VALUES\n  (1, 'Arjun Mehta', 'India'), (2, 'Emma Brown', 'UK'), (3, 'Li Wei', 'China'),\n  (4, 'Sneha Iyer', 'India'), (5, 'Oliver Smith', 'UK'), (6, 'Rahul Verma', 'India'),\n  (7, 'Chen Jing', 'China'), (8, 'Sofia Rossi', 'Italy');",
+     "result": "Query OK, 8 rows affected (0.00 sec)\nRecords: 8  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Q1. Total number of customers from each country.",
+     "sql": "SELECT country, COUNT(*) FROM customer GROUP BY country;",
+     "result": "+---------+----------+\n| country | COUNT(*) |\n+---------+----------+\n| China   |        2 |\n| India   |        3 |\n| Italy   |        1 |\n| UK      |        2 |\n+---------+----------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q2. Countries with more than one customer.",
+     "sql": "SELECT country, COUNT(*) AS customers FROM customer GROUP BY country HAVING COUNT(*) > 1;",
+     "result": "+---------+-----------+\n| country | customers |\n+---------+-----------+\n| China   |         2 |\n| India   |         3 |\n| UK      |         2 |\n+---------+-----------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q3. Countries in descending order of the number of customers.",
+     "sql": "SELECT country, COUNT(*) AS customers FROM customer GROUP BY country ORDER BY customers DESC;",
+     "result": "+---------+-----------+\n| country | customers |\n+---------+-----------+\n| India   |         3 |\n| China   |         2 |\n| UK      |         2 |\n| Italy   |         1 |\n+---------+-----------+\n4 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE shop;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE shop;\nDatabase changed\n\nmysql> CREATE TABLE customer (\n  cust_id INT PRIMARY KEY,\n  cust_name VARCHAR(20),\n  country VARCHAR(15)\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO customer VALUES\n  (1, 'Arjun Mehta', 'India'), (2, 'Emma Brown', 'UK'), (3, 'Li Wei', 'China'),\n  (4, 'Sneha Iyer', 'India'), (5, 'Oliver Smith', 'UK'), (6, 'Rahul Verma', 'India'),\n  (7, 'Chen Jing', 'China'), (8, 'Sofia Rossi', 'Italy');\nQuery OK, 8 rows affected (0.00 sec)\nRecords: 8  Duplicates: 0  Warnings: 0\n\nmysql> SELECT country, COUNT(*) FROM customer GROUP BY country;\n+---------+----------+\n| country | COUNT(*) |\n+---------+----------+\n| China   |        2 |\n| India   |        3 |\n| Italy   |        1 |\n| UK      |        2 |\n+---------+----------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT country, COUNT(*) AS customers FROM customer GROUP BY country HAVING COUNT(*) > 1;\n+---------+-----------+\n| country | customers |\n+---------+-----------+\n| China   |         2 |\n| India   |         3 |\n| UK      |         2 |\n+---------+-----------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT country, COUNT(*) AS customers FROM customer GROUP BY country ORDER BY customers DESC;\n+---------+-----------+\n| country | customers |\n+---------+-----------+\n| India   |         3 |\n| China   |         2 |\n| UK      |         2 |\n| Italy   |         1 |\n+---------+-----------+\n4 rows in set (0.00 sec)\n"
+  },
+  {
+   "id": "ip12-24",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 3 – Math functions POWER(), ROUND(), MOD() and text functions UPPER(), LOWER(), SUBSTR(), MID(), LENGTH(), LEFT(), RIGHT(), INSTR(), LTRIM(), RTRIM(), TRIM().",
+   "title_hi": "SQL सेट 3 – गणितीय फ़ंक्शन POWER(), ROUND(), MOD() तथा टेक्स्ट फ़ंक्शन UPPER(), LOWER(), SUBSTR(), MID(), LENGTH(), LEFT(), RIGHT(), INSTR(), LTRIM(), RTRIM(), TRIM()।",
+   "syllabus": false,
+   "code": "CREATE DATABASE shop;\n\nUSE shop;\n\nCREATE TABLE product (\n  pcode CHAR(4) PRIMARY KEY,\n  pname VARCHAR(20),\n  price FLOAT,\n  qty INT\n);\n\nINSERT INTO product VALUES ('P01', 'Steel Bottle', 349.75, 12), ('P02', 'Lunch Box', 225.40, 7), ('P03', 'School Bag', 899.99, 5), ('P04', 'Water Colour', 120.50, 20);\n\nSELECT pname, qty, POWER(qty, 2) FROM product;\n\nSELECT pname, ROUND(price, 1), ROUND(price) FROM product;\n\nSELECT pname, qty, MOD(qty, 5) FROM product;\n\nSELECT UPPER(pname), LOWER(pname) FROM product;\n\nSELECT pname, LENGTH(pname), LEFT(pname, 3), RIGHT(pname, 3) FROM product;\n\nSELECT pname, SUBSTR(pname, 2, 4), MID(pname, 2, 4) FROM product;\n\nSELECT pname, INSTR(pname, 'o') FROM product;\n\nSELECT CONCAT('[', LTRIM('   Padhaku   '), ']') AS ltrimmed,\n       CONCAT('[', RTRIM('   Padhaku   '), ']') AS rtrimmed,\n       CONCAT('[', TRIM('   Padhaku   '), ']') AS trimmed;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE shop;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE shop;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE product (\n  pcode CHAR(4) PRIMARY KEY,\n  pname VARCHAR(20),\n  price FLOAT,\n  qty INT\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO product VALUES ('P01', 'Steel Bottle', 349.75, 12), ('P02', 'Lunch Box', 225.40, 7), ('P03', 'School Bag', 899.99, 5), ('P04', 'Water Colour', 120.50, 20);",
+     "result": "Query OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Q1. POWER(): square of the quantity of each product.",
+     "sql": "SELECT pname, qty, POWER(qty, 2) FROM product;",
+     "result": "+--------------+------+---------------+\n| pname        | qty  | POWER(qty, 2) |\n+--------------+------+---------------+\n| Steel Bottle |   12 |           144 |\n| Lunch Box    |    7 |            49 |\n| School Bag   |    5 |            25 |\n| Water Colour |   20 |           400 |\n+--------------+------+---------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q2. ROUND(): price rounded to 1 decimal place and to the nearest rupee.",
+     "sql": "SELECT pname, ROUND(price, 1), ROUND(price) FROM product;",
+     "result": "+--------------+-----------------+--------------+\n| pname        | ROUND(price, 1) | ROUND(price) |\n+--------------+-----------------+--------------+\n| Steel Bottle |           349.8 |          350 |\n| Lunch Box    |           225.4 |          225 |\n| School Bag   |           900.0 |          900 |\n| Water Colour |           120.5 |          120 |\n+--------------+-----------------+--------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q3. MOD(): remainder when the quantity is divided by 5.",
+     "sql": "SELECT pname, qty, MOD(qty, 5) FROM product;",
+     "result": "+--------------+------+-------------+\n| pname        | qty  | MOD(qty, 5) |\n+--------------+------+-------------+\n| Steel Bottle |   12 |           2 |\n| Lunch Box    |    7 |           2 |\n| School Bag   |    5 |           0 |\n| Water Colour |   20 |           0 |\n+--------------+------+-------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q4. UPPER() and LOWER().",
+     "sql": "SELECT UPPER(pname), LOWER(pname) FROM product;",
+     "result": "+--------------+--------------+\n| UPPER(pname) | LOWER(pname) |\n+--------------+--------------+\n| STEEL BOTTLE | steel bottle |\n| LUNCH BOX    | lunch box    |\n| SCHOOL BAG   | school bag   |\n| WATER COLOUR | water colour |\n+--------------+--------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q5. LENGTH(), LEFT() and RIGHT().",
+     "sql": "SELECT pname, LENGTH(pname), LEFT(pname, 3), RIGHT(pname, 3) FROM product;",
+     "result": "+--------------+---------------+----------------+-----------------+\n| pname        | LENGTH(pname) | LEFT(pname, 3) | RIGHT(pname, 3) |\n+--------------+---------------+----------------+-----------------+\n| Steel Bottle |            12 | Ste            | tle             |\n| Lunch Box    |             9 | Lun            | Box             |\n| School Bag   |            10 | Sch            | Bag             |\n| Water Colour |            12 | Wat            | our             |\n+--------------+---------------+----------------+-----------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q6. SUBSTR() / MID(): 4 characters from the 2nd character.",
+     "sql": "SELECT pname, SUBSTR(pname, 2, 4), MID(pname, 2, 4) FROM product;",
+     "result": "+--------------+---------------------+------------------+\n| pname        | SUBSTR(pname, 2, 4) | MID(pname, 2, 4) |\n+--------------+---------------------+------------------+\n| Steel Bottle | teel                | teel             |\n| Lunch Box    | unch                | unch             |\n| School Bag   | choo                | choo             |\n| Water Colour | ater                | ater             |\n+--------------+---------------------+------------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q7. INSTR(): position of the first 'o' in the product name.",
+     "sql": "SELECT pname, INSTR(pname, 'o') FROM product;",
+     "result": "+--------------+-------------------+\n| pname        | INSTR(pname, 'o') |\n+--------------+-------------------+\n| Steel Bottle |                 8 |\n| Lunch Box    |                 8 |\n| School Bag   |                 4 |\n| Water Colour |                 8 |\n+--------------+-------------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q8. LTRIM(), RTRIM() and TRIM() on a string with spaces.",
+     "sql": "SELECT CONCAT('[', LTRIM('   Padhaku   '), ']') AS ltrimmed,\n       CONCAT('[', RTRIM('   Padhaku   '), ']') AS rtrimmed,\n       CONCAT('[', TRIM('   Padhaku   '), ']') AS trimmed;",
+     "result": "+--------------+--------------+-----------+\n| ltrimmed     | rtrimmed     | trimmed   |\n+--------------+--------------+-----------+\n| [Padhaku   ] | [   Padhaku] | [Padhaku] |\n+--------------+--------------+-----------+\n1 row in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE shop;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE shop;\nDatabase changed\n\nmysql> CREATE TABLE product (\n  pcode CHAR(4) PRIMARY KEY,\n  pname VARCHAR(20),\n  price FLOAT,\n  qty INT\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO product VALUES ('P01', 'Steel Bottle', 349.75, 12), ('P02', 'Lunch Box', 225.40, 7), ('P03', 'School Bag', 899.99, 5), ('P04', 'Water Colour', 120.50, 20);\nQuery OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0\n\nmysql> SELECT pname, qty, POWER(qty, 2) FROM product;\n+--------------+------+---------------+\n| pname        | qty  | POWER(qty, 2) |\n+--------------+------+---------------+\n| Steel Bottle |   12 |           144 |\n| Lunch Box    |    7 |            49 |\n| School Bag   |    5 |            25 |\n| Water Colour |   20 |           400 |\n+--------------+------+---------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT pname, ROUND(price, 1), ROUND(price) FROM product;\n+--------------+-----------------+--------------+\n| pname        | ROUND(price, 1) | ROUND(price) |\n+--------------+-----------------+--------------+\n| Steel Bottle |           349.8 |          350 |\n| Lunch Box    |           225.4 |          225 |\n| School Bag   |           900.0 |          900 |\n| Water Colour |           120.5 |          120 |\n+--------------+-----------------+--------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT pname, qty, MOD(qty, 5) FROM product;\n+--------------+------+-------------+\n| pname        | qty  | MOD(qty, 5) |\n+--------------+------+-------------+\n| Steel Bottle |   12 |           2 |\n| Lunch Box    |    7 |           2 |\n| School Bag   |    5 |           0 |\n| Water Colour |   20 |           0 |\n+--------------+------+-------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT UPPER(pname), LOWER(pname) FROM product;\n+--------------+--------------+\n| UPPER(pname) | LOWER(pname) |\n+--------------+--------------+\n| STEEL BOTTLE | steel bottle |\n| LUNCH BOX    | lunch box    |\n| SCHOOL BAG   | school bag   |\n| WATER COLOUR | water colour |\n+--------------+--------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT pname, LENGTH(pname), LEFT(pname, 3), RIGHT(pname, 3) FROM product;\n+--------------+---------------+----------------+-----------------+\n| pname        | LENGTH(pname) | LEFT(pname, 3) | RIGHT(pname, 3) |\n+--------------+---------------+----------------+-----------------+\n| Steel Bottle |            12 | Ste            | tle             |\n| Lunch Box    |             9 | Lun            | Box             |\n| School Bag   |            10 | Sch            | Bag             |\n| Water Colour |            12 | Wat            | our             |\n+--------------+---------------+----------------+-----------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT pname, SUBSTR(pname, 2, 4), MID(pname, 2, 4) FROM product;\n+--------------+---------------------+------------------+\n| pname        | SUBSTR(pname, 2, 4) | MID(pname, 2, 4) |\n+--------------+---------------------+------------------+\n| Steel Bottle | teel                | teel             |\n| Lunch Box    | unch                | unch             |\n| School Bag   | choo                | choo             |\n| Water Colour | ater                | ater             |\n+--------------+---------------------+------------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT pname, INSTR(pname, 'o') FROM product;\n+--------------+-------------------+\n| pname        | INSTR(pname, 'o') |\n+--------------+-------------------+\n| Steel Bottle |                 8 |\n| Lunch Box    |                 8 |\n| School Bag   |                 4 |\n| Water Colour |                 8 |\n+--------------+-------------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT CONCAT('[', LTRIM('   Padhaku   '), ']') AS ltrimmed,\n       CONCAT('[', RTRIM('   Padhaku   '), ']') AS rtrimmed,\n       CONCAT('[', TRIM('   Padhaku   '), ']') AS trimmed;\n+--------------+--------------+-----------+\n| ltrimmed     | rtrimmed     | trimmed   |\n+--------------+--------------+-----------+\n| [Padhaku   ] | [   Padhaku] | [Padhaku] |\n+--------------+--------------+-----------+\n1 row in set (0.00 sec)\n"
+  },
+  {
+   "id": "ip12-25",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 4 – Date functions NOW(), DATE(), MONTH(), MONTHNAME(), YEAR(), DAY() and DAYNAME() on a table of school events.",
+   "title_hi": "SQL सेट 4 – विद्यालय के कार्यक्रमों की तालिका पर दिनांक फ़ंक्शन NOW(), DATE(), MONTH(), MONTHNAME(), YEAR(), DAY() और DAYNAME()।",
+   "syllabus": false,
+   "code": "CREATE DATABASE school;\n\nUSE school;\n\nCREATE TABLE events (\n  event VARCHAR(20),\n  event_date DATE\n);\n\nINSERT INTO events VALUES ('Sports Day', '2026-12-05'), ('Science Fair', '2026-08-21'), ('Annual Day', '2027-01-30'), ('Yoga Day', '2026-06-21');\n\nSELECT NOW(), DATE(NOW());\n\nSELECT event, DAY(event_date), MONTH(event_date), YEAR(event_date) FROM events;\n\nSELECT event, MONTHNAME(event_date), DAYNAME(event_date) FROM events;\n\nSELECT event FROM events WHERE YEAR(event_date) = 2026;\n\nSELECT * FROM events ORDER BY event_date;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE school;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE school;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE events (\n  event VARCHAR(20),\n  event_date DATE\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO events VALUES ('Sports Day', '2026-12-05'), ('Science Fair', '2026-08-21'), ('Annual Day', '2027-01-30'), ('Yoga Day', '2026-06-21');",
+     "result": "Query OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Q1. Current date and time, and only today's date.",
+     "sql": "SELECT NOW(), DATE(NOW());",
+     "result": "+---------------------+-------------+\n| NOW()               | DATE(NOW()) |\n+---------------------+-------------+\n| 2026-11-16 17:38:41 | 2026-11-16  |\n+---------------------+-------------+\n1 row in set (0.00 sec)"
+    },
+    {
+     "question": "Q2. Day, month number and year of each event.",
+     "sql": "SELECT event, DAY(event_date), MONTH(event_date), YEAR(event_date) FROM events;",
+     "result": "+--------------+-----------------+-------------------+------------------+\n| event        | DAY(event_date) | MONTH(event_date) | YEAR(event_date) |\n+--------------+-----------------+-------------------+------------------+\n| Sports Day   |               5 |                12 |             2026 |\n| Science Fair |              21 |                 8 |             2026 |\n| Annual Day   |              30 |                 1 |             2027 |\n| Yoga Day     |              21 |                 6 |             2026 |\n+--------------+-----------------+-------------------+------------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q3. Month name and day name of each event.",
+     "sql": "SELECT event, MONTHNAME(event_date), DAYNAME(event_date) FROM events;",
+     "result": "+--------------+-----------------------+---------------------+\n| event        | MONTHNAME(event_date) | DAYNAME(event_date) |\n+--------------+-----------------------+---------------------+\n| Sports Day   | December              | Saturday            |\n| Science Fair | August                | Friday              |\n| Annual Day   | January               | Saturday            |\n| Yoga Day     | June                  | Sunday              |\n+--------------+-----------------------+---------------------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q4. Events held in the year 2026.",
+     "sql": "SELECT event FROM events WHERE YEAR(event_date) = 2026;",
+     "result": "+--------------+\n| event        |\n+--------------+\n| Sports Day   |\n| Science Fair |\n| Yoga Day     |\n+--------------+\n3 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q5. Events in order of their dates.",
+     "sql": "SELECT * FROM events ORDER BY event_date;",
+     "result": "+--------------+------------+\n| event        | event_date |\n+--------------+------------+\n| Yoga Day     | 2026-06-21 |\n| Science Fair | 2026-08-21 |\n| Sports Day   | 2026-12-05 |\n| Annual Day   | 2027-01-30 |\n+--------------+------------+\n4 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE school;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE school;\nDatabase changed\n\nmysql> CREATE TABLE events (\n  event VARCHAR(20),\n  event_date DATE\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO events VALUES ('Sports Day', '2026-12-05'), ('Science Fair', '2026-08-21'), ('Annual Day', '2027-01-30'), ('Yoga Day', '2026-06-21');\nQuery OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0\n\nmysql> SELECT NOW(), DATE(NOW());\n+---------------------+-------------+\n| NOW()               | DATE(NOW()) |\n+---------------------+-------------+\n| 2026-11-16 17:38:41 | 2026-11-16  |\n+---------------------+-------------+\n1 row in set (0.00 sec)\n\nmysql> SELECT event, DAY(event_date), MONTH(event_date), YEAR(event_date) FROM events;\n+--------------+-----------------+-------------------+------------------+\n| event        | DAY(event_date) | MONTH(event_date) | YEAR(event_date) |\n+--------------+-----------------+-------------------+------------------+\n| Sports Day   |               5 |                12 |             2026 |\n| Science Fair |              21 |                 8 |             2026 |\n| Annual Day   |              30 |                 1 |             2027 |\n| Yoga Day     |              21 |                 6 |             2026 |\n+--------------+-----------------+-------------------+------------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT event, MONTHNAME(event_date), DAYNAME(event_date) FROM events;\n+--------------+-----------------------+---------------------+\n| event        | MONTHNAME(event_date) | DAYNAME(event_date) |\n+--------------+-----------------------+---------------------+\n| Sports Day   | December              | Saturday            |\n| Science Fair | August                | Friday              |\n| Annual Day   | January               | Saturday            |\n| Yoga Day     | June                  | Sunday              |\n+--------------+-----------------------+---------------------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT event FROM events WHERE YEAR(event_date) = 2026;\n+--------------+\n| event        |\n+--------------+\n| Sports Day   |\n| Science Fair |\n| Yoga Day     |\n+--------------+\n3 rows in set (0.00 sec)\n\nmysql> SELECT * FROM events ORDER BY event_date;\n+--------------+------------+\n| event        | event_date |\n+--------------+------------+\n| Yoga Day     | 2026-06-21 |\n| Science Fair | 2026-08-21 |\n| Sports Day   | 2026-12-05 |\n| Annual Day   | 2027-01-30 |\n+--------------+------------+\n4 rows in set (0.00 sec)\n",
+   "note": "NOW() shows the date and time when the query was run, so its value will be different on your computer."
+  },
+  {
+   "id": "ip12-26",
+   "group": "sql",
+   "type": "sql",
+   "title": "SQL Set 5 – Two tables ITEM and SALE: GROUP BY with HAVING, ORDER BY, and an equi-join to show each sale with the item name and amount.",
+   "title_hi": "SQL सेट 5 – दो तालिकाएँ ITEM और SALE: HAVING के साथ GROUP BY, ORDER BY, और हर बिक्री को वस्तु के नाम व राशि के साथ दिखाने के लिए इक्वी-जॉइन।",
+   "syllabus": false,
+   "code": "CREATE DATABASE store;\n\nUSE store;\n\nCREATE TABLE item (\n  icode CHAR(3) PRIMARY KEY,\n  iname VARCHAR(15),\n  price INT\n);\n\nCREATE TABLE sale (\n  sale_id INT PRIMARY KEY,\n  icode CHAR(3),\n  qty INT,\n  city VARCHAR(10)\n);\n\nINSERT INTO item VALUES ('I01', 'Keyboard', 650), ('I02', 'Mouse', 350), ('I03', 'Monitor', 7800), ('I04', 'Webcam', 1900);\n\nINSERT INTO sale VALUES (1, 'I01', 3, 'Delhi'), (2, 'I02', 10, 'Pune'), (3, 'I03', 2, 'Delhi'), (4, 'I02', 6, 'Delhi'), (5, 'I04', 1, 'Pune'), (6, 'I01', 4, 'Pune');\n\nSELECT sale_id, iname, qty, price, qty * price AS amount FROM item, sale WHERE item.icode = sale.icode;\n\nSELECT city, SUM(qty) FROM sale GROUP BY city;\n\nSELECT iname, SUM(qty) FROM item, sale WHERE item.icode = sale.icode GROUP BY iname HAVING SUM(qty) > 5;\n\nSELECT iname, SUM(qty * price) AS total FROM item, sale WHERE item.icode = sale.icode GROUP BY iname ORDER BY total DESC;\n\nSELECT city, COUNT(*), AVG(qty) FROM sale GROUP BY city;\n",
+   "steps": [
+    {
+     "question": "",
+     "sql": "CREATE DATABASE store;",
+     "result": "Query OK, 1 row affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "USE store;",
+     "result": "Database changed"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE item (\n  icode CHAR(3) PRIMARY KEY,\n  iname VARCHAR(15),\n  price INT\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "CREATE TABLE sale (\n  sale_id INT PRIMARY KEY,\n  icode CHAR(3),\n  qty INT,\n  city VARCHAR(10)\n);",
+     "result": "Query OK, 0 rows affected (0.00 sec)"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO item VALUES ('I01', 'Keyboard', 650), ('I02', 'Mouse', 350), ('I03', 'Monitor', 7800), ('I04', 'Webcam', 1900);",
+     "result": "Query OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "",
+     "sql": "INSERT INTO sale VALUES (1, 'I01', 3, 'Delhi'), (2, 'I02', 10, 'Pune'), (3, 'I03', 2, 'Delhi'), (4, 'I02', 6, 'Delhi'), (5, 'I04', 1, 'Pune'), (6, 'I01', 4, 'Pune');",
+     "result": "Query OK, 6 rows affected (0.00 sec)\nRecords: 6  Duplicates: 0  Warnings: 0"
+    },
+    {
+     "question": "Q1. Each sale with the item name and amount (equi-join).",
+     "sql": "SELECT sale_id, iname, qty, price, qty * price AS amount FROM item, sale WHERE item.icode = sale.icode;",
+     "result": "+---------+----------+------+-------+--------+\n| sale_id | iname    | qty  | price | amount |\n+---------+----------+------+-------+--------+\n|       1 | Keyboard |    3 |   650 |   1950 |\n|       2 | Mouse    |   10 |   350 |   3500 |\n|       3 | Monitor  |    2 |  7800 |  15600 |\n|       4 | Mouse    |    6 |   350 |   2100 |\n|       5 | Webcam   |    1 |  1900 |   1900 |\n|       6 | Keyboard |    4 |   650 |   2600 |\n+---------+----------+------+-------+--------+\n6 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q2. Total quantity sold in each city.",
+     "sql": "SELECT city, SUM(qty) FROM sale GROUP BY city;",
+     "result": "+-------+----------+\n| city  | SUM(qty) |\n+-------+----------+\n| Delhi |       11 |\n| Pune  |       15 |\n+-------+----------+\n2 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q3. Items sold more than 5 pieces in all.",
+     "sql": "SELECT iname, SUM(qty) FROM item, sale WHERE item.icode = sale.icode GROUP BY iname HAVING SUM(qty) > 5;",
+     "result": "+----------+----------+\n| iname    | SUM(qty) |\n+----------+----------+\n| Keyboard |        7 |\n| Mouse    |       16 |\n+----------+----------+\n2 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q4. Total sale amount of each item, highest first.",
+     "sql": "SELECT iname, SUM(qty * price) AS total FROM item, sale WHERE item.icode = sale.icode GROUP BY iname ORDER BY total DESC;",
+     "result": "+----------+-------+\n| iname    | total |\n+----------+-------+\n| Monitor  | 15600 |\n| Mouse    |  5600 |\n| Keyboard |  4550 |\n| Webcam   |  1900 |\n+----------+-------+\n4 rows in set (0.00 sec)"
+    },
+    {
+     "question": "Q5. Number of sales and average quantity per city.",
+     "sql": "SELECT city, COUNT(*), AVG(qty) FROM sale GROUP BY city;",
+     "result": "+-------+----------+----------+\n| city  | COUNT(*) | AVG(qty) |\n+-------+----------+----------+\n| Delhi |        3 |   3.6667 |\n| Pune  |        3 |   5.0000 |\n+-------+----------+----------+\n2 rows in set (0.00 sec)"
+    }
+   ],
+   "output": "mysql> CREATE DATABASE store;\nQuery OK, 1 row affected (0.00 sec)\n\nmysql> USE store;\nDatabase changed\n\nmysql> CREATE TABLE item (\n  icode CHAR(3) PRIMARY KEY,\n  iname VARCHAR(15),\n  price INT\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> CREATE TABLE sale (\n  sale_id INT PRIMARY KEY,\n  icode CHAR(3),\n  qty INT,\n  city VARCHAR(10)\n);\nQuery OK, 0 rows affected (0.00 sec)\n\nmysql> INSERT INTO item VALUES ('I01', 'Keyboard', 650), ('I02', 'Mouse', 350), ('I03', 'Monitor', 7800), ('I04', 'Webcam', 1900);\nQuery OK, 4 rows affected (0.00 sec)\nRecords: 4  Duplicates: 0  Warnings: 0\n\nmysql> INSERT INTO sale VALUES (1, 'I01', 3, 'Delhi'), (2, 'I02', 10, 'Pune'), (3, 'I03', 2, 'Delhi'), (4, 'I02', 6, 'Delhi'), (5, 'I04', 1, 'Pune'), (6, 'I01', 4, 'Pune');\nQuery OK, 6 rows affected (0.00 sec)\nRecords: 6  Duplicates: 0  Warnings: 0\n\nmysql> SELECT sale_id, iname, qty, price, qty * price AS amount FROM item, sale WHERE item.icode = sale.icode;\n+---------+----------+------+-------+--------+\n| sale_id | iname    | qty  | price | amount |\n+---------+----------+------+-------+--------+\n|       1 | Keyboard |    3 |   650 |   1950 |\n|       2 | Mouse    |   10 |   350 |   3500 |\n|       3 | Monitor  |    2 |  7800 |  15600 |\n|       4 | Mouse    |    6 |   350 |   2100 |\n|       5 | Webcam   |    1 |  1900 |   1900 |\n|       6 | Keyboard |    4 |   650 |   2600 |\n+---------+----------+------+-------+--------+\n6 rows in set (0.00 sec)\n\nmysql> SELECT city, SUM(qty) FROM sale GROUP BY city;\n+-------+----------+\n| city  | SUM(qty) |\n+-------+----------+\n| Delhi |       11 |\n| Pune  |       15 |\n+-------+----------+\n2 rows in set (0.00 sec)\n\nmysql> SELECT iname, SUM(qty) FROM item, sale WHERE item.icode = sale.icode GROUP BY iname HAVING SUM(qty) > 5;\n+----------+----------+\n| iname    | SUM(qty) |\n+----------+----------+\n| Keyboard |        7 |\n| Mouse    |       16 |\n+----------+----------+\n2 rows in set (0.00 sec)\n\nmysql> SELECT iname, SUM(qty * price) AS total FROM item, sale WHERE item.icode = sale.icode GROUP BY iname ORDER BY total DESC;\n+----------+-------+\n| iname    | total |\n+----------+-------+\n| Monitor  | 15600 |\n| Mouse    |  5600 |\n| Keyboard |  4550 |\n| Webcam   |  1900 |\n+----------+-------+\n4 rows in set (0.00 sec)\n\nmysql> SELECT city, COUNT(*), AVG(qty) FROM sale GROUP BY city;\n+-------+----------+----------+\n| city  | COUNT(*) | AVG(qty) |\n+-------+----------+----------+\n| Delhi |        3 |   3.6667 |\n| Pune  |        3 |   5.0000 |\n+-------+----------+----------+\n2 rows in set (0.00 sec)\n"
+  }
+ ]
+}

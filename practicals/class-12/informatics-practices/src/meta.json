@@ -1,0 +1,26 @@
+{
+ "version": 1,
+ "class": 12,
+ "subject": "informatics-practices",
+ "subjectName": "Informatics Practices",
+ "subjectName_hi": "सूचना विज्ञान अभ्यास (Informatics Practices)",
+ "subjectCode": "065",
+ "session": "2026-27",
+ "source": "CBSE Curriculum 2026-27, Informatics Practices (065), Class XII: practical list and marks (cbseacademic.nic.in)",
+ "reportFileRule": "Minimum 15 programs based on Pandas, 4 based on Matplotlib and 15 SQL queries.",
+ "reportFileRule_hi": "Pandas पर कम से कम 15 प्रोग्राम, Matplotlib पर 4 और 15 SQL क्वेरी।",
+ "marks": [
+  {"part": "Programs using Pandas and Matplotlib", "part_hi": "Pandas और Matplotlib के प्रोग्राम", "marks": 8},
+  {"part": "SQL queries", "part_hi": "SQL क्वेरी", "marks": 7},
+  {"part": "Practical file (15 Pandas, 4 Matplotlib programs, 15 SQL queries)", "part_hi": "प्रैक्टिकल फ़ाइल (15 Pandas, 4 Matplotlib प्रोग्राम, 15 SQL क्वेरी)", "marks": 5},
+  {"part": "Project work (concepts of Classes 11 and 12)", "part_hi": "प्रोजेक्ट कार्य (कक्षा 11 और 12 की अवधारणाएँ)", "marks": 5},
+  {"part": "Viva voce", "part_hi": "मौखिक परीक्षा (वाइवा)", "marks": 5}
+ ],
+ "groups": [
+  {"id": "series", "title": "Pandas Series", "title_hi": "Pandas सीरीज़"},
+  {"id": "dataframe", "title": "Pandas DataFrame", "title_hi": "Pandas डेटाफ़्रेम"},
+  {"id": "csv", "title": "CSV and SQL with Pandas", "title_hi": "Pandas के साथ CSV और SQL"},
+  {"id": "plots", "title": "Data Visualization (Matplotlib)", "title_hi": "डेटा विज़ुअलाइज़ेशन (Matplotlib)"},
+  {"id": "sql", "title": "SQL Queries", "title_hi": "SQL क्वेरी"}
+ ]
+}

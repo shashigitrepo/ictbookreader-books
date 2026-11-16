@@ -1,0 +1,17 @@
+{
+  "subject": "Artificial Intelligence (417)",
+  "title": "Artificial Intelligence – Class 10 (CBSE 417)",
+  "order": 61,
+  "bookOrder": 1,
+  "publisher": "CBSE",
+  "chapters": {
+    "00-introduction.pdf": "Introduction and Syllabus",
+    "01-revisiting-ai-project-cycle-and-ethical-frameworks.pdf": "Unit 1 – Revisiting AI Project Cycle & Ethical Frameworks for AI",
+    "02-advanced-concepts-of-modeling-in-ai.pdf": "Unit 2 – Advanced Concepts of Modeling in AI",
+    "03-evaluating-models.pdf": "Unit 3 – Evaluating Models",
+    "04-statistical-data.pdf": "Unit 4 – Statistical Data",
+    "05-computer-vision.pdf": "Unit 5 – Computer Vision",
+    "06-natural-language-processing.pdf": "Unit 6 – Natural Language Processing",
+    "99-answer-key.pdf": "Answer Key (Unit-End Exercises)"
+  }
+}

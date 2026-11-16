@@ -1,0 +1,18 @@
+{
+  "title": "Computer Science",
+  "chapters": {
+    "01-exception-handling-in-python.pdf": "Exception Handling in Python",
+    "02-file-handling-in-python.pdf": "File Handling in Python",
+    "03-stack.pdf": "Stack",
+    "04-queue.pdf": "Queue",
+    "05-sorting.pdf": "Sorting",
+    "06-searching.pdf": "Searching",
+    "07-understanding-data.pdf": "Understanding Data",
+    "08-database-concepts.pdf": "Database Concepts",
+    "09-structured-query-language-sql.pdf": "Structured Query Language (SQL)",
+    "10-computer-networks.pdf": "Computer Networks",
+    "11-data-communication.pdf": "Data Communication",
+    "12-security-aspects.pdf": "Security Aspects",
+    "13-project-based-learning.pdf": "Project Based Learning"
+  }
+}

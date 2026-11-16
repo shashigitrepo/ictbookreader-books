@@ -1,0 +1,25 @@
+{
+  "subject": "Information Technology (402)",
+  "title": "Information Technology – Class 10 (CBSE 402)",
+  "order": 60,
+  "publisher": "CBSE / PSSCIVE",
+  "chapters": {
+    "00-front-matter.pdf": "Contents and Foreword",
+    "01-introduction-to-styles.pdf": "Chapter 1 – Introduction to Styles",
+    "02-working-with-images.pdf": "Chapter 2 – Working with Images",
+    "03-advanced-features-of-writer.pdf": "Chapter 3 – Advanced Features of Writer",
+    "04-analyse-data-using-scenarios-and-goal-seek.pdf": "Chapter 4 – Analyse Data using Scenarios and Goal Seek",
+    "05-using-macros-in-spreadsheet.pdf": "Chapter 5 – Using Macros in Spreadsheet",
+    "06-linking-spreadsheet-data.pdf": "Chapter 6 – Linking Spreadsheet Data",
+    "07-share-and-review-a-spreadsheet.pdf": "Chapter 7 – Share and Review a Spreadsheet",
+    "08-introduction-to-database-management-system.pdf": "Chapter 8 – Introduction to Database Management System",
+    "09-starting-with-libreoffice-base.pdf": "Chapter 9 – Starting with LibreOffice Base",
+    "10-working-with-multiple-tables.pdf": "Chapter 10 – Working with Multiple Tables",
+    "11-queries-in-base.pdf": "Chapter 11 – Queries in Base",
+    "12-forms-and-reports.pdf": "Chapter 12 – Forms and Reports",
+    "13-health-safety-and-security-at-workplace.pdf": "Chapter 13 – Health, Safety and Security at Workplace",
+    "14-workplace-quality-measures.pdf": "Chapter 14 – Workplace Quality Measures",
+    "15-prevent-accidents-and-emergencies.pdf": "Chapter 15 – Prevent Accidents and Emergencies",
+    "99-answer-key.pdf": "Answer Key"
+  }
+}
