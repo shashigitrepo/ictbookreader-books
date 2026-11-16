@@ -4079,5 +4079,13 @@
       ]
     }
   ],
-  "videos": []
+  "videos": [
+    {
+      "gradeId": "g9",
+      "subjectId": "g9-science",
+      "chapter": 2,
+      "title": "Diffusion & Osmosis Explained (Hindi + English)",
+      "url": "https://youtu.be/LBvUH1AC-Nw"
+    }
+  ]
 }
