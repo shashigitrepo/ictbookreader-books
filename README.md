@@ -124,10 +124,10 @@ Edit **`videos.csv`** at the top of this repository (on GitHub: open it → ✏�
 One row per video; keep the first line as it is:
 
 ```
-class,subject,chapter,title,url
-10,science,1,Chemical reactions – part 1,https://youtu.be/xxxxxxxxxxx
-10,science,1,Chemical reactions – part 2,https://youtu.be/yyyyyyyyyyy
-9,mathematics,,Number systems – full revision,https://www.youtube.com/watch?v=zzzzzzzzzzz
+class,subject,chapter,title,url,important,topic,topic_hi
+10,science,1,How to balance any chemical equation,https://youtu.be/xxxxxxxxxxx,yes,Balancing chemical equations,रासायनिक समीकरणों का संतुलन
+10,science,1,Oxidation and reduction in 10 minutes,https://youtu.be/yyyyyyyyyyy,yes,Oxidation and reduction,उपचयन और अपचयन
+9,mathematics,,Number systems – full revision,https://www.youtube.com/watch?v=zzzzzzzzzzz,,,
 ```
 
 - **class** 6 … 12, **subject** one of the subject folder names in the table above.
@@ -135,6 +135,11 @@ class,subject,chapter,title,url
   Leave it empty for a video about the whole subject.
 - **title**: put it in "double quotes" if it contains a comma.
 - **url**: a YouTube link (`https://youtu.be/…` or `https://www.youtube.com/…`).
+- **important** (optional): `yes` for a **"Most important topics"** video (only our own channel's
+  videos; usually 2–3 per chapter, one per important topic). These appear in a ★ strip on Home (for the
+  student's class) and at the top of Videos, with an "Important" badge. Leave it empty for other videos.
+- **topic**, **topic_hi** (optional): the topic the video explains, in English and Hindi. The app shows
+  it in large type above the video title. A chapter with several videos asks which one to play.
 
 The videos appear in the app under **Home → Videos** about a minute after you commit.
 The channel button on that screen comes from Firebase Remote Config: add the parameter

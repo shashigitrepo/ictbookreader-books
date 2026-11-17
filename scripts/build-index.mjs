@@ -168,7 +168,7 @@ function notesBook(folder, names) {
 }
 
 // YouTube lessons: videos.csv at the top of this repository, one row per video:
-// class,subject,chapter,title,url  e.g.  10,science,1,Chemical reactions – part 1,https://youtu.be/…
+// class,subject,chapter,title,url[,important,topic,topic_hi]  e.g.  10,science,1,Balancing equations,https://youtu.be/…,yes,Balancing chemical equations,रासायनिक समीकरण का संतुलन
 // chapter may be empty for a video about the whole subject. The app shows them under Videos and
 // as a Video button on that textbook chapter.
 const videos = [];
@@ -190,10 +190,21 @@ const parseCsvLine = (line) => {
 const videosFile = join(ROOT, 'videos.csv');
 if (existsSync(videosFile)) {
   const lines = readFileSync(videosFile, 'utf8').replace(/^\uFEFF/, '').split(/\r?\n/);
+  // Columns by name, so optional ones can be added: important (yes = "Most important topics" in the
+  // app, 2–3 per chapter from our own channel), topic and topic_hi (the topic the video explains).
+  const header = parseCsvLine(lines[0] ?? '').map((h) => h.toLowerCase());
+  const col = (name, fallback) => (header.includes(name) ? header.indexOf(name) : fallback);
+  const at = { klass: col('class', 0), subject: col('subject', 1), chapter: col('chapter', 2), title: col('title', 3), url: col('url', 4),
+    important: col('important', -1), topic: col('topic', -1), topicHi: col('topic_hi', -1) };
   lines.forEach((line, i) => {
     if (i === 0 || !line.trim()) return; // header
     const row = i + 1;
-    const [klass, subject, chapter, title, url] = parseCsvLine(line);
+    const cells = parseCsvLine(line);
+    const cell = (k) => (at[k] >= 0 ? cells[at[k]] ?? '' : '');
+    const [klass, subject, chapter, title, url] = ['klass', 'subject', 'chapter', 'title', 'url'].map(cell);
+    const important = /^(yes|y|1|true|important)$/i.test(cell('important'));
+    const topic = cell('topic');
+    const topicHi = cell('topicHi');
     const classFolder = `class-${klass}`;
     if (!SUBJECTS[classFolder]) return errors.push(`videos.csv row ${row}: class must be 6 … 12`);
     if (!SUBJECTS[classFolder][subject]) {
@@ -208,6 +219,9 @@ if (existsSync(videosFile)) {
       ...(chapter ? { chapter: Number(chapter) } : {}),
       title,
       url,
+      ...(important ? { important: true } : {}),
+      ...(topic ? { topic } : {}),
+      ...(topicHi ? { topicHi } : {}),
     });
   });
 }
