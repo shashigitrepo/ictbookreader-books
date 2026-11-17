@@ -1,0 +1,17 @@
+{
+ "version": 1,
+ "instructions": [
+  "The value points and step marks given here are suggestive. Accept any other correct answer and give due credit.",
+  "Award marks step by step as shown; do not deduct marks for spelling or grammar unless the question tests it.",
+  "If a student attempts an extra question, evaluate all and count the better answer.",
+  "In numerical questions, give marks for the formula and the steps even if the final answer is wrong; deduct only for the error.",
+  "Totals of each page and of the paper must be checked carefully."
+ ],
+ "instructions_hi": [
+  "यहाँ दिए गए मूल्य बिंदु और चरण-अंक सुझावात्मक हैं। कोई अन्य सही उत्तर भी स्वीकार करें और उचित अंक दें।",
+  "दिखाए अनुसार चरणबद्ध अंक दें; वर्तनी या व्याकरण के लिए अंक न काटें, जब तक प्रश्न उसी को न जाँचता हो।",
+  "यदि विद्यार्थी ने अतिरिक्त प्रश्न किया है, तो सभी जाँचें और बेहतर उत्तर के अंक गिनें।",
+  "संख्यात्मक प्रश्नों में अंतिम उत्तर गलत होने पर भी सूत्र और चरणों के अंक दें; केवल त्रुटि के अंक काटें।",
+  "हर पृष्ठ और पूरे पेपर का योग ध्यान से जाँचें।"
+ ]
+}
