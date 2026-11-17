@@ -1,0 +1,39 @@
+# CBSE sample papers for the Padhaku app (Practice → Sample Papers).
+# On the 2nd of every month, and whenever "Run workflow" is pressed (on GitHub, or from the app's
+# Profile → Admin → Refresh sample papers): rebuild cbse-sample-papers.json from cbseacademic.nic.in
+# (newest session only) and copy every PDF into the Release "cbse-sqp-<session>".
+name: CBSE sample papers
+
+on:
+  schedule:
+    - cron: '23 3 2 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cbse-sample-papers
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild the list
+        run: python3 scripts/cbse-sqp/build.py --sizes
+      - name: Save the list if it changed
+        run: |
+          if ! git diff --quiet -- cbse-sample-papers.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add cbse-sample-papers.json
+            git commit -m "CBSE sample papers list updated"
+            git push
+          fi
+      - name: Copy the PDFs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/cbse-sqp/mirror.sh
