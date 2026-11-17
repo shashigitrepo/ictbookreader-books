@@ -3,6 +3,29 @@
  "skillSession": "2026-27",
  "updated": "2026-11-17",
  "source": "CBSE Sample Question Papers and Marking Schemes, cbseacademic.nic.in",
+ "important": [
+  "English",
+  "Hindi",
+  "Science",
+  "Mathematics",
+  "Social Science",
+  "Computer",
+  "Informatics Practices",
+  "Information Technology",
+  "Artificial Intelligence",
+  "Physics",
+  "Chemistry",
+  "Biology",
+  "Applied Mathematics",
+  "Accountancy",
+  "Business Studies",
+  "Economics",
+  "History",
+  "Political Science",
+  "Geography",
+  "Sanskrit",
+  "Physical Education"
+ ],
  "papers": [
   {
    "grade": 9,
@@ -179,17 +202,6 @@
    "sqpSize": 155539,
    "msFile": "c10-Bhoti-MS.pdf",
    "msSize": 189535
-  },
-  {
-   "grade": 10,
-   "subject": "Bhutia",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
   },
   {
    "grade": 10,
@@ -446,28 +458,6 @@
   },
   {
    "grade": 10,
-   "subject": "Lepcha",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 10,
-   "subject": "Limboo",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 10,
    "subject": "Malayalam",
    "kind": "main",
    "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/Malayalam-SQP.pdf",
@@ -520,17 +510,6 @@
    "sqpSize": 3014269,
    "msFile": "c10-MathsStandard-MS.pdf",
    "msSize": 2153065
-  },
-  {
-   "grade": 10,
-   "subject": "Mizo",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
   },
   {
    "grade": 10,
@@ -655,17 +634,6 @@
   },
   {
    "grade": 10,
-   "subject": "Sherpa",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 10,
    "subject": "Sindhi",
    "kind": "main",
    "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/Sindhi-SQP.pdf",
@@ -710,50 +678,6 @@
   },
   {
    "grade": 10,
-   "subject": "Tamil",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 10,
-   "subject": "Tangkhul",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 10,
-   "subject": "Telugu AP",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 10,
-   "subject": "Telugu Telangana",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 10,
    "subject": "Thai",
    "kind": "main",
    "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/Thai-SQP.pdf",
@@ -762,17 +686,6 @@
    "sqpSize": 861224,
    "msFile": "c10-Thai-MS.pdf",
    "msSize": 1061422
-  },
-  {
-   "grade": 10,
-   "subject": "Tibetan",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/error.pdf",
-   "sqpFile": "c10-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c10-error.pdf",
-   "msSize": 176295
   },
   {
    "grade": 10,
@@ -1359,17 +1272,6 @@
   },
   {
    "grade": 12,
-   "subject": "Bhutia",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 12,
    "subject": "Biology",
    "kind": "main",
    "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Biology-SQP.pdf",
@@ -1755,17 +1657,6 @@
   },
   {
    "grade": 12,
-   "subject": "KTPI",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 12,
    "subject": "Kuchipudi",
    "kind": "main",
    "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Kuchipudi-SQP.pdf",
@@ -1785,17 +1676,6 @@
    "sqpSize": 382506,
    "msFile": "c12-LegalStudies-MS.pdf",
    "msSize": 436735
-  },
-  {
-   "grade": 12,
-   "subject": "Lepcha",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
   },
   {
    "grade": 12,
@@ -1821,17 +1701,6 @@
   },
   {
    "grade": 12,
-   "subject": "Manipuri",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 12,
    "subject": "Marathi",
    "kind": "main",
    "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Marathi-SQP.pdf",
@@ -1851,17 +1720,6 @@
    "sqpSize": 1229951,
    "msFile": "c12-Maths-MS.pdf",
    "msSize": 2510840
-  },
-  {
-   "grade": 12,
-   "subject": "Mizo",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
   },
   {
    "grade": 12,
@@ -2049,39 +1907,6 @@
    "sqpSize": 439197,
    "msFile": "c12-Spanish-MS.pdf",
    "msSize": 436075
-  },
-  {
-   "grade": 12,
-   "subject": "Tamil",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 12,
-   "subject": "Tangkhul (MIL)",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
-  },
-  {
-   "grade": 12,
-   "subject": "Telugu (AP)",
-   "kind": "main",
-   "sqp": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "ms": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/error.pdf",
-   "sqpFile": "c12-error.pdf",
-   "sqpSize": 176295,
-   "msFile": "c12-error.pdf",
-   "msSize": 176295
   },
   {
    "grade": 12,

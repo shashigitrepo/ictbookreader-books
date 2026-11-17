@@ -67,6 +67,16 @@ def sessions():
     return [f"{y}-{str(y + 1)[2:]}" for y in (start + 1, start, start - 1)]
 
 
+IMPORTANT = ["English", "Hindi", "Science", "Mathematics", "Social Science", "Computer", "Informatics Practices",
+             "Information Technology", "Artificial Intelligence", "Physics", "Chemistry", "Biology",
+             "Applied Mathematics", "Accountancy", "Business Studies", "Economics", "History", "Political Science",
+             "Geography", "Sanskrit", "Physical Education"]
+
+
+def placeholder(link):
+    return link.rsplit("/", 1)[-1].lower().startswith("error")
+
+
 def main_papers():
     papers, used = [], None
     for session in sessions():
@@ -81,8 +91,9 @@ def main_papers():
                 if len(cells) < 3:
                     continue
                 subject = clean(cells[0])
-                sqp = re.findall(r'href="([^"]+\.pdf)"', cells[1], flags=re.I)
-                ms = re.findall(r'href="([^"]+\.pdf)"', cells[2], flags=re.I)
+                # CBSE links a placeholder "error.pdf" for papers that are not out yet: skip those.
+                sqp = [l for l in re.findall(r'href="([^"]+\.pdf)"', cells[1], flags=re.I) if not placeholder(l)]
+                ms = [l for l in re.findall(r'href="([^"]+\.pdf)"', cells[2], flags=re.I) if not placeholder(l)]
                 if subject and sqp:
                     found.append({"grade": grade, "subject": subject, "kind": "main",
                                   "sqp": BASE + sqp[0].lstrip("/"), "ms": (BASE + ms[0].lstrip("/")) if ms else ""})
@@ -176,6 +187,8 @@ def main():
         "skillSession": skill_session,
         "updated": datetime.date.today().isoformat(),
         "source": "CBSE Sample Question Papers and Marking Schemes, cbseacademic.nic.in",
+        # The app shows these subjects first (name starts with the entry), then the rest A–Z.
+        "important": IMPORTANT,
         "papers": items,
     }
     with open(OUT, "w", encoding="utf-8") as f:
