@@ -188,6 +188,18 @@ In `practicals.json` each practical has `id`, `group`, `type` (python, sql, pyth
 `title_hi`, `syllabus`, `code`, `output`; Python ones also `inputs`, `inputFiles`, `outputFiles`,
 `images`; SQL ones `steps` (question, sql, result).
 
+## CBSE sample papers (`cbse-sample-papers.json`)
+
+The list behind the app's **Practice → Sample Papers**: CBSE's Sample Question Papers and Marking Schemes
+of the newest session (Classes 10 and 12, and skill subjects of Classes 9–12), with links to
+cbseacademic.nic.in and the name of our copy in the Release `cbse-sqp-<session>`.
+
+- Made by `scripts/cbse-sqp/build.py` (finds the newest session itself; papers whose file CBSE no longer
+  serves are left out). Don't edit the JSON by hand.
+- The workflow **CBSE sample papers** runs on the 2nd of every month: rebuilds the list and copies every
+  PDF into the Release (`scripts/cbse-sqp/mirror.sh`). To refresh at once (e.g. the day CBSE publishes the new
+  session): GitHub → this repository → Actions → CBSE sample papers → **Run workflow**.
+
 ## NCERT catalogue (`catalog/catalog.json`)
 
 The app's list of NCERT classes, subjects, books, chapter names and links (app version 21.9 and later
