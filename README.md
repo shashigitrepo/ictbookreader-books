@@ -188,6 +188,20 @@ In `practicals.json` each practical has `id`, `group`, `type` (python, sql, pyth
 `title_hi`, `syllabus`, `code`, `output`; Python ones also `inputs`, `inputFiles`, `outputFiles`,
 `images`; SQL ones `steps` (question, sql, result).
 
+### Practical exam pattern (`exam.json`)
+
+Next to each `practicals.json` an `exam.json` feeds the teacher's **Teach → Practical Exam Paper** (sets A, B, C…
+with marking scheme and viva). Edit it by hand (it has no outputs):
+
+- `duration` / `duration_hi`, `maxMarks`, `instructions` / `instructions_hi` (General Instructions).
+- `parts` in paper order, each with `id`, `kind`, `title`/`title_hi`, `marks`, optional `rubric`/`rubric_hi`
+  (marking scheme line) and `note`/`note_hi`:
+  - `program`: one ready practical from `groups` (practical group ids) per set; the scheme shows its real code and output.
+  - `sql`: one SQL set per set; the paper shows its CREATE TABLE / INSERT statements and `queries` of its questions.
+    Only SQL sets with at least `queries` real queries are offered.
+  - `record` (report file, project): marks and the note only. `viva`: `questions` viva questions per set.
+- `viva`: the viva bank, `{group, q, a, q_hi, a_hi}`; questions come from the groups the teacher ticks (and SQL).
+
 ## CBSE sample papers (`cbse-sample-papers.json`)
 
 The list behind the app's **Practice → Sample Papers**: CBSE's Sample Question Papers and Marking Schemes

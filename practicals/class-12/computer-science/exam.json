@@ -1,0 +1,450 @@
+{
+ "version": 1,
+ "class": 12,
+ "subject": "computer-science",
+ "subjectName": "Computer Science",
+ "subjectName_hi": "कंप्यूटर विज्ञान",
+ "subjectCode": "083",
+ "session": "2026-27",
+ "source": "CBSE Curriculum 2026-27, Computer Science (083), Class XII: practical examination scheme (cbseacademic.nic.in)",
+ "duration": "3 Hours",
+ "duration_hi": "3 घंटे",
+ "maxMarks": 30,
+ "instructions": [
+  "All questions are compulsory.",
+  "Write the program / queries in the computer, run them and show the output to the examiner.",
+  "Write the program and its output on the answer sheet as well.",
+  "Submit your report file and project for evaluation; the viva voce is based on the practical work."
+ ],
+ "instructions_hi": [
+  "सभी प्रश्न अनिवार्य हैं।",
+  "प्रोग्राम / क्वेरी कंप्यूटर पर लिखें, चलाएँ और आउटपुट परीक्षक को दिखाएँ।",
+  "प्रोग्राम और उसका आउटपुट उत्तर-पुस्तिका में भी लिखें।",
+  "मूल्यांकन के लिए अपनी रिपोर्ट फ़ाइल और प्रोजेक्ट जमा करें; मौखिक परीक्षा प्रैक्टिकल कार्य पर आधारित है।"
+ ],
+ "parts": [
+  {
+   "id": "program",
+   "kind": "program",
+   "title": "Python program",
+   "title_hi": "पायथन प्रोग्राम",
+   "marks": 8,
+   "count": 1,
+   "groups": [
+    "functions",
+    "exceptions",
+    "text-files",
+    "binary-files",
+    "csv-files",
+    "stack"
+   ],
+   "rubric": "Logic 60% (5) · Documentation 20% (1.5) · Code quality 20% (1.5)",
+   "rubric_hi": "लॉजिक 60% (5) · डॉक्यूमेंटेशन 20% (1.5) · कोड गुणवत्ता 20% (1.5)"
+  },
+  {
+   "id": "sql",
+   "kind": "sql",
+   "title": "SQL queries",
+   "title_hi": "SQL क्वेरी",
+   "marks": 4,
+   "queries": 4,
+   "groups": [
+    "sql"
+   ],
+   "rubric": "1 mark for each correct query (½ for correct clause, ½ for correct output)",
+   "rubric_hi": "प्रत्येक सही क्वेरी पर 1 अंक (सही क्लॉज़ पर ½, सही आउटपुट पर ½)"
+  },
+  {
+   "id": "report",
+   "kind": "record",
+   "title": "Report file",
+   "title_hi": "रिपोर्ट फ़ाइल",
+   "marks": 7,
+   "note": "Minimum 15 Python programs, 5 sets of SQL queries and 4 Python–SQL connectivity programs.",
+   "note_hi": "कम से कम 15 पायथन प्रोग्राम, SQL क्वेरी के 5 सेट और पायथन–SQL कनेक्टिविटी के 4 प्रोग्राम।"
+  },
+  {
+   "id": "project",
+   "kind": "record",
+   "title": "Project",
+   "title_hi": "प्रोजेक्ट",
+   "marks": 8,
+   "note": "Based on the concepts of Classes 11 and 12 (e.g. Python with files or MySQL).",
+   "note_hi": "कक्षा 11 और 12 की अवधारणाओं पर आधारित (जैसे फ़ाइल या MySQL के साथ पायथन)।"
+  },
+  {
+   "id": "viva",
+   "kind": "viva",
+   "title": "Viva voce",
+   "title_hi": "मौखिक परीक्षा (वाइवा)",
+   "marks": 3,
+   "questions": 6
+  }
+ ],
+ "viva": [
+  {
+   "group": "functions",
+   "q": "What is a function?",
+   "a": "A named block of code that does one task and runs only when it is called.",
+   "q_hi": "फ़ंक्शन क्या है?",
+   "a_hi": "कोड का एक नाम वाला खंड जो एक काम करता है और बुलाए जाने पर ही चलता है।"
+  },
+  {
+   "group": "functions",
+   "q": "What is the difference between a parameter and an argument?",
+   "a": "A parameter is the name in the function definition; an argument is the value passed when the function is called.",
+   "q_hi": "पैरामीटर और आर्ग्युमेंट में क्या अंतर है?",
+   "a_hi": "पैरामीटर फ़ंक्शन की परिभाषा में लिखा नाम है; आर्ग्युमेंट वह मान है जो फ़ंक्शन बुलाते समय दिया जाता है।"
+  },
+  {
+   "group": "functions",
+   "q": "What are default parameters?",
+   "a": "Parameters that get a value in the definition (e.g. r=8), used when no argument is given. They must come after the other parameters.",
+   "q_hi": "डिफ़ॉल्ट पैरामीटर क्या होते हैं?",
+   "a_hi": "वे पैरामीटर जिन्हें परिभाषा में ही मान दे दिया जाता है (जैसे r=8); आर्ग्युमेंट न देने पर यही मान लगता है। ये बाकी पैरामीटरों के बाद आते हैं।"
+  },
+  {
+   "group": "functions",
+   "q": "What is the difference between a local and a global variable?",
+   "a": "A local variable is made inside a function and exists only there; a global variable is made outside all functions and can be read anywhere.",
+   "q_hi": "लोकल और ग्लोबल वेरिएबल में क्या अंतर है?",
+   "a_hi": "लोकल वेरिएबल फ़ंक्शन के अंदर बनता है और वहीं तक रहता है; ग्लोबल वेरिएबल सभी फ़ंक्शनों के बाहर बनता है और कहीं भी पढ़ा जा सकता है।"
+  },
+  {
+   "group": "functions",
+   "q": "Why do we use the keyword global?",
+   "a": "To change a global variable from inside a function.",
+   "q_hi": "global कीवर्ड का प्रयोग क्यों करते हैं?",
+   "a_hi": "फ़ंक्शन के अंदर से किसी ग्लोबल वेरिएबल का मान बदलने के लिए।"
+  },
+  {
+   "group": "functions",
+   "q": "Can a Python function return more than one value?",
+   "a": "Yes. return a, b returns a tuple of the values.",
+   "q_hi": "क्या पायथन फ़ंक्शन एक से अधिक मान लौटा सकता है?",
+   "a_hi": "हाँ। return a, b मानों का एक tuple लौटाता है।"
+  },
+  {
+   "group": "functions",
+   "q": "What does a function return if it has no return statement?",
+   "a": "None.",
+   "q_hi": "return स्टेटमेंट न होने पर फ़ंक्शन क्या लौटाता है?",
+   "a_hi": "None।"
+  },
+  {
+   "group": "exceptions",
+   "q": "What is an exception?",
+   "a": "An error that happens while the program is running, such as dividing by zero.",
+   "q_hi": "एक्सेप्शन (अपवाद) क्या है?",
+   "a_hi": "प्रोग्राम चलते समय होने वाली त्रुटि, जैसे शून्य से भाग देना।"
+  },
+  {
+   "group": "exceptions",
+   "q": "What is the difference between a syntax error and an exception?",
+   "a": "A syntax error is found before the program runs (wrong grammar); an exception happens while it runs.",
+   "q_hi": "सिंटैक्स एरर और एक्सेप्शन में क्या अंतर है?",
+   "a_hi": "सिंटैक्स एरर प्रोग्राम चलने से पहले पकड़ी जाती है (गलत व्याकरण); एक्सेप्शन प्रोग्राम चलते समय होता है।"
+  },
+  {
+   "group": "exceptions",
+   "q": "What is the use of the try and except blocks?",
+   "a": "Code that may fail goes in try; except catches the error and handles it, so the program does not stop.",
+   "q_hi": "try और except ब्लॉक का क्या उपयोग है?",
+   "a_hi": "जो कोड गलत हो सकता है वह try में रखते हैं; except उस त्रुटि को पकड़कर संभालता है, जिससे प्रोग्राम रुकता नहीं।"
+  },
+  {
+   "group": "exceptions",
+   "q": "When does the finally block run?",
+   "a": "Always: whether an exception happened or not.",
+   "q_hi": "finally ब्लॉक कब चलता है?",
+   "a_hi": "हमेशा: एक्सेप्शन हो या न हो।"
+  },
+  {
+   "group": "exceptions",
+   "q": "Name three built-in exceptions.",
+   "a": "ZeroDivisionError, ValueError, IndexError (also TypeError, NameError, KeyError).",
+   "q_hi": "तीन बिल्ट-इन एक्सेप्शन के नाम बताइए।",
+   "a_hi": "ZeroDivisionError, ValueError, IndexError (TypeError, NameError, KeyError भी)।"
+  },
+  {
+   "group": "exceptions",
+   "q": "What does the raise statement do?",
+   "a": "It throws an exception on purpose, e.g. raise ValueError(\"negative\").",
+   "q_hi": "raise स्टेटमेंट क्या करता है?",
+   "a_hi": "यह जानबूझकर एक्सेप्शन उत्पन्न करता है, जैसे raise ValueError(\"negative\")।"
+  },
+  {
+   "group": "text-files",
+   "q": "What is the difference between a text file and a binary file?",
+   "a": "A text file stores characters that people can read; a binary file stores bytes (e.g. pickled objects) that need a program to read.",
+   "q_hi": "टेक्स्ट फ़ाइल और बाइनरी फ़ाइल में क्या अंतर है?",
+   "a_hi": "टेक्स्ट फ़ाइल में पढ़ने योग्य अक्षर होते हैं; बाइनरी फ़ाइल में बाइट्स (जैसे pickle किए गए ऑब्जेक्ट) होते हैं जिन्हें प्रोग्राम ही पढ़ सकता है।"
+  },
+  {
+   "group": "text-files",
+   "q": "What is the difference between the modes 'w' and 'a'?",
+   "a": "'w' creates the file or erases its old contents; 'a' adds new data at the end.",
+   "q_hi": "'w' और 'a' मोड में क्या अंतर है?",
+   "a_hi": "'w' फ़ाइल बनाता है या पुराना डेटा मिटा देता है; 'a' नया डेटा अंत में जोड़ता है।"
+  },
+  {
+   "group": "text-files",
+   "q": "What is the difference between read(), readline() and readlines()?",
+   "a": "read() reads the whole file as one string, readline() reads one line, readlines() returns a list of all lines.",
+   "q_hi": "read(), readline() और readlines() में क्या अंतर है?",
+   "a_hi": "read() पूरी फ़ाइल को एक string के रूप में पढ़ता है, readline() एक पंक्ति पढ़ता है, readlines() सभी पंक्तियों की list देता है।"
+  },
+  {
+   "group": "text-files",
+   "q": "Why should a file be closed?",
+   "a": "To save the data still in the buffer and free the file; the with statement closes it automatically.",
+   "q_hi": "फ़ाइल को बंद करना क्यों ज़रूरी है?",
+   "a_hi": "बफ़र में बचा डेटा सेव करने और फ़ाइल को मुक्त करने के लिए; with स्टेटमेंट इसे अपने-आप बंद कर देता है।"
+  },
+  {
+   "group": "text-files",
+   "q": "What do seek() and tell() do?",
+   "a": "tell() gives the current position of the file pointer; seek(n) moves the pointer to byte n.",
+   "q_hi": "seek() और tell() क्या करते हैं?",
+   "a_hi": "tell() फ़ाइल पॉइंटर की वर्तमान स्थिति बताता है; seek(n) पॉइंटर को बाइट n पर ले जाता है।"
+  },
+  {
+   "group": "text-files",
+   "q": "What is the difference between write() and writelines()?",
+   "a": "write() writes one string; writelines() writes every string of a list (it adds no newlines itself).",
+   "q_hi": "write() और writelines() में क्या अंतर है?",
+   "a_hi": "write() एक string लिखता है; writelines() list की हर string लिखता है (यह खुद नई पंक्ति नहीं जोड़ता)।"
+  },
+  {
+   "group": "binary-files",
+   "q": "Which module is used to work with binary files of Python objects?",
+   "a": "The pickle module.",
+   "q_hi": "पायथन ऑब्जेक्ट की बाइनरी फ़ाइलों के लिए कौन-सा मॉड्यूल प्रयोग होता है?",
+   "a_hi": "pickle मॉड्यूल।"
+  },
+  {
+   "group": "binary-files",
+   "q": "What do pickle.dump() and pickle.load() do?",
+   "a": "dump() writes (serialises) an object to the file; load() reads one object back.",
+   "q_hi": "pickle.dump() और pickle.load() क्या करते हैं?",
+   "a_hi": "dump() ऑब्जेक्ट को फ़ाइल में लिखता (serialise करता) है; load() एक ऑब्जेक्ट वापस पढ़ता है।"
+  },
+  {
+   "group": "binary-files",
+   "q": "Which modes are used to open a binary file?",
+   "a": "'rb' to read, 'wb' to write, 'ab' to append, 'rb+' to read and write.",
+   "q_hi": "बाइनरी फ़ाइल खोलने के लिए कौन-से मोड प्रयोग होते हैं?",
+   "a_hi": "पढ़ने के लिए 'rb', लिखने के लिए 'wb', जोड़ने के लिए 'ab', पढ़ने-लिखने के लिए 'rb+'।"
+  },
+  {
+   "group": "binary-files",
+   "q": "How do you know that all records of a binary file have been read?",
+   "a": "pickle.load() raises EOFError at the end of the file; we catch it with try–except.",
+   "q_hi": "कैसे पता चलता है कि बाइनरी फ़ाइल के सभी रिकॉर्ड पढ़ लिए गए?",
+   "a_hi": "फ़ाइल के अंत में pickle.load() EOFError देता है; हम इसे try–except से पकड़ते हैं।"
+  },
+  {
+   "group": "binary-files",
+   "q": "What is serialisation (pickling)?",
+   "a": "Turning a Python object into a stream of bytes so it can be stored in a file.",
+   "q_hi": "सीरियलाइज़ेशन (पिकलिंग) क्या है?",
+   "a_hi": "पायथन ऑब्जेक्ट को बाइट्स की धारा में बदलना ताकि उसे फ़ाइल में रखा जा सके।"
+  },
+  {
+   "group": "binary-files",
+   "q": "How can a record in a binary file be updated?",
+   "a": "Read all records, change the one needed, and write them all back (or use seek() to overwrite it).",
+   "q_hi": "बाइनरी फ़ाइल के किसी रिकॉर्ड को कैसे अपडेट करते हैं?",
+   "a_hi": "सभी रिकॉर्ड पढ़ें, ज़रूरी रिकॉर्ड बदलें और सब वापस लिखें (या seek() से उसी जगह फिर से लिखें)।"
+  },
+  {
+   "group": "csv-files",
+   "q": "What is a CSV file?",
+   "a": "A text file of comma-separated values: each line is a record, and commas separate its fields.",
+   "q_hi": "CSV फ़ाइल क्या है?",
+   "a_hi": "कॉमा से अलग किए गए मानों वाली टेक्स्ट फ़ाइल: हर पंक्ति एक रिकॉर्ड है और कॉमा उसके फ़ील्ड अलग करते हैं।"
+  },
+  {
+   "group": "csv-files",
+   "q": "Which module is used for CSV files?",
+   "a": "The csv module (csv.writer, csv.reader).",
+   "q_hi": "CSV फ़ाइलों के लिए कौन-सा मॉड्यूल प्रयोग होता है?",
+   "a_hi": "csv मॉड्यूल (csv.writer, csv.reader)।"
+  },
+  {
+   "group": "csv-files",
+   "q": "What is the difference between writerow() and writerows()?",
+   "a": "writerow() writes one record (a list); writerows() writes many records (a list of lists).",
+   "q_hi": "writerow() और writerows() में क्या अंतर है?",
+   "a_hi": "writerow() एक रिकॉर्ड (list) लिखता है; writerows() कई रिकॉर्ड (lists की list) लिखता है।"
+  },
+  {
+   "group": "csv-files",
+   "q": "Why is newline='' used when opening a CSV file for writing?",
+   "a": "To stop blank lines appearing between rows (mainly on Windows).",
+   "q_hi": "CSV फ़ाइल लिखने के लिए खोलते समय newline='' क्यों लगाते हैं?",
+   "a_hi": "पंक्तियों के बीच खाली पंक्तियाँ न आएँ (खासकर Windows पर)।"
+  },
+  {
+   "group": "csv-files",
+   "q": "In what form does csv.reader give each row?",
+   "a": "As a list of strings.",
+   "q_hi": "csv.reader हर पंक्ति को किस रूप में देता है?",
+   "a_hi": "strings की list के रूप में।"
+  },
+  {
+   "group": "csv-files",
+   "q": "How can you use a delimiter other than a comma?",
+   "a": "Pass delimiter, e.g. csv.writer(f, delimiter=';').",
+   "q_hi": "कॉमा के अलावा दूसरा डिलिमिटर कैसे लगाते हैं?",
+   "a_hi": "delimiter देकर, जैसे csv.writer(f, delimiter=';')।"
+  },
+  {
+   "group": "stack",
+   "q": "What is a stack?",
+   "a": "A linear data structure where elements are added and removed at the same end (the top): Last In, First Out (LIFO).",
+   "q_hi": "स्टैक क्या है?",
+   "a_hi": "एक रेखीय डेटा संरचना जिसमें तत्व एक ही सिरे (top) से जोड़े और हटाए जाते हैं: Last In, First Out (LIFO)।"
+  },
+  {
+   "group": "stack",
+   "q": "What are PUSH and POP?",
+   "a": "PUSH adds an element at the top; POP removes the top element.",
+   "q_hi": "PUSH और POP क्या हैं?",
+   "a_hi": "PUSH ऊपर एक तत्व जोड़ता है; POP सबसे ऊपर का तत्व हटाता है।"
+  },
+  {
+   "group": "stack",
+   "q": "What is underflow?",
+   "a": "Trying to POP from an empty stack.",
+   "q_hi": "अंडरफ़्लो क्या है?",
+   "a_hi": "खाली स्टैक से POP करने का प्रयास।"
+  },
+  {
+   "group": "stack",
+   "q": "How is a stack made with a Python list?",
+   "a": "append() pushes, pop() pops, and list[-1] is the top (peek).",
+   "q_hi": "पायथन list से स्टैक कैसे बनाते हैं?",
+   "a_hi": "append() से push, pop() से pop, और list[-1] ऊपर का तत्व (peek) है।"
+  },
+  {
+   "group": "stack",
+   "q": "Give two uses of a stack.",
+   "a": "Reversing a string, undo in editors, checking brackets, function calls, converting expressions.",
+   "q_hi": "स्टैक के दो उपयोग बताइए।",
+   "a_hi": "string उलटना, एडिटर में undo, कोष्ठक जाँचना, फ़ंक्शन कॉल, एक्सप्रेशन बदलना।"
+  },
+  {
+   "group": "stack",
+   "q": "What is overflow?",
+   "a": "Trying to push onto a stack that is full (with a fixed size); a Python list grows, so it rarely happens.",
+   "q_hi": "ओवरफ़्लो क्या है?",
+   "a_hi": "भरे हुए (निश्चित आकार वाले) स्टैक में push करने का प्रयास; पायथन list बढ़ती रहती है, इसलिए ऐसा कम होता है।"
+  },
+  {
+   "group": "sql",
+   "q": "What is the difference between DDL and DML?",
+   "a": "DDL defines structure (CREATE, ALTER, DROP); DML works on the data (INSERT, UPDATE, DELETE, SELECT).",
+   "q_hi": "DDL और DML में क्या अंतर है?",
+   "a_hi": "DDL संरचना बनाता/बदलता है (CREATE, ALTER, DROP); DML डेटा पर काम करता है (INSERT, UPDATE, DELETE, SELECT)।"
+  },
+  {
+   "group": "sql",
+   "q": "What is a primary key?",
+   "a": "A column (or set of columns) whose value is unique and not NULL for every row.",
+   "q_hi": "प्राइमरी की क्या है?",
+   "a_hi": "एक कॉलम (या कॉलमों का समूह) जिसका मान हर पंक्ति के लिए अनोखा और NULL रहित होता है।"
+  },
+  {
+   "group": "sql",
+   "q": "What is a foreign key?",
+   "a": "A column that refers to the primary key of another table, linking the two tables.",
+   "q_hi": "फ़ॉरेन की क्या है?",
+   "a_hi": "वह कॉलम जो दूसरी तालिका की प्राइमरी की को संदर्भित करता है और दोनों तालिकाओं को जोड़ता है।"
+  },
+  {
+   "group": "sql",
+   "q": "What is the difference between WHERE and HAVING?",
+   "a": "WHERE filters rows before grouping; HAVING filters groups made by GROUP BY.",
+   "q_hi": "WHERE और HAVING में क्या अंतर है?",
+   "a_hi": "WHERE समूह बनने से पहले पंक्तियाँ छाँटता है; HAVING GROUP BY से बने समूहों को छाँटता है।"
+  },
+  {
+   "group": "sql",
+   "q": "What is the difference between DELETE and DROP?",
+   "a": "DELETE removes rows and keeps the table; DROP removes the whole table.",
+   "q_hi": "DELETE और DROP में क्या अंतर है?",
+   "a_hi": "DELETE पंक्तियाँ हटाता है और तालिका रहती है; DROP पूरी तालिका हटा देता है।"
+  },
+  {
+   "group": "sql",
+   "q": "What do degree and cardinality mean?",
+   "a": "Degree = number of columns; cardinality = number of rows.",
+   "q_hi": "डिग्री और कार्डिनैलिटी का क्या अर्थ है?",
+   "a_hi": "डिग्री = कॉलमों की संख्या; कार्डिनैलिटी = पंक्तियों की संख्या।"
+  },
+  {
+   "group": "sql",
+   "q": "Does COUNT(column) count NULL values?",
+   "a": "No. COUNT(column) skips NULLs; COUNT(*) counts all rows.",
+   "q_hi": "क्या COUNT(column) NULL मान गिनता है?",
+   "a_hi": "नहीं। COUNT(column) NULL छोड़ देता है; COUNT(*) सभी पंक्तियाँ गिनता है।"
+  },
+  {
+   "group": "sql",
+   "q": "What is an equi-join?",
+   "a": "A join of two tables on equal values of a common column, e.g. WHERE emp.deptno = dept.deptno.",
+   "q_hi": "इक्वी-जॉइन क्या है?",
+   "a_hi": "दो तालिकाओं को एक साझा कॉलम के बराबर मानों पर जोड़ना, जैसे WHERE emp.deptno = dept.deptno।"
+  },
+  {
+   "group": "python-sql",
+   "q": "Which module connects Python to MySQL?",
+   "a": "mysql.connector (installed as mysql-connector-python).",
+   "q_hi": "पायथन को MySQL से कौन-सा मॉड्यूल जोड़ता है?",
+   "a_hi": "mysql.connector (mysql-connector-python के रूप में इंस्टॉल होता है)।"
+  },
+  {
+   "group": "python-sql",
+   "q": "Which arguments does connect() need?",
+   "a": "host, user, password and (optionally) database.",
+   "q_hi": "connect() को कौन-से आर्ग्युमेंट चाहिए?",
+   "a_hi": "host, user, password और (वैकल्पिक) database।"
+  },
+  {
+   "group": "python-sql",
+   "q": "What is a cursor?",
+   "a": "An object made by connection.cursor() that runs SQL statements with execute() and holds their results.",
+   "q_hi": "कर्सर क्या है?",
+   "a_hi": "connection.cursor() से बना ऑब्जेक्ट जो execute() से SQL चलाता है और उनके परिणाम रखता है।"
+  },
+  {
+   "group": "python-sql",
+   "q": "Why is commit() needed?",
+   "a": "To save changes made by INSERT, UPDATE or DELETE in the database permanently.",
+   "q_hi": "commit() क्यों ज़रूरी है?",
+   "a_hi": "INSERT, UPDATE या DELETE से किए बदलाव डेटाबेस में स्थायी रूप से सेव करने के लिए।"
+  },
+  {
+   "group": "python-sql",
+   "q": "What is the difference between fetchone(), fetchmany() and fetchall()?",
+   "a": "fetchone() gives the next row, fetchmany(n) the next n rows, fetchall() all remaining rows.",
+   "q_hi": "fetchone(), fetchmany() और fetchall() में क्या अंतर है?",
+   "a_hi": "fetchone() अगली पंक्ति, fetchmany(n) अगली n पंक्तियाँ, fetchall() बची सभी पंक्तियाँ देता है।"
+  },
+  {
+   "group": "python-sql",
+   "q": "What does cursor.rowcount tell?",
+   "a": "The number of rows fetched or changed by the last statement.",
+   "q_hi": "cursor.rowcount क्या बताता है?",
+   "a_hi": "पिछले स्टेटमेंट से पढ़ी या बदली गई पंक्तियों की संख्या।"
+  },
+  {
+   "group": "python-sql",
+   "q": "How are values put into a query safely?",
+   "a": "With placeholders: execute(\"... WHERE roll = %s\", (r,)) or format() / f-strings for simple class work.",
+   "q_hi": "क्वेरी में मान सुरक्षित रूप से कैसे डालते हैं?",
+   "a_hi": "प्लेसहोल्डर से: execute(\"... WHERE roll = %s\", (r,)), या सामान्य अभ्यास के लिए format() / f-string से।"
+  }
+ ]
+}

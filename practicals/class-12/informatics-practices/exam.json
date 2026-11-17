@@ -1,0 +1,376 @@
+{
+ "version": 1,
+ "class": 12,
+ "subject": "informatics-practices",
+ "subjectName": "Informatics Practices",
+ "subjectName_hi": "सूचना विज्ञान अभ्यास (Informatics Practices)",
+ "subjectCode": "065",
+ "session": "2026-27",
+ "source": "CBSE Curriculum 2026-27, Informatics Practices (065), Class XII: practical examination scheme (cbseacademic.nic.in)",
+ "duration": "3 Hours",
+ "duration_hi": "3 घंटे",
+ "maxMarks": 30,
+ "instructions": [
+  "All questions are compulsory.",
+  "Write the programs / queries in the computer, run them and show the output (and the chart) to the examiner.",
+  "Write the programs and their output on the answer sheet as well.",
+  "Submit your practical file and project for evaluation; the viva voce is based on the practical work."
+ ],
+ "instructions_hi": [
+  "सभी प्रश्न अनिवार्य हैं।",
+  "प्रोग्राम / क्वेरी कंप्यूटर पर लिखें, चलाएँ और आउटपुट (और चार्ट) परीक्षक को दिखाएँ।",
+  "प्रोग्राम और उनका आउटपुट उत्तर-पुस्तिका में भी लिखें।",
+  "मूल्यांकन के लिए अपनी प्रैक्टिकल फ़ाइल और प्रोजेक्ट जमा करें; मौखिक परीक्षा प्रैक्टिकल कार्य पर आधारित है।"
+ ],
+ "parts": [
+  {
+   "id": "pandas",
+   "kind": "program",
+   "title": "Pandas program",
+   "title_hi": "Pandas प्रोग्राम",
+   "marks": 5,
+   "count": 1,
+   "groups": [
+    "series",
+    "dataframe",
+    "csv"
+   ],
+   "rubric": "Correct logic 3 · Correct output 1 · Documentation and code quality 1",
+   "rubric_hi": "सही लॉजिक 3 · सही आउटपुट 1 · डॉक्यूमेंटेशन और कोड गुणवत्ता 1"
+  },
+  {
+   "id": "plot",
+   "kind": "program",
+   "title": "Data visualization (Matplotlib)",
+   "title_hi": "डेटा विज़ुअलाइज़ेशन (Matplotlib)",
+   "marks": 3,
+   "count": 1,
+   "groups": [
+    "plots"
+   ],
+   "rubric": "Correct chart 2 · Title, labels and legend 1",
+   "rubric_hi": "सही चार्ट 2 · शीर्षक, लेबल और लेजेंड 1"
+  },
+  {
+   "id": "sql",
+   "kind": "sql",
+   "title": "SQL queries",
+   "title_hi": "SQL क्वेरी",
+   "marks": 7,
+   "queries": 5,
+   "groups": [
+    "sql"
+   ],
+   "rubric": "Creating the table(s) correctly 2 · 1 mark for each correct query (½ for the correct clause, ½ for the correct output)",
+   "rubric_hi": "तालिका/तालिकाएँ सही बनाना 2 · प्रत्येक सही क्वेरी पर 1 अंक (सही क्लॉज़ पर ½, सही आउटपुट पर ½)"
+  },
+  {
+   "id": "file",
+   "kind": "record",
+   "title": "Practical file",
+   "title_hi": "प्रैक्टिकल फ़ाइल",
+   "marks": 5,
+   "note": "Minimum 15 Pandas programs, 4 Matplotlib programs and 15 SQL queries.",
+   "note_hi": "कम से कम 15 Pandas प्रोग्राम, 4 Matplotlib प्रोग्राम और 15 SQL क्वेरी।"
+  },
+  {
+   "id": "project",
+   "kind": "record",
+   "title": "Project work",
+   "title_hi": "प्रोजेक्ट कार्य",
+   "marks": 5,
+   "note": "Based on the concepts of Classes 11 and 12.",
+   "note_hi": "कक्षा 11 और 12 की अवधारणाओं पर आधारित।"
+  },
+  {
+   "id": "viva",
+   "kind": "viva",
+   "title": "Viva voce",
+   "title_hi": "मौखिक परीक्षा (वाइवा)",
+   "marks": 5,
+   "questions": 8
+  }
+ ],
+ "viva": [
+  {
+   "group": "series",
+   "q": "What is a Pandas Series?",
+   "a": "A one-dimensional labelled array: values with an index.",
+   "q_hi": "Pandas सीरीज़ क्या है?",
+   "a_hi": "एक-आयामी लेबल वाला ऐरे: मान और उनका इंडेक्स।"
+  },
+  {
+   "group": "series",
+   "q": "How can a Series be created?",
+   "a": "pd.Series() from a list, a dictionary, a NumPy array or a scalar value.",
+   "q_hi": "सीरीज़ कैसे बनाई जा सकती है?",
+   "a_hi": "pd.Series() से: list, dictionary, NumPy array या एक scalar मान से।"
+  },
+  {
+   "group": "series",
+   "q": "What is the difference between loc and iloc?",
+   "a": "loc selects by label (end label included); iloc selects by position (end position excluded).",
+   "q_hi": "loc और iloc में क्या अंतर है?",
+   "a_hi": "loc लेबल से चुनता है (अंतिम लेबल शामिल); iloc स्थिति से चुनता है (अंतिम स्थिति शामिल नहीं)।"
+  },
+  {
+   "group": "series",
+   "q": "What do head() and tail() do?",
+   "a": "head(n) shows the first n elements, tail(n) the last n (5 by default).",
+   "q_hi": "head() और tail() क्या करते हैं?",
+   "a_hi": "head(n) पहले n तत्व दिखाता है, tail(n) अंतिम n (डिफ़ॉल्ट 5)।"
+  },
+  {
+   "group": "series",
+   "q": "What happens when two Series with different indexes are added?",
+   "a": "Values are added by matching labels; labels found in only one Series give NaN.",
+   "q_hi": "अलग-अलग इंडेक्स वाली दो सीरीज़ जोड़ने पर क्या होता है?",
+   "a_hi": "मिलते लेबल के मान जुड़ते हैं; जो लेबल केवल एक में हैं उनका परिणाम NaN होता है।"
+  },
+  {
+   "group": "series",
+   "q": "Name four attributes of a Series.",
+   "a": "index, values, size, dtype (also empty, name, hasnans).",
+   "q_hi": "सीरीज़ के चार गुण (attributes) बताइए।",
+   "a_hi": "index, values, size, dtype (empty, name, hasnans भी)।"
+  },
+  {
+   "group": "series",
+   "q": "What is NaN?",
+   "a": "Not a Number: Pandas' mark for a missing value.",
+   "q_hi": "NaN क्या है?",
+   "a_hi": "Not a Number: Pandas में छूटे (missing) मान का चिह्न।"
+  },
+  {
+   "group": "series",
+   "q": "What is the difference between a Series and a NumPy array?",
+   "a": "A Series has an index of labels and can hold mixed types; an array has only positions and one type.",
+   "q_hi": "सीरीज़ और NumPy ऐरे में क्या अंतर है?",
+   "a_hi": "सीरीज़ में लेबल वाला इंडेक्स होता है और अलग-अलग प्रकार के मान रह सकते हैं; ऐरे में केवल स्थिति और एक ही प्रकार।"
+  },
+  {
+   "group": "dataframe",
+   "q": "What is a DataFrame?",
+   "a": "A two-dimensional labelled table with rows (index) and columns, each column like a Series.",
+   "q_hi": "डेटाफ़्रेम क्या है?",
+   "a_hi": "पंक्तियों (index) और कॉलमों वाली द्वि-आयामी लेबल तालिका; हर कॉलम एक सीरीज़ जैसा।"
+  },
+  {
+   "group": "dataframe",
+   "q": "How do you add a new column to a DataFrame?",
+   "a": "Assign to it: df['new'] = values (or df.insert()).",
+   "q_hi": "डेटाफ़्रेम में नया कॉलम कैसे जोड़ते हैं?",
+   "a_hi": "मान देकर: df['new'] = values (या df.insert())।"
+  },
+  {
+   "group": "dataframe",
+   "q": "How do you delete a column or a row?",
+   "a": "df.drop('col', axis=1) for a column, df.drop(label, axis=0) for a row.",
+   "q_hi": "कॉलम या पंक्ति कैसे हटाते हैं?",
+   "a_hi": "कॉलम के लिए df.drop('col', axis=1), पंक्ति के लिए df.drop(label, axis=0)।"
+  },
+  {
+   "group": "dataframe",
+   "q": "What do shape, size and ndim give?",
+   "a": "shape = (rows, columns), size = number of values, ndim = 2 for a DataFrame.",
+   "q_hi": "shape, size और ndim क्या देते हैं?",
+   "a_hi": "shape = (पंक्तियाँ, कॉलम), size = कुल मानों की संख्या, ndim = डेटाफ़्रेम के लिए 2।"
+  },
+  {
+   "group": "dataframe",
+   "q": "What is the difference between iterrows() and items()?",
+   "a": "iterrows() gives each row as (index, Series); items() gives each column as (name, Series).",
+   "q_hi": "iterrows() और items() में क्या अंतर है?",
+   "a_hi": "iterrows() हर पंक्ति (index, Series) के रूप में देता है; items() हर कॉलम (name, Series) के रूप में।"
+  },
+  {
+   "group": "dataframe",
+   "q": "What is Boolean indexing?",
+   "a": "Selecting rows with a condition, e.g. df[df['marks'] > 80].",
+   "q_hi": "बूलियन इंडेक्सिंग क्या है?",
+   "a_hi": "शर्त से पंक्तियाँ चुनना, जैसे df[df['marks'] > 80]।"
+  },
+  {
+   "group": "dataframe",
+   "q": "How do you rename a column?",
+   "a": "df.rename(columns={'old': 'new'}).",
+   "q_hi": "कॉलम का नाम कैसे बदलते हैं?",
+   "a_hi": "df.rename(columns={'old': 'new'})।"
+  },
+  {
+   "group": "dataframe",
+   "q": "What does df.T do?",
+   "a": "Transposes the DataFrame: rows become columns.",
+   "q_hi": "df.T क्या करता है?",
+   "a_hi": "डेटाफ़्रेम को transpose करता है: पंक्तियाँ कॉलम बन जाती हैं।"
+  },
+  {
+   "group": "csv",
+   "q": "Which functions read and write CSV files in Pandas?",
+   "a": "pd.read_csv() reads a CSV into a DataFrame; df.to_csv() writes it.",
+   "q_hi": "Pandas में CSV पढ़ने-लिखने के फ़ंक्शन कौन-से हैं?",
+   "a_hi": "pd.read_csv() CSV को डेटाफ़्रेम में पढ़ता है; df.to_csv() लिखता है।"
+  },
+  {
+   "group": "csv",
+   "q": "What do the parameters sep, header and index_col of read_csv() do?",
+   "a": "sep = separator, header = row with column names (None if there is none), index_col = column used as the index.",
+   "q_hi": "read_csv() के sep, header और index_col क्या करते हैं?",
+   "a_hi": "sep = विभाजक, header = कॉलम नामों वाली पंक्ति (न हो तो None), index_col = इंडेक्स बनने वाला कॉलम।"
+  },
+  {
+   "group": "csv",
+   "q": "Why is index=False used with to_csv()?",
+   "a": "So that the row index is not written as an extra column.",
+   "q_hi": "to_csv() में index=False क्यों लगाते हैं?",
+   "a_hi": "ताकि पंक्ति इंडेक्स अतिरिक्त कॉलम के रूप में न लिखा जाए।"
+  },
+  {
+   "group": "csv",
+   "q": "How is a DataFrame written to a MySQL table?",
+   "a": "With df.to_sql('table', engine, if_exists='replace', index=False), using an SQLAlchemy engine.",
+   "q_hi": "डेटाफ़्रेम को MySQL तालिका में कैसे लिखते हैं?",
+   "a_hi": "SQLAlchemy engine के साथ df.to_sql('table', engine, if_exists='replace', index=False) से।"
+  },
+  {
+   "group": "csv",
+   "q": "How is data read from MySQL into a DataFrame?",
+   "a": "pd.read_sql('SELECT ...', engine) (or read_sql_query / read_sql_table).",
+   "q_hi": "MySQL से डेटा डेटाफ़्रेम में कैसे पढ़ते हैं?",
+   "a_hi": "pd.read_sql('SELECT ...', engine) से (या read_sql_query / read_sql_table)।"
+  },
+  {
+   "group": "csv",
+   "q": "What does nrows do in read_csv()?",
+   "a": "Reads only the first n rows of the file.",
+   "q_hi": "read_csv() में nrows क्या करता है?",
+   "a_hi": "फ़ाइल की केवल पहली n पंक्तियाँ पढ़ता है।"
+  },
+  {
+   "group": "csv",
+   "q": "What are the options of if_exists in to_sql()?",
+   "a": "'fail' (default), 'replace' and 'append'.",
+   "q_hi": "to_sql() में if_exists के विकल्प क्या हैं?",
+   "a_hi": "'fail' (डिफ़ॉल्ट), 'replace' और 'append'।"
+  },
+  {
+   "group": "csv",
+   "q": "What is a CSV file?",
+   "a": "A text file in which values are separated by commas; each line is one record.",
+   "q_hi": "CSV फ़ाइल क्या है?",
+   "a_hi": "एक टेक्स्ट फ़ाइल जिसमें मान कॉमा से अलग होते हैं; हर पंक्ति एक रिकॉर्ड है।"
+  },
+  {
+   "group": "plots",
+   "q": "Which module is used for plotting?",
+   "a": "matplotlib.pyplot, usually imported as plt.",
+   "q_hi": "प्लॉट बनाने के लिए कौन-सा मॉड्यूल प्रयोग होता है?",
+   "a_hi": "matplotlib.pyplot, जिसे आमतौर पर plt नाम से import करते हैं।"
+  },
+  {
+   "group": "plots",
+   "q": "Which chart suits which data?",
+   "a": "Line chart for change over time, bar chart to compare categories, histogram for the distribution of numbers.",
+   "q_hi": "कौन-सा चार्ट किस डेटा के लिए उपयुक्त है?",
+   "a_hi": "समय के साथ बदलाव के लिए लाइन चार्ट, श्रेणियों की तुलना के लिए बार चार्ट, संख्याओं के वितरण के लिए हिस्टोग्राम।"
+  },
+  {
+   "group": "plots",
+   "q": "What do xlabel(), ylabel(), title() and legend() do?",
+   "a": "They add the x-axis label, y-axis label, chart title and the key of the lines/bars.",
+   "q_hi": "xlabel(), ylabel(), title() और legend() क्या करते हैं?",
+   "a_hi": "ये x-अक्ष लेबल, y-अक्ष लेबल, चार्ट का शीर्षक और रेखाओं/बार की कुंजी जोड़ते हैं।"
+  },
+  {
+   "group": "plots",
+   "q": "What is the difference between a bar chart and a histogram?",
+   "a": "A bar chart compares separate categories (gaps between bars); a histogram shows how numbers fall into ranges (bins), with no gaps.",
+   "q_hi": "बार चार्ट और हिस्टोग्राम में क्या अंतर है?",
+   "a_hi": "बार चार्ट अलग-अलग श्रेणियों की तुलना करता है (बार के बीच जगह); हिस्टोग्राम दिखाता है कि संख्याएँ किन सीमाओं (bins) में आती हैं, बिना जगह के।"
+  },
+  {
+   "group": "plots",
+   "q": "What does bins mean in hist()?",
+   "a": "The number of ranges (or the range edges) the data is divided into.",
+   "q_hi": "hist() में bins का क्या अर्थ है?",
+   "a_hi": "डेटा को जितनी सीमाओं (या जिन सीमा-बिंदुओं) में बाँटा जाता है।"
+  },
+  {
+   "group": "plots",
+   "q": "How is a chart saved as an image?",
+   "a": "plt.savefig('chart.png') before plt.show().",
+   "q_hi": "चार्ट को इमेज के रूप में कैसे सेव करते हैं?",
+   "a_hi": "plt.show() से पहले plt.savefig('chart.png') से।"
+  },
+  {
+   "group": "plots",
+   "q": "How can a chart be drawn directly from a DataFrame?",
+   "a": "df.plot(kind='bar' / 'line' / 'hist', x=..., y=...).",
+   "q_hi": "डेटाफ़्रेम से सीधे चार्ट कैसे बनाते हैं?",
+   "a_hi": "df.plot(kind='bar' / 'line' / 'hist', x=..., y=...) से।"
+  },
+  {
+   "group": "plots",
+   "q": "Name three ways to style a line plot.",
+   "a": "color, linestyle, marker (also linewidth, label).",
+   "q_hi": "लाइन प्लॉट को सजाने के तीन तरीके बताइए।",
+   "a_hi": "color, linestyle, marker (linewidth, label भी)।"
+  },
+  {
+   "group": "sql",
+   "q": "What is the difference between a single-row and an aggregate function?",
+   "a": "A single-row function gives one result per row (ROUND, UPPER); an aggregate gives one result for a group (SUM, AVG).",
+   "q_hi": "सिंगल-रो फ़ंक्शन और एग्रीगेट फ़ंक्शन में क्या अंतर है?",
+   "a_hi": "सिंगल-रो फ़ंक्शन हर पंक्ति का एक परिणाम देता है (ROUND, UPPER); एग्रीगेट पूरे समूह का एक परिणाम (SUM, AVG)।"
+  },
+  {
+   "group": "sql",
+   "q": "What does ROUND(15.678, 1) return?",
+   "a": "15.7.",
+   "q_hi": "ROUND(15.678, 1) क्या लौटाता है?",
+   "a_hi": "15.7।"
+  },
+  {
+   "group": "sql",
+   "q": "What is the difference between WHERE and HAVING?",
+   "a": "WHERE filters rows before grouping; HAVING filters the groups made by GROUP BY.",
+   "q_hi": "WHERE और HAVING में क्या अंतर है?",
+   "a_hi": "WHERE समूह बनने से पहले पंक्तियाँ छाँटता है; HAVING GROUP BY से बने समूहों को।"
+  },
+  {
+   "group": "sql",
+   "q": "Name three text functions.",
+   "a": "UPPER()/UCASE(), LOWER(), LENGTH(), LEFT(), RIGHT(), MID()/SUBSTR(), INSTR(), TRIM().",
+   "q_hi": "तीन टेक्स्ट फ़ंक्शन बताइए।",
+   "a_hi": "UPPER()/UCASE(), LOWER(), LENGTH(), LEFT(), RIGHT(), MID()/SUBSTR(), INSTR(), TRIM()।"
+  },
+  {
+   "group": "sql",
+   "q": "What does NOW() return, and how is it different from DATE()?",
+   "a": "NOW() gives the current date and time; DATE() takes only the date part of a date-time.",
+   "q_hi": "NOW() क्या लौटाता है और यह DATE() से कैसे अलग है?",
+   "a_hi": "NOW() वर्तमान तिथि और समय देता है; DATE() किसी तिथि-समय का केवल तिथि भाग लेता है।"
+  },
+  {
+   "group": "sql",
+   "q": "Does COUNT(column) count NULL values?",
+   "a": "No. COUNT(column) skips NULLs; COUNT(*) counts all rows.",
+   "q_hi": "क्या COUNT(column) NULL मान गिनता है?",
+   "a_hi": "नहीं। COUNT(column) NULL छोड़ देता है; COUNT(*) सभी पंक्तियाँ गिनता है।"
+  },
+  {
+   "group": "sql",
+   "q": "What does ORDER BY ... DESC do?",
+   "a": "Sorts the result in descending order (ASC, ascending, is the default).",
+   "q_hi": "ORDER BY ... DESC क्या करता है?",
+   "a_hi": "परिणाम को घटते क्रम में लगाता है (ASC, बढ़ता क्रम, डिफ़ॉल्ट है)।"
+  },
+  {
+   "group": "sql",
+   "q": "What is a primary key?",
+   "a": "A column whose value is unique and not NULL for every row.",
+   "q_hi": "प्राइमरी की क्या है?",
+   "a_hi": "वह कॉलम जिसका मान हर पंक्ति के लिए अनोखा और NULL रहित होता है।"
+  }
+ ]
+}
