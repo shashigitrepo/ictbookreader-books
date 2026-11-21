@@ -3260,6 +3260,168 @@
       ]
     },
     {
+      "id": "g10-information-technology-solutions",
+      "gradeId": "g10",
+      "subjectId": "g10-information-technology",
+      "title": "Information Technology (402) – Textbook Solutions",
+      "order": 51,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-information-technology-solutions-01",
+          "title": "Introduction to Styles",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/01-introduction-to-styles.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-information-technology-solutions-02",
+          "title": "Working with Images",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/02-working-with-images.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-information-technology-solutions-03",
+          "title": "Advanced Features of Writer",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/03-advanced-features-of-writer.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-information-technology-solutions-04",
+          "title": "Analyse Data using Scenarios and Goal Seek",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/04-analyse-data-using-scenarios-and-goal-seek.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-information-technology-solutions-05",
+          "title": "Using Macros in Spreadsheet",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/05-using-macros-in-spreadsheet.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-information-technology-solutions-06",
+          "title": "Linking Spreadsheet Data",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/06-linking-spreadsheet-data.pdf"
+          },
+          "number": 6
+        },
+        {
+          "id": "g10-information-technology-solutions-07",
+          "title": "Share and Review a Spreadsheet",
+          "order": 7,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/07-share-and-review-a-spreadsheet.pdf"
+          },
+          "number": 7
+        },
+        {
+          "id": "g10-information-technology-solutions-08",
+          "title": "Introduction to Database Management System",
+          "order": 8,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/08-introduction-to-database-management-system.pdf"
+          },
+          "number": 8
+        },
+        {
+          "id": "g10-information-technology-solutions-09",
+          "title": "Starting with LibreOffice Base",
+          "order": 9,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/09-starting-with-libreoffice-base.pdf"
+          },
+          "number": 9
+        },
+        {
+          "id": "g10-information-technology-solutions-10",
+          "title": "Working with Multiple Tables",
+          "order": 10,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/10-working-with-multiple-tables.pdf"
+          },
+          "number": 10
+        },
+        {
+          "id": "g10-information-technology-solutions-11",
+          "title": "Queries in Base",
+          "order": 11,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/11-queries-in-base.pdf"
+          },
+          "number": 11
+        },
+        {
+          "id": "g10-information-technology-solutions-12",
+          "title": "Forms and Reports",
+          "order": 12,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/12-forms-and-reports.pdf"
+          },
+          "number": 12
+        },
+        {
+          "id": "g10-information-technology-solutions-13",
+          "title": "Health, Safety and Security at Workplace",
+          "order": 13,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/13-health-safety-and-security-at-workplace.pdf"
+          },
+          "number": 13
+        },
+        {
+          "id": "g10-information-technology-solutions-14",
+          "title": "Workplace Quality Measures",
+          "order": 14,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/14-workplace-quality-measures.pdf"
+          },
+          "number": 14
+        },
+        {
+          "id": "g10-information-technology-solutions-15",
+          "title": "Prevent Accidents and Emergencies",
+          "order": 15,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/information-technology/15-prevent-accidents-and-emergencies.pdf"
+          },
+          "number": 15
+        }
+      ]
+    },
+    {
       "id": "g10-mathematics-solutions",
       "gradeId": "g10",
       "subjectId": "g10-mathematics",
