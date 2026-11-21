@@ -3,6 +3,8 @@
   "chapters": {
     "01-introduction-to-styles.pdf": "Introduction to Styles",
     "02-working-with-images.pdf": "Working with Images",
-    "03-advanced-features-of-writer.pdf": "Advanced Features of Writer"
+    "03-advanced-features-of-writer.pdf": "Advanced Features of Writer",
+    "04-analyse-data-using-scenarios-and-goal-seek.pdf": "Analyse Data using Scenarios and Goal Seek",
+    "05-using-macros-in-spreadsheet.pdf": "Using Macros in Spreadsheet"
   }
 }
