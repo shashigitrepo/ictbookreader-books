@@ -1,0 +1,11 @@
+{
+  "title": "Artificial Intelligence (417) – Textbook Solutions",
+  "chapters": {
+    "01-revisiting-ai-project-cycle-ethical-frameworks-for-ai.pdf": "Revisiting AI Project Cycle & Ethical Frameworks for AI",
+    "02-advanced-concepts-of-modeling-in-ai.pdf": "Advanced Concepts of Modeling in AI",
+    "03-evaluating-models.pdf": "Evaluating Models",
+    "04-statistical-data.pdf": "Statistical Data",
+    "05-computer-vision.pdf": "Computer Vision",
+    "06-natural-language-processing.pdf": "Natural Language Processing"
+  }
+}
