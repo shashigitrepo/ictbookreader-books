@@ -2974,6 +2974,78 @@
       ]
     },
     {
+      "id": "g10-artificial-intelligence-solutions",
+      "gradeId": "g10",
+      "subjectId": "g10-artificial-intelligence",
+      "title": "Artificial Intelligence (417) – Textbook Solutions",
+      "order": 52,
+      "publisher": "Padhaku",
+      "medium": "en",
+      "type": "solutions",
+      "chapters": [
+        {
+          "id": "g10-artificial-intelligence-solutions-01",
+          "title": "Revisiting AI Project Cycle & Ethical Frameworks for AI",
+          "order": 1,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/artificial-intelligence/01-revisiting-ai-project-cycle-ethical-frameworks-for-ai.pdf"
+          },
+          "number": 1
+        },
+        {
+          "id": "g10-artificial-intelligence-solutions-02",
+          "title": "Advanced Concepts of Modeling in AI",
+          "order": 2,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/artificial-intelligence/02-advanced-concepts-of-modeling-in-ai.pdf"
+          },
+          "number": 2
+        },
+        {
+          "id": "g10-artificial-intelligence-solutions-03",
+          "title": "Evaluating Models",
+          "order": 3,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/artificial-intelligence/03-evaluating-models.pdf"
+          },
+          "number": 3
+        },
+        {
+          "id": "g10-artificial-intelligence-solutions-04",
+          "title": "Statistical Data",
+          "order": 4,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/artificial-intelligence/04-statistical-data.pdf"
+          },
+          "number": 4
+        },
+        {
+          "id": "g10-artificial-intelligence-solutions-05",
+          "title": "Computer Vision",
+          "order": 5,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/artificial-intelligence/05-computer-vision.pdf"
+          },
+          "number": 5
+        },
+        {
+          "id": "g10-artificial-intelligence-solutions-06",
+          "title": "Natural Language Processing",
+          "order": 6,
+          "source": {
+            "type": "remote",
+            "url": "https://raw.githubusercontent.com/shashigitrepo/ictbookreader-books/main/solutions/class-10/artificial-intelligence/06-natural-language-processing.pdf"
+          },
+          "number": 6
+        }
+      ]
+    },
+    {
       "id": "g10-english-solutions-first-flight",
       "gradeId": "g10",
       "subjectId": "g10-english",
