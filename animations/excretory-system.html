@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Human excretory system</title>
+<link rel="stylesheet" href="player.css">
+<style>
+  .torso { fill: var(--body); stroke: var(--line); stroke-width: 2; }
+  .kidney { fill: #8D3B32; stroke: #5D1F18; stroke-width: 1.5; }
+  .duct { fill: none; stroke: #F9A825; stroke-width: 6; stroke-linecap: round; }
+  .tubule { fill: none; stroke: #EF9A9A; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+</head>
+<body>
+<!-- Padhaku Animated Science · Class 10 Science, Chapter 5 Life Processes (Excretion in human beings). Our own drawing. -->
+<svg id="scene" viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg">
+  <path class="torso" d="M110 30 L250 30 Q300 40 300 100 L292 400 Q180 430 68 400 L60 100 Q60 40 110 30 Z"/>
+  <!-- Backbone -->
+  <g id="spine" class="part" fill="#E0E0E0" stroke="#BDBDBD">
+    <rect x="171" y="40" width="18" height="20" rx="4"/><rect x="171" y="64" width="18" height="20" rx="4"/><rect x="171" y="88" width="18" height="20" rx="4"/>
+    <rect x="171" y="112" width="18" height="20" rx="4"/><rect x="171" y="136" width="18" height="20" rx="4"/><rect x="171" y="160" width="18" height="20" rx="4"/>
+    <rect x="171" y="184" width="18" height="20" rx="4"/><rect x="171" y="208" width="18" height="20" rx="4"/>
+  </g>
+  <!-- Blood vessels to the kidneys -->
+  <g id="vessels" class="part">
+    <path d="M196 40 L196 300" stroke="#E53935" stroke-width="7"/><path d="M164 40 L164 300" stroke="#5C6BC0" stroke-width="7"/>
+    <path d="M196 120 L232 128" stroke="#E53935" stroke-width="5"/><path d="M164 120 L128 128" stroke="#E53935" stroke-width="5"/>
+  </g>
+  <!-- Kidneys, ureters, bladder, urethra -->
+  <g id="kidneys" class="part">
+    <path class="kidney" d="M120 84 Q92 86 92 128 Q92 172 120 174 Q134 172 134 150 Q124 140 128 128 Q124 116 134 106 Q134 86 120 84 Z"/>
+    <path class="kidney" d="M240 84 Q268 86 268 128 Q268 172 240 174 Q226 172 226 150 Q236 140 232 128 Q236 116 226 106 Q226 86 240 84 Z"/>
+  </g>
+  <g id="ureters" class="part">
+    <path class="duct" d="M130 140 Q150 220 168 300"/><path class="duct" d="M230 140 Q210 220 192 300"/>
+  </g>
+  <path id="bladder" class="part" d="M150 300 Q180 286 210 300 Q220 330 196 344 L164 344 Q140 330 150 300 Z" fill="#FFD54F" stroke="#F9A825" stroke-width="2"/>
+  <path id="urethra" class="part duct" d="M180 344 L180 392"/>
+
+  <!-- Urine flow -->
+  <path id="p-urine-l" d="M130 140 Q150 220 168 300 L180 320" fill="none"/>
+  <path id="p-urine-r" d="M230 140 Q210 220 192 300 L180 320" fill="none"/>
+  <path id="p-out" d="M180 330 L180 398" fill="none"/>
+  <g id="u1"><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/></g>
+  <g id="u2"><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/></g>
+  <g id="u3" class="only"><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/><circle transform="translate(-40,-40)" r="3.5" fill="#F9A825"/></g>
+
+  <!-- Nephron, zoomed (steps 3–5) -->
+  <g id="nephron" class="only">
+    <rect x="18" y="186" width="324" height="196" rx="20" fill="var(--card)" stroke="var(--accent)" stroke-width="2"/>
+    <!-- Bowman's capsule and glomerulus -->
+    <path d="M64 230 Q40 230 40 256 Q40 282 64 282 L64 272 Q50 272 50 256 Q50 240 64 240 Z" fill="#F8BBD0" stroke="#C2185B" stroke-width="1.5"/>
+    <g id="glom"><circle cx="66" cy="256" r="13" fill="none" stroke="#E53935" stroke-width="4" stroke-dasharray="6 3"/>
+      <circle cx="66" cy="256" r="6" fill="none" stroke="#E53935" stroke-width="3"/></g>
+    <path d="M30 214 L58 248" stroke="#E53935" stroke-width="4"/><path d="M76 266 L96 300" stroke="#E53935" stroke-width="4"/>
+    <!-- Tubule with a loop, to the collecting duct -->
+    <path id="tube" class="tubule" d="M64 236 Q100 222 120 244 Q132 262 150 252 L170 252 L170 340 Q186 360 200 340 L200 256 Q214 236 236 252 L300 252 L300 360"/>
+    <!-- Blood capillary taking back useful substances -->
+    <path d="M120 300 Q180 316 250 300" fill="none" stroke="#E53935" stroke-width="4" opacity=".8"/>
+    <path id="p-filter" d="M66 256 L58 244 L64 236" fill="none"/>
+    <path id="p-tube" d="M64 236 Q100 222 120 244 Q132 262 150 252 L170 252 L170 340 Q186 360 200 340 L200 256 Q214 236 236 252 L300 252 L300 360" fill="none"/>
+    <path id="p-back" d="M185 280 L185 304" fill="none"/>
+    <g id="filtrate"><circle transform="translate(-40,-40)" r="3.5" fill="#FFF176"/><circle transform="translate(-40,-40)" r="3.5" fill="#FFF176"/><circle transform="translate(-40,-40)" r="3.5" fill="#FFF176"/><circle transform="translate(-40,-40)" r="3.5" fill="#FFF176"/><circle transform="translate(-40,-40)" r="3.5" fill="#FFF176"/></g>
+    <g id="back"><circle transform="translate(-40,-40)" r="3.5" fill="#66BB6A"/><circle transform="translate(-40,-40)" r="3.5" fill="#29B6F6"/></g>
+    <text x="40" y="210" class="lbl" id="l-glom" data-hi="केशिका गुच्छ">Glomerulus</text>
+    <text x="28" y="302" class="lbl" id="l-bowman" data-hi="बोमन संपुट">Bowman's capsule</text>
+    <text x="214" y="240" class="lbl" id="l-tube" data-hi="नलिका">Tubule</text>
+    <text x="104" y="334" class="lbl" id="l-back" data-hi="● ग्लूकोज़, अमीनो अम्ल, लवण, जल वापस">● glucose, amino acids, salts, water back</text>
+    <text x="250" y="374" class="lbl" id="l-urine" data-hi="मूत्र">Urine</text>
+  </g>
+
+  <!-- Labels -->
+  <line id="l-kidney-line" class="lead" x1="96" y1="110" x2="40" y2="90"/>
+  <text id="l-kidney" class="lbl" x="10" y="84" data-hi="वृक्क">Kidney</text>
+  <line id="l-ureter-line" class="lead" x1="214" y1="220" x2="270" y2="220"/>
+  <text id="l-ureter" class="lbl" x="250" y="214" data-hi="मूत्रवाहिनी">Ureter</text>
+  <line id="l-bladder-line" class="lead" x1="210" y1="320" x2="270" y2="320"/>
+  <text id="l-bladder" class="lbl" x="240" y="340" data-hi="मूत्राशय">Urinary bladder</text>
+  <line id="l-urethra-line" class="lead" x1="182" y1="380" x2="250" y2="384"/>
+  <text id="l-urethra" class="lbl" x="232" y="402" data-hi="मूत्रमार्ग">Urethra</text>
+  <line id="l-artery-line" class="lead" x1="214" y1="124" x2="260" y2="60"/>
+  <text id="l-artery" class="lbl" x="214" y="54" data-hi="वृक्क धमनी (रुधिर आता है)">Renal artery (blood in)</text>
+</svg>
+<script src="player.js"></script>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const P = Padhaku;
+  P.animation({
+    stepSeconds: 8,
+    steps: [
+      {
+        name: { en: 'Organs of excretion', hi: 'उत्सर्जन के अंग' },
+        text: { en: 'The human excretory system has a pair of kidneys, a pair of ureters, a urinary bladder and a urethra. The kidneys lie in the abdomen, one on either side of the backbone.',
+                hi: 'मानव उत्सर्जन तंत्र में एक जोड़ा वृक्क, एक जोड़ा मूत्रवाहिनी, एक मूत्राशय और एक मूत्रमार्ग होते हैं। वृक्क उदर में मेरुदंड के दोनों ओर स्थित होते हैं।' },
+        focus: ['kidneys', 'ureters', 'bladder', 'urethra'], labels: ['l-kidney', 'l-ureter', 'l-bladder', 'l-urethra'],
+        tick: (p, t) => { P.flow($('u1'), $('p-urine-l'), t, 0.2); P.flow($('u2'), $('p-urine-r'), t, 0.2); },
+      },
+      {
+        name: { en: 'Blood comes to be cleaned', hi: 'रुधिर साफ़ होने आता है' },
+        text: { en: 'Just as carbon dioxide is removed from blood in the lungs, nitrogenous wastes such as urea or uric acid are removed from blood in the kidneys. Blood reaches each kidney through the renal artery.',
+                hi: 'जैसे फुफ्फुसों में रुधिर से कार्बन डाइऑक्साइड निकाली जाती है, वैसे ही वृक्कों में रुधिर से यूरिया या यूरिक अम्ल जैसे नाइट्रोजनी वर्ज्य पदार्थ निकाले जाते हैं। रुधिर वृक्क धमनी द्वारा हर वृक्क तक पहुँचता है।' },
+        focus: ['kidneys', 'vessels'], labels: ['l-kidney', 'l-artery'],
+        tick: (p, t) => { P.pulse($('kidneys'), t, 1, 1.04, 1.2); },
+      },
+      {
+        name: { en: 'Nephron: filtration', hi: 'वृक्काणु: निस्यंदन' },
+        text: { en: 'Each kidney has large numbers of filtration units called nephrons. In each, a cluster of very thin-walled blood capillaries (glomerulus) sits in the cup-shaped Bowman\'s capsule, which collects the filtrate.',
+                hi: 'प्रत्येक वृक्क में बहुत सारी निस्यंदन इकाइयाँ होती हैं, जिन्हें वृक्काणु (नेफ्रॉन) कहते हैं। हर वृक्काणु में बहुत पतली भित्ति वाली रुधिर केशिकाओं का गुच्छ (ग्लोमेरुलस) कप के आकार के बोमन संपुट में होता है, जो निस्यंद एकत्र करता है।' },
+        focus: ['kidneys'], labels: ['l-glom', 'l-bowman'], only: ['nephron'],
+        tick: (p, t) => { P.flow($('filtrate'), $('p-filter'), t, 0.6); P.flow($('back'), $('p-back'), -10, 0); P.pulse($('glom'), t, 1, 1.08, 0.8); },
+      },
+      {
+        name: { en: 'Selective re-absorption', hi: 'वरणात्मक पुनरवशोषण' },
+        text: { en: 'As the filtrate flows along the tubule, useful substances such as glucose, amino acids, salts and a major amount of water are selectively re-absorbed into the blood. How much water is re-absorbed depends on how much extra water there is in the body.',
+                hi: 'जब निस्यंद नलिका में आगे बहता है, तो ग्लूकोज़, अमीनो अम्ल, लवण और जल की प्रचुर मात्रा जैसे उपयोगी पदार्थ चुनकर रुधिर में पुनः अवशोषित कर लिए जाते हैं। कितना जल पुनरवशोषित होगा, यह शरीर में अतिरिक्त जल की मात्रा पर निर्भर करता है।' },
+        focus: ['kidneys'], labels: ['l-tube', 'l-back'], only: ['nephron'],
+        tick: (p, t) => { P.flow($('filtrate'), $('p-tube'), t, 0.12); P.flow($('back'), $('p-back'), t, 0.5); },
+      },
+      {
+        name: { en: '180 litres filtered, 1–2 litres urine', hi: '180 लीटर निस्यंद, 1–2 लीटर मूत्र' },
+        text: { en: 'In a healthy adult the initial filtrate in the kidneys is about 180 L a day, but only a litre or two is excreted as urine, because the rest is re-absorbed in the kidney tubules.',
+                hi: 'एक स्वस्थ वयस्क में वृक्कों में प्रतिदिन लगभग 180 लीटर आरंभिक निस्यंद बनता है, पर केवल एक-दो लीटर ही मूत्र के रूप में बाहर निकलता है, क्योंकि बाक़ी वृक्क नलिकाओं में पुनरवशोषित हो जाता है।' },
+        focus: ['kidneys'], labels: ['l-tube', 'l-urine', 'l-back'], only: ['nephron'],
+        tick: (p, t) => { P.flow($('filtrate'), $('p-tube'), t, 0.12); P.flow($('back'), $('p-back'), t, 0.7); },
+      },
+      {
+        name: { en: 'Storing and passing urine', hi: 'मूत्र का संग्रह और निष्कासन' },
+        text: { en: 'Urine from each kidney enters a long tube, the ureter, and is stored in the urinary bladder. When the expanded bladder presses, we feel the urge to pass urine through the urethra. The bladder is muscular and under nervous control, so we can usually control the urge.',
+                hi: 'प्रत्येक वृक्क से मूत्र एक लंबी नलिका – मूत्रवाहिनी – में जाकर मूत्राशय में जमा होता है। फैले हुए मूत्राशय के दबाव से मूत्र त्यागने की इच्छा होती है और मूत्र मूत्रमार्ग से बाहर निकलता है। मूत्राशय पेशीय है और तंत्रिका नियंत्रण में रहता है, इसलिए हम प्रायः इस इच्छा को नियंत्रित कर सकते हैं।' },
+        focus: ['ureters', 'bladder', 'urethra'], labels: ['l-ureter', 'l-bladder', 'l-urethra'], only: ['u3'],
+        tick: (p, t) => { P.flow($('u1'), $('p-urine-l'), t, 0.25); P.flow($('u2'), $('p-urine-r'), t, 0.25); P.flow($('u3'), $('p-out'), t, 0.35);
+          P.pulse($('bladder'), t, 1, 1.06, 1.6); },
+      },
+      {
+        name: { en: 'The whole path', hi: 'पूरा मार्ग' },
+        text: { en: 'Blood → kidneys (nephrons filter and re-absorb) → ureters → urinary bladder → urethra. Kidneys keep our blood clean every minute.',
+                hi: 'रुधिर → वृक्क (वृक्काणु छानते और पुनरवशोषण करते हैं) → मूत्रवाहिनी → मूत्राशय → मूत्रमार्ग। वृक्क हर पल हमारे रुधिर को साफ़ रखते हैं।' },
+        focus: [], labels: ['l-kidney', 'l-ureter', 'l-bladder', 'l-urethra', 'l-artery'], only: ['u3'],
+        tick: (p, t) => { P.flow($('u1'), $('p-urine-l'), t, 0.25); P.flow($('u2'), $('p-urine-r'), t, 0.25); P.flow($('u3'), $('p-out'), t, 0.35); $('bladder').style.transform = ''; },
+      },
+    ],
+  });
+</script>
+</body>
+</html>

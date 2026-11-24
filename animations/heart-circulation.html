@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Human heart and double circulation</title>
+<link rel="stylesheet" href="player.css">
+<style>
+  .box { stroke-width: 2; }
+  .vein { fill: none; stroke: #5C6BC0; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; opacity: .55; }
+  .artery { fill: none; stroke: #E53935; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; opacity: .55; }
+  .valve { fill: #FFFFFF; stroke: #6D4C41; stroke-width: 1.2; }
+  .name { font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+  .hint { font-size: 11px; fill: var(--muted); }
+  .boxname { font-size: 13px; font-weight: 700; fill: #3E2723; }
+</style>
+</head>
+<body>
+<!-- Padhaku Animated Science · Class 10 Science, Chapter 5 Life Processes (Transportation: the heart). Our own drawing.
+     As in textbook diagrams, the heart's right side is drawn on the viewer's left. -->
+<svg id="scene" viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lungs and body -->
+  <g id="lungsbox" class="part">
+    <rect x="96" y="12" width="168" height="54" rx="22" fill="#F8BBD0" stroke="#C2185B" class="box"/>
+    <text x="180" y="44" text-anchor="middle" class="boxname" data-hi="फुफ्फुस (ऑक्सीजन मिलती है)">Lungs (oxygen enters)</text>
+  </g>
+  <g id="bodybox" class="part">
+    <rect x="70" y="402" width="220" height="54" rx="22" fill="#FFE0B2" stroke="#E65100" class="box"/>
+    <text x="180" y="434" text-anchor="middle" class="boxname" data-hi="शरीर के अंग (ऑक्सीजन दी जाती है)">Body organs (oxygen used)</text>
+  </g>
+
+  <!-- Vessels -->
+  <path id="pa" class="part vein" d="M128 236 L70 236 L70 40 L96 40"/>
+  <path id="pv" class="part artery" d="M264 40 L292 40 L292 120 L232 120"/>
+  <path id="aorta" class="part artery" d="M232 290 L300 290 L300 428 L290 428"/>
+  <path id="vc" class="part vein" d="M70 428 L50 428 L50 140 L128 140"/>
+
+  <!-- Chambers: right side on the viewer's left -->
+  <g id="ra" class="part"><rect x="104" y="100" width="76" height="76" rx="18" fill="#5C6BC0" stroke="#283593" class="box"/>
+    <text x="142" y="136" text-anchor="middle" class="name" data-hi="दायाँ">Right</text><text x="142" y="152" text-anchor="middle" class="name" data-hi="अलिंद">atrium</text></g>
+  <g id="la" class="part"><rect x="180" y="100" width="76" height="76" rx="18" fill="#E53935" stroke="#B71C1C" class="box"/>
+    <text x="218" y="136" text-anchor="middle" class="name" data-hi="बायाँ">Left</text><text x="218" y="152" text-anchor="middle" class="name" data-hi="अलिंद">atrium</text></g>
+  <g id="rv" class="part"><path d="M104 190 L180 190 L180 330 Q140 340 104 300 Z" fill="#3949AB" stroke="#1A237E" stroke-width="5"/>
+    <text x="144" y="250" text-anchor="middle" class="name" data-hi="दायाँ">Right</text><text x="144" y="266" text-anchor="middle" class="name" data-hi="निलय">ventricle</text></g>
+  <g id="lv" class="part"><path d="M180 190 L256 190 L256 300 Q222 344 180 330 Z" fill="#C62828" stroke="#7F0000" stroke-width="8"/>
+    <text x="218" y="250" text-anchor="middle" class="name" data-hi="बायाँ">Left</text><text x="218" y="266" text-anchor="middle" class="name" data-hi="निलय">ventricle</text></g>
+  <!-- Valves between atria and ventricles -->
+  <g id="valves" class="part">
+    <path class="valve" d="M126 178 L142 192 L158 178"/><path class="valve" d="M202 178 L218 192 L234 178"/>
+  </g>
+
+  <!-- Blood -->
+  <path id="p-blue" d="M70 428 L50 428 L50 140 L130 140 L142 160 L142 240 L130 236 L70 236 L70 40 L96 40" fill="none"/>
+  <path id="p-red" d="M264 40 L292 40 L292 120 L232 120 L218 140 L218 240 L232 290 L300 290 L300 428 L290 428" fill="none"/>
+  <g id="blue"><circle transform="translate(-40,-40)" r="4.5" fill="var(--co2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--co2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--co2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--co2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--co2)"/></g>
+  <g id="red"><circle transform="translate(-40,-40)" r="4.5" fill="var(--o2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--o2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--o2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--o2)"/><circle transform="translate(-40,-40)" r="4.5" fill="var(--o2)"/></g>
+
+  <!-- Vessel labels -->
+  <text id="l-vc" class="lbl" x="6" y="300" data-hi="महाशिरा">Vena cava</text>
+  <text id="l-pa" class="lbl" x="74" y="84" data-hi="फुफ्फुस धमनी">Pulmonary artery</text>
+  <text id="l-pv" class="lbl" x="226" y="84" data-hi="फुफ्फुस शिरा">Pulmonary vein</text>
+  <text id="l-aorta" class="lbl" x="250" y="370" data-hi="महाधमनी">Aorta</text>
+  <text id="l-valves" class="lbl" x="128" y="186" data-hi="वाल्व">Valves</text>
+  <text id="l-twice" class="lbl" x="66" y="384" data-hi="● नीला: ऑक्सीजन रहित   ● लाल: ऑक्सीजन युक्त">● blue: deoxygenated   ● red: oxygenated</text>
+</svg>
+<script src="player.js"></script>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const P = Padhaku;
+  const beat = (id, t, k) => P.pulse($(id), t, 1, k, 0.9);
+  const still = () => ['ra', 'la', 'rv', 'lv'].forEach((id) => { $(id).style.transform = ''; });
+  P.animation({
+    stepSeconds: 8,
+    steps: [
+      {
+        name: { en: 'Four chambers', hi: 'चार कोष्ठ' },
+        text: { en: 'The heart has four chambers: two thin-walled upper chambers (atria) and two lower chambers (ventricles). Ventricles pump blood to organs, so their muscular walls are thicker than those of the atria.',
+                hi: 'हृदय में चार कोष्ठ होते हैं: ऊपर के दो पतली भित्ति वाले कोष्ठ (अलिंद) और नीचे के दो कोष्ठ (निलय)। निलय रुधिर को अंगों तक पंप करते हैं, इसलिए इनकी पेशीय भित्ति अलिंदों से मोटी होती है।' },
+        focus: ['ra', 'la', 'rv', 'lv'], labels: [],
+        tick: (p, t) => { still(); beat('rv', t, 1.03); beat('lv', t, 1.03); },
+      },
+      {
+        name: { en: 'Oxygen-rich blood enters', hi: 'ऑक्सीजन युक्त रुधिर आता है' },
+        text: { en: 'Oxygen-rich blood from the lungs comes through the pulmonary vein to the left atrium. The left atrium relaxes while it collects this blood.',
+                hi: 'फुफ्फुसों से ऑक्सीजन युक्त रुधिर फुफ्फुस शिरा द्वारा बाएँ अलिंद में आता है। रुधिर एकत्र करते समय बायाँ अलिंद शिथिल रहता है।' },
+        focus: ['lungsbox', 'pv', 'la'], labels: ['l-pv'],
+        tick: (p, t) => { still(); P.flow($('red'), $('p-red'), t * 0.5, 0.22); },
+      },
+      {
+        name: { en: 'Left ventricle pumps to the body', hi: 'बायाँ निलय शरीर में पंप करता है' },
+        text: { en: 'The left atrium contracts while the left ventricle relaxes, so blood moves into it. Then the muscular left ventricle contracts and pumps the blood through the aorta to the body.',
+                hi: 'बायाँ अलिंद सिकुड़ता है और बायाँ निलय शिथिल होता है, जिससे रुधिर निलय में आ जाता है। फिर पेशीय बायाँ निलय सिकुड़कर रुधिर को महाधमनी द्वारा पूरे शरीर में पंप करता है।' },
+        focus: ['la', 'lv', 'aorta', 'bodybox'], labels: ['l-aorta'],
+        tick: (p, t) => { still(); beat('la', t, 0.96); beat('lv', t + 0.45, 0.95); P.flow($('red'), $('p-red'), t, 0.22); },
+      },
+      {
+        name: { en: 'Deoxygenated blood returns', hi: 'ऑक्सीजन रहित रुधिर लौटता है' },
+        text: { en: 'The body\'s cells use the oxygen. De-oxygenated blood comes from the body through the vena cava to the right atrium as it relaxes.',
+                hi: 'शरीर की कोशिकाएँ ऑक्सीजन का उपयोग करती हैं। ऑक्सीजन रहित रुधिर शरीर से महाशिरा द्वारा दाएँ अलिंद में आता है, जब वह शिथिल होता है।' },
+        focus: ['bodybox', 'vc', 'ra'], labels: ['l-vc'],
+        tick: (p, t) => { still(); P.flow($('blue'), $('p-blue'), t * 0.5, 0.22); },
+      },
+      {
+        name: { en: 'Right ventricle pumps to the lungs', hi: 'दायाँ निलय फुफ्फुसों में पंप करता है' },
+        text: { en: 'The right atrium contracts and the right ventricle dilates, so blood moves into it. The right ventricle then pumps the blood through the pulmonary artery to the lungs for oxygenation.',
+                hi: 'दायाँ अलिंद सिकुड़ता है और दायाँ निलय फैलता है, जिससे रुधिर उसमें आ जाता है। फिर दायाँ निलय रुधिर को फुफ्फुस धमनी द्वारा ऑक्सीजन लेने के लिए फुफ्फुसों में पंप करता है।' },
+        focus: ['ra', 'rv', 'pa', 'lungsbox'], labels: ['l-pa'],
+        tick: (p, t) => { still(); beat('ra', t, 0.96); beat('rv', t + 0.45, 0.95); P.flow($('blue'), $('p-blue'), t, 0.22); },
+      },
+      {
+        name: { en: 'Valves and two separate sides', hi: 'वाल्व और अलग-अलग दो भाग' },
+        text: { en: 'Valves make sure that blood does not flow backwards when the atria or ventricles contract. The right and left sides are separate, so oxygenated and deoxygenated blood never mix – a highly efficient supply of oxygen.',
+                hi: 'वाल्व यह सुनिश्चित करते हैं कि अलिंद या निलय के सिकुड़ने पर रुधिर उलटी दिशा में न बहे। हृदय का दायाँ और बायाँ भाग अलग होने से ऑक्सीजन युक्त और ऑक्सीजन रहित रुधिर आपस में नहीं मिलते – इससे ऑक्सीजन की आपूर्ति बहुत दक्ष होती है।' },
+        focus: ['valves', 'ra', 'la', 'rv', 'lv'], labels: ['l-valves'],
+        tick: (p, t) => { still(); P.pulse($('valves'), t, 1, 1.15, 0.9); P.flow($('red'), $('p-red'), t, 0.22); P.flow($('blue'), $('p-blue'), t, 0.22); },
+      },
+      {
+        name: { en: 'Double circulation', hi: 'दोहरा परिसंचरण' },
+        text: { en: 'Blood passes through the heart twice in each cycle: heart → lungs → heart (blue becomes red), then heart → body → heart (red becomes blue). This is double circulation.',
+                hi: 'प्रत्येक चक्र में रुधिर दो बार हृदय से होकर गुज़रता है: हृदय → फुफ्फुस → हृदय (नीला लाल बनता है), फिर हृदय → शरीर → हृदय (लाल नीला बनता है)। इसे दोहरा परिसंचरण कहते हैं।' },
+        focus: [], labels: ['l-vc', 'l-pa', 'l-pv', 'l-aorta', 'l-twice'],
+        tick: (p, t) => { beat('ra', t, 0.97); beat('la', t, 0.97); beat('rv', t + 0.45, 0.96); beat('lv', t + 0.45, 0.96); P.flow($('red'), $('p-red'), t, 0.2); P.flow($('blue'), $('p-blue'), t, 0.2); },
+      },
+    ],
+  });
+</script>
+</body>
+</html>

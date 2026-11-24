@@ -1,0 +1,39 @@
+/* Padhaku Animated Science – shared look for every animation page. */
+:root {
+  --bg: #F4F7F5; --card: #FFFFFF; --ink: #17312C; --muted: #5D706B; --accent: #00897B; --accent-ink: #FFFFFF;
+  --line: #D5E3DF; --dim: 0.22; --body: #FDE7DC; --organ: #F4A99A; --organ2: #E57373; --fluid: #64B5F6;
+  --food: #8D6E63; --o2: #E53935; --co2: #5C6BC0; --nerve: #FFB300; --label: #17312C;
+}
+html.dark {
+  --bg: #0D1917; --card: #172522; --ink: #E3F1EC; --muted: #9FB5AF; --accent: #4DB6AC; --accent-ink: #0D1917;
+  --line: #30423D; --body: #3B2E2A; --organ: #B5645A; --organ2: #C25B5B; --fluid: #5A9BD5;
+  --food: #BCA08F; --o2: #FF6B66; --co2: #8E99F3; --nerve: #FFCA28; --label: #E3F1EC;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink);
+  font-family: "Noto Sans", "Noto Sans Devanagari", Roboto, system-ui, sans-serif; }
+body { display: flex; flex-direction: column; }
+#stage { flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 8px; }
+#stage svg { width: 100%; height: 100%; max-width: 560px; }
+#panel { background: var(--card); border-top: 1px solid var(--line); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); }
+#stepno { font-size: 13px; color: var(--accent); font-weight: 700; letter-spacing: .3px; }
+#stepname { font-size: 17px; font-weight: 700; margin: 2px 0 4px; }
+#caption { font-size: 15px; line-height: 1.45; min-height: 66px; color: var(--ink); }
+#controls { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+#controls button { border: 0; border-radius: 22px; height: 44px; min-width: 44px; font-size: 18px; cursor: pointer;
+  background: var(--line); color: var(--ink); }
+#controls button.main { flex: 1; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 16px; }
+#dots { display: flex; gap: 6px; justify-content: center; margin-top: 10px; }
+#dots span { width: 8px; height: 8px; border-radius: 4px; background: var(--line); transition: all .25s; }
+#dots span.on { width: 22px; background: var(--accent); }
+/* Scene parts */
+.part { transition: opacity .45s; }
+.part.dim { opacity: var(--dim); }
+.lbl { font-size: 13px; font-weight: 700; fill: var(--label); paint-order: stroke; stroke: var(--bg); stroke-width: 3px;
+  transition: opacity .4s; }
+.lbl.off { opacity: 0; }
+.lead { stroke: var(--muted); stroke-width: 1; fill: none; transition: opacity .4s; }
+.lead.off { opacity: 0; }
+.only { transition: opacity .45s; }
+.only.hide { opacity: 0; pointer-events: none; }
+.glow { filter: drop-shadow(0 0 6px var(--nerve)); }

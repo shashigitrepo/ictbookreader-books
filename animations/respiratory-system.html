@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Human respiratory system</title>
+<link rel="stylesheet" href="player.css">
+<style>
+  .torso { fill: var(--body); stroke: var(--line); stroke-width: 2; }
+  .lung { fill: #F48FB1; stroke: #C2185B; stroke-width: 1.5; }
+  .tube { fill: none; stroke: #EC407A; stroke-linecap: round; }
+  .rib { fill: none; stroke: #BCAAA4; stroke-width: 5; stroke-linecap: round; }
+</style>
+</head>
+<body>
+<!-- Padhaku Animated Science · Class 10 Science, Chapter 5 Life Processes (Respiration in human beings). Our own drawing. -->
+<svg id="scene" viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg">
+  <ellipse class="torso" cx="180" cy="52" rx="44" ry="48"/>
+  <path class="torso" d="M150 96 L210 96 L214 112 Q298 120 300 182 L292 432 Q180 456 68 432 L60 182 Q62 120 146 112 Z"/>
+
+  <!-- Ribs -->
+  <g id="ribs" class="part">
+    <path class="rib" d="M120 160 Q180 150 240 160"/><path class="rib" d="M112 185 Q180 175 248 185"/>
+    <path class="rib" d="M108 210 Q180 200 252 210"/><path class="rib" d="M108 235 Q180 225 252 235"/>
+    <path class="rib" d="M112 260 Q180 250 248 260"/>
+  </g>
+  <!-- Lungs (scale while breathing) -->
+  <g id="lungs" class="part">
+    <path id="lung-r" class="lung" d="M168 150 Q132 140 118 186 Q106 236 116 270 Q140 280 170 268 Z"/>
+    <path id="lung-l" class="lung" d="M192 150 Q228 140 242 186 Q254 236 244 270 Q220 280 190 268 Z"/>
+  </g>
+  <!-- Nose, windpipe and bronchi -->
+  <g id="nose" class="part">
+    <path d="M180 44 L172 66 Q180 70 188 66 Z" fill="#E0A88F"/>
+    <circle cx="176" cy="66" r="2.4" fill="#5D4037"/><circle cx="184" cy="66" r="2.4" fill="#5D4037"/>
+  </g>
+  <g id="windpipe" class="part">
+    <path class="tube" stroke-width="12" d="M180 70 L180 150"/>
+    <path d="M174 96 h12 M174 106 h12 M174 116 h12 M174 126 h12 M174 136 h12" stroke="#FFFFFF" stroke-width="2.5"/>
+  </g>
+  <g id="bronchi" class="part">
+    <path class="tube" stroke-width="7" d="M180 150 Q164 160 152 182 M180 150 Q196 160 208 182"/>
+    <path class="tube" stroke-width="3" d="M152 182 L140 206 M152 182 L158 212 M140 206 L132 226 M140 206 L146 232 M208 182 L220 206 M208 182 L202 212 M220 206 L228 226 M220 206 L214 232"/>
+    <g fill="#F8BBD0" stroke="#C2185B" stroke-width="1"><circle cx="132" cy="230" r="5"/><circle cx="146" cy="236" r="5"/><circle cx="158" cy="216" r="5"/>
+      <circle cx="228" cy="230" r="5"/><circle cx="214" cy="236" r="5"/><circle cx="202" cy="216" r="5"/></g>
+  </g>
+  <!-- Diaphragm (flattens when breathing in) -->
+  <path id="diaphragm" class="part" d="M96 292 Q180 238 264 292" fill="none" stroke="#8D6E63" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Air -->
+  <path id="p-air" d="M180 40 L180 66 L180 150 Q164 160 152 182 L140 206 L132 230" fill="none"/>
+  <g id="air"><circle transform="translate(-40,-40)" r="3.5" fill="#4FC3F7"/><circle transform="translate(-40,-40)" r="3.5" fill="#4FC3F7"/><circle transform="translate(-40,-40)" r="3.5" fill="#4FC3F7"/><circle transform="translate(-40,-40)" r="3.5" fill="#4FC3F7"/></g>
+
+  <!-- Alveolus, zoomed (step 5) -->
+  <g id="alveolus" class="only">
+    <circle cx="282" cy="118" r="60" fill="var(--card)" stroke="var(--accent)" stroke-width="2"/>
+    <line x1="232" y1="150" x2="150" y2="234" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <circle cx="282" cy="112" r="30" fill="#E3F2FD" stroke="#C2185B" stroke-width="2"/>
+    <path d="M244 150 Q250 80 282 76 Q316 80 320 150" fill="none" stroke="#E53935" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+    <path id="p-o2" d="M282 112 L250 118" fill="none"/>
+    <path id="p-co2" d="M314 120 L282 112" fill="none"/>
+    <g id="o2"><circle transform="translate(-40,-40)" r="3.5" fill="var(--o2)"/><circle transform="translate(-40,-40)" r="3.5" fill="var(--o2)"/></g>
+    <g id="co2"><circle transform="translate(-40,-40)" r="3.5" fill="var(--co2)"/><circle transform="translate(-40,-40)" r="3.5" fill="var(--co2)"/></g>
+    <text x="282" y="62" text-anchor="middle" class="lbl" id="l-alv" data-hi="कूपिका">Alveolus</text>
+    <text x="228" y="176" class="lbl" id="l-o2" data-hi="● O₂ रुधिर में">● O₂ into blood</text>
+    <text x="250" y="194" class="lbl" id="l-co2" data-hi="● CO₂ बाहर">● CO₂ out</text>
+  </g>
+
+  <!-- Labels -->
+  <line id="l-nose-line" class="lead" x1="172" y1="64" x2="96" y2="40"/>
+  <text id="l-nose" class="lbl" x="18" y="36" data-hi="नासाद्वार">Nostrils</text>
+  <line id="l-pipe-line" class="lead" x1="186" y1="112" x2="250" y2="112"/>
+  <text id="l-pipe" class="lbl" x="200" y="104" data-hi="श्वासनली (उपास्थि वलय)">Windpipe (cartilage rings)</text>
+  <line id="l-bronchi-line" class="lead" x1="146" y1="196" x2="60" y2="196"/>
+  <text id="l-bronchi" class="lbl" x="8" y="190" data-hi="श्वसनी">Bronchi</text>
+  <line id="l-lungs-line" class="lead" x1="244" y1="210" x2="300" y2="210"/>
+  <text id="l-lungs" class="lbl" x="262" y="230" data-hi="फुफ्फुस">Lungs</text>
+  <line id="l-ribs-line" class="lead" x1="110" y1="236" x2="40" y2="250"/>
+  <text id="l-ribs" class="lbl" x="6" y="268" data-hi="पसलियाँ">Ribs</text>
+  <line id="l-dia-line" class="lead" x1="220" y1="282" x2="290" y2="314"/>
+  <text id="l-dia" class="lbl" x="242" y="332" data-hi="डायाफ्राम">Diaphragm</text>
+</svg>
+<script src="player.js"></script>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const P = Padhaku;
+  // Breathing in (k = 1): lungs bigger, diaphragm flatter, ribs lifted.
+  function breathe(k) {
+    $('lungs').style.transformBox = 'fill-box'; $('lungs').style.transformOrigin = '50% 0%';
+    $('lungs').style.transform = `scale(${1 + 0.08 * k}, ${1 + 0.1 * k})`;
+    const y = 238 + 34 * k; $('diaphragm').setAttribute('d', `M96 ${292 + 6 * k} Q180 ${y} 264 ${292 + 6 * k}`);
+    $('ribs').style.transform = `translateY(${-6 * k}px)`;
+  }
+  P.animation({
+    stepSeconds: 8,
+    steps: [
+      {
+        name: { en: 'Nostrils', hi: 'नासाद्वार' },
+        text: { en: 'Air enters the body through the nostrils. Fine hairs and mucus lining the passage filter the air.',
+                hi: 'वायु नासाद्वार द्वारा शरीर के अंदर जाती है। नासामार्ग में उपस्थित महीन बाल और श्लेष्मा वायु को छानते हैं।' },
+        focus: ['nose'], labels: ['l-nose'],
+        tick: (p, t) => { breathe(0); P.flow($('air'), $('p-air'), t * 0.25, 0.4); },
+      },
+      {
+        name: { en: 'Throat and windpipe', hi: 'कंठ और श्वासनली' },
+        text: { en: 'From the nostrils, air passes through the throat into the lungs. Rings of cartilage in the throat make sure the air-passage does not collapse.',
+                hi: 'नासाद्वार से वायु कंठ से होकर फुफ्फुसों में जाती है। कंठ में उपस्थित उपास्थि के वलय यह सुनिश्चित करते हैं कि वायु मार्ग पिचके नहीं।' },
+        focus: ['windpipe'], labels: ['l-pipe'],
+        tick: (p, t) => { breathe(0); P.flow($('air'), $('p-air'), t, 0.25); },
+      },
+      {
+        name: { en: 'Inside the lungs', hi: 'फुफ्फुसों के अंदर' },
+        text: { en: 'Inside the lungs the passage divides into smaller and smaller tubes (bronchi). They end in balloon-like alveoli, which give a large surface for the exchange of gases.',
+                hi: 'फुफ्फुसों के अंदर वायु मार्ग छोटी-छोटी नलिकाओं (श्वसनी) में बँटता जाता है, जो अंत में गुब्बारे जैसी कूपिकाओं में खुलती हैं। कूपिकाएँ गैसों के विनिमय के लिए बड़ी सतह देती हैं।' },
+        focus: ['bronchi', 'lungs'], labels: ['l-bronchi', 'l-lungs'],
+        tick: (p, t) => { breathe(0); P.flow($('air'), $('p-air'), t, 0.25); },
+      },
+      {
+        name: { en: 'Breathing in', hi: 'श्वास लेना (अंतःश्वसन)' },
+        text: { en: 'When we breathe in, we lift our ribs and flatten our diaphragm. The chest cavity becomes larger, so air is sucked into the lungs and fills the expanded alveoli.',
+                hi: 'जब हम श्वास अंदर लेते हैं, तो पसलियाँ ऊपर उठती हैं और डायाफ्राम चपटा हो जाता है। वक्षगुहा बड़ी हो जाती है, जिससे वायु फुफ्फुसों में खिंच आती है और फैली हुई कूपिकाओं को भर देती है।' },
+        focus: ['ribs', 'diaphragm', 'lungs'], labels: ['l-ribs', 'l-dia', 'l-lungs'],
+        tick: (p, t) => { const k = (1 - Math.cos(t * 1.6)) / 2; breathe(k); P.flow($('air'), $('p-air'), t, 0.3); },
+      },
+      {
+        name: { en: 'Exchange of gases', hi: 'गैसों का विनिमय' },
+        text: { en: 'The walls of the alveoli have a network of blood vessels. Blood brings carbon dioxide from the body and releases it into the alveoli; oxygen from the alveolar air is taken up by the blood.',
+                hi: 'कूपिकाओं की भित्ति में रुधिर वाहिकाओं का जाल होता है। रुधिर शरीर से कार्बन डाइऑक्साइड लाकर कूपिकाओं में छोड़ता है और कूपिका की वायु से ऑक्सीजन ले लेता है।' },
+        focus: ['bronchi'], labels: ['l-alv', 'l-o2', 'l-co2'], only: ['alveolus'],
+        tick: (p, t) => { breathe(0.5); P.flow($('o2'), $('p-o2'), t, 0.5); P.flow($('co2'), $('p-co2'), t, 0.5); },
+      },
+      {
+        name: { en: 'Haemoglobin carries oxygen', hi: 'हीमोग्लोबिन ऑक्सीजन ले जाता है' },
+        text: { en: 'In human beings the respiratory pigment is haemoglobin, present in red blood corpuscles. It has a very high affinity for oxygen and carries it to all cells. Carbon dioxide travels mostly dissolved in blood.',
+                hi: 'मनुष्यों में श्वसन वर्णक हीमोग्लोबिन है, जो लाल रुधिर कणिकाओं में होता है। इसकी ऑक्सीजन के प्रति बंधुता बहुत अधिक है और यह ऑक्सीजन को सभी कोशिकाओं तक ले जाता है। कार्बन डाइऑक्साइड अधिकतर रुधिर में घुले रूप में ले जाई जाती है।' },
+        focus: ['bronchi'], labels: ['l-alv', 'l-o2', 'l-co2'], only: ['alveolus'],
+        tick: (p, t) => { breathe(0.5); P.flow($('o2'), $('p-o2'), t, 0.8); P.flow($('co2'), $('p-co2'), t, 0.4); },
+      },
+      {
+        name: { en: 'Breathing out', hi: 'श्वास छोड़ना (उच्छ्वसन)' },
+        text: { en: 'When we breathe out, the ribs come down and the diaphragm becomes dome-shaped again, pushing air out. The lungs always keep some residual air, so there is enough time for oxygen to be absorbed and carbon dioxide released.',
+                hi: 'श्वास छोड़ते समय पसलियाँ नीचे आती हैं और डायाफ्राम फिर गुंबद जैसा हो जाता है, जिससे वायु बाहर निकलती है। फुफ्फुसों में हमेशा कुछ वायु शेष रहती है, ताकि ऑक्सीजन के अवशोषण और कार्बन डाइऑक्साइड के निकलने के लिए पर्याप्त समय मिले।' },
+        focus: ['ribs', 'diaphragm', 'lungs'], labels: ['l-ribs', 'l-dia'],
+        tick: (p, t) => { breathe((1 + Math.cos(t * 1.6)) / 2); P.flow($('air'), $('p-air'), -t, 0.3); },
+      },
+      {
+        name: { en: 'The whole path', hi: 'पूरा मार्ग' },
+        text: { en: 'Nostrils → throat (windpipe) → bronchi → alveoli in the lungs → blood. Breathing in and out goes on all the time.',
+                hi: 'नासाद्वार → कंठ (श्वासनली) → श्वसनी → फुफ्फुसों की कूपिकाएँ → रुधिर। श्वास लेने और छोड़ने का यह क्रम लगातार चलता रहता है।' },
+        focus: [], labels: ['l-nose', 'l-pipe', 'l-bronchi', 'l-lungs', 'l-ribs', 'l-dia'],
+        tick: (p, t) => { breathe((1 - Math.cos(t * 1.6)) / 2); P.flow($('air'), $('p-air'), t, 0.3); },
+      },
+    ],
+  });
+</script>
+</body>
+</html>
