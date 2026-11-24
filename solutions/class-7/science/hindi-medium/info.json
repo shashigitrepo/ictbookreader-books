@@ -1,0 +1,18 @@
+{
+  "title": "विज्ञान – NCERT समाधान",
+  "medium": "hi",
+  "chapters": {
+    "01-the-ever-evolving-world-of-science.pdf": "विज्ञान का निरंतर बढ़ता संसार",
+    "02-exploring-substances-acidic-basic-and-neutral.pdf": "पदार्थों का अन्वेषण — अम्लीय, क्षारीय एवं उदासीन",
+    "03-electricity-circuits-and-their-components.pdf": "विद्युत — परिपथ एवं उनके घटक",
+    "04-the-world-of-metals-and-non-metals.pdf": "धातुओं और अधातुओं का संसार",
+    "05-changes-around-us-physical-and-chemical.pdf": "हमारे आस-पास के परिवर्तन — भौतिक एवं रासायनिक",
+    "06-adolescence-a-stage-of-growth-and-change.pdf": "किशोरावस्था — वृद्धि एवं परिवर्तन की अवस्था",
+    "07-heat-transfer-in-nature.pdf": "प्रकृति में ऊष्मा का स्थानांतरण",
+    "08-measurement-of-time-and-motion.pdf": "समय एवं गति का मापन",
+    "09-life-processes-in-animals.pdf": "जंतुओं में जैव प्रक्रम",
+    "10-life-processes-in-plants.pdf": "पादपों में जैव प्रक्रम",
+    "11-light-shadows-and-reflections.pdf": "प्रकाश — छाया एवं परावर्तन",
+    "12-earth-moon-and-the-sun.pdf": "पृथ्वी, चंद्रमा एवं सूर्य"
+  }
+}
