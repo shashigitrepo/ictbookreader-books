@@ -1,9 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
   "base": "",
   "files": {
-    "player.js": 1,
-    "player.css": 1,
+    "player.js": 2,
+    "player.css": 2,
     "digestive-system.html": 1,
     "respiratory-system.html": 1,
     "heart-circulation.html": 1,
@@ -12,39 +12,104 @@
   },
   "items": [
     {
-      "id": "digestive-system", "grade": 10, "subject": "science", "chapter": 5,
-      "chapter_title": "Ch 5 Life Processes", "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
-      "title": "Human digestive system", "title_hi": "मानव पाचन तंत्र",
-      "summary": "Follow the food from mouth to anus: enzymes, bile, villi.", "summary_hi": "मुख से गुदा तक भोजन की यात्रा: एंजाइम, पित्तरस, दीर्घरोम।",
-      "file": "digestive-system.html", "order": 1, "new": true, "colors": ["#AD1457", "#F06292"], "icon": "digestion"
+      "id": "digestive-system",
+      "grade": 10,
+      "subject": "science",
+      "chapter": 5,
+      "chapter_title": "Ch 5 Life Processes",
+      "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
+      "title": "Human digestive system",
+      "title_hi": "मानव पाचन तंत्र",
+      "summary": "Follow the food from mouth to anus: enzymes, bile, villi.",
+      "summary_hi": "मुख से गुदा तक भोजन की यात्रा: एंजाइम, पित्तरस, दीर्घरोम।",
+      "file": "digestive-system.html",
+      "order": 1,
+      "new": true,
+      "colors": [
+        "#AD1457",
+        "#F06292"
+      ],
+      "icon": "digestion"
     },
     {
-      "id": "respiratory-system", "grade": 10, "subject": "science", "chapter": 5,
-      "chapter_title": "Ch 5 Life Processes", "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
-      "title": "Human respiratory system", "title_hi": "मानव श्वसन तंत्र",
-      "summary": "Breathing in and out, alveoli and exchange of gases.", "summary_hi": "श्वास लेना-छोड़ना, कूपिकाएँ और गैसों का विनिमय।",
-      "file": "respiratory-system.html", "order": 2, "new": true, "colors": ["#0277BD", "#4FC3F7"], "icon": "lungs"
+      "id": "respiratory-system",
+      "grade": 10,
+      "subject": "science",
+      "chapter": 5,
+      "chapter_title": "Ch 5 Life Processes",
+      "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
+      "title": "Human respiratory system",
+      "title_hi": "मानव श्वसन तंत्र",
+      "summary": "Breathing in and out, alveoli and exchange of gases.",
+      "summary_hi": "श्वास लेना-छोड़ना, कूपिकाएँ और गैसों का विनिमय।",
+      "file": "respiratory-system.html",
+      "order": 2,
+      "new": true,
+      "colors": [
+        "#0277BD",
+        "#4FC3F7"
+      ],
+      "icon": "lungs"
     },
     {
-      "id": "heart-circulation", "grade": 10, "subject": "science", "chapter": 5,
-      "chapter_title": "Ch 5 Life Processes", "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
-      "title": "Heart and double circulation", "title_hi": "हृदय और दोहरा परिसंचरण",
-      "summary": "Four chambers, valves and the two loops of blood.", "summary_hi": "चार कोष्ठ, वाल्व और रुधिर के दो चक्र।",
-      "file": "heart-circulation.html", "order": 3, "new": true, "colors": ["#B71C1C", "#EF5350"], "icon": "heart"
+      "id": "heart-circulation",
+      "grade": 10,
+      "subject": "science",
+      "chapter": 5,
+      "chapter_title": "Ch 5 Life Processes",
+      "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
+      "title": "Heart and double circulation",
+      "title_hi": "हृदय और दोहरा परिसंचरण",
+      "summary": "Four chambers, valves and the two loops of blood.",
+      "summary_hi": "चार कोष्ठ, वाल्व और रुधिर के दो चक्र।",
+      "file": "heart-circulation.html",
+      "order": 3,
+      "new": true,
+      "colors": [
+        "#B71C1C",
+        "#EF5350"
+      ],
+      "icon": "heart"
     },
     {
-      "id": "excretory-system", "grade": 10, "subject": "science", "chapter": 5,
-      "chapter_title": "Ch 5 Life Processes", "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
-      "title": "Human excretory system", "title_hi": "मानव उत्सर्जन तंत्र",
-      "summary": "Kidneys, nephron filtration and re-absorption.", "summary_hi": "वृक्क, वृक्काणु में निस्यंदन और पुनरवशोषण।",
-      "file": "excretory-system.html", "order": 4, "new": true, "colors": ["#E65100", "#FFB74D"], "icon": "kidney"
+      "id": "excretory-system",
+      "grade": 10,
+      "subject": "science",
+      "chapter": 5,
+      "chapter_title": "Ch 5 Life Processes",
+      "chapter_title_hi": "अध्याय 5 जैव प्रक्रम",
+      "title": "Human excretory system",
+      "title_hi": "मानव उत्सर्जन तंत्र",
+      "summary": "Kidneys, nephron filtration and re-absorption.",
+      "summary_hi": "वृक्क, वृक्काणु में निस्यंदन और पुनरवशोषण।",
+      "file": "excretory-system.html",
+      "order": 4,
+      "new": true,
+      "colors": [
+        "#E65100",
+        "#FFB74D"
+      ],
+      "icon": "kidney"
     },
     {
-      "id": "reflex-arc", "grade": 10, "subject": "science", "chapter": 6,
-      "chapter_title": "Ch 6 Control and Coordination", "chapter_title_hi": "अध्याय 6 नियंत्रण एवं समन्वय",
-      "title": "Reflex arc", "title_hi": "प्रतिवर्ती चाप",
-      "summary": "Why the hand pulls back from a flame before we think.", "summary_hi": "सोचने से पहले ही हाथ लौ से क्यों हट जाता है।",
-      "file": "reflex-arc.html", "order": 5, "new": true, "colors": ["#6A1B9A", "#FFB300"], "icon": "nerve"
+      "id": "reflex-arc",
+      "grade": 10,
+      "subject": "science",
+      "chapter": 6,
+      "chapter_title": "Ch 6 Control and Coordination",
+      "chapter_title_hi": "अध्याय 6 नियंत्रण एवं समन्वय",
+      "title": "Reflex arc",
+      "title_hi": "प्रतिवर्ती चाप",
+      "summary": "Why the hand pulls back from a flame before we think.",
+      "summary_hi": "सोचने से पहले ही हाथ लौ से क्यों हट जाता है।",
+      "file": "reflex-arc.html",
+      "order": 5,
+      "new": true,
+      "colors": [
+        "#6A1B9A",
+        "#FFB300"
+      ],
+      "icon": "nerve"
     }
   ]
 }

@@ -116,6 +116,18 @@
     }
     show(0);
     requestAnimationFrame(frame);
+    // Android WebView may report a height of 0 while the page first loads, which squeezed the drawing to nothing.
+    // Size the page from the real window height now and whenever it changes.
+    function fit() {
+      const h = (window.visualViewport && window.visualViewport.height) || window.innerHeight || document.documentElement.clientHeight;
+      if (h > 0) document.body.style.height = h + 'px';
+      const free = (h || 0) - panel.offsetHeight - 16;
+      stage.style.height = Math.max(240, free) + 'px';
+    }
+    fit();
+    window.addEventListener('resize', fit);
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', fit);
+    setTimeout(fit, 200); setTimeout(fit, 800);
   }
 
   window.Padhaku = { animation, along, flow, pulse, lang };
